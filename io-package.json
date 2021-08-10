@@ -1,0 +1,77 @@
+{
+    "common": {
+        "name": "product-alert",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "titleLang": {
+            "en": "product-alert",
+            "de": "Produktwarnung",
+            "ru": "оповещение о продукте",
+            "pt": "alerta de produto",
+            "nl": "product-alert",
+            "fr": "alerte-produit",
+            "it": "prodotto-avviso",
+            "es": "alerta de producto",
+            "pl": "alert o produkcie",
+            "zh-cn": "产品警报"
+        },
+        "desc": {
+            "en": "product-alert",
+            "de": "Produktwarnung",
+            "ru": "оповещение о продукте",
+            "pt": "alerta de produto",
+            "nl": "product-alert",
+            "fr": "alerte-produit",
+            "it": "prodotto-avviso",
+            "es": "alerta de producto",
+            "pl": "alert o produkcie",
+            "zh-cn": "产品警报"
+        },
+        "authors": [
+            "jlssmt <i-hate-spammers-emails-wont-be-read@gmail.com>"
+        ],
+        "keywords": [
+            "product",
+            "alert"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "product-alert.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/jlssmt/ioBroker.product-alert/master/admin/product-alert.png",
+        "readme": "https://github.com/jlssmt/ioBroker.product-alert/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "schedule",
+        "allowInit": true,
+        "type": "misc-data",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": []
+}

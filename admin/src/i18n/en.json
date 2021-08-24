@@ -1,5 +1,10 @@
 {
     "product-alert adapter settings": "Adapter settings for product-alert",
-    "option1": "option1",
-    "option2": "option2"
+    "productName": "Product Name",
+    "url": "URL",
+    "priceQuerySelector": "Query Selector for price tag",
+    "unavailableKeyword": "Keyword(s) to check if unavailable",
+    "vendor": "Vendor",
+    "zalando": "Zalando",
+    "universal": "Universal HTML"
 }

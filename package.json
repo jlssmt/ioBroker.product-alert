@@ -22,7 +22,7 @@
     "cheerio": "^1.0.0-rc.10"
   },
   "devDependencies": {
-    "@alcalzone/release-script": "^2.2.1",
+    "@alcalzone/release-script": "^3.4.0",
     "@babel/cli": "^7.14.8",
     "@babel/core": "^7.15.0",
     "@babel/plugin-proposal-decorators": "^7.14.5",

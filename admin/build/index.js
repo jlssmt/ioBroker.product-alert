@@ -112233,12 +112233,14 @@ var __assign = this && this.__assign || function () {
   return __assign.apply(this, arguments);
 };
 
-var __spreadArray = this && this.__spreadArray || function (to, from) {
-  for (var i = 0, il = from.length, j = to.length; i < il; i++, j++) {
-    to[j] = from[i];
+var __spreadArray = this && this.__spreadArray || function (to, from, pack) {
+  if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+    if (ar || !(i in from)) {
+      if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+      ar[i] = from[i];
+    }
   }
-
-  return to;
+  return to.concat(ar || Array.prototype.slice.call(from));
 };
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -112309,7 +112311,7 @@ function (_super) {
     var _this = _super.call(this, props) || this;
 
     _this.state = {
-      items: !_this.props.native.items || !_this.props.native.items.length ? [{}] : __spreadArray([], _this.props.native.items)
+      items: !_this.props.native.items || !_this.props.native.items.length ? [{}] : __spreadArray([], _this.props.native.items, true)
     };
     return _this;
   }
@@ -112319,7 +112321,7 @@ function (_super) {
       return;
     }
 
-    var items = __spreadArray([], this.state.items);
+    var items = __spreadArray([], this.state.items, true);
 
     items[index][attr] = value;
     this.props.onChange('items', items);
@@ -112329,7 +112331,7 @@ function (_super) {
   };
 
   Settings.prototype.appendRow = function () {
-    var items = __spreadArray(__spreadArray([], this.state.items), [{}]);
+    var items = __spreadArray(__spreadArray([], this.state.items, true), [{}], false);
 
     this.props.onChange('items', items);
     this.setState({
@@ -112340,7 +112342,7 @@ function (_super) {
   Settings.prototype.deleteRow = function (index) {
     if (isNaN(index) || index < 0) return;
 
-    var items = __spreadArray([], this.state.items).filter(function (item, i) {
+    var items = __spreadArray([], this.state.items, true).filter(function (item, i) {
       return i !== index;
     });
 
@@ -112355,7 +112357,7 @@ function (_super) {
 
     return react_1.default.createElement(TextField_1.default, {
       label: i18n_1.default.t(title),
-      className: this.props.classes.input + " " + this.props.classes.controlElement,
+      className: "".concat(this.props.classes.input, " ").concat(this.props.classes.controlElement),
       style: {
         marginLeft: 10,
         marginRight: 10
@@ -112374,7 +112376,7 @@ function (_super) {
     var _this = this;
 
     return react_1.default.createElement(core_1.FormControl, {
-      className: this.props.classes.input + " " + this.props.classes.controlElement,
+      className: "".concat(this.props.classes.input, " ").concat(this.props.classes.controlElement),
       style: __assign({
         paddingTop: 5
       }, style)
@@ -112425,7 +112427,7 @@ function (_super) {
   return Settings;
 }(react_1.default.Component);
 
-exports.default = styles_1.withStyles(styles)(Settings);
+exports.default = (0, styles_1.withStyles)(styles)(Settings);
 },{"@iobroker/adapter-react/i18n":"../../node_modules/@iobroker/adapter-react/i18n.js","@material-ui/core":"../../node_modules/@material-ui/core/esm/index.js","@material-ui/core/styles":"../../node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/TextField":"../../node_modules/@material-ui/core/esm/TextField/index.js","@material-ui/icons/Add":"../../node_modules/@material-ui/icons/Add.js","@material-ui/icons/Delete":"../../node_modules/@material-ui/icons/Delete.js","react":"../../node_modules/react/index.js"}],"i18n/en.json":[function(require,module,exports) {
 module.exports = {
   "product-alert adapter settings": "Adapter settings for product-alert",
@@ -112608,7 +112610,7 @@ function (_super) {
   return App;
 }(GenericApp_1.default);
 
-exports.default = styles_1.withStyles(styles)(App);
+exports.default = (0, styles_1.withStyles)(styles)(App);
 },{"react":"../../node_modules/react/index.js","@material-ui/core/styles":"../../node_modules/@material-ui/core/esm/styles/index.js","@iobroker/adapter-react/GenericApp":"../../node_modules/@iobroker/adapter-react/GenericApp.js","./components/settings":"components/settings.tsx","./i18n/en.json":"i18n/en.json","./i18n/de.json":"i18n/de.json","./i18n/ru.json":"i18n/ru.json","./i18n/pt.json":"i18n/pt.json","./i18n/nl.json":"i18n/nl.json","./i18n/fr.json":"i18n/fr.json","./i18n/it.json":"i18n/it.json","./i18n/es.json":"i18n/es.json","./i18n/pl.json":"i18n/pl.json","./i18n/zh-cn.json":"i18n/zh-cn.json"}],"index.tsx":[function(require,module,exports) {
 "use strict";
 
@@ -112638,7 +112640,7 @@ var themeName = Utils_1.default.getThemeName();
 
 function build() {
   react_dom_1.default.render(react_1.default.createElement(styles_1.MuiThemeProvider, {
-    theme: Theme_1.default(themeName)
+    theme: (0, Theme_1.default)(themeName)
   }, react_1.default.createElement(app_1.default, {
     adapterName: "product-alert",
     onThemeChange: function onThemeChange(_theme) {
@@ -112677,7 +112679,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60456" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58898" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

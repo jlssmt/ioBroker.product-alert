@@ -46,7 +46,7 @@ class ProductAlert extends utils.Adapter {
      */
     async onReady() {
         const promises = [];
-        puppeteer_extra_1.default.use(puppeteer_extra_plugin_stealth_1.default());
+        puppeteer_extra_1.default.use((0, puppeteer_extra_plugin_stealth_1.default)());
         const browser = await puppeteer_extra_1.default.launch({ defaultViewport: { width: 1920, height: 1080 } });
         for (const item of this.config.items || []) {
             if (!item.productName || !item.url)

@@ -29639,8 +29639,8 @@ function _typeof(obj) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isPlainObject = isPlainObject;
 exports.default = deepmerge;
+exports.isPlainObject = isPlainObject;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -31102,8 +31102,8 @@ if ("development" === 'production') {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getFunctionName = getFunctionName;
 exports.default = getDisplayName;
+exports.getFunctionName = getFunctionName;
 
 var _typeof2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/typeof"));
 
@@ -31235,6 +31235,12 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "HTMLElementType", {
+  enumerable: true,
+  get: function () {
+    return _HTMLElementType.default;
+  }
+});
 Object.defineProperty(exports, "chainPropTypes", {
   enumerable: true,
   get: function () {
@@ -31277,12 +31283,6 @@ Object.defineProperty(exports, "getDisplayName", {
     return _getDisplayName.default;
   }
 });
-Object.defineProperty(exports, "HTMLElementType", {
-  enumerable: true,
-  get: function () {
-    return _HTMLElementType.default;
-  }
-});
 Object.defineProperty(exports, "ponyfillGlobal", {
   enumerable: true,
   get: function () {
@@ -31323,18 +31323,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.hexToRgb = hexToRgb;
-exports.rgbToHex = rgbToHex;
-exports.hslToRgb = hslToRgb;
-exports.decomposeColor = decomposeColor;
-exports.recomposeColor = recomposeColor;
-exports.getContrastRatio = getContrastRatio;
-exports.getLuminance = getLuminance;
-exports.emphasize = emphasize;
-exports.fade = fade;
 exports.alpha = alpha;
 exports.darken = darken;
+exports.decomposeColor = decomposeColor;
+exports.emphasize = emphasize;
+exports.fade = fade;
+exports.getContrastRatio = getContrastRatio;
+exports.getLuminance = getLuminance;
+exports.hexToRgb = hexToRgb;
+exports.hslToRgb = hslToRgb;
 exports.lighten = lighten;
+exports.recomposeColor = recomposeColor;
+exports.rgbToHex = rgbToHex;
 
 var _utils = require("@material-ui/utils");
 
@@ -32024,8 +32024,9 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.dark = void 0;
 exports.default = createPalette;
-exports.dark = exports.light = void 0;
+exports.light = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -32562,8 +32563,8 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.handleBreakpoints = handleBreakpoints;
 exports.default = void 0;
+exports.handleBreakpoints = handleBreakpoints;
 
 var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/toConsumableArray"));
 
@@ -32790,7 +32791,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.borderRadius = exports.borderColor = exports.borderLeft = exports.borderBottom = exports.borderRight = exports.borderTop = exports.border = void 0;
+exports.default = exports.borderTop = exports.borderRight = exports.borderRadius = exports.borderLeft = exports.borderColor = exports.borderBottom = exports.border = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -32938,7 +32939,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.whiteSpace = exports.visibility = exports.textOverflow = exports.overflow = exports.displayRaw = exports.displayPrint = void 0;
+exports.whiteSpace = exports.visibility = exports.textOverflow = exports.overflow = exports.displayRaw = exports.displayPrint = exports.default = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -32988,7 +32989,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.justifySelf = exports.justifyItems = exports.alignSelf = exports.flexShrink = exports.flexGrow = exports.flex = exports.order = exports.alignContent = exports.alignItems = exports.justifyContent = exports.flexWrap = exports.flexDirection = exports.flexBasis = void 0;
+exports.order = exports.justifySelf = exports.justifyItems = exports.justifyContent = exports.flexWrap = exports.flexShrink = exports.flexGrow = exports.flexDirection = exports.flexBasis = exports.flex = exports.default = exports.alignSelf = exports.alignItems = exports.alignContent = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33057,7 +33058,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.gridArea = exports.gridTemplateAreas = exports.gridTemplateRows = exports.gridTemplateColumns = exports.gridAutoRows = exports.gridAutoColumns = exports.gridAutoFlow = exports.gridRow = exports.gridColumn = exports.gridRowGap = exports.gridColumnGap = exports.gridGap = void 0;
+exports.gridTemplateRows = exports.gridTemplateColumns = exports.gridTemplateAreas = exports.gridRowGap = exports.gridRow = exports.gridGap = exports.gridColumnGap = exports.gridColumn = exports.gridAutoRows = exports.gridAutoFlow = exports.gridAutoColumns = exports.gridArea = exports.default = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33122,7 +33123,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.bgcolor = exports.color = void 0;
+exports.default = exports.color = exports.bgcolor = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33150,7 +33151,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.left = exports.bottom = exports.right = exports.top = exports.zIndex = exports.position = void 0;
+exports.zIndex = exports.top = exports.right = exports.position = exports.left = exports.default = exports.bottom = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33211,7 +33212,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.boxSizing = exports.sizeHeight = exports.sizeWidth = exports.minHeight = exports.maxHeight = exports.height = exports.minWidth = exports.maxWidth = exports.width = void 0;
+exports.width = exports.sizeWidth = exports.sizeHeight = exports.minWidth = exports.minHeight = exports.maxWidth = exports.maxHeight = exports.height = exports.default = exports.boxSizing = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33533,7 +33534,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.textAlign = exports.lineHeight = exports.letterSpacing = exports.fontWeight = exports.fontStyle = exports.fontSize = exports.fontFamily = void 0;
+exports.textAlign = exports.lineHeight = exports.letterSpacing = exports.fontWeight = exports.fontStyle = exports.fontSize = exports.fontFamily = exports.default = void 0;
 
 var _style = _interopRequireDefault(require("./style"));
 
@@ -33616,12 +33617,6 @@ Object.defineProperty(exports, "compose", {
     return _compose.default;
   }
 });
-Object.defineProperty(exports, "styleFunctionSx", {
-  enumerable: true,
-  get: function () {
-    return _styleFunctionSx.default;
-  }
-});
 Object.defineProperty(exports, "display", {
   enumerable: true,
   get: function () {
@@ -33674,6 +33669,12 @@ Object.defineProperty(exports, "style", {
   enumerable: true,
   get: function () {
     return _style.default;
+  }
+});
+Object.defineProperty(exports, "styleFunctionSx", {
+  enumerable: true,
+  get: function () {
+    return _styleFunctionSx.default;
   }
 });
 Object.defineProperty(exports, "typography", {
@@ -33902,7 +33903,7 @@ function createSpacing() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.duration = exports.easing = void 0;
+exports.easing = exports.duration = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -34396,7 +34397,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.isBrowser = void 0;
+exports.isBrowser = exports.default = void 0;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
   return typeof obj;
@@ -34485,9 +34486,11 @@ function _assertThisInitialized(self) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.createGenerateId = exports.create = exports.SheetsRegistry = exports.SheetsManager = exports.RuleList = void 0;
 exports.createRule = createRule;
+exports.default = void 0;
 exports.getDynamicStyles = getDynamicStyles;
-exports.toCssValue = exports.sheets = exports.hasCSSTOMSupport = exports.createGenerateId = exports.create = exports.SheetsRegistry = exports.SheetsManager = exports.RuleList = exports.default = void 0;
+exports.toCssValue = exports.sheets = exports.hasCSSTOMSupport = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -37508,10 +37511,10 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.prefix = void 0;
 exports.supportedKeyframes = supportedKeyframes;
 exports.supportedProperty = supportedProperty;
 exports.supportedValue = supportedValue;
-exports.prefix = void 0;
 
 var _isInBrowser = _interopRequireDefault(require("is-in-browser"));
 
@@ -38374,8 +38377,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.StylesContext = void 0;
 exports.default = StylesProvider;
-exports.StylesContext = exports.sheetsManager = void 0;
+exports.sheetsManager = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -39098,7 +39102,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = _default;
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function toVal(mix) {
   var k,
@@ -39910,8 +39914,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.withThemeCreator = withThemeCreator;
 exports.default = void 0;
+exports.withThemeCreator = withThemeCreator;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -40039,6 +40043,24 @@ var _exportNames = {
   withStyles: true,
   withTheme: true
 };
+Object.defineProperty(exports, "ServerStyleSheets", {
+  enumerable: true,
+  get: function () {
+    return _ServerStyleSheets.default;
+  }
+});
+Object.defineProperty(exports, "StylesProvider", {
+  enumerable: true,
+  get: function () {
+    return _StylesProvider.default;
+  }
+});
+Object.defineProperty(exports, "ThemeProvider", {
+  enumerable: true,
+  get: function () {
+    return _ThemeProvider.default;
+  }
+});
 Object.defineProperty(exports, "createGenerateClassName", {
   enumerable: true,
   get: function () {
@@ -40075,28 +40097,10 @@ Object.defineProperty(exports, "mergeClasses", {
     return _mergeClasses.default;
   }
 });
-Object.defineProperty(exports, "ServerStyleSheets", {
-  enumerable: true,
-  get: function () {
-    return _ServerStyleSheets.default;
-  }
-});
 Object.defineProperty(exports, "styled", {
   enumerable: true,
   get: function () {
     return _styled.default;
-  }
-});
-Object.defineProperty(exports, "StylesProvider", {
-  enumerable: true,
-  get: function () {
-    return _StylesProvider.default;
-  }
-});
-Object.defineProperty(exports, "ThemeProvider", {
-  enumerable: true,
-  get: function () {
-    return _ThemeProvider.default;
   }
 });
 Object.defineProperty(exports, "useTheme", {
@@ -40393,13 +40397,13 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isUnitless = isUnitless;
-exports.getUnit = getUnit;
-exports.toUnitless = toUnitless;
-exports.convertLength = convertLength;
 exports.alignProperty = alignProperty;
+exports.convertLength = convertLength;
 exports.fontGrid = fontGrid;
+exports.getUnit = getUnit;
+exports.isUnitless = isUnitless;
 exports.responsiveProperty = responsiveProperty;
+exports.toUnitless = toUnitless;
 
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/defineProperty"));
 
@@ -40736,10 +40740,34 @@ var _exportNames = {
   MuiThemeProvider: true,
   ThemeProvider: true
 };
-Object.defineProperty(exports, "createTheme", {
+Object.defineProperty(exports, "MuiThemeProvider", {
   enumerable: true,
   get: function () {
-    return _createTheme.default;
+    return _styles.ThemeProvider;
+  }
+});
+Object.defineProperty(exports, "ServerStyleSheets", {
+  enumerable: true,
+  get: function () {
+    return _styles.ServerStyleSheets;
+  }
+});
+Object.defineProperty(exports, "StylesProvider", {
+  enumerable: true,
+  get: function () {
+    return _styles.StylesProvider;
+  }
+});
+Object.defineProperty(exports, "ThemeProvider", {
+  enumerable: true,
+  get: function () {
+    return _styles.ThemeProvider;
+  }
+});
+Object.defineProperty(exports, "createGenerateClassName", {
+  enumerable: true,
+  get: function () {
+    return _styles.createGenerateClassName;
   }
 });
 Object.defineProperty(exports, "createMuiTheme", {
@@ -40748,16 +40776,22 @@ Object.defineProperty(exports, "createMuiTheme", {
     return _createTheme.createMuiTheme;
   }
 });
-Object.defineProperty(exports, "unstable_createMuiStrictModeTheme", {
-  enumerable: true,
-  get: function () {
-    return _createMuiStrictModeTheme.default;
-  }
-});
 Object.defineProperty(exports, "createStyles", {
   enumerable: true,
   get: function () {
     return _createStyles.default;
+  }
+});
+Object.defineProperty(exports, "createTheme", {
+  enumerable: true,
+  get: function () {
+    return _createTheme.default;
+  }
+});
+Object.defineProperty(exports, "jssPreset", {
+  enumerable: true,
+  get: function () {
+    return _styles.jssPreset;
   }
 });
 Object.defineProperty(exports, "makeStyles", {
@@ -40778,6 +40812,12 @@ Object.defineProperty(exports, "styled", {
     return _styled.default;
   }
 });
+Object.defineProperty(exports, "unstable_createMuiStrictModeTheme", {
+  enumerable: true,
+  get: function () {
+    return _createMuiStrictModeTheme.default;
+  }
+});
 Object.defineProperty(exports, "useTheme", {
   enumerable: true,
   get: function () {
@@ -40794,42 +40834,6 @@ Object.defineProperty(exports, "withTheme", {
   enumerable: true,
   get: function () {
     return _withTheme.default;
-  }
-});
-Object.defineProperty(exports, "createGenerateClassName", {
-  enumerable: true,
-  get: function () {
-    return _styles.createGenerateClassName;
-  }
-});
-Object.defineProperty(exports, "jssPreset", {
-  enumerable: true,
-  get: function () {
-    return _styles.jssPreset;
-  }
-});
-Object.defineProperty(exports, "ServerStyleSheets", {
-  enumerable: true,
-  get: function () {
-    return _styles.ServerStyleSheets;
-  }
-});
-Object.defineProperty(exports, "StylesProvider", {
-  enumerable: true,
-  get: function () {
-    return _styles.StylesProvider;
-  }
-});
-Object.defineProperty(exports, "MuiThemeProvider", {
-  enumerable: true,
-  get: function () {
-    return _styles.ThemeProvider;
-  }
-});
-Object.defineProperty(exports, "ThemeProvider", {
-  enumerable: true,
-  get: function () {
-    return _styles.ThemeProvider;
   }
 });
 
@@ -41152,6 +41156,42 @@ var Theme = function Theme(type) {
         }
       }
     };
+  } else if (type === 'DX') {
+    theme = {
+      name: type,
+      palette: {
+        type: 'light',
+        primary: {
+          main: '#F5F5F7'
+        },
+        secondary: {
+          main: '#a9a9a9'
+        },
+        expert: '#BD1B24',
+        text: {
+          primary: '#007AFE',
+          secondary: '#007AFE',
+          disabled: '#007AFEAA'
+        }
+      },
+      overrides: {
+        MuiAppBar: {
+          colorDefault: {
+            backgroundColor: '#a9a9a9'
+          }
+        },
+        MuiLink: {
+          root: {
+            textTransform: 'uppercase',
+            transition: 'color .3s ease',
+            color: _orange["default"][400],
+            '&:hover': {
+              color: _orange["default"][300]
+            }
+          }
+        }
+      }
+    };
   } else {
     theme = {
       name: type,
@@ -41210,7 +41250,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -41397,13 +41437,13 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -42550,7 +42590,19 @@ var Utils = /*#__PURE__*/function () {
         return '';
       }
 
-      if (hex.startsWith('#')) {
+      if (hex.startsWith('rgba')) {
+        var m = hex.match(/rgba?\((\d+),\s*(\d+),\s*(\d+),\s*([.\d]+)\)/);
+
+        if (m) {
+          hex = parseInt(m[1], 10).toString(16).padStart(2, '0') + parseInt(m[2], 10).toString(16).padStart(2, '0') + parseInt(m[2], 10).toString(16).padStart(2, '0');
+        }
+      } else if (hex.startsWith('rgba')) {
+        var _m = hex.match(/rgb?\((\d+),\s*(\d+),\s*(\d+)\)/);
+
+        if (_m) {
+          hex = parseInt(_m[1], 10).toString(16).padStart(2, '0') + parseInt(_m[2], 10).toString(16).padStart(2, '0') + parseInt(_m[2], 10).toString(16).padStart(2, '0');
+        }
+      } else if (hex.startsWith('#')) {
         hex = hex.slice(1);
       } // convert 3-digit hex to 6-digits.
 
@@ -43118,7 +43170,7 @@ _defineProperty(Utils, "INSTANCES", 'instances');
 
 _defineProperty(Utils, "dateFormat", ['DD', 'MM']);
 
-_defineProperty(Utils, "FORBIDDEN_CHARS", /(?:(?![ !#-&\(\)\+\x2D-:=@-Z\^_a-~\xB5\xC0-\xD6\xD8-\xF6\xF8-\u01BA\u01BC-\u01BF\u01C4\u01C6\u01C7\u01C9\u01CA\u01CC-\u01F1\u01F3-\u0293\u0295-\u02AF\u0370-\u0373\u0376\u0377\u037B-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0560-\u0588\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FD-\u10FF\u13A0-\u13F5\u13F8-\u13FD\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6-\u1FBB\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCB\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFB\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2134\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C2E\u2C30-\u2C5E\u2C60-\u2C7B\u2C7E-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA620-\uA629\uA640-\uA66D\uA680-\uA69B\uA722-\uA76F\uA771-\uA787\uA78B-\uA78E\uA790-\uA7BF\uA7C2-\uA7CA\uA7F5\uA7F6\uA7FA\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uAB30-\uAB5A\uAB60-\uAB68\uAB70-\uABBF\uABF0-\uABF9\uFB00-\uFB06\uFB13-\uFB17\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]|\uD801[\uDC00-\uDC4F\uDCA0-\uDCA9\uDCB0-\uDCD3\uDCD8-\uDCFB]|\uD803[\uDC80-\uDCB2\uDCC0-\uDCF2\uDD30-\uDD39]|\uD804[\uDC66-\uDC6F\uDCF0-\uDCF9\uDD36-\uDD3F\uDDD0-\uDDD9\uDEF0-\uDEF9]|\uD805[\uDC50-\uDC59\uDCD0-\uDCD9\uDE50-\uDE59\uDEC0-\uDEC9\uDF30-\uDF39]|\uD806[\uDCA0-\uDCE9\uDD50-\uDD59]|\uD807[\uDC50-\uDC59\uDD50-\uDD59\uDDA0-\uDDA9]|\uD81A[\uDE60-\uDE69\uDF50-\uDF59]|\uD81B[\uDE40-\uDE7F]|\uD835[\uDC00-\uDC54\uDC56-\uDC9C\uDC9E\uDC9F\uDCA2\uDCA5\uDCA6\uDCA9-\uDCAC\uDCAE-\uDCB9\uDCBB\uDCBD-\uDCC3\uDCC5-\uDD05\uDD07-\uDD0A\uDD0D-\uDD14\uDD16-\uDD1C\uDD1E-\uDD39\uDD3B-\uDD3E\uDD40-\uDD44\uDD46\uDD4A-\uDD50\uDD52-\uDEA5\uDEA8-\uDEC0\uDEC2-\uDEDA\uDEDC-\uDEFA\uDEFC-\uDF14\uDF16-\uDF34\uDF36-\uDF4E\uDF50-\uDF6E\uDF70-\uDF88\uDF8A-\uDFA8\uDFAA-\uDFC2\uDFC4-\uDFCB\uDFCE-\uDFFF]|\uD838[\uDD40-\uDD49\uDEF0-\uDEF9]|\uD83A[\uDD00-\uDD43\uDD50-\uDD59]|\uD83E[\uDFF0-\uDFF9])[\s\S])+/g);
+_defineProperty(Utils, "FORBIDDEN_CHARS", /(?:(?![ !#-&\(\)\+\x2D-:=@-Z\^_a-~\xB5\xC0-\xD6\xD8-\xF6\xF8-\u01BA\u01BC-\u01BF\u01C4\u01C6\u01C7\u01C9\u01CA\u01CC-\u01F1\u01F3-\u0293\u0295-\u02AF\u0370-\u0373\u0376\u0377\u037B-\u037D\u037F\u0386\u0388-\u038A\u038C\u038E-\u03A1\u03A3-\u03F5\u03F7-\u0481\u048A-\u052F\u0531-\u0556\u0560-\u0588\u0660-\u0669\u06F0-\u06F9\u07C0-\u07C9\u0966-\u096F\u09E6-\u09EF\u0A66-\u0A6F\u0AE6-\u0AEF\u0B66-\u0B6F\u0BE6-\u0BEF\u0C66-\u0C6F\u0CE6-\u0CEF\u0D66-\u0D6F\u0DE6-\u0DEF\u0E50-\u0E59\u0ED0-\u0ED9\u0F20-\u0F29\u1040-\u1049\u1090-\u1099\u10A0-\u10C5\u10C7\u10CD\u10D0-\u10FA\u10FD-\u10FF\u13A0-\u13F5\u13F8-\u13FD\u17E0-\u17E9\u1810-\u1819\u1946-\u194F\u19D0-\u19D9\u1A80-\u1A89\u1A90-\u1A99\u1B50-\u1B59\u1BB0-\u1BB9\u1C40-\u1C49\u1C50-\u1C59\u1C80-\u1C88\u1C90-\u1CBA\u1CBD-\u1CBF\u1D00-\u1D2B\u1D6B-\u1D77\u1D79-\u1D9A\u1E00-\u1F15\u1F18-\u1F1D\u1F20-\u1F45\u1F48-\u1F4D\u1F50-\u1F57\u1F59\u1F5B\u1F5D\u1F5F-\u1F7D\u1F80-\u1F87\u1F90-\u1F97\u1FA0-\u1FA7\u1FB0-\u1FB4\u1FB6-\u1FBB\u1FBE\u1FC2-\u1FC4\u1FC6-\u1FCB\u1FD0-\u1FD3\u1FD6-\u1FDB\u1FE0-\u1FEC\u1FF2-\u1FF4\u1FF6-\u1FFB\u2102\u2107\u210A-\u2113\u2115\u2119-\u211D\u2124\u2126\u2128\u212A-\u212D\u212F-\u2134\u2139\u213C-\u213F\u2145-\u2149\u214E\u2183\u2184\u2C00-\u2C7B\u2C7E-\u2CE4\u2CEB-\u2CEE\u2CF2\u2CF3\u2D00-\u2D25\u2D27\u2D2D\uA620-\uA629\uA640-\uA66D\uA680-\uA69B\uA722-\uA76F\uA771-\uA787\uA78B-\uA78E\uA790-\uA7CA\uA7D0\uA7D1\uA7D3\uA7D5-\uA7D9\uA7F5\uA7F6\uA7FA\uA8D0-\uA8D9\uA900-\uA909\uA9D0-\uA9D9\uA9F0-\uA9F9\uAA50-\uAA59\uAB30-\uAB5A\uAB60-\uAB68\uAB70-\uABBF\uABF0-\uABF9\uFB00-\uFB06\uFB13-\uFB17\uFF10-\uFF19\uFF21-\uFF3A\uFF41-\uFF5A]|\uD801[\uDC00-\uDC4F\uDCA0-\uDCA9\uDCB0-\uDCD3\uDCD8-\uDCFB\uDD70-\uDD7A\uDD7C-\uDD8A\uDD8C-\uDD92\uDD94\uDD95\uDD97-\uDDA1\uDDA3-\uDDB1\uDDB3-\uDDB9\uDDBB\uDDBC]|\uD803[\uDC80-\uDCB2\uDCC0-\uDCF2\uDD30-\uDD39]|\uD804[\uDC66-\uDC6F\uDCF0-\uDCF9\uDD36-\uDD3F\uDDD0-\uDDD9\uDEF0-\uDEF9]|\uD805[\uDC50-\uDC59\uDCD0-\uDCD9\uDE50-\uDE59\uDEC0-\uDEC9\uDF30-\uDF39]|\uD806[\uDCA0-\uDCE9\uDD50-\uDD59]|\uD807[\uDC50-\uDC59\uDD50-\uDD59\uDDA0-\uDDA9]|\uD81A[\uDE60-\uDE69\uDEC0-\uDEC9\uDF50-\uDF59]|\uD81B[\uDE40-\uDE7F]|\uD835[\uDC00-\uDC54\uDC56-\uDC9C\uDC9E\uDC9F\uDCA2\uDCA5\uDCA6\uDCA9-\uDCAC\uDCAE-\uDCB9\uDCBB\uDCBD-\uDCC3\uDCC5-\uDD05\uDD07-\uDD0A\uDD0D-\uDD14\uDD16-\uDD1C\uDD1E-\uDD39\uDD3B-\uDD3E\uDD40-\uDD44\uDD46\uDD4A-\uDD50\uDD52-\uDEA5\uDEA8-\uDEC0\uDEC2-\uDEDA\uDEDC-\uDEFA\uDEFC-\uDF14\uDF16-\uDF34\uDF36-\uDF4E\uDF50-\uDF6E\uDF70-\uDF88\uDF8A-\uDFA8\uDFAA-\uDFC2\uDFC4-\uDFCB\uDFCE-\uDFFF]|\uD837[\uDF00-\uDF09\uDF0B-\uDF1E]|\uD838[\uDD40-\uDD49\uDEF0-\uDEF9]|\uD83A[\uDD00-\uDD43\uDD50-\uDD59]|\uD83E[\uDFF0-\uDFF9])[\s\S])+/g);
 
 var _default = Utils;
 exports["default"] = _default;
@@ -43130,7 +43182,7 @@ exports["default"] = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.ERRORS = exports.PROGRESS = void 0;
+exports["default"] = exports.PROGRESS = exports.ERRORS = void 0;
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -43152,7 +43204,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 /** Possible progress states. */
 var PROGRESS = {
@@ -43347,7 +43399,7 @@ var Connection = /*#__PURE__*/function () {
         }
       }
 
-      var url = "".concat(protocol, "://").concat(host, ":").concat(port);
+      var url = port ? "".concat(protocol, "://").concat(host, ":").concat(port) : "".concat(protocol, "://").concat(host);
       this._socket = window.io.connect(url, {
         query: 'ws=true',
         name: this.props.name,
@@ -46402,7 +46454,7 @@ var Connection = /*#__PURE__*/function () {
   }], [{
     key: "isWeb",
     value: function isWeb() {
-      return window.adapterName === 'material' || window.socketUrl !== undefined;
+      return window.adapterName === 'material' || window.adapterName === 'vis' || window.socketUrl !== undefined;
     }
   }]);
 
@@ -46424,29 +46476,29 @@ exports["default"] = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.__extends = __extends;
-exports.__rest = __rest;
-exports.__decorate = __decorate;
-exports.__param = __param;
-exports.__metadata = __metadata;
-exports.__awaiter = __awaiter;
-exports.__generator = __generator;
-exports.__createBinding = __createBinding;
-exports.__exportStar = __exportStar;
-exports.__values = __values;
-exports.__read = __read;
-exports.__spread = __spread;
-exports.__spreadArrays = __spreadArrays;
-exports.__await = __await;
-exports.__asyncGenerator = __asyncGenerator;
+exports.__assign = void 0;
 exports.__asyncDelegator = __asyncDelegator;
+exports.__asyncGenerator = __asyncGenerator;
 exports.__asyncValues = __asyncValues;
-exports.__makeTemplateObject = __makeTemplateObject;
-exports.__importStar = __importStar;
-exports.__importDefault = __importDefault;
+exports.__await = __await;
+exports.__awaiter = __awaiter;
 exports.__classPrivateFieldGet = __classPrivateFieldGet;
 exports.__classPrivateFieldSet = __classPrivateFieldSet;
-exports.__assign = void 0;
+exports.__createBinding = __createBinding;
+exports.__decorate = __decorate;
+exports.__exportStar = __exportStar;
+exports.__extends = __extends;
+exports.__generator = __generator;
+exports.__importDefault = __importDefault;
+exports.__importStar = __importStar;
+exports.__makeTemplateObject = __makeTemplateObject;
+exports.__metadata = __metadata;
+exports.__param = __param;
+exports.__read = __read;
+exports.__rest = __rest;
+exports.__spread = __spread;
+exports.__spreadArrays = __spreadArrays;
+exports.__values = __values;
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -46873,82 +46925,17 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
   privateMap.set(receiver, value);
   return value;
 }
-},{}],"../../node_modules/@sentry/types/esm/loglevel.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.LogLevel = void 0;
-
-/** Console logging verbosity for the SDK. */
-var LogLevel;
-exports.LogLevel = LogLevel;
-
-(function (LogLevel) {
-  /** No logs will be generated. */
-  LogLevel[LogLevel["None"] = 0] = "None";
-  /** Only SDK internal errors will be logged. */
-
-  LogLevel[LogLevel["Error"] = 1] = "Error";
-  /** Information useful for debugging the SDK will be logged. */
-
-  LogLevel[LogLevel["Debug"] = 2] = "Debug";
-  /** All SDK actions will be logged. */
-
-  LogLevel[LogLevel["Verbose"] = 3] = "Verbose";
-})(LogLevel || (exports.LogLevel = LogLevel = {}));
-},{}],"../../node_modules/@sentry/types/esm/session.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.RequestSessionStatus = exports.SessionStatus = void 0;
-
-/**
- * Session Status
- */
-var SessionStatus;
-exports.SessionStatus = SessionStatus;
-
-(function (SessionStatus) {
-  /** JSDoc */
-  SessionStatus["Ok"] = "ok";
-  /** JSDoc */
-
-  SessionStatus["Exited"] = "exited";
-  /** JSDoc */
-
-  SessionStatus["Crashed"] = "crashed";
-  /** JSDoc */
-
-  SessionStatus["Abnormal"] = "abnormal";
-})(SessionStatus || (exports.SessionStatus = SessionStatus = {}));
-
-var RequestSessionStatus;
-exports.RequestSessionStatus = RequestSessionStatus;
-
-(function (RequestSessionStatus) {
-  /** JSDoc */
-  RequestSessionStatus["Ok"] = "ok";
-  /** JSDoc */
-
-  RequestSessionStatus["Errored"] = "errored";
-  /** JSDoc */
-
-  RequestSessionStatus["Crashed"] = "crashed";
-})(RequestSessionStatus || (exports.RequestSessionStatus = RequestSessionStatus = {}));
 },{}],"../../node_modules/@sentry/types/esm/severity.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Severity = void 0;
+exports.SeverityLevels = exports.Severity = void 0;
 
-/** JSDoc */
-// eslint-disable-next-line import/export
+/**
+ * TODO(v7): Remove this enum and replace with SeverityLevel
+ */
 var Severity;
 exports.Severity = Severity;
 
@@ -46973,147 +46960,15 @@ exports.Severity = Severity;
   /** JSDoc */
 
   Severity["Critical"] = "critical";
-})(Severity || (exports.Severity = Severity = {})); // eslint-disable-next-line @typescript-eslint/no-namespace, import/export
-
-
-(function (Severity) {
-  /**
-   * Converts a string-based level into a {@link Severity}.
-   *
-   * @param level string representation of Severity
-   * @returns Severity
-   */
-  function fromString(level) {
-    switch (level) {
-      case 'debug':
-        return Severity.Debug;
-
-      case 'info':
-        return Severity.Info;
-
-      case 'warn':
-      case 'warning':
-        return Severity.Warning;
-
-      case 'error':
-        return Severity.Error;
-
-      case 'fatal':
-        return Severity.Fatal;
-
-      case 'critical':
-        return Severity.Critical;
-
-      case 'log':
-      default:
-        return Severity.Log;
-    }
-  }
-
-  Severity.fromString = fromString;
 })(Severity || (exports.Severity = Severity = {}));
-},{}],"../../node_modules/@sentry/types/esm/status.js":[function(require,module,exports) {
-"use strict";
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Status = void 0;
-
-/** The status of an event. */
-// eslint-disable-next-line import/export
-var Status;
-exports.Status = Status;
-
-(function (Status) {
-  /** The status could not be determined. */
-  Status["Unknown"] = "unknown";
-  /** The event was skipped due to configuration or callbacks. */
-
-  Status["Skipped"] = "skipped";
-  /** The event was sent to Sentry successfully. */
-
-  Status["Success"] = "success";
-  /** The client is currently rate limited and will try again later. */
-
-  Status["RateLimit"] = "rate_limit";
-  /** The event could not be processed. */
-
-  Status["Invalid"] = "invalid";
-  /** A server-side error ocurred during submission. */
-
-  Status["Failed"] = "failed";
-})(Status || (exports.Status = Status = {})); // eslint-disable-next-line @typescript-eslint/no-namespace, import/export
-
-
-(function (Status) {
-  /**
-   * Converts a HTTP status code into a {@link Status}.
-   *
-   * @param code The HTTP response status code.
-   * @returns The send status or {@link Status.Unknown}.
-   */
-  function fromHttpCode(code) {
-    if (code >= 200 && code < 300) {
-      return Status.Success;
-    }
-
-    if (code === 429) {
-      return Status.RateLimit;
-    }
-
-    if (code >= 400 && code < 500) {
-      return Status.Invalid;
-    }
-
-    if (code >= 500) {
-      return Status.Failed;
-    }
-
-    return Status.Unknown;
-  }
-
-  Status.fromHttpCode = fromHttpCode;
-})(Status || (exports.Status = Status = {}));
-},{}],"../../node_modules/@sentry/types/esm/transaction.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.TransactionSamplingMethod = void 0;
-var TransactionSamplingMethod;
-exports.TransactionSamplingMethod = TransactionSamplingMethod;
-
-(function (TransactionSamplingMethod) {
-  TransactionSamplingMethod["Explicit"] = "explicitly_set";
-  TransactionSamplingMethod["Sampler"] = "client_sampler";
-  TransactionSamplingMethod["Rate"] = "client_rate";
-  TransactionSamplingMethod["Inheritance"] = "inheritance";
-})(TransactionSamplingMethod || (exports.TransactionSamplingMethod = TransactionSamplingMethod = {}));
+var SeverityLevels = ['fatal', 'error', 'warning', 'log', 'info', 'debug', 'critical'];
+exports.SeverityLevels = SeverityLevels;
 },{}],"../../node_modules/@sentry/types/esm/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
-});
-Object.defineProperty(exports, "LogLevel", {
-  enumerable: true,
-  get: function () {
-    return _loglevel.LogLevel;
-  }
-});
-Object.defineProperty(exports, "SessionStatus", {
-  enumerable: true,
-  get: function () {
-    return _session.SessionStatus;
-  }
-});
-Object.defineProperty(exports, "RequestSessionStatus", {
-  enumerable: true,
-  get: function () {
-    return _session.RequestSessionStatus;
-  }
 });
 Object.defineProperty(exports, "Severity", {
   enumerable: true,
@@ -47121,29 +46976,15 @@ Object.defineProperty(exports, "Severity", {
     return _severity.Severity;
   }
 });
-Object.defineProperty(exports, "Status", {
+Object.defineProperty(exports, "SeverityLevels", {
   enumerable: true,
   get: function () {
-    return _status.Status;
+    return _severity.SeverityLevels;
   }
 });
-Object.defineProperty(exports, "TransactionSamplingMethod", {
-  enumerable: true,
-  get: function () {
-    return _transaction.TransactionSamplingMethod;
-  }
-});
-
-var _loglevel = require("./loglevel");
-
-var _session = require("./session");
 
 var _severity = require("./severity");
-
-var _status = require("./status");
-
-var _transaction = require("./transaction");
-},{"./loglevel":"../../node_modules/@sentry/types/esm/loglevel.js","./session":"../../node_modules/@sentry/types/esm/session.js","./severity":"../../node_modules/@sentry/types/esm/severity.js","./status":"../../node_modules/@sentry/types/esm/status.js","./transaction":"../../node_modules/@sentry/types/esm/transaction.js"}],"../../node_modules/@sentry/utils/esm/async.js":[function(require,module,exports) {
+},{"./severity":"../../node_modules/@sentry/types/esm/severity.js"}],"../../node_modules/@sentry/utils/esm/async.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -47163,539 +47004,45 @@ function forget(promise) {
     console.error(e);
   });
 }
-},{}],"../../node_modules/@sentry/utils/esm/is.js":[function(require,module,exports) {
+},{}],"../../node_modules/@sentry/utils/esm/env.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isError = isError;
-exports.isErrorEvent = isErrorEvent;
-exports.isDOMError = isDOMError;
-exports.isDOMException = isDOMException;
-exports.isString = isString;
-exports.isPrimitive = isPrimitive;
-exports.isPlainObject = isPlainObject;
-exports.isEvent = isEvent;
-exports.isElement = isElement;
-exports.isRegExp = isRegExp;
-exports.isThenable = isThenable;
-exports.isSyntheticEvent = isSyntheticEvent;
-exports.isInstanceOf = isInstanceOf;
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+exports.isBrowserBundle = isBrowserBundle;
+exports.isDebugBuild = isDebugBuild;
 
 /**
- * Checks whether given value's type is one of a few Error or Error-like
- * {@link isError}.
+ * This module mostly exists for optimizations in the build process
+ * through rollup and terser.  We define some global constants which
+ * are normally undefined.  However terser overrides these with global
+ * definitions which can be evaluated by the static analyzer when
+ * creating a bundle.
  *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
+ * In turn the `isDebugBuild` and `isBrowserBundle` functions are pure
+ * and can help us remove unused code from the bundles.
  */
-function isError(wat) {
-  switch (Object.prototype.toString.call(wat)) {
-    case '[object Error]':
-      return true;
 
-    case '[object Exception]':
-      return true;
-
-    case '[object DOMException]':
-      return true;
-
-    default:
-      return isInstanceOf(wat, Error);
-  }
-}
 /**
- * Checks whether given value's type is ErrorEvent
- * {@link isErrorEvent}.
+ * Figures out if we're building with debug functionality.
  *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
+ * @returns true if this is a debug build
  */
-
-
-function isErrorEvent(wat) {
-  return Object.prototype.toString.call(wat) === '[object ErrorEvent]';
+function isDebugBuild() {
+  return typeof __SENTRY_NO_DEBUG__ !== 'undefined' && !__SENTRY_BROWSER_BUNDLE__;
 }
 /**
- * Checks whether given value's type is DOMError
- * {@link isDOMError}.
+ * Figures out if we're building a browser bundle.
  *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
+ * @returns true if this is a browser bundle build.
  */
 
 
-function isDOMError(wat) {
-  return Object.prototype.toString.call(wat) === '[object DOMError]';
+function isBrowserBundle() {
+  return typeof __SENTRY_BROWSER_BUNDLE__ !== 'undefined' && !!__SENTRY_BROWSER_BUNDLE__;
 }
-/**
- * Checks whether given value's type is DOMException
- * {@link isDOMException}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isDOMException(wat) {
-  return Object.prototype.toString.call(wat) === '[object DOMException]';
-}
-/**
- * Checks whether given value's type is a string
- * {@link isString}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isString(wat) {
-  return Object.prototype.toString.call(wat) === '[object String]';
-}
-/**
- * Checks whether given value's is a primitive (undefined, null, number, boolean, string, bigint, symbol)
- * {@link isPrimitive}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isPrimitive(wat) {
-  return wat === null || _typeof(wat) !== 'object' && typeof wat !== 'function';
-}
-/**
- * Checks whether given value's type is an object literal
- * {@link isPlainObject}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isPlainObject(wat) {
-  return Object.prototype.toString.call(wat) === '[object Object]';
-}
-/**
- * Checks whether given value's type is an Event instance
- * {@link isEvent}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isEvent(wat) {
-  return typeof Event !== 'undefined' && isInstanceOf(wat, Event);
-}
-/**
- * Checks whether given value's type is an Element instance
- * {@link isElement}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isElement(wat) {
-  return typeof Element !== 'undefined' && isInstanceOf(wat, Element);
-}
-/**
- * Checks whether given value's type is an regexp
- * {@link isRegExp}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isRegExp(wat) {
-  return Object.prototype.toString.call(wat) === '[object RegExp]';
-}
-/**
- * Checks whether given value has a then function.
- * @param wat A value to be checked.
- */
-
-
-function isThenable(wat) {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  return Boolean(wat && wat.then && typeof wat.then === 'function');
-}
-/**
- * Checks whether given value's type is a SyntheticEvent
- * {@link isSyntheticEvent}.
- *
- * @param wat A value to be checked.
- * @returns A boolean representing the result.
- */
-
-
-function isSyntheticEvent(wat) {
-  return isPlainObject(wat) && 'nativeEvent' in wat && 'preventDefault' in wat && 'stopPropagation' in wat;
-}
-/**
- * Checks whether given value's type is an instance of provided constructor.
- * {@link isInstanceOf}.
- *
- * @param wat A value to be checked.
- * @param base A constructor to be used in a check.
- * @returns A boolean representing the result.
- */
-
-
-function isInstanceOf(wat, base) {
-  try {
-    return wat instanceof base;
-  } catch (_e) {
-    return false;
-  }
-}
-},{}],"../../node_modules/@sentry/utils/esm/browser.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.htmlTreeAsString = htmlTreeAsString;
-
-var _is = require("./is");
-
-/**
- * Given a child DOM element, returns a query-selector statement describing that
- * and its ancestors
- * e.g. [HTMLElement] => body > div > input#foo.btn[name=baz]
- * @returns generated DOM path
- */
-function htmlTreeAsString(elem, keyAttrs) {
-  // try/catch both:
-  // - accessing event.target (see getsentry/raven-js#838, #768)
-  // - `htmlTreeAsString` because it's complex, and just accessing the DOM incorrectly
-  // - can throw an exception in some circumstances.
-  try {
-    var currentElem = elem;
-    var MAX_TRAVERSE_HEIGHT = 5;
-    var MAX_OUTPUT_LEN = 80;
-    var out = [];
-    var height = 0;
-    var len = 0;
-    var separator = ' > ';
-    var sepLength = separator.length;
-    var nextStr = void 0; // eslint-disable-next-line no-plusplus
-
-    while (currentElem && height++ < MAX_TRAVERSE_HEIGHT) {
-      nextStr = _htmlElementAsString(currentElem, keyAttrs); // bail out if
-      // - nextStr is the 'html' element
-      // - the length of the string that would be created exceeds MAX_OUTPUT_LEN
-      //   (ignore this limit if we are on the first iteration)
-
-      if (nextStr === 'html' || height > 1 && len + out.length * sepLength + nextStr.length >= MAX_OUTPUT_LEN) {
-        break;
-      }
-
-      out.push(nextStr);
-      len += nextStr.length;
-      currentElem = currentElem.parentNode;
-    }
-
-    return out.reverse().join(separator);
-  } catch (_oO) {
-    return '<unknown>';
-  }
-}
-/**
- * Returns a simple, query-selector representation of a DOM element
- * e.g. [HTMLElement] => input#foo.btn[name=baz]
- * @returns generated DOM path
- */
-
-
-function _htmlElementAsString(el, keyAttrs) {
-  var _a, _b;
-
-  var elem = el;
-  var out = [];
-  var className;
-  var classes;
-  var key;
-  var attr;
-  var i;
-
-  if (!elem || !elem.tagName) {
-    return '';
-  }
-
-  out.push(elem.tagName.toLowerCase()); // Pairs of attribute keys defined in `serializeAttribute` and their values on element.
-
-  var keyAttrPairs = ((_a = keyAttrs) === null || _a === void 0 ? void 0 : _a.length) ? keyAttrs.filter(function (keyAttr) {
-    return elem.getAttribute(keyAttr);
-  }).map(function (keyAttr) {
-    return [keyAttr, elem.getAttribute(keyAttr)];
-  }) : null;
-
-  if ((_b = keyAttrPairs) === null || _b === void 0 ? void 0 : _b.length) {
-    keyAttrPairs.forEach(function (keyAttrPair) {
-      out.push("[" + keyAttrPair[0] + "=\"" + keyAttrPair[1] + "\"]");
-    });
-  } else {
-    if (elem.id) {
-      out.push("#" + elem.id);
-    } // eslint-disable-next-line prefer-const
-
-
-    className = elem.className;
-
-    if (className && (0, _is.isString)(className)) {
-      classes = className.split(/\s+/);
-
-      for (i = 0; i < classes.length; i++) {
-        out.push("." + classes[i]);
-      }
-    }
-  }
-
-  var allowedAttrs = ['type', 'name', 'title', 'alt'];
-
-  for (i = 0; i < allowedAttrs.length; i++) {
-    key = allowedAttrs[i];
-    attr = elem.getAttribute(key);
-
-    if (attr) {
-      out.push("[" + key + "=\"" + attr + "\"]");
-    }
-  }
-
-  return out.join('');
-}
-},{"./is":"../../node_modules/@sentry/utils/esm/is.js"}],"../../node_modules/@sentry/utils/esm/polyfill.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.setPrototypeOf = void 0;
-var setPrototypeOf = Object.setPrototypeOf || ({
-  __proto__: []
-} instanceof Array ? setProtoOf : mixinProperties);
-/**
- * setPrototypeOf polyfill using __proto__
- */
-// eslint-disable-next-line @typescript-eslint/ban-types
-
-exports.setPrototypeOf = setPrototypeOf;
-
-function setProtoOf(obj, proto) {
-  // @ts-ignore __proto__ does not exist on obj
-  obj.__proto__ = proto;
-  return obj;
-}
-/**
- * setPrototypeOf polyfill using mixin
- */
-// eslint-disable-next-line @typescript-eslint/ban-types
-
-
-function mixinProperties(obj, proto) {
-  for (var prop in proto) {
-    // eslint-disable-next-line no-prototype-builtins
-    if (!obj.hasOwnProperty(prop)) {
-      // @ts-ignore typescript complains about indexing so we remove
-      obj[prop] = proto[prop];
-    }
-  }
-
-  return obj;
-}
-},{}],"../../node_modules/@sentry/utils/esm/error.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.SentryError = void 0;
-
-var _tslib = require("tslib");
-
-var _polyfill = require("./polyfill");
-
-/** An error emitted by Sentry SDKs and related utilities. */
-var SentryError = function (_super) {
-  (0, _tslib.__extends)(SentryError, _super);
-
-  function SentryError(message) {
-    var _newTarget = this.constructor;
-
-    var _this = _super.call(this, message) || this;
-
-    _this.message = message;
-    _this.name = _newTarget.prototype.constructor.name;
-    (0, _polyfill.setPrototypeOf)(_this, _newTarget.prototype);
-    return _this;
-  }
-
-  return SentryError;
-}(Error);
-
-exports.SentryError = SentryError;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","./polyfill":"../../node_modules/@sentry/utils/esm/polyfill.js"}],"../../node_modules/@sentry/utils/esm/dsn.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Dsn = void 0;
-
-var _tslib = require("tslib");
-
-var _error = require("./error");
-
-/** Regular expression used to parse a Dsn. */
-var DSN_REGEX = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+))?@)([\w.-]+)(?::(\d+))?\/(.+)/;
-/** Error message */
-
-var ERROR_MESSAGE = 'Invalid Dsn';
-/** The Sentry Dsn, identifying a Sentry instance and project. */
-
-var Dsn = function () {
-  /** Creates a new Dsn component */
-  function Dsn(from) {
-    if (typeof from === 'string') {
-      this._fromString(from);
-    } else {
-      this._fromComponents(from);
-    }
-
-    this._validate();
-  }
-  /**
-   * Renders the string representation of this Dsn.
-   *
-   * By default, this will render the public representation without the password
-   * component. To get the deprecated private representation, set `withPassword`
-   * to true.
-   *
-   * @param withPassword When set to true, the password will be included.
-   */
-
-
-  Dsn.prototype.toString = function (withPassword) {
-    if (withPassword === void 0) {
-      withPassword = false;
-    }
-
-    var _a = this,
-        host = _a.host,
-        path = _a.path,
-        pass = _a.pass,
-        port = _a.port,
-        projectId = _a.projectId,
-        protocol = _a.protocol,
-        publicKey = _a.publicKey;
-
-    return protocol + "://" + publicKey + (withPassword && pass ? ":" + pass : '') + ("@" + host + (port ? ":" + port : '') + "/" + (path ? path + "/" : path) + projectId);
-  };
-  /** Parses a string into this Dsn. */
-
-
-  Dsn.prototype._fromString = function (str) {
-    var match = DSN_REGEX.exec(str);
-
-    if (!match) {
-      throw new _error.SentryError(ERROR_MESSAGE);
-    }
-
-    var _a = (0, _tslib.__read)(match.slice(1), 6),
-        protocol = _a[0],
-        publicKey = _a[1],
-        _b = _a[2],
-        pass = _b === void 0 ? '' : _b,
-        host = _a[3],
-        _c = _a[4],
-        port = _c === void 0 ? '' : _c,
-        lastPath = _a[5];
-
-    var path = '';
-    var projectId = lastPath;
-    var split = projectId.split('/');
-
-    if (split.length > 1) {
-      path = split.slice(0, -1).join('/');
-      projectId = split.pop();
-    }
-
-    if (projectId) {
-      var projectMatch = projectId.match(/^\d+/);
-
-      if (projectMatch) {
-        projectId = projectMatch[0];
-      }
-    }
-
-    this._fromComponents({
-      host: host,
-      pass: pass,
-      path: path,
-      projectId: projectId,
-      port: port,
-      protocol: protocol,
-      publicKey: publicKey
-    });
-  };
-  /** Maps Dsn components into this instance. */
-
-
-  Dsn.prototype._fromComponents = function (components) {
-    // TODO this is for backwards compatibility, and can be removed in a future version
-    if ('user' in components && !('publicKey' in components)) {
-      components.publicKey = components.user;
-    }
-
-    this.user = components.publicKey || '';
-    this.protocol = components.protocol;
-    this.publicKey = components.publicKey || '';
-    this.pass = components.pass || '';
-    this.host = components.host;
-    this.port = components.port || '';
-    this.path = components.path || '';
-    this.projectId = components.projectId;
-  };
-  /** Validates this Dsn and throws on error. */
-
-
-  Dsn.prototype._validate = function () {
-    var _this = this;
-
-    ['protocol', 'publicKey', 'host', 'projectId'].forEach(function (component) {
-      if (!_this[component]) {
-        throw new _error.SentryError(ERROR_MESSAGE + ": " + component + " missing");
-      }
-    });
-
-    if (!this.projectId.match(/^\d+$/)) {
-      throw new _error.SentryError(ERROR_MESSAGE + ": Invalid projectId " + this.projectId);
-    }
-
-    if (this.protocol !== 'http' && this.protocol !== 'https') {
-      throw new _error.SentryError(ERROR_MESSAGE + ": Invalid protocol " + this.protocol);
-    }
-
-    if (this.port && isNaN(parseInt(this.port, 10))) {
-      throw new _error.SentryError(ERROR_MESSAGE + ": Invalid port " + this.port);
-    }
-  };
-
-  return Dsn;
-}();
-
-exports.Dsn = Dsn;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","./error":"../../node_modules/@sentry/utils/esm/error.js"}],"../../node_modules/process/browser.js":[function(require,module,exports) {
+},{}],"../../node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -47911,9 +47258,16 @@ var process = require("process");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isNodeEnv = isNodeEnv;
 exports.dynamicRequire = dynamicRequire;
+exports.isNodeEnv = isNodeEnv;
 exports.loadModule = loadModule;
+
+var _env = require("./env");
+
+/**
+ * NOTE: In order to avoid circular dependencies, if you add a function to this module and it needs to print something,
+ * you must either a) use `console.log` rather than the logger, or b) put your function elsewhere.
+ */
 
 /**
  * Checks whether we're in the Node.js or Browser environment
@@ -47921,7 +47275,9 @@ exports.loadModule = loadModule;
  * @returns Answer to given question
  */
 function isNodeEnv() {
-  return Object.prototype.toString.call(typeof process !== 'undefined' ? process : 0) === '[object process]';
+  // explicitly check for browser bundles as those can be optimized statically
+  // by terser/rollup.
+  return !(0, _env.isBrowserBundle)() && Object.prototype.toString.call(typeof process !== 'undefined' ? process : 0) === '[object process]';
 }
 /**
  * Requires a module which is protected against bundler minification.
@@ -47966,16 +47322,809 @@ function loadModule(moduleName) {
 
   return mod;
 }
-},{"process":"../../node_modules/process/browser.js"}],"../../node_modules/@sentry/utils/esm/string.js":[function(require,module,exports) {
+},{"./env":"../../node_modules/@sentry/utils/esm/env.js","process":"../../node_modules/process/browser.js"}],"../../node_modules/@sentry/utils/esm/global.js":[function(require,module,exports) {
+var global = arguments[3];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.truncate = truncate;
-exports.snipLine = snipLine;
-exports.safeJoin = safeJoin;
+exports.getGlobalObject = getGlobalObject;
+
+var _node = require("./node");
+
+/**
+ * NOTE: In order to avoid circular dependencies, if you add a function to this module and it needs to print something,
+ * you must either a) use `console.log` rather than the logger, or b) put your function elsewhere.
+ */
+var fallbackGlobalObject = {};
+/**
+ * Safely get global scope object
+ *
+ * @returns Global scope object
+ */
+
+function getGlobalObject() {
+  return (0, _node.isNodeEnv)() ? global : typeof window !== 'undefined' // eslint-disable-line no-restricted-globals
+  ? window // eslint-disable-line no-restricted-globals
+  : typeof self !== 'undefined' ? self : fallbackGlobalObject;
+}
+},{"./node":"../../node_modules/@sentry/utils/esm/node.js"}],"../../node_modules/@sentry/utils/esm/is.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.isDOMError = isDOMError;
+exports.isDOMException = isDOMException;
+exports.isElement = isElement;
+exports.isError = isError;
+exports.isErrorEvent = isErrorEvent;
+exports.isEvent = isEvent;
+exports.isInstanceOf = isInstanceOf;
+exports.isPlainObject = isPlainObject;
+exports.isPrimitive = isPrimitive;
+exports.isRegExp = isRegExp;
+exports.isString = isString;
+exports.isSyntheticEvent = isSyntheticEvent;
+exports.isThenable = isThenable;
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+// eslint-disable-next-line @typescript-eslint/unbound-method
+var objectToString = Object.prototype.toString;
+/**
+ * Checks whether given value's type is one of a few Error or Error-like
+ * {@link isError}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+function isError(wat) {
+  switch (objectToString.call(wat)) {
+    case '[object Error]':
+    case '[object Exception]':
+    case '[object DOMException]':
+      return true;
+
+    default:
+      return isInstanceOf(wat, Error);
+  }
+}
+
+function isBuiltin(wat, ty) {
+  return objectToString.call(wat) === "[object " + ty + "]";
+}
+/**
+ * Checks whether given value's type is ErrorEvent
+ * {@link isErrorEvent}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isErrorEvent(wat) {
+  return isBuiltin(wat, 'ErrorEvent');
+}
+/**
+ * Checks whether given value's type is DOMError
+ * {@link isDOMError}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isDOMError(wat) {
+  return isBuiltin(wat, 'DOMError');
+}
+/**
+ * Checks whether given value's type is DOMException
+ * {@link isDOMException}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isDOMException(wat) {
+  return isBuiltin(wat, 'DOMException');
+}
+/**
+ * Checks whether given value's type is a string
+ * {@link isString}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isString(wat) {
+  return isBuiltin(wat, 'String');
+}
+/**
+ * Checks whether given value is a primitive (undefined, null, number, boolean, string, bigint, symbol)
+ * {@link isPrimitive}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isPrimitive(wat) {
+  return wat === null || _typeof(wat) !== 'object' && typeof wat !== 'function';
+}
+/**
+ * Checks whether given value's type is an object literal
+ * {@link isPlainObject}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isPlainObject(wat) {
+  return isBuiltin(wat, 'Object');
+}
+/**
+ * Checks whether given value's type is an Event instance
+ * {@link isEvent}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isEvent(wat) {
+  return typeof Event !== 'undefined' && isInstanceOf(wat, Event);
+}
+/**
+ * Checks whether given value's type is an Element instance
+ * {@link isElement}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isElement(wat) {
+  return typeof Element !== 'undefined' && isInstanceOf(wat, Element);
+}
+/**
+ * Checks whether given value's type is an regexp
+ * {@link isRegExp}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isRegExp(wat) {
+  return isBuiltin(wat, 'RegExp');
+}
+/**
+ * Checks whether given value has a then function.
+ * @param wat A value to be checked.
+ */
+
+
+function isThenable(wat) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  return Boolean(wat && wat.then && typeof wat.then === 'function');
+}
+/**
+ * Checks whether given value's type is a SyntheticEvent
+ * {@link isSyntheticEvent}.
+ *
+ * @param wat A value to be checked.
+ * @returns A boolean representing the result.
+ */
+
+
+function isSyntheticEvent(wat) {
+  return isPlainObject(wat) && 'nativeEvent' in wat && 'preventDefault' in wat && 'stopPropagation' in wat;
+}
+/**
+ * Checks whether given value's type is an instance of provided constructor.
+ * {@link isInstanceOf}.
+ *
+ * @param wat A value to be checked.
+ * @param base A constructor to be used in a check.
+ * @returns A boolean representing the result.
+ */
+
+
+function isInstanceOf(wat, base) {
+  try {
+    return wat instanceof base;
+  } catch (_e) {
+    return false;
+  }
+}
+},{}],"../../node_modules/@sentry/utils/esm/browser.js":[function(require,module,exports) {
+var global = arguments[3];
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getLocationHref = getLocationHref;
+exports.htmlTreeAsString = htmlTreeAsString;
+
+var _global = require("./global");
+
+var _is = require("./is");
+
+/**
+ * Given a child DOM element, returns a query-selector statement describing that
+ * and its ancestors
+ * e.g. [HTMLElement] => body > div > input#foo.btn[name=baz]
+ * @returns generated DOM path
+ */
+function htmlTreeAsString(elem, keyAttrs) {
+  // try/catch both:
+  // - accessing event.target (see getsentry/raven-js#838, #768)
+  // - `htmlTreeAsString` because it's complex, and just accessing the DOM incorrectly
+  // - can throw an exception in some circumstances.
+  try {
+    var currentElem = elem;
+    var MAX_TRAVERSE_HEIGHT = 5;
+    var MAX_OUTPUT_LEN = 80;
+    var out = [];
+    var height = 0;
+    var len = 0;
+    var separator = ' > ';
+    var sepLength = separator.length;
+    var nextStr = void 0; // eslint-disable-next-line no-plusplus
+
+    while (currentElem && height++ < MAX_TRAVERSE_HEIGHT) {
+      nextStr = _htmlElementAsString(currentElem, keyAttrs); // bail out if
+      // - nextStr is the 'html' element
+      // - the length of the string that would be created exceeds MAX_OUTPUT_LEN
+      //   (ignore this limit if we are on the first iteration)
+
+      if (nextStr === 'html' || height > 1 && len + out.length * sepLength + nextStr.length >= MAX_OUTPUT_LEN) {
+        break;
+      }
+
+      out.push(nextStr);
+      len += nextStr.length;
+      currentElem = currentElem.parentNode;
+    }
+
+    return out.reverse().join(separator);
+  } catch (_oO) {
+    return '<unknown>';
+  }
+}
+/**
+ * Returns a simple, query-selector representation of a DOM element
+ * e.g. [HTMLElement] => input#foo.btn[name=baz]
+ * @returns generated DOM path
+ */
+
+
+function _htmlElementAsString(el, keyAttrs) {
+  var elem = el;
+  var out = [];
+  var className;
+  var classes;
+  var key;
+  var attr;
+  var i;
+
+  if (!elem || !elem.tagName) {
+    return '';
+  }
+
+  out.push(elem.tagName.toLowerCase()); // Pairs of attribute keys defined in `serializeAttribute` and their values on element.
+
+  var keyAttrPairs = keyAttrs && keyAttrs.length ? keyAttrs.filter(function (keyAttr) {
+    return elem.getAttribute(keyAttr);
+  }).map(function (keyAttr) {
+    return [keyAttr, elem.getAttribute(keyAttr)];
+  }) : null;
+
+  if (keyAttrPairs && keyAttrPairs.length) {
+    keyAttrPairs.forEach(function (keyAttrPair) {
+      out.push("[" + keyAttrPair[0] + "=\"" + keyAttrPair[1] + "\"]");
+    });
+  } else {
+    if (elem.id) {
+      out.push("#" + elem.id);
+    } // eslint-disable-next-line prefer-const
+
+
+    className = elem.className;
+
+    if (className && (0, _is.isString)(className)) {
+      classes = className.split(/\s+/);
+
+      for (i = 0; i < classes.length; i++) {
+        out.push("." + classes[i]);
+      }
+    }
+  }
+
+  var allowedAttrs = ['type', 'name', 'title', 'alt'];
+
+  for (i = 0; i < allowedAttrs.length; i++) {
+    key = allowedAttrs[i];
+    attr = elem.getAttribute(key);
+
+    if (attr) {
+      out.push("[" + key + "=\"" + attr + "\"]");
+    }
+  }
+
+  return out.join('');
+}
+/**
+ * A safe form of location.href
+ */
+
+
+function getLocationHref() {
+  var global = (0, _global.getGlobalObject)();
+
+  try {
+    return global.document.location.href;
+  } catch (oO) {
+    return '';
+  }
+}
+},{"./global":"../../node_modules/@sentry/utils/esm/global.js","./is":"../../node_modules/@sentry/utils/esm/is.js"}],"../../node_modules/@sentry/utils/esm/polyfill.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.setPrototypeOf = void 0;
+var setPrototypeOf = Object.setPrototypeOf || ({
+  __proto__: []
+} instanceof Array ? setProtoOf : mixinProperties);
+/**
+ * setPrototypeOf polyfill using __proto__
+ */
+// eslint-disable-next-line @typescript-eslint/ban-types
+
+exports.setPrototypeOf = setPrototypeOf;
+
+function setProtoOf(obj, proto) {
+  // @ts-ignore __proto__ does not exist on obj
+  obj.__proto__ = proto;
+  return obj;
+}
+/**
+ * setPrototypeOf polyfill using mixin
+ */
+// eslint-disable-next-line @typescript-eslint/ban-types
+
+
+function mixinProperties(obj, proto) {
+  for (var prop in proto) {
+    if (!Object.prototype.hasOwnProperty.call(obj, prop)) {
+      // @ts-ignore typescript complains about indexing so we remove
+      obj[prop] = proto[prop];
+    }
+  }
+
+  return obj;
+}
+},{}],"../../node_modules/@sentry/utils/esm/error.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SentryError = void 0;
+
+var _tslib = require("tslib");
+
+var _polyfill = require("./polyfill");
+
+/** An error emitted by Sentry SDKs and related utilities. */
+var SentryError =
+/** @class */
+function (_super) {
+  (0, _tslib.__extends)(SentryError, _super);
+
+  function SentryError(message) {
+    var _newTarget = this.constructor;
+
+    var _this = _super.call(this, message) || this;
+
+    _this.message = message;
+    _this.name = _newTarget.prototype.constructor.name;
+    (0, _polyfill.setPrototypeOf)(_this, _newTarget.prototype);
+    return _this;
+  }
+
+  return SentryError;
+}(Error);
+
+exports.SentryError = SentryError;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","./polyfill":"../../node_modules/@sentry/utils/esm/polyfill.js"}],"../../node_modules/@sentry/utils/esm/dsn.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.dsnToString = dsnToString;
+exports.makeDsn = makeDsn;
+
+var _tslib = require("tslib");
+
+var _env = require("./env");
+
+var _error = require("./error");
+
+/** Regular expression used to parse a Dsn. */
+var DSN_REGEX = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+))?@)([\w.-]+)(?::(\d+))?\/(.+)/;
+
+function isValidProtocol(protocol) {
+  return protocol === 'http' || protocol === 'https';
+}
+/**
+ * Renders the string representation of this Dsn.
+ *
+ * By default, this will render the public representation without the password
+ * component. To get the deprecated private representation, set `withPassword`
+ * to true.
+ *
+ * @param withPassword When set to true, the password will be included.
+ */
+
+
+function dsnToString(dsn, withPassword) {
+  if (withPassword === void 0) {
+    withPassword = false;
+  }
+
+  var host = dsn.host,
+      path = dsn.path,
+      pass = dsn.pass,
+      port = dsn.port,
+      projectId = dsn.projectId,
+      protocol = dsn.protocol,
+      publicKey = dsn.publicKey;
+  return protocol + "://" + publicKey + (withPassword && pass ? ":" + pass : '') + ("@" + host + (port ? ":" + port : '') + "/" + (path ? path + "/" : path) + projectId);
+}
+
+function dsnFromString(str) {
+  var match = DSN_REGEX.exec(str);
+
+  if (!match) {
+    throw new _error.SentryError("Invalid Sentry Dsn: " + str);
+  }
+
+  var _a = (0, _tslib.__read)(match.slice(1), 6),
+      protocol = _a[0],
+      publicKey = _a[1],
+      _b = _a[2],
+      pass = _b === void 0 ? '' : _b,
+      host = _a[3],
+      _c = _a[4],
+      port = _c === void 0 ? '' : _c,
+      lastPath = _a[5];
+
+  var path = '';
+  var projectId = lastPath;
+  var split = projectId.split('/');
+
+  if (split.length > 1) {
+    path = split.slice(0, -1).join('/');
+    projectId = split.pop();
+  }
+
+  if (projectId) {
+    var projectMatch = projectId.match(/^\d+/);
+
+    if (projectMatch) {
+      projectId = projectMatch[0];
+    }
+  }
+
+  return dsnFromComponents({
+    host: host,
+    pass: pass,
+    path: path,
+    projectId: projectId,
+    port: port,
+    protocol: protocol,
+    publicKey: publicKey
+  });
+}
+
+function dsnFromComponents(components) {
+  // TODO this is for backwards compatibility, and can be removed in a future version
+  if ('user' in components && !('publicKey' in components)) {
+    components.publicKey = components.user;
+  }
+
+  return {
+    user: components.publicKey || '',
+    protocol: components.protocol,
+    publicKey: components.publicKey || '',
+    pass: components.pass || '',
+    host: components.host,
+    port: components.port || '',
+    path: components.path || '',
+    projectId: components.projectId
+  };
+}
+
+function validateDsn(dsn) {
+  if (!(0, _env.isDebugBuild)()) {
+    return;
+  }
+
+  var port = dsn.port,
+      projectId = dsn.projectId,
+      protocol = dsn.protocol;
+  var requiredComponents = ['protocol', 'publicKey', 'host', 'projectId'];
+  requiredComponents.forEach(function (component) {
+    if (!dsn[component]) {
+      throw new _error.SentryError("Invalid Sentry Dsn: " + component + " missing");
+    }
+  });
+
+  if (!projectId.match(/^\d+$/)) {
+    throw new _error.SentryError("Invalid Sentry Dsn: Invalid projectId " + projectId);
+  }
+
+  if (!isValidProtocol(protocol)) {
+    throw new _error.SentryError("Invalid Sentry Dsn: Invalid protocol " + protocol);
+  }
+
+  if (port && isNaN(parseInt(port, 10))) {
+    throw new _error.SentryError("Invalid Sentry Dsn: Invalid port " + port);
+  }
+
+  return true;
+}
+/** The Sentry Dsn, identifying a Sentry instance and project. */
+
+
+function makeDsn(from) {
+  var components = typeof from === 'string' ? dsnFromString(from) : dsnFromComponents(from);
+  validateDsn(components);
+  return components;
+}
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","./env":"../../node_modules/@sentry/utils/esm/env.js","./error":"../../node_modules/@sentry/utils/esm/error.js"}],"../../node_modules/@sentry/utils/esm/logger.js":[function(require,module,exports) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.consoleSandbox = consoleSandbox;
+exports.logger = void 0;
+
+var _global = require("./global");
+
+// TODO: Implement different loggers for different environments
+var global = (0, _global.getGlobalObject)();
+/** Prefix for logging strings */
+
+var PREFIX = 'Sentry Logger ';
+/**
+ * Temporarily unwrap `console.log` and friends in order to perform the given callback using the original methods.
+ * Restores wrapping after the callback completes.
+ *
+ * @param callback The function to run against the original `console` messages
+ * @returns The results of the callback
+ */
+
+function consoleSandbox(callback) {
+  var global = (0, _global.getGlobalObject)();
+  var levels = ['debug', 'info', 'warn', 'error', 'log', 'assert'];
+
+  if (!('console' in global)) {
+    return callback();
+  } // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+
+  var originalConsole = global.console;
+  var wrappedLevels = {}; // Restore all wrapped console methods
+
+  levels.forEach(function (level) {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    if (level in global.console && originalConsole[level].__sentry_original__) {
+      wrappedLevels[level] = originalConsole[level];
+      originalConsole[level] = originalConsole[level].__sentry_original__;
+    }
+  }); // Perform callback manipulations
+
+  var result = callback(); // Revert restoration to wrapped state
+
+  Object.keys(wrappedLevels).forEach(function (level) {
+    originalConsole[level] = wrappedLevels[level];
+  });
+  return result;
+}
+/** JSDoc */
+
+
+var Logger =
+/** @class */
+function () {
+  /** JSDoc */
+  function Logger() {
+    this._enabled = false;
+  }
+  /** JSDoc */
+
+
+  Logger.prototype.disable = function () {
+    this._enabled = false;
+  };
+  /** JSDoc */
+
+
+  Logger.prototype.enable = function () {
+    this._enabled = true;
+  };
+  /** JSDoc */
+
+
+  Logger.prototype.log = function () {
+    var args = [];
+
+    for (var _i = 0; _i < arguments.length; _i++) {
+      args[_i] = arguments[_i];
+    }
+
+    if (!this._enabled) {
+      return;
+    }
+
+    consoleSandbox(function () {
+      global.console.log(PREFIX + "[Log]: " + args.join(' '));
+    });
+  };
+  /** JSDoc */
+
+
+  Logger.prototype.warn = function () {
+    var args = [];
+
+    for (var _i = 0; _i < arguments.length; _i++) {
+      args[_i] = arguments[_i];
+    }
+
+    if (!this._enabled) {
+      return;
+    }
+
+    consoleSandbox(function () {
+      global.console.warn(PREFIX + "[Warn]: " + args.join(' '));
+    });
+  };
+  /** JSDoc */
+
+
+  Logger.prototype.error = function () {
+    var args = [];
+
+    for (var _i = 0; _i < arguments.length; _i++) {
+      args[_i] = arguments[_i];
+    }
+
+    if (!this._enabled) {
+      return;
+    }
+
+    consoleSandbox(function () {
+      global.console.error(PREFIX + "[Error]: " + args.join(' '));
+    });
+  };
+
+  return Logger;
+}(); // Ensure we only have a single logger instance, even if multiple versions of @sentry/utils are being used
+
+
+global.__SENTRY__ = global.__SENTRY__ || {};
+var logger = global.__SENTRY__.logger || (global.__SENTRY__.logger = new Logger());
+exports.logger = logger;
+},{"./global":"../../node_modules/@sentry/utils/esm/global.js"}],"../../node_modules/@sentry/utils/esm/memo.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.memoBuilder = memoBuilder;
+
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/**
+ * Helper to decycle json objects
+ */
+function memoBuilder() {
+  var hasWeakSet = typeof WeakSet === 'function';
+  var inner = hasWeakSet ? new WeakSet() : [];
+
+  function memoize(obj) {
+    if (hasWeakSet) {
+      if (inner.has(obj)) {
+        return true;
+      }
+
+      inner.add(obj);
+      return false;
+    } // eslint-disable-next-line @typescript-eslint/prefer-for-of
+
+
+    for (var i = 0; i < inner.length; i++) {
+      var value = inner[i];
+
+      if (value === obj) {
+        return true;
+      }
+    }
+
+    inner.push(obj);
+    return false;
+  }
+
+  function unmemoize(obj) {
+    if (hasWeakSet) {
+      inner.delete(obj);
+    } else {
+      for (var i = 0; i < inner.length; i++) {
+        if (inner[i] === obj) {
+          inner.splice(i, 1);
+          break;
+        }
+      }
+    }
+  }
+
+  return [memoize, unmemoize];
+}
+},{}],"../../node_modules/@sentry/utils/esm/stacktrace.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getFunctionName = getFunctionName;
+var defaultFunctionName = '<anonymous>';
+/**
+ * Safely extract function name from itself
+ */
+
+function getFunctionName(fn) {
+  try {
+    if (!fn || typeof fn !== 'function') {
+      return defaultFunctionName;
+    }
+
+    return fn.name || defaultFunctionName;
+  } catch (e) {
+    // Just accessing custom props in some Selenium environments
+    // can cause a "Permission denied" exception (see raven-js#495).
+    return defaultFunctionName;
+  }
+}
+},{}],"../../node_modules/@sentry/utils/esm/string.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.escapeStringForRegex = escapeStringForRegex;
 exports.isMatchingPattern = isMatchingPattern;
+exports.safeJoin = safeJoin;
+exports.snipLine = snipLine;
+exports.truncate = truncate;
 
 var _is = require("./is");
 
@@ -48009,15 +48158,15 @@ function truncate(str, max) {
 
 function snipLine(line, colno) {
   var newLine = line;
-  var ll = newLine.length;
+  var lineLength = newLine.length;
 
-  if (ll <= 150) {
+  if (lineLength <= 150) {
     return newLine;
   }
 
-  if (colno > ll) {
+  if (colno > lineLength) {
     // eslint-disable-next-line no-param-reassign
-    colno = ll;
+    colno = lineLength;
   }
 
   var start = Math.max(colno - 60, 0);
@@ -48026,13 +48175,13 @@ function snipLine(line, colno) {
     start = 0;
   }
 
-  var end = Math.min(start + 140, ll);
+  var end = Math.min(start + 140, lineLength);
 
-  if (end > ll - 5) {
-    end = ll;
+  if (end > lineLength - 5) {
+    end = lineLength;
   }
 
-  if (end === ll) {
+  if (end === lineLength) {
     start = Math.max(end - 140, 0);
   }
 
@@ -48042,7 +48191,7 @@ function snipLine(line, colno) {
     newLine = "'{snip} " + newLine;
   }
 
-  if (end < ll) {
+  if (end < lineLength) {
     newLine += ' {snip}';
   }
 
@@ -48098,520 +48247,42 @@ function isMatchingPattern(value, pattern) {
 
   return false;
 }
-},{"./is":"../../node_modules/@sentry/utils/esm/is.js"}],"../../node_modules/@sentry/utils/esm/misc.js":[function(require,module,exports) {
+/**
+ * Given a string, escape characters which have meaning in the regex grammar, such that the result is safe to feed to
+ * `new RegExp()`.
+ *
+ * Based on https://github.com/sindresorhus/escape-string-regexp. Vendored to a) reduce the size by skipping the runtime
+ * type-checking, and b) ensure it gets down-compiled for old versions of Node (the published package only supports Node
+ * 12+).
+ *
+ * @param regexString The string to escape
+ * @returns An version of the string with all special regex characters escaped
+ */
+
+
+function escapeStringForRegex(regexString) {
+  // escape the hyphen separately so we can also replace it with a unicode literal hyphen, to avoid the problems
+  // discussed in https://github.com/sindresorhus/escape-string-regexp/issues/20.
+  return regexString.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&').replace(/-/g, '\\x2d');
+}
+},{"./is":"../../node_modules/@sentry/utils/esm/is.js"}],"../../node_modules/@sentry/utils/esm/object.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getGlobalObject = getGlobalObject;
-exports.uuid4 = uuid4;
-exports.parseUrl = parseUrl;
-exports.getEventDescription = getEventDescription;
-exports.consoleSandbox = consoleSandbox;
-exports.addExceptionTypeValue = addExceptionTypeValue;
-exports.addExceptionMechanism = addExceptionMechanism;
-exports.getLocationHref = getLocationHref;
-exports.parseSemver = parseSemver;
-exports.parseRetryAfterHeader = parseRetryAfterHeader;
-exports.addContextToFrame = addContextToFrame;
-exports.stripUrlQueryAndFragment = stripUrlQueryAndFragment;
-
-var _node = require("./node");
-
-var _string = require("./string");
-
-var fallbackGlobalObject = {};
-/**
- * Safely get global scope object
- *
- * @returns Global scope object
- */
-
-function getGlobalObject() {
-  return (0, _node.isNodeEnv)() ? global : typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : fallbackGlobalObject;
-}
-/**
- * UUID4 generator
- *
- * @returns string Generated UUID4.
- */
-
-
-function uuid4() {
-  var global = getGlobalObject();
-  var crypto = global.crypto || global.msCrypto;
-
-  if (!(crypto === void 0) && crypto.getRandomValues) {
-    // Use window.crypto API if available
-    var arr = new Uint16Array(8);
-    crypto.getRandomValues(arr); // set 4 in byte 7
-    // eslint-disable-next-line no-bitwise
-
-    arr[3] = arr[3] & 0xfff | 0x4000; // set 2 most significant bits of byte 9 to '10'
-    // eslint-disable-next-line no-bitwise
-
-    arr[4] = arr[4] & 0x3fff | 0x8000;
-
-    var pad = function (num) {
-      var v = num.toString(16);
-
-      while (v.length < 4) {
-        v = "0" + v;
-      }
-
-      return v;
-    };
-
-    return pad(arr[0]) + pad(arr[1]) + pad(arr[2]) + pad(arr[3]) + pad(arr[4]) + pad(arr[5]) + pad(arr[6]) + pad(arr[7]);
-  } // http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/2117523#2117523
-
-
-  return 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-    // eslint-disable-next-line no-bitwise
-    var r = Math.random() * 16 | 0; // eslint-disable-next-line no-bitwise
-
-    var v = c === 'x' ? r : r & 0x3 | 0x8;
-    return v.toString(16);
-  });
-}
-/**
- * Parses string form of URL into an object
- * // borrowed from https://tools.ietf.org/html/rfc3986#appendix-B
- * // intentionally using regex and not <a/> href parsing trick because React Native and other
- * // environments where DOM might not be available
- * @returns parsed URL object
- */
-
-
-function parseUrl(url) {
-  if (!url) {
-    return {};
-  }
-
-  var match = url.match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
-
-  if (!match) {
-    return {};
-  } // coerce to undefined values to empty string so we don't get 'undefined'
-
-
-  var query = match[6] || '';
-  var fragment = match[8] || '';
-  return {
-    host: match[4],
-    path: match[5],
-    protocol: match[2],
-    relative: match[5] + query + fragment
-  };
-}
-/**
- * Extracts either message or type+value from an event that can be used for user-facing logs
- * @returns event's description
- */
-
-
-function getEventDescription(event) {
-  if (event.message) {
-    return event.message;
-  }
-
-  if (event.exception && event.exception.values && event.exception.values[0]) {
-    var exception = event.exception.values[0];
-
-    if (exception.type && exception.value) {
-      return exception.type + ": " + exception.value;
-    }
-
-    return exception.type || exception.value || event.event_id || '<unknown>';
-  }
-
-  return event.event_id || '<unknown>';
-}
-/** JSDoc */
-
-
-function consoleSandbox(callback) {
-  var global = getGlobalObject();
-  var levels = ['debug', 'info', 'warn', 'error', 'log', 'assert'];
-
-  if (!('console' in global)) {
-    return callback();
-  } // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-
-
-  var originalConsole = global.console;
-  var wrappedLevels = {}; // Restore all wrapped console methods
-
-  levels.forEach(function (level) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-    if (level in global.console && originalConsole[level].__sentry_original__) {
-      wrappedLevels[level] = originalConsole[level];
-      originalConsole[level] = originalConsole[level].__sentry_original__;
-    }
-  }); // Perform callback manipulations
-
-  var result = callback(); // Revert restoration to wrapped state
-
-  Object.keys(wrappedLevels).forEach(function (level) {
-    originalConsole[level] = wrappedLevels[level];
-  });
-  return result;
-}
-/**
- * Adds exception values, type and value to an synthetic Exception.
- * @param event The event to modify.
- * @param value Value of the exception.
- * @param type Type of the exception.
- * @hidden
- */
-
-
-function addExceptionTypeValue(event, value, type) {
-  event.exception = event.exception || {};
-  event.exception.values = event.exception.values || [];
-  event.exception.values[0] = event.exception.values[0] || {};
-  event.exception.values[0].value = event.exception.values[0].value || value || '';
-  event.exception.values[0].type = event.exception.values[0].type || type || 'Error';
-}
-/**
- * Adds exception mechanism to a given event.
- * @param event The event to modify.
- * @param mechanism Mechanism of the mechanism.
- * @hidden
- */
-
-
-function addExceptionMechanism(event, mechanism) {
-  if (mechanism === void 0) {
-    mechanism = {};
-  } // TODO: Use real type with `keyof Mechanism` thingy and maybe make it better?
-
-
-  try {
-    // @ts-ignore Type 'Mechanism | {}' is not assignable to type 'Mechanism | undefined'
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    event.exception.values[0].mechanism = event.exception.values[0].mechanism || {};
-    Object.keys(mechanism).forEach(function (key) {
-      // @ts-ignore Mechanism has no index signature
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      event.exception.values[0].mechanism[key] = mechanism[key];
-    });
-  } catch (_oO) {// no-empty
-  }
-}
-/**
- * A safe form of location.href
- */
-
-
-function getLocationHref() {
-  try {
-    return document.location.href;
-  } catch (oO) {
-    return '';
-  }
-} // https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
-
-
-var SEMVER_REGEXP = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
-/**
- * Parses input into a SemVer interface
- * @param input string representation of a semver version
- */
-
-function parseSemver(input) {
-  var match = input.match(SEMVER_REGEXP) || [];
-  var major = parseInt(match[1], 10);
-  var minor = parseInt(match[2], 10);
-  var patch = parseInt(match[3], 10);
-  return {
-    buildmetadata: match[5],
-    major: isNaN(major) ? undefined : major,
-    minor: isNaN(minor) ? undefined : minor,
-    patch: isNaN(patch) ? undefined : patch,
-    prerelease: match[4]
-  };
-}
-
-var defaultRetryAfter = 60 * 1000; // 60 seconds
-
-/**
- * Extracts Retry-After value from the request header or returns default value
- * @param now current unix timestamp
- * @param header string representation of 'Retry-After' header
- */
-
-function parseRetryAfterHeader(now, header) {
-  if (!header) {
-    return defaultRetryAfter;
-  }
-
-  var headerDelay = parseInt("" + header, 10);
-
-  if (!isNaN(headerDelay)) {
-    return headerDelay * 1000;
-  }
-
-  var headerDate = Date.parse("" + header);
-
-  if (!isNaN(headerDate)) {
-    return headerDate - now;
-  }
-
-  return defaultRetryAfter;
-}
-/**
- * This function adds context (pre/post/line) lines to the provided frame
- *
- * @param lines string[] containing all lines
- * @param frame StackFrame that will be mutated
- * @param linesOfContext number of context lines we want to add pre/post
- */
-
-
-function addContextToFrame(lines, frame, linesOfContext) {
-  if (linesOfContext === void 0) {
-    linesOfContext = 5;
-  }
-
-  var lineno = frame.lineno || 0;
-  var maxLines = lines.length;
-  var sourceLine = Math.max(Math.min(maxLines, lineno - 1), 0);
-  frame.pre_context = lines.slice(Math.max(0, sourceLine - linesOfContext), sourceLine).map(function (line) {
-    return (0, _string.snipLine)(line, 0);
-  });
-  frame.context_line = (0, _string.snipLine)(lines[Math.min(maxLines - 1, sourceLine)], frame.colno || 0);
-  frame.post_context = lines.slice(Math.min(sourceLine + 1, maxLines), sourceLine + 1 + linesOfContext).map(function (line) {
-    return (0, _string.snipLine)(line, 0);
-  });
-}
-/**
- * Strip the query string and fragment off of a given URL or path (if present)
- *
- * @param urlPath Full URL or path, including possible query string and/or fragment
- * @returns URL or path without query string or fragment
- */
-
-
-function stripUrlQueryAndFragment(urlPath) {
-  // eslint-disable-next-line no-useless-escape
-  return urlPath.split(/[\?#]/, 1)[0];
-}
-},{"./node":"../../node_modules/@sentry/utils/esm/node.js","./string":"../../node_modules/@sentry/utils/esm/string.js"}],"../../node_modules/@sentry/utils/esm/logger.js":[function(require,module,exports) {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.logger = void 0;
-
-var _misc = require("./misc");
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-// TODO: Implement different loggers for different environments
-var global = (0, _misc.getGlobalObject)();
-/** Prefix for logging strings */
-
-var PREFIX = 'Sentry Logger ';
-/** JSDoc */
-
-var Logger = function () {
-  /** JSDoc */
-  function Logger() {
-    this._enabled = false;
-  }
-  /** JSDoc */
-
-
-  Logger.prototype.disable = function () {
-    this._enabled = false;
-  };
-  /** JSDoc */
-
-
-  Logger.prototype.enable = function () {
-    this._enabled = true;
-  };
-  /** JSDoc */
-
-
-  Logger.prototype.log = function () {
-    var args = [];
-
-    for (var _i = 0; _i < arguments.length; _i++) {
-      args[_i] = arguments[_i];
-    }
-
-    if (!this._enabled) {
-      return;
-    }
-
-    (0, _misc.consoleSandbox)(function () {
-      global.console.log(PREFIX + "[Log]: " + args.join(' '));
-    });
-  };
-  /** JSDoc */
-
-
-  Logger.prototype.warn = function () {
-    var args = [];
-
-    for (var _i = 0; _i < arguments.length; _i++) {
-      args[_i] = arguments[_i];
-    }
-
-    if (!this._enabled) {
-      return;
-    }
-
-    (0, _misc.consoleSandbox)(function () {
-      global.console.warn(PREFIX + "[Warn]: " + args.join(' '));
-    });
-  };
-  /** JSDoc */
-
-
-  Logger.prototype.error = function () {
-    var args = [];
-
-    for (var _i = 0; _i < arguments.length; _i++) {
-      args[_i] = arguments[_i];
-    }
-
-    if (!this._enabled) {
-      return;
-    }
-
-    (0, _misc.consoleSandbox)(function () {
-      global.console.error(PREFIX + "[Error]: " + args.join(' '));
-    });
-  };
-
-  return Logger;
-}(); // Ensure we only have a single logger instance, even if multiple versions of @sentry/utils are being used
-
-
-global.__SENTRY__ = global.__SENTRY__ || {};
-var logger = global.__SENTRY__.logger || (global.__SENTRY__.logger = new Logger());
-exports.logger = logger;
-},{"./misc":"../../node_modules/@sentry/utils/esm/misc.js"}],"../../node_modules/@sentry/utils/esm/memo.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Memo = void 0;
-
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-
-/**
- * Memo class used for decycle json objects. Uses WeakSet if available otherwise array.
- */
-var Memo = function () {
-  function Memo() {
-    this._hasWeakSet = typeof WeakSet === 'function';
-    this._inner = this._hasWeakSet ? new WeakSet() : [];
-  }
-  /**
-   * Sets obj to remember.
-   * @param obj Object to remember
-   */
-
-
-  Memo.prototype.memoize = function (obj) {
-    if (this._hasWeakSet) {
-      if (this._inner.has(obj)) {
-        return true;
-      }
-
-      this._inner.add(obj);
-
-      return false;
-    } // eslint-disable-next-line @typescript-eslint/prefer-for-of
-
-
-    for (var i = 0; i < this._inner.length; i++) {
-      var value = this._inner[i];
-
-      if (value === obj) {
-        return true;
-      }
-    }
-
-    this._inner.push(obj);
-
-    return false;
-  };
-  /**
-   * Removes object from internal storage.
-   * @param obj Object to forget
-   */
-
-
-  Memo.prototype.unmemoize = function (obj) {
-    if (this._hasWeakSet) {
-      this._inner.delete(obj);
-    } else {
-      for (var i = 0; i < this._inner.length; i++) {
-        if (this._inner[i] === obj) {
-          this._inner.splice(i, 1);
-
-          break;
-        }
-      }
-    }
-  };
-
-  return Memo;
-}();
-
-exports.Memo = Memo;
-},{}],"../../node_modules/@sentry/utils/esm/stacktrace.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.getFunctionName = getFunctionName;
-var defaultFunctionName = '<anonymous>';
-/**
- * Safely extract function name from itself
- */
-
-function getFunctionName(fn) {
-  try {
-    if (!fn || typeof fn !== 'function') {
-      return defaultFunctionName;
-    }
-
-    return fn.name || defaultFunctionName;
-  } catch (e) {
-    // Just accessing custom props in some Selenium environments
-    // can cause a "Permission denied" exception (see raven-js#495).
-    return defaultFunctionName;
-  }
-}
-},{}],"../../node_modules/@sentry/utils/esm/object.js":[function(require,module,exports) {
-var global = arguments[3];
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.fill = fill;
-exports.urlEncode = urlEncode;
-exports.normalizeToSize = normalizeToSize;
-exports.walk = walk;
-exports.normalize = normalize;
-exports.extractExceptionKeysForMessage = extractExceptionKeysForMessage;
+exports.addNonEnumerableProperty = addNonEnumerableProperty;
 exports.dropUndefinedKeys = dropUndefinedKeys;
+exports.extractExceptionKeysForMessage = extractExceptionKeysForMessage;
+exports.fill = fill;
+exports.getOriginalFunction = getOriginalFunction;
+exports.markFunctionWrapped = markFunctionWrapped;
+exports.normalize = normalize;
+exports.normalizeToSize = normalizeToSize;
+exports.objectify = objectify;
+exports.urlEncode = urlEncode;
+exports.walk = walk;
 
 var _tslib = require("tslib");
 
@@ -48625,7 +48296,7 @@ var _stacktrace = require("./stacktrace");
 
 var _string = require("./string");
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 /**
  * Replace a method in an object with a wrapped version of itself.
@@ -48649,19 +48320,54 @@ function fill(source, name, replacementFactory) {
 
   if (typeof wrapped === 'function') {
     try {
-      wrapped.prototype = wrapped.prototype || {};
-      Object.defineProperties(wrapped, {
-        __sentry_original__: {
-          enumerable: false,
-          value: original
-        }
-      });
+      markFunctionWrapped(wrapped, original);
     } catch (_Oo) {// This can throw if multiple fill happens on a global object like XMLHttpRequest
       // Fixes https://github.com/getsentry/sentry-javascript/issues/2043
     }
   }
 
   source[name] = wrapped;
+}
+/**
+ * Defines a non enumerable property.  This creates a non enumerable property on an object.
+ *
+ * @param func The function to set a property to
+ * @param name the name of the special sentry property
+ * @param value the property to define
+ */
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+
+
+function addNonEnumerableProperty(func, name, value) {
+  Object.defineProperty(func, name, {
+    value: value
+  });
+}
+/**
+ * Remembers the original function on the wrapped function and
+ * patches up the prototype.
+ *
+ * @param wrapped the wrapper function
+ * @param original the original function that gets wrapped
+ */
+
+
+function markFunctionWrapped(wrapped, original) {
+  var proto = original.prototype || {};
+  wrapped.prototype = original.prototype = proto;
+  addNonEnumerableProperty(wrapped, '__sentry_original__', original);
+}
+/**
+ * This extracts the original function if available.  See
+ * `markFunctionWrapped` for more information.
+ *
+ * @param func the function to unwrap
+ * @returns the unwrapped version of the function if available.
+ */
+
+
+function getOriginalFunction(func) {
+  return func.__sentry_original__;
 }
 /**
  * Encodes given object into url-friendly format
@@ -48784,11 +48490,12 @@ maxSize) {
 
 
 function serializeValue(value) {
-  var type = Object.prototype.toString.call(value); // Node.js REPL notation
-
+  // Node.js REPL notation
   if (typeof value === 'string') {
     return value;
   }
+
+  var type = Object.prototype.toString.call(value);
 
   if (type === '[object Object]') {
     return '[Object]';
@@ -48823,11 +48530,15 @@ function normalizeValue(value, key) {
 
   if (typeof global !== 'undefined' && value === global) {
     return '[Global]';
-  }
+  } // It's safe to use `window` and `document` here in this manner, as we are asserting using `typeof` first
+  // which won't throw if they are not present.
+  // eslint-disable-next-line no-restricted-globals
+
 
   if (typeof window !== 'undefined' && value === window) {
     return '[Window]';
-  }
+  } // eslint-disable-next-line no-restricted-globals
+
 
   if (typeof document !== 'undefined' && value === document) {
     return '[Document]';
@@ -48878,8 +48589,8 @@ function walk(key, value, depth, memo) {
   }
 
   if (memo === void 0) {
-    memo = new _memo.Memo();
-  } // If we reach the maximum depth, serialize whatever has left
+    memo = (0, _memo.memoBuilder)();
+  } // If we reach the maximum depth, serialize whatever is left
 
 
   if (depth === 0) {
@@ -48893,21 +48604,22 @@ function walk(key, value, depth, memo) {
     return value.toJSON();
   }
   /* eslint-enable @typescript-eslint/no-unsafe-member-access */
-  // If normalized value is a primitive, there are no branches left to walk, so we can just bail out, as theres no point in going down that branch any further
+  // If normalized value is a primitive, there are no branches left to walk, so bail out
 
 
   var normalized = normalizeValue(value, key);
 
   if ((0, _is.isPrimitive)(normalized)) {
     return normalized;
-  } // Create source that we will use for next itterations, either objectified error object (Error type with extracted keys:value pairs) or the input itself
+  } // Create source that we will use for the next iteration. It will either be an objectified error object (`Error` type
+  // with extracted key:value pairs) or the input itself.
 
 
   var source = getWalkSource(value); // Create an accumulator that will act as a parent for all future itterations of that branch
 
   var acc = Array.isArray(value) ? [] : {}; // If we already walked that branch, bail out, as it's circular reference
 
-  if (memo.memoize(value)) {
+  if (memo[0](value)) {
     return '[Circular ~]';
   } // Walk all keys of the source
 
@@ -48923,7 +48635,7 @@ function walk(key, value, depth, memo) {
   } // Once walked through all the branches, remove the parent from memo storage
 
 
-  memo.unmemoize(value); // Return accumulated values
+  memo[1](value); // Return accumulated values
 
   return acc;
 }
@@ -49033,6 +48745,46 @@ function dropUndefinedKeys(val) {
 
   return val;
 }
+/**
+ * Ensure that something is an object.
+ *
+ * Turns `undefined` and `null` into `String`s and all other primitives into instances of their respective wrapper
+ * classes (String, Boolean, Number, etc.). Acts as the identity function on non-primitives.
+ *
+ * @param wat The subject of the objectification
+ * @returns A version of `wat` which can safely be used with `Object` class methods
+ */
+
+
+function objectify(wat) {
+  var objectified;
+
+  switch (true) {
+    case wat === undefined || wat === null:
+      objectified = new String(wat);
+      break;
+    // Though symbols and bigints do have wrapper classes (`Symbol` and `BigInt`, respectively), for whatever reason
+    // those classes don't have constructors which can be used with the `new` keyword. We therefore need to cast each as
+    // an object in order to wrap it.
+
+    case _typeof(wat) === 'symbol' || typeof wat === 'bigint':
+      objectified = Object(wat);
+      break;
+    // this will catch the remaining primitives: `String`, `Number`, and `Boolean`
+
+    case (0, _is.isPrimitive)(wat):
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      objectified = new wat.constructor(wat);
+      break;
+    // by process of elimination, at this point we know that `wat` must already be an object
+
+    default:
+      objectified = wat;
+      break;
+  }
+
+  return objectified;
+}
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","./browser":"../../node_modules/@sentry/utils/esm/browser.js","./is":"../../node_modules/@sentry/utils/esm/is.js","./memo":"../../node_modules/@sentry/utils/esm/memo.js","./stacktrace":"../../node_modules/@sentry/utils/esm/stacktrace.js","./string":"../../node_modules/@sentry/utils/esm/string.js"}],"../../node_modules/@sentry/utils/esm/supports.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -49040,19 +48792,21 @@ var global = arguments[3];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.supportsErrorEvent = supportsErrorEvent;
+exports.isNativeFetch = isNativeFetch;
 exports.supportsDOMError = supportsDOMError;
 exports.supportsDOMException = supportsDOMException;
+exports.supportsErrorEvent = supportsErrorEvent;
 exports.supportsFetch = supportsFetch;
-exports.isNativeFetch = isNativeFetch;
-exports.supportsNativeFetch = supportsNativeFetch;
-exports.supportsReportingObserver = supportsReportingObserver;
-exports.supportsReferrerPolicy = supportsReferrerPolicy;
 exports.supportsHistory = supportsHistory;
+exports.supportsNativeFetch = supportsNativeFetch;
+exports.supportsReferrerPolicy = supportsReferrerPolicy;
+exports.supportsReportingObserver = supportsReportingObserver;
+
+var _env = require("./env");
+
+var _global = require("./global");
 
 var _logger = require("./logger");
-
-var _misc = require("./misc");
 
 /**
  * Tells whether current environment supports ErrorEvent objects
@@ -49112,7 +48866,7 @@ function supportsDOMException() {
 
 
 function supportsFetch() {
-  if (!('fetch' in (0, _misc.getGlobalObject)())) {
+  if (!('fetch' in (0, _global.getGlobalObject)())) {
     return false;
   }
 
@@ -49147,7 +48901,7 @@ function supportsNativeFetch() {
     return false;
   }
 
-  var global = (0, _misc.getGlobalObject)(); // Fast path to avoid DOM I/O
+  var global = (0, _global.getGlobalObject)(); // Fast path to avoid DOM I/O
   // eslint-disable-next-line @typescript-eslint/unbound-method
 
   if (isNativeFetch(global.fetch)) {
@@ -49172,7 +48926,9 @@ function supportsNativeFetch() {
 
       doc.head.removeChild(sandbox);
     } catch (err) {
-      _logger.logger.warn('Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ', err);
+      if ((0, _env.isDebugBuild)()) {
+        _logger.logger.warn('Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ', err);
+      }
     }
   }
 
@@ -49187,7 +48943,7 @@ function supportsNativeFetch() {
 
 
 function supportsReportingObserver() {
-  return 'ReportingObserver' in (0, _misc.getGlobalObject)();
+  return 'ReportingObserver' in (0, _global.getGlobalObject)();
 }
 /**
  * Tells whether current environment supports Referrer Policy API
@@ -49198,9 +48954,9 @@ function supportsReportingObserver() {
 
 
 function supportsReferrerPolicy() {
-  // Despite all stars in the sky saying that Edge supports old draft syntax, aka 'never', 'always', 'origin' and 'default
-  // https://caniuse.com/#feat=referrer-policy
-  // It doesn't. And it throw exception instead of ignoring this parameter...
+  // Despite all stars in the sky saying that Edge supports old draft syntax, aka 'never', 'always', 'origin' and 'default'
+  // (see https://caniuse.com/#feat=referrer-policy),
+  // it doesn't. And it throws an exception instead of ignoring this parameter...
   // REF: https://github.com/getsentry/raven-js/issues/1233
   if (!supportsFetch()) {
     return false;
@@ -49227,7 +48983,7 @@ function supportsHistory() {
   // NOTE: in Chrome App environment, touching history.pushState, *even inside
   //       a try/catch block*, will cause Chrome to output an error to console.error
   // borrowed from: https://github.com/angular/angular.js/pull/13945/files
-  var global = (0, _misc.getGlobalObject)();
+  var global = (0, _global.getGlobalObject)();
   /* eslint-disable @typescript-eslint/no-unsafe-member-access */
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
@@ -49238,7 +48994,7 @@ function supportsHistory() {
   var hasHistoryApi = 'history' in global && !!global.history.pushState && !!global.history.replaceState;
   return !isChromePackagedApp && hasHistoryApi;
 }
-},{"./logger":"../../node_modules/@sentry/utils/esm/logger.js","./misc":"../../node_modules/@sentry/utils/esm/misc.js"}],"../../node_modules/@sentry/utils/esm/instrument.js":[function(require,module,exports) {
+},{"./env":"../../node_modules/@sentry/utils/esm/env.js","./global":"../../node_modules/@sentry/utils/esm/global.js","./logger":"../../node_modules/@sentry/utils/esm/logger.js"}],"../../node_modules/@sentry/utils/esm/instrument.js":[function(require,module,exports) {
 
 "use strict";
 
@@ -49249,11 +49005,13 @@ exports.addInstrumentationHandler = addInstrumentationHandler;
 
 var _tslib = require("tslib");
 
+var _env = require("./env");
+
+var _global = require("./global");
+
 var _is = require("./is");
 
 var _logger = require("./logger");
-
-var _misc = require("./misc");
 
 var _object = require("./object");
 
@@ -49261,7 +49019,7 @@ var _stacktrace = require("./stacktrace");
 
 var _supports = require("./supports");
 
-var global = (0, _misc.getGlobalObject)();
+var global = (0, _global.getGlobalObject)();
 /**
  * Instrument native APIs to call handlers that can be used to create breadcrumbs, APM spans etc.
  *  - Console API
@@ -49325,14 +49083,10 @@ function instrument(type) {
  */
 
 
-function addInstrumentationHandler(handler) {
-  if (!handler || typeof handler.type !== 'string' || typeof handler.callback !== 'function') {
-    return;
-  }
-
-  handlers[handler.type] = handlers[handler.type] || [];
-  handlers[handler.type].push(handler.callback);
-  instrument(handler.type);
+function addInstrumentationHandler(type, callback) {
+  handlers[type] = handlers[type] || [];
+  handlers[type].push(callback);
+  instrument(type);
 }
 /** JSDoc */
 
@@ -49351,7 +49105,9 @@ function triggerHandlers(type, data) {
       try {
         handler(data);
       } catch (e) {
-        _logger.logger.error("Error while triggering instrumentation handler.\nType: " + type + "\nName: " + (0, _stacktrace.getFunctionName)(handler) + "\nError: " + e);
+        if ((0, _env.isDebugBuild)()) {
+          _logger.logger.error("Error while triggering instrumentation handler.\nType: " + type + "\nName: " + (0, _stacktrace.getFunctionName)(handler) + "\nError: " + e);
+        }
       }
     }
   } catch (e_1_1) {
@@ -49490,11 +49246,8 @@ function getFetchUrl(fetchArgs) {
 function instrumentXHR() {
   if (!('XMLHttpRequest' in global)) {
     return;
-  } // Poor man's implementation of ES6 `Map`, tracking and keeping in sync key and value separately.
+  }
 
-
-  var requestKeys = [];
-  var requestValues = [];
   var xhrproto = XMLHttpRequest.prototype;
   (0, _object.fill)(xhrproto, 'open', function (originalOpen) {
     return function () {
@@ -49507,14 +49260,14 @@ function instrumentXHR() {
 
       var xhr = this;
       var url = args[1];
-      xhr.__sentry_xhr__ = {
+      var xhrInfo = xhr.__sentry_xhr__ = {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         method: (0, _is.isString)(args[0]) ? args[0].toUpperCase() : args[0],
         url: args[1]
       }; // if Sentry key appears in URL, don't capture it as a request
       // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 
-      if ((0, _is.isString)(url) && xhr.__sentry_xhr__.method === 'POST' && url.match(/sentry_key/)) {
+      if ((0, _is.isString)(url) && xhrInfo.method === 'POST' && url.match(/sentry_key/)) {
         xhr.__sentry_own_request__ = true;
       }
 
@@ -49523,25 +49276,7 @@ function instrumentXHR() {
           try {
             // touching statusCode in some platforms throws
             // an exception
-            if (xhr.__sentry_xhr__) {
-              xhr.__sentry_xhr__.status_code = xhr.status;
-            }
-          } catch (e) {
-            /* do nothing */
-          }
-
-          try {
-            var requestPos = requestKeys.indexOf(xhr);
-
-            if (requestPos !== -1) {
-              // Make sure to pop both key and value to keep it in sync.
-              requestKeys.splice(requestPos);
-              var args_1 = requestValues.splice(requestPos)[0];
-
-              if (xhr.__sentry_xhr__ && args_1[0] !== undefined) {
-                xhr.__sentry_xhr__.body = args_1[0];
-              }
-            }
+            xhrInfo.status_code = xhr.status;
           } catch (e) {
             /* do nothing */
           }
@@ -49583,8 +49318,10 @@ function instrumentXHR() {
         args[_i] = arguments[_i];
       }
 
-      requestKeys.push(this);
-      requestValues.push(args);
+      if (this.__sentry_xhr__ && args[0] !== undefined) {
+        this.__sentry_xhr__.body = args[0];
+      }
+
       triggerHandlers('xhr', {
         args: args,
         startTimestamp: Date.now(),
@@ -49910,19 +49647,321 @@ function instrumentUnhandledRejection() {
     return true;
   };
 }
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","./is":"../../node_modules/@sentry/utils/esm/is.js","./logger":"../../node_modules/@sentry/utils/esm/logger.js","./misc":"../../node_modules/@sentry/utils/esm/misc.js","./object":"../../node_modules/@sentry/utils/esm/object.js","./stacktrace":"../../node_modules/@sentry/utils/esm/stacktrace.js","./supports":"../../node_modules/@sentry/utils/esm/supports.js"}],"../../node_modules/@sentry/utils/esm/path.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","./env":"../../node_modules/@sentry/utils/esm/env.js","./global":"../../node_modules/@sentry/utils/esm/global.js","./is":"../../node_modules/@sentry/utils/esm/is.js","./logger":"../../node_modules/@sentry/utils/esm/logger.js","./object":"../../node_modules/@sentry/utils/esm/object.js","./stacktrace":"../../node_modules/@sentry/utils/esm/stacktrace.js","./supports":"../../node_modules/@sentry/utils/esm/supports.js"}],"../../node_modules/@sentry/utils/esm/misc.js":[function(require,module,exports) {
+var global = arguments[3];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.resolve = resolve;
-exports.relative = relative;
-exports.normalizePath = normalizePath;
+exports.addContextToFrame = addContextToFrame;
+exports.addExceptionMechanism = addExceptionMechanism;
+exports.addExceptionTypeValue = addExceptionTypeValue;
+exports.checkOrSetAlreadyCaught = checkOrSetAlreadyCaught;
+exports.getEventDescription = getEventDescription;
+exports.parseRetryAfterHeader = parseRetryAfterHeader;
+exports.parseSemver = parseSemver;
+exports.parseUrl = parseUrl;
+exports.stripUrlQueryAndFragment = stripUrlQueryAndFragment;
+exports.uuid4 = uuid4;
+
+var _tslib = require("tslib");
+
+var _global = require("./global");
+
+var _object = require("./object");
+
+var _string = require("./string");
+
+/**
+ * UUID4 generator
+ *
+ * @returns string Generated UUID4.
+ */
+function uuid4() {
+  var global = (0, _global.getGlobalObject)();
+  var crypto = global.crypto || global.msCrypto;
+
+  if (!(crypto === void 0) && crypto.getRandomValues) {
+    // Use window.crypto API if available
+    var arr = new Uint16Array(8);
+    crypto.getRandomValues(arr); // set 4 in byte 7
+    // eslint-disable-next-line no-bitwise
+
+    arr[3] = arr[3] & 0xfff | 0x4000; // set 2 most significant bits of byte 9 to '10'
+    // eslint-disable-next-line no-bitwise
+
+    arr[4] = arr[4] & 0x3fff | 0x8000;
+
+    var pad = function (num) {
+      var v = num.toString(16);
+
+      while (v.length < 4) {
+        v = "0" + v;
+      }
+
+      return v;
+    };
+
+    return pad(arr[0]) + pad(arr[1]) + pad(arr[2]) + pad(arr[3]) + pad(arr[4]) + pad(arr[5]) + pad(arr[6]) + pad(arr[7]);
+  } // http://stackoverflow.com/questions/105034/how-to-create-a-guid-uuid-in-javascript/2117523#2117523
+
+
+  return 'xxxxxxxxxxxx4xxxyxxxxxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    // eslint-disable-next-line no-bitwise
+    var r = Math.random() * 16 | 0; // eslint-disable-next-line no-bitwise
+
+    var v = c === 'x' ? r : r & 0x3 | 0x8;
+    return v.toString(16);
+  });
+}
+/**
+ * Parses string form of URL into an object
+ * // borrowed from https://tools.ietf.org/html/rfc3986#appendix-B
+ * // intentionally using regex and not <a/> href parsing trick because React Native and other
+ * // environments where DOM might not be available
+ * @returns parsed URL object
+ */
+
+
+function parseUrl(url) {
+  if (!url) {
+    return {};
+  }
+
+  var match = url.match(/^(([^:/?#]+):)?(\/\/([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?$/);
+
+  if (!match) {
+    return {};
+  } // coerce to undefined values to empty string so we don't get 'undefined'
+
+
+  var query = match[6] || '';
+  var fragment = match[8] || '';
+  return {
+    host: match[4],
+    path: match[5],
+    protocol: match[2],
+    relative: match[5] + query + fragment
+  };
+}
+
+function getFirstException(event) {
+  return event.exception && event.exception.values ? event.exception.values[0] : undefined;
+}
+/**
+ * Extracts either message or type+value from an event that can be used for user-facing logs
+ * @returns event's description
+ */
+
+
+function getEventDescription(event) {
+  var message = event.message,
+      eventId = event.event_id;
+
+  if (message) {
+    return message;
+  }
+
+  var firstException = getFirstException(event);
+
+  if (firstException) {
+    if (firstException.type && firstException.value) {
+      return firstException.type + ": " + firstException.value;
+    }
+
+    return firstException.type || firstException.value || eventId || '<unknown>';
+  }
+
+  return eventId || '<unknown>';
+}
+/**
+ * Adds exception values, type and value to an synthetic Exception.
+ * @param event The event to modify.
+ * @param value Value of the exception.
+ * @param type Type of the exception.
+ * @hidden
+ */
+
+
+function addExceptionTypeValue(event, value, type) {
+  var exception = event.exception = event.exception || {};
+  var values = exception.values = exception.values || [];
+  var firstException = values[0] = values[0] || {};
+
+  if (!firstException.value) {
+    firstException.value = value || '';
+  }
+
+  if (!firstException.type) {
+    firstException.type = type || 'Error';
+  }
+}
+/**
+ * Adds exception mechanism data to a given event. Uses defaults if the second parameter is not passed.
+ *
+ * @param event The event to modify.
+ * @param newMechanism Mechanism data to add to the event.
+ * @hidden
+ */
+
+
+function addExceptionMechanism(event, newMechanism) {
+  var firstException = getFirstException(event);
+
+  if (!firstException) {
+    return;
+  }
+
+  var defaultMechanism = {
+    type: 'generic',
+    handled: true
+  };
+  var currentMechanism = firstException.mechanism;
+  firstException.mechanism = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, defaultMechanism), currentMechanism), newMechanism);
+
+  if (newMechanism && 'data' in newMechanism) {
+    var mergedData = (0, _tslib.__assign)((0, _tslib.__assign)({}, currentMechanism && currentMechanism.data), newMechanism.data);
+    firstException.mechanism.data = mergedData;
+  }
+} // https://semver.org/#is-there-a-suggested-regular-expression-regex-to-check-a-semver-string
+
+
+var SEMVER_REGEXP = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
+/**
+ * Parses input into a SemVer interface
+ * @param input string representation of a semver version
+ */
+
+function parseSemver(input) {
+  var match = input.match(SEMVER_REGEXP) || [];
+  var major = parseInt(match[1], 10);
+  var minor = parseInt(match[2], 10);
+  var patch = parseInt(match[3], 10);
+  return {
+    buildmetadata: match[5],
+    major: isNaN(major) ? undefined : major,
+    minor: isNaN(minor) ? undefined : minor,
+    patch: isNaN(patch) ? undefined : patch,
+    prerelease: match[4]
+  };
+}
+
+var defaultRetryAfter = 60 * 1000; // 60 seconds
+
+/**
+ * Extracts Retry-After value from the request header or returns default value
+ * @param now current unix timestamp
+ * @param header string representation of 'Retry-After' header
+ */
+
+function parseRetryAfterHeader(now, header) {
+  if (!header) {
+    return defaultRetryAfter;
+  }
+
+  var headerDelay = parseInt("" + header, 10);
+
+  if (!isNaN(headerDelay)) {
+    return headerDelay * 1000;
+  }
+
+  var headerDate = Date.parse("" + header);
+
+  if (!isNaN(headerDate)) {
+    return headerDate - now;
+  }
+
+  return defaultRetryAfter;
+}
+/**
+ * This function adds context (pre/post/line) lines to the provided frame
+ *
+ * @param lines string[] containing all lines
+ * @param frame StackFrame that will be mutated
+ * @param linesOfContext number of context lines we want to add pre/post
+ */
+
+
+function addContextToFrame(lines, frame, linesOfContext) {
+  if (linesOfContext === void 0) {
+    linesOfContext = 5;
+  }
+
+  var lineno = frame.lineno || 0;
+  var maxLines = lines.length;
+  var sourceLine = Math.max(Math.min(maxLines, lineno - 1), 0);
+  frame.pre_context = lines.slice(Math.max(0, sourceLine - linesOfContext), sourceLine).map(function (line) {
+    return (0, _string.snipLine)(line, 0);
+  });
+  frame.context_line = (0, _string.snipLine)(lines[Math.min(maxLines - 1, sourceLine)], frame.colno || 0);
+  frame.post_context = lines.slice(Math.min(sourceLine + 1, maxLines), sourceLine + 1 + linesOfContext).map(function (line) {
+    return (0, _string.snipLine)(line, 0);
+  });
+}
+/**
+ * Strip the query string and fragment off of a given URL or path (if present)
+ *
+ * @param urlPath Full URL or path, including possible query string and/or fragment
+ * @returns URL or path without query string or fragment
+ */
+
+
+function stripUrlQueryAndFragment(urlPath) {
+  // eslint-disable-next-line no-useless-escape
+  return urlPath.split(/[\?#]/, 1)[0];
+}
+/**
+ * Checks whether or not we've already captured the given exception (note: not an identical exception - the very object
+ * in question), and marks it captured if not.
+ *
+ * This is useful because it's possible for an error to get captured by more than one mechanism. After we intercept and
+ * record an error, we rethrow it (assuming we've intercepted it before it's reached the top-level global handlers), so
+ * that we don't interfere with whatever effects the error might have had were the SDK not there. At that point, because
+ * the error has been rethrown, it's possible for it to bubble up to some other code we've instrumented. If it's not
+ * caught after that, it will bubble all the way up to the global handlers (which of course we also instrument). This
+ * function helps us ensure that even if we encounter the same error more than once, we only record it the first time we
+ * see it.
+ *
+ * Note: It will ignore primitives (always return `false` and not mark them as seen), as properties can't be set on
+ * them. {@link: Object.objectify} can be used on exceptions to convert any that are primitives into their equivalent
+ * object wrapper forms so that this check will always work. However, because we need to flag the exact object which
+ * will get rethrown, and because that rethrowing happens outside of the event processing pipeline, the objectification
+ * must be done before the exception captured.
+ *
+ * @param A thrown exception to check or flag as having been seen
+ * @returns `true` if the exception has already been captured, `false` if not (with the side effect of marking it seen)
+ */
+
+
+function checkOrSetAlreadyCaught(exception) {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+  if (exception && exception.__sentry_captured__) {
+    return true;
+  }
+
+  try {
+    // set it this way rather than by assignment so that it's not ennumerable and therefore isn't recorded by the
+    // `ExtraErrorData` integration
+    (0, _object.addNonEnumerableProperty)(exception, '__sentry_captured__', true);
+  } catch (err) {// `exception` is a primitive, so we can't mark it seen
+  }
+
+  return false;
+}
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","./global":"../../node_modules/@sentry/utils/esm/global.js","./object":"../../node_modules/@sentry/utils/esm/object.js","./string":"../../node_modules/@sentry/utils/esm/string.js"}],"../../node_modules/@sentry/utils/esm/path.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.basename = basename;
+exports.dirname = dirname;
 exports.isAbsolute = isAbsolute;
 exports.join = join;
-exports.dirname = dirname;
-exports.basename = basename;
+exports.normalizePath = normalizePath;
+exports.relative = relative;
+exports.resolve = resolve;
 
 // Slightly modified (no IE8 support, ES6) and transcribed to TypeScript
 // https://raw.githubusercontent.com/calvinmetcalf/rollup-plugin-node-builtins/master/src/es6/path.js
@@ -50142,6 +50181,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.SyncPromise = void 0;
+exports.rejectedSyncPromise = rejectedSyncPromise;
+exports.resolvedSyncPromise = resolvedSyncPromise;
 
 var _is = require("./is");
 
@@ -50153,47 +50194,68 @@ var _is = require("./is");
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-/** SyncPromise internal states */
-var States;
+/**
+ * Creates a resolved sync promise.
+ *
+ * @param value the value to resolve the promise with
+ * @returns the resolved sync promise
+ */
+function resolvedSyncPromise(value) {
+  return new SyncPromise(function (resolve) {
+    resolve(value);
+  });
+}
+/**
+ * Creates a rejected sync promise.
+ *
+ * @param value the value to reject the promise with
+ * @returns the rejected sync promise
+ */
 
-(function (States) {
-  /** Pending */
-  States["PENDING"] = "PENDING";
-  /** Resolved / OK */
 
-  States["RESOLVED"] = "RESOLVED";
-  /** Rejected / Error */
-
-  States["REJECTED"] = "REJECTED";
-})(States || (States = {}));
+function rejectedSyncPromise(reason) {
+  return new SyncPromise(function (_, reject) {
+    reject(reason);
+  });
+}
 /**
  * Thenable class that behaves like a Promise and follows it's interface
  * but is not async internally
  */
 
 
-var SyncPromise = function () {
+var SyncPromise =
+/** @class */
+function () {
   function SyncPromise(executor) {
     var _this = this;
 
-    this._state = States.PENDING;
+    this._state = 0
+    /* PENDING */
+    ;
     this._handlers = [];
     /** JSDoc */
 
     this._resolve = function (value) {
-      _this._setResult(States.RESOLVED, value);
+      _this._setResult(1
+      /* RESOLVED */
+      , value);
     };
     /** JSDoc */
 
 
     this._reject = function (reason) {
-      _this._setResult(States.REJECTED, reason);
+      _this._setResult(2
+      /* REJECTED */
+      , reason);
     };
     /** JSDoc */
 
 
     this._setResult = function (state, value) {
-      if (_this._state !== States.PENDING) {
+      if (_this._state !== 0
+      /* PENDING */
+      ) {
         return;
       }
 
@@ -50206,21 +50268,14 @@ var SyncPromise = function () {
       _this._value = value;
 
       _this._executeHandlers();
-    }; // TODO: FIXME
-
-    /** JSDoc */
-
-
-    this._attachHandler = function (handler) {
-      _this._handlers = _this._handlers.concat(handler);
-
-      _this._executeHandlers();
     };
     /** JSDoc */
 
 
     this._executeHandlers = function () {
-      if (_this._state === States.PENDING) {
+      if (_this._state === 0
+      /* PENDING */
+      ) {
         return;
       }
 
@@ -50228,24 +50283,24 @@ var SyncPromise = function () {
 
       _this._handlers = [];
       cachedHandlers.forEach(function (handler) {
-        if (handler.done) {
+        if (handler[0]) {
           return;
         }
 
-        if (_this._state === States.RESOLVED) {
-          if (handler.onfulfilled) {
-            // eslint-disable-next-line @typescript-eslint/no-floating-promises
-            handler.onfulfilled(_this._value);
-          }
+        if (_this._state === 1
+        /* RESOLVED */
+        ) {
+          // eslint-disable-next-line @typescript-eslint/no-floating-promises
+          handler[1](_this._value);
         }
 
-        if (_this._state === States.REJECTED) {
-          if (handler.onrejected) {
-            handler.onrejected(_this._value);
-          }
+        if (_this._state === 2
+        /* REJECTED */
+        ) {
+          handler[2](_this._value);
         }
 
-        handler.done = true;
+        handler[0] = true;
       });
     };
 
@@ -50258,90 +50313,35 @@ var SyncPromise = function () {
   /** JSDoc */
 
 
-  SyncPromise.resolve = function (value) {
-    return new SyncPromise(function (resolve) {
-      resolve(value);
-    });
-  };
-  /** JSDoc */
-
-
-  SyncPromise.reject = function (reason) {
-    return new SyncPromise(function (_, reject) {
-      reject(reason);
-    });
-  };
-  /** JSDoc */
-
-
-  SyncPromise.all = function (collection) {
-    return new SyncPromise(function (resolve, reject) {
-      if (!Array.isArray(collection)) {
-        reject(new TypeError("Promise.all requires an array as input."));
-        return;
-      }
-
-      if (collection.length === 0) {
-        resolve([]);
-        return;
-      }
-
-      var counter = collection.length;
-      var resolvedCollection = [];
-      collection.forEach(function (item, index) {
-        void SyncPromise.resolve(item).then(function (value) {
-          resolvedCollection[index] = value;
-          counter -= 1;
-
-          if (counter !== 0) {
-            return;
-          }
-
-          resolve(resolvedCollection);
-        }).then(null, reject);
-      });
-    });
-  };
-  /** JSDoc */
-
-
   SyncPromise.prototype.then = function (onfulfilled, onrejected) {
     var _this = this;
 
     return new SyncPromise(function (resolve, reject) {
-      _this._attachHandler({
-        done: false,
-        onfulfilled: function (result) {
-          if (!onfulfilled) {
-            // TODO: ¯\_(ツ)_/¯
-            // TODO: FIXME
-            resolve(result);
-            return;
-          }
-
+      _this._handlers.push([false, function (result) {
+        if (!onfulfilled) {
+          // TODO: ¯\_(ツ)_/¯
+          // TODO: FIXME
+          resolve(result);
+        } else {
           try {
             resolve(onfulfilled(result));
-            return;
           } catch (e) {
             reject(e);
-            return;
-          }
-        },
-        onrejected: function (reason) {
-          if (!onrejected) {
-            reject(reason);
-            return;
-          }
-
-          try {
-            resolve(onrejected(reason));
-            return;
-          } catch (e) {
-            reject(e);
-            return;
           }
         }
-      });
+      }, function (reason) {
+        if (!onrejected) {
+          reject(reason);
+        } else {
+          try {
+            resolve(onrejected(reason));
+          } catch (e) {
+            reject(e);
+          }
+        }
+      }]);
+
+      _this._executeHandlers();
     });
   };
   /** JSDoc */
@@ -50385,12 +50385,6 @@ var SyncPromise = function () {
       });
     });
   };
-  /** JSDoc */
-
-
-  SyncPromise.prototype.toString = function () {
-    return '[object SyncPromise]';
-  };
 
   return SyncPromise;
 }();
@@ -50402,28 +50396,33 @@ exports.SyncPromise = SyncPromise;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.PromiseBuffer = void 0;
+exports.makePromiseBuffer = makePromiseBuffer;
 
 var _error = require("./error");
 
 var _syncpromise = require("./syncpromise");
 
-/** A simple queue that holds promises. */
-var PromiseBuffer = function () {
-  function PromiseBuffer(_limit) {
-    this._limit = _limit;
-    /** Internal set of queued Promises */
+/**
+ * Creates an new PromiseBuffer object with the specified limit
+ * @param limit max number of promises that can be stored in the buffer
+ */
+function makePromiseBuffer(limit) {
+  var buffer = [];
 
-    this._buffer = [];
+  function isReady() {
+    return limit === undefined || buffer.length < limit;
   }
   /**
-   * Says if the buffer is ready to take more requests
+   * Remove a promise from the queue.
+   *
+   * @param task Can be any PromiseLike<T>
+   * @returns Removed promise.
    */
 
 
-  PromiseBuffer.prototype.isReady = function () {
-    return this._limit === undefined || this.length() < this._limit;
-  };
+  function remove(task) {
+    return buffer.splice(buffer.indexOf(task), 1)[0];
+  }
   /**
    * Add a promise (representing an in-flight action) to the queue, and set it to remove itself on fulfillment.
    *
@@ -50436,52 +50435,29 @@ var PromiseBuffer = function () {
    */
 
 
-  PromiseBuffer.prototype.add = function (taskProducer) {
-    var _this = this;
-
-    if (!this.isReady()) {
-      return _syncpromise.SyncPromise.reject(new _error.SentryError('Not adding Promise due to buffer limit reached.'));
+  function add(taskProducer) {
+    if (!isReady()) {
+      return (0, _syncpromise.rejectedSyncPromise)(new _error.SentryError('Not adding Promise due to buffer limit reached.'));
     } // start the task and add its promise to the queue
 
 
     var task = taskProducer();
 
-    if (this._buffer.indexOf(task) === -1) {
-      this._buffer.push(task);
+    if (buffer.indexOf(task) === -1) {
+      buffer.push(task);
     }
 
     void task.then(function () {
-      return _this.remove(task);
+      return remove(task);
     }) // Use `then(null, rejectionHandler)` rather than `catch(rejectionHandler)` so that we can use `PromiseLike`
     // rather than `Promise`. `PromiseLike` doesn't have a `.catch` method, making its polyfill smaller. (ES5 didn't
     // have promises, so TS has to polyfill when down-compiling.)
     .then(null, function () {
-      return _this.remove(task).then(null, function () {// We have to add another catch here because `this.remove()` starts a new promise chain.
+      return remove(task).then(null, function () {// We have to add another catch here because `remove()` starts a new promise chain.
       });
     });
     return task;
-  };
-  /**
-   * Remove a promise from the queue.
-   *
-   * @param task Can be any PromiseLike<T>
-   * @returns Removed promise.
-   */
-
-
-  PromiseBuffer.prototype.remove = function (task) {
-    var removedTask = this._buffer.splice(this._buffer.indexOf(task), 1)[0];
-
-    return removedTask;
-  };
-  /**
-   * This function returns the number of unresolved promises in the queue.
-   */
-
-
-  PromiseBuffer.prototype.length = function () {
-    return this._buffer.length;
-  };
+  }
   /**
    * Wait for all promises in the queue to resolve or for timeout to expire, whichever comes first.
    *
@@ -50493,39 +50469,111 @@ var PromiseBuffer = function () {
    */
 
 
-  PromiseBuffer.prototype.drain = function (timeout) {
-    var _this = this;
+  function drain(timeout) {
+    return new _syncpromise.SyncPromise(function (resolve, reject) {
+      var counter = buffer.length;
 
-    return new _syncpromise.SyncPromise(function (resolve) {
-      // wait for `timeout` ms and then resolve to `false` (if not cancelled first)
+      if (!counter) {
+        return resolve(true);
+      } // wait for `timeout` ms and then resolve to `false` (if not cancelled first)
+
+
       var capturedSetTimeout = setTimeout(function () {
         if (timeout && timeout > 0) {
           resolve(false);
         }
       }, timeout); // if all promises resolve in time, cancel the timer and resolve to `true`
 
-      void _syncpromise.SyncPromise.all(_this._buffer).then(function () {
-        clearTimeout(capturedSetTimeout);
-        resolve(true);
-      }).then(null, function () {
-        resolve(true);
+      buffer.forEach(function (item) {
+        void (0, _syncpromise.resolvedSyncPromise)(item).then(function () {
+          // eslint-disable-next-line no-plusplus
+          if (! --counter) {
+            clearTimeout(capturedSetTimeout);
+            resolve(true);
+          }
+        }, reject);
       });
     });
+  }
+
+  return {
+    $: buffer,
+    add: add,
+    drain: drain
   };
-
-  return PromiseBuffer;
-}();
-
-exports.PromiseBuffer = PromiseBuffer;
-},{"./error":"../../node_modules/@sentry/utils/esm/error.js","./syncpromise":"../../node_modules/@sentry/utils/esm/syncpromise.js"}],"../../node_modules/@sentry/utils/esm/time.js":[function(require,module,exports) {
+}
+},{"./error":"../../node_modules/@sentry/utils/esm/error.js","./syncpromise":"../../node_modules/@sentry/utils/esm/syncpromise.js"}],"../../node_modules/@sentry/utils/esm/severity.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.browserPerformanceTimeOrigin = exports._browserPerformanceTimeOriginMode = exports.usingPerformanceAPI = exports.timestampWithMs = exports.timestampInSeconds = exports.dateTimestampInSeconds = void 0;
+exports.severityFromString = severityFromString;
 
-var _misc = require("./misc");
+var _types = require("@sentry/types");
+
+function isSupportedSeverity(level) {
+  return _types.SeverityLevels.indexOf(level) !== -1;
+}
+/**
+ * Converts a string-based level into a {@link Severity}.
+ *
+ * @param level string representation of Severity
+ * @returns Severity
+ */
+
+
+function severityFromString(level) {
+  if (level === 'warn') return _types.Severity.Warning;
+
+  if (isSupportedSeverity(level)) {
+    return level;
+  }
+
+  return _types.Severity.Log;
+}
+},{"@sentry/types":"../../node_modules/@sentry/types/esm/index.js"}],"../../node_modules/@sentry/utils/esm/status.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.eventStatusFromHttpCode = eventStatusFromHttpCode;
+
+/**
+ * Converts an HTTP status code to sentry status {@link EventStatus}.
+ *
+ * @param code number HTTP status code
+ * @returns EventStatus
+ */
+function eventStatusFromHttpCode(code) {
+  if (code >= 200 && code < 300) {
+    return 'success';
+  }
+
+  if (code === 429) {
+    return 'rate_limit';
+  }
+
+  if (code >= 400 && code < 500) {
+    return 'invalid';
+  }
+
+  if (code >= 500) {
+    return 'failed';
+  }
+
+  return 'unknown';
+}
+},{}],"../../node_modules/@sentry/utils/esm/time.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.usingPerformanceAPI = exports.timestampWithMs = exports.timestampInSeconds = exports.dateTimestampInSeconds = exports.browserPerformanceTimeOrigin = exports._browserPerformanceTimeOriginMode = void 0;
+
+var _global = require("./global");
 
 var _node = require("./node");
 
@@ -50549,7 +50597,7 @@ var dateTimestampSource = {
  */
 
 function getBrowserPerformance() {
-  var performance = (0, _misc.getGlobalObject)().performance;
+  var performance = (0, _global.getGlobalObject)().performance;
 
   if (!performance || !performance.now) {
     return undefined;
@@ -50656,7 +50704,7 @@ var browserPerformanceTimeOrigin = function () {
   // Unfortunately browsers may report an inaccurate time origin data, through either performance.timeOrigin or
   // performance.timing.navigationStart, which results in poor results in performance data. We only treat time origin
   // data as reliable if they are within a reasonable threshold of the current time.
-  var performance = (0, _misc.getGlobalObject)().performance;
+  var performance = (0, _global.getGlobalObject)().performance;
 
   if (!performance || !performance.now) {
     exports._browserPerformanceTimeOriginMode = _browserPerformanceTimeOriginMode = 'none';
@@ -50698,7 +50746,7 @@ var browserPerformanceTimeOrigin = function () {
 }();
 
 exports.browserPerformanceTimeOrigin = browserPerformanceTimeOrigin;
-},{"./misc":"../../node_modules/@sentry/utils/esm/misc.js","./node":"../../node_modules/@sentry/utils/esm/node.js"}],"../../node_modules/@sentry/utils/esm/index.js":[function(require,module,exports) {
+},{"./global":"../../node_modules/@sentry/utils/esm/global.js","./node":"../../node_modules/@sentry/utils/esm/node.js"}],"../../node_modules/@sentry/utils/esm/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -50753,6 +50801,19 @@ Object.keys(_error).forEach(function (key) {
     enumerable: true,
     get: function () {
       return _error[key];
+    }
+  });
+});
+
+var _global = require("./global");
+
+Object.keys(_global).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _global[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _global[key];
     }
   });
 });
@@ -50874,6 +50935,19 @@ Object.keys(_promisebuffer).forEach(function (key) {
   });
 });
 
+var _severity = require("./severity");
+
+Object.keys(_severity).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _severity[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _severity[key];
+    }
+  });
+});
+
 var _stacktrace = require("./stacktrace");
 
 Object.keys(_stacktrace).forEach(function (key) {
@@ -50883,6 +50957,19 @@ Object.keys(_stacktrace).forEach(function (key) {
     enumerable: true,
     get: function () {
       return _stacktrace[key];
+    }
+  });
+});
+
+var _status = require("./status");
+
+Object.keys(_status).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _status[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _status[key];
     }
   });
 });
@@ -50938,15 +51025,28 @@ Object.keys(_time).forEach(function (key) {
     }
   });
 });
-},{"./async":"../../node_modules/@sentry/utils/esm/async.js","./browser":"../../node_modules/@sentry/utils/esm/browser.js","./dsn":"../../node_modules/@sentry/utils/esm/dsn.js","./error":"../../node_modules/@sentry/utils/esm/error.js","./instrument":"../../node_modules/@sentry/utils/esm/instrument.js","./is":"../../node_modules/@sentry/utils/esm/is.js","./logger":"../../node_modules/@sentry/utils/esm/logger.js","./memo":"../../node_modules/@sentry/utils/esm/memo.js","./misc":"../../node_modules/@sentry/utils/esm/misc.js","./node":"../../node_modules/@sentry/utils/esm/node.js","./object":"../../node_modules/@sentry/utils/esm/object.js","./path":"../../node_modules/@sentry/utils/esm/path.js","./promisebuffer":"../../node_modules/@sentry/utils/esm/promisebuffer.js","./stacktrace":"../../node_modules/@sentry/utils/esm/stacktrace.js","./string":"../../node_modules/@sentry/utils/esm/string.js","./supports":"../../node_modules/@sentry/utils/esm/supports.js","./syncpromise":"../../node_modules/@sentry/utils/esm/syncpromise.js","./time":"../../node_modules/@sentry/utils/esm/time.js"}],"../../node_modules/@sentry/hub/esm/scope.js":[function(require,module,exports) {
+
+var _env = require("./env");
+
+Object.keys(_env).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (key in exports && exports[key] === _env[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _env[key];
+    }
+  });
+});
+},{"./async":"../../node_modules/@sentry/utils/esm/async.js","./browser":"../../node_modules/@sentry/utils/esm/browser.js","./dsn":"../../node_modules/@sentry/utils/esm/dsn.js","./error":"../../node_modules/@sentry/utils/esm/error.js","./global":"../../node_modules/@sentry/utils/esm/global.js","./instrument":"../../node_modules/@sentry/utils/esm/instrument.js","./is":"../../node_modules/@sentry/utils/esm/is.js","./logger":"../../node_modules/@sentry/utils/esm/logger.js","./memo":"../../node_modules/@sentry/utils/esm/memo.js","./misc":"../../node_modules/@sentry/utils/esm/misc.js","./node":"../../node_modules/@sentry/utils/esm/node.js","./object":"../../node_modules/@sentry/utils/esm/object.js","./path":"../../node_modules/@sentry/utils/esm/path.js","./promisebuffer":"../../node_modules/@sentry/utils/esm/promisebuffer.js","./severity":"../../node_modules/@sentry/utils/esm/severity.js","./stacktrace":"../../node_modules/@sentry/utils/esm/stacktrace.js","./status":"../../node_modules/@sentry/utils/esm/status.js","./string":"../../node_modules/@sentry/utils/esm/string.js","./supports":"../../node_modules/@sentry/utils/esm/supports.js","./syncpromise":"../../node_modules/@sentry/utils/esm/syncpromise.js","./time":"../../node_modules/@sentry/utils/esm/time.js","./env":"../../node_modules/@sentry/utils/esm/env.js"}],"../../node_modules/@sentry/hub/esm/scope.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.addGlobalEventProcessor = addGlobalEventProcessor;
 exports.Scope = void 0;
+exports.addGlobalEventProcessor = addGlobalEventProcessor;
 
 var _tslib = require("tslib");
 
@@ -50962,7 +51062,9 @@ var MAX_BREADCRUMBS = 100;
  * called by the client before an event will be sent.
  */
 
-var Scope = function () {
+var Scope =
+/** @class */
+function () {
   function Scope() {
     /** Flag if notifying is happening. */
     this._notifyingListeners = false;
@@ -50987,6 +51089,12 @@ var Scope = function () {
     /** Contexts */
 
     this._contexts = {};
+    /**
+     * A place to stash data which is needed at some point in the SDK's event processing pipeline but which shouldn't get
+     * sent to Sentry
+     */
+
+    this._sdkProcessingMetadata = {};
   }
   /**
    * Inherit values from the parent scope.
@@ -51218,22 +51326,10 @@ var Scope = function () {
 
 
   Scope.prototype.getTransaction = function () {
-    var _a, _b, _c, _d; // often, this span will be a transaction, but it's not guaranteed to be
-
-
-    var span = this.getSpan(); // try it the new way first
-
-    if ((_a = span) === null || _a === void 0 ? void 0 : _a.transaction) {
-      return (_b = span) === null || _b === void 0 ? void 0 : _b.transaction;
-    } // fallback to the old way (known bug: this only finds transactions with sampled = true)
-
-
-    if ((_d = (_c = span) === null || _c === void 0 ? void 0 : _c.spanRecorder) === null || _d === void 0 ? void 0 : _d.spans[0]) {
-      return span.spanRecorder.spans[0];
-    } // neither way found a transaction
-
-
-    return undefined;
+    // Often, this span (if it exists at all) will be a transaction, but it's not guaranteed to be. Regardless, it will
+    // have a pointer to the currently-active transaction.
+    var span = this.getSpan();
+    return span && span.transaction;
   };
   /**
    * @inheritDoc
@@ -51386,8 +51482,6 @@ var Scope = function () {
 
 
   Scope.prototype.applyToEvent = function (event, hint) {
-    var _a;
-
     if (this._extra && Object.keys(this._extra).length) {
       event.extra = (0, _tslib.__assign)((0, _tslib.__assign)({}, this._extra), event.extra);
     }
@@ -51419,7 +51513,7 @@ var Scope = function () {
       event.contexts = (0, _tslib.__assign)({
         trace: this._span.getTraceContext()
       }, event.contexts);
-      var transactionName = (_a = this._span.transaction) === null || _a === void 0 ? void 0 : _a.name;
+      var transactionName = this._span.transaction && this._span.transaction.name;
 
       if (transactionName) {
         event.tags = (0, _tslib.__assign)({
@@ -51432,7 +51526,17 @@ var Scope = function () {
 
     event.breadcrumbs = (0, _tslib.__spread)(event.breadcrumbs || [], this._breadcrumbs);
     event.breadcrumbs = event.breadcrumbs.length > 0 ? event.breadcrumbs : undefined;
+    event.sdkProcessingMetadata = this._sdkProcessingMetadata;
     return this._notifyEventProcessors((0, _tslib.__spread)(getGlobalEventProcessors(), this._eventProcessors), event, hint);
+  };
+  /**
+   * Add data which will be accessible during event processing but won't get sent to Sentry
+   */
+
+
+  Scope.prototype.setSDKProcessingMetadata = function (newData) {
+    this._sdkProcessingMetadata = (0, _tslib.__assign)((0, _tslib.__assign)({}, this._sdkProcessingMetadata), newData);
+    return this;
   };
   /**
    * This will be called after {@link applyToEvent} is finished.
@@ -51538,19 +51642,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Session = void 0;
 
-var _types = require("@sentry/types");
-
 var _utils = require("@sentry/utils");
 
 /**
  * @inheritdoc
  */
-var Session = function () {
+var Session =
+/** @class */
+function () {
   function Session(context) {
     this.errors = 0;
     this.sid = (0, _utils.uuid4)();
     this.duration = 0;
-    this.status = _types.SessionStatus.Ok;
+    this.status = 'ok';
     this.init = true;
     this.ignoreDuration = false; // Both timestamp and started are in seconds since the UNIX epoch.
 
@@ -51645,9 +51749,9 @@ var Session = function () {
       this.update({
         status: status
       });
-    } else if (this.status === _types.SessionStatus.Ok) {
+    } else if (this.status === 'ok') {
       this.update({
-        status: _types.SessionStatus.Exited
+        status: 'exited'
       });
     } else {
       this.update();
@@ -51667,12 +51771,12 @@ var Session = function () {
       errors: this.errors,
       did: typeof this.did === 'number' || typeof this.did === 'string' ? "" + this.did : undefined,
       duration: this.duration,
-      attrs: (0, _utils.dropUndefinedKeys)({
+      attrs: {
         release: this.release,
         environment: this.environment,
         ip_address: this.ipAddress,
         user_agent: this.userAgent
-      })
+      }
     });
   };
 
@@ -51680,32 +51784,28 @@ var Session = function () {
 }();
 
 exports.Session = Session;
-},{"@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/hub/esm/hub.js":[function(require,module,exports) {
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/hub/esm/hub.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Hub = exports.API_VERSION = void 0;
+exports.getActiveDomain = getActiveDomain;
+exports.getCurrentHub = getCurrentHub;
+exports.getHubFromCarrier = getHubFromCarrier;
 exports.getMainCarrier = getMainCarrier;
 exports.makeMain = makeMain;
-exports.getCurrentHub = getCurrentHub;
-exports.getActiveDomain = getActiveDomain;
-exports.getHubFromCarrier = getHubFromCarrier;
 exports.setHubOnCarrier = setHubOnCarrier;
-exports.Hub = exports.API_VERSION = void 0;
 
 var _tslib = require("tslib");
-
-var _types = require("@sentry/types");
 
 var _utils = require("@sentry/utils");
 
 var _scope = require("./scope");
 
 var _session = require("./session");
-
-/* eslint-disable max-lines */
 
 /**
  * API compatibility version of this hub.
@@ -51727,7 +51827,9 @@ var DEFAULT_BREADCRUMBS = 100;
  * @inheritDoc
  */
 
-var Hub = function () {
+var Hub =
+/** @class */
+function () {
   /**
    * Creates a new instance of the hub, will push one {@link Layer} into the
    * internal stack on creation.
@@ -51913,7 +52015,11 @@ var Hub = function () {
 
 
   Hub.prototype.captureEvent = function (event, hint) {
-    var eventId = this._lastEventId = (0, _utils.uuid4)();
+    var eventId = (0, _utils.uuid4)();
+
+    if (event.type !== 'transaction') {
+      this._lastEventId = eventId;
+    }
 
     this._invokeClient('captureEvent', event, (0, _tslib.__assign)((0, _tslib.__assign)({}, hint), {
       event_id: eventId
@@ -52106,14 +52212,20 @@ var Hub = function () {
 
 
   Hub.prototype.endSession = function () {
-    var _a, _b, _c, _d, _e;
+    var layer = this.getStackTop();
+    var scope = layer && layer.scope;
+    var session = scope && scope.getSession();
 
-    (_c = (_b = (_a = this.getStackTop()) === null || _a === void 0 ? void 0 : _a.scope) === null || _b === void 0 ? void 0 : _b.getSession()) === null || _c === void 0 ? void 0 : _c.close();
+    if (session) {
+      session.close();
+    }
 
     this._sendSessionUpdate(); // the session is over; take it off of the scope
 
 
-    (_e = (_d = this.getStackTop()) === null || _d === void 0 ? void 0 : _d.scope) === null || _e === void 0 ? void 0 : _e.setSession();
+    if (scope) {
+      scope.setSession();
+    }
   };
   /**
    * @inheritDoc
@@ -52145,9 +52257,9 @@ var Hub = function () {
       // End existing session if there's one
       var currentSession = scope.getSession && scope.getSession();
 
-      if (currentSession && currentSession.status === _types.SessionStatus.Ok) {
+      if (currentSession && currentSession.status === 'ok') {
         currentSession.update({
-          status: _types.SessionStatus.Exited
+          status: 'exited'
         });
       }
 
@@ -52308,10 +52420,10 @@ function getActiveDomain() {
 
 
 function getHubFromActiveDomain(registry) {
-  var _a, _b, _c;
-
   try {
-    var activeDomain = (_c = (_b = (_a = getMainCarrier().__SENTRY__) === null || _a === void 0 ? void 0 : _a.extensions) === null || _b === void 0 ? void 0 : _b.domain) === null || _c === void 0 ? void 0 : _c.active; // If there's no active domain, just return global hub
+    var sentry = getMainCarrier().__SENTRY__;
+
+    var activeDomain = sentry && sentry.extensions && sentry.extensions.domain && sentry.extensions.domain.active; // If there's no active domain, just return global hub
 
     if (!activeDomain) {
       return getHubFromCarrier(registry);
@@ -52367,15 +52479,13 @@ function setHubOnCarrier(carrier, hub) {
   carrier.__SENTRY__.hub = hub;
   return true;
 }
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./scope":"../../node_modules/@sentry/hub/esm/scope.js","./session":"../../node_modules/@sentry/hub/esm/session.js"}],"../../node_modules/@sentry/hub/esm/sessionflusher.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./scope":"../../node_modules/@sentry/hub/esm/scope.js","./session":"../../node_modules/@sentry/hub/esm/session.js"}],"../../node_modules/@sentry/hub/esm/sessionflusher.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.SessionFlusher = void 0;
-
-var _types = require("@sentry/types");
 
 var _utils = require("@sentry/utils");
 
@@ -52384,7 +52494,9 @@ var _hub = require("./hub");
 /**
  * @inheritdoc
  */
-var SessionFlusher = function () {
+var SessionFlusher =
+/** @class */
+function () {
   function SessionFlusher(transport, attrs) {
     var _this = this;
 
@@ -52456,22 +52568,23 @@ var SessionFlusher = function () {
 
 
   SessionFlusher.prototype.incrementSessionStatusCount = function () {
-    var _a, _b;
-
     if (!this._isEnabled) {
       return;
     }
 
     var scope = (0, _hub.getCurrentHub)().getScope();
-    var requestSession = (_a = scope) === null || _a === void 0 ? void 0 : _a.getRequestSession();
+    var requestSession = scope && scope.getRequestSession();
 
     if (requestSession && requestSession.status) {
       this._incrementSessionStatusCount(requestSession.status, new Date()); // This is not entirely necessarily but is added as a safe guard to indicate the bounds of a request and so in
       // case captureRequestSession is called more than once to prevent double count
 
 
-      (_b = scope) === null || _b === void 0 ? void 0 : _b.setRequestSession(undefined);
+      if (scope) {
+        scope.setRequestSession(undefined);
+      }
       /* eslint-enable @typescript-eslint/no-unsafe-member-access */
+
     }
   };
   /**
@@ -52493,15 +52606,15 @@ var SessionFlusher = function () {
     }
 
     switch (status) {
-      case _types.RequestSessionStatus.Errored:
+      case 'errored':
         aggregationCounts.errored = (aggregationCounts.errored || 0) + 1;
         return aggregationCounts.errored;
 
-      case _types.RequestSessionStatus.Ok:
+      case 'ok':
         aggregationCounts.exited = (aggregationCounts.exited || 0) + 1;
         return aggregationCounts.exited;
 
-      case _types.RequestSessionStatus.Crashed:
+      default:
         aggregationCounts.crashed = (aggregationCounts.crashed || 0) + 1;
         return aggregationCounts.crashed;
     }
@@ -52511,16 +52624,16 @@ var SessionFlusher = function () {
 }();
 
 exports.SessionFlusher = SessionFlusher;
-},{"@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./hub":"../../node_modules/@sentry/hub/esm/hub.js"}],"../../node_modules/@sentry/hub/esm/index.js":[function(require,module,exports) {
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./hub":"../../node_modules/@sentry/hub/esm/hub.js"}],"../../node_modules/@sentry/hub/esm/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "addGlobalEventProcessor", {
+Object.defineProperty(exports, "Hub", {
   enumerable: true,
   get: function () {
-    return _scope.addGlobalEventProcessor;
+    return _hub.Hub;
   }
 });
 Object.defineProperty(exports, "Scope", {
@@ -52539,6 +52652,12 @@ Object.defineProperty(exports, "SessionFlusher", {
   enumerable: true,
   get: function () {
     return _sessionflusher.SessionFlusher;
+  }
+});
+Object.defineProperty(exports, "addGlobalEventProcessor", {
+  enumerable: true,
+  get: function () {
+    return _scope.addGlobalEventProcessor;
   }
 });
 Object.defineProperty(exports, "getActiveDomain", {
@@ -52563,12 +52682,6 @@ Object.defineProperty(exports, "getMainCarrier", {
   enumerable: true,
   get: function () {
     return _hub.getMainCarrier;
-  }
-});
-Object.defineProperty(exports, "Hub", {
-  enumerable: true,
-  get: function () {
-    return _hub.Hub;
   }
 });
 Object.defineProperty(exports, "makeMain", {
@@ -52597,20 +52710,20 @@ var _hub = require("./hub");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports._callOnClient = _callOnClient;
+exports.addBreadcrumb = addBreadcrumb;
+exports.captureEvent = captureEvent;
 exports.captureException = captureException;
 exports.captureMessage = captureMessage;
-exports.captureEvent = captureEvent;
 exports.configureScope = configureScope;
-exports.addBreadcrumb = addBreadcrumb;
 exports.setContext = setContext;
-exports.setExtras = setExtras;
-exports.setTags = setTags;
 exports.setExtra = setExtra;
+exports.setExtras = setExtras;
 exports.setTag = setTag;
+exports.setTags = setTags;
 exports.setUser = setUser;
-exports.withScope = withScope;
-exports._callOnClient = _callOnClient;
 exports.startTransaction = startTransaction;
+exports.withScope = withScope;
 
 var _tslib = require("tslib");
 
@@ -52666,7 +52779,7 @@ function captureException(exception, captureContext) {
  * Captures a message event and sends it to Sentry.
  *
  * @param message The message to send to Sentry.
- * @param level Define the level of the message.
+ * @param Severity Define the level of the message.
  * @returns The generated eventId.
  */
 
@@ -52855,6 +52968,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.API = void 0;
+exports.getEnvelopeEndpointWithUrlEncodedAuth = getEnvelopeEndpointWithUrlEncodedAuth;
+exports.getReportDialogEndpoint = getReportDialogEndpoint;
+exports.getRequestHeaders = getRequestHeaders;
+exports.getStoreEndpointWithUrlEncodedAuth = getStoreEndpointWithUrlEncodedAuth;
+exports.initAPIDetails = initAPIDetails;
 
 var _utils = require("@sentry/utils");
 
@@ -52863,9 +52981,13 @@ var SENTRY_API_VERSION = '7';
  * Helper class to provide urls, headers and metadata that can be used to form
  * different types of requests to Sentry endpoints.
  * Supports both envelopes and regular event requests.
+ *
+ * @deprecated Please use APIDetails
  **/
 
-var API = function () {
+var API =
+/** @class */
+function () {
   /** Create a new instance of API */
   function API(dsn, metadata, tunnel) {
     if (metadata === void 0) {
@@ -52873,7 +52995,7 @@ var API = function () {
     }
 
     this.dsn = dsn;
-    this._dsnObject = new _utils.Dsn(dsn);
+    this._dsnObject = (0, _utils.makeDsn)(dsn);
     this.metadata = metadata;
     this._tunnel = tunnel;
   }
@@ -52893,16 +53015,13 @@ var API = function () {
 
 
   API.prototype.getBaseApiEndpoint = function () {
-    var dsn = this.getDsn();
-    var protocol = dsn.protocol ? dsn.protocol + ":" : '';
-    var port = dsn.port ? ":" + dsn.port : '';
-    return protocol + "//" + dsn.host + port + (dsn.path ? "/" + dsn.path : '') + "/api/";
+    return getBaseApiEndpoint(this._dsnObject);
   };
   /** Returns the store endpoint URL. */
 
 
   API.prototype.getStoreEndpoint = function () {
-    return this._getIngestEndpoint('store');
+    return getStoreEndpoint(this._dsnObject);
   };
   /**
    * Returns the store endpoint URL with auth in the query string.
@@ -52912,7 +53031,7 @@ var API = function () {
 
 
   API.prototype.getStoreEndpointWithUrlEncodedAuth = function () {
-    return this.getStoreEndpoint() + "?" + this._encodedAuth();
+    return getStoreEndpointWithUrlEncodedAuth(this._dsnObject);
   };
   /**
    * Returns the envelope endpoint URL with auth in the query string.
@@ -52922,118 +53041,133 @@ var API = function () {
 
 
   API.prototype.getEnvelopeEndpointWithUrlEncodedAuth = function () {
-    if (this.forceEnvelope()) {
-      return this._tunnel;
-    }
-
-    return this._getEnvelopeEndpoint() + "?" + this._encodedAuth();
-  };
-  /** Returns only the path component for the store endpoint. */
-
-
-  API.prototype.getStoreEndpointPath = function () {
-    var dsn = this.getDsn();
-    return (dsn.path ? "/" + dsn.path : '') + "/api/" + dsn.projectId + "/store/";
-  };
-  /**
-   * Returns an object that can be used in request headers.
-   * This is needed for node and the old /store endpoint in sentry
-   */
-
-
-  API.prototype.getRequestHeaders = function (clientName, clientVersion) {
-    // CHANGE THIS to use metadata but keep clientName and clientVersion compatible
-    var dsn = this.getDsn();
-    var header = ["Sentry sentry_version=" + SENTRY_API_VERSION];
-    header.push("sentry_client=" + clientName + "/" + clientVersion);
-    header.push("sentry_key=" + dsn.publicKey);
-
-    if (dsn.pass) {
-      header.push("sentry_secret=" + dsn.pass);
-    }
-
-    return {
-      'Content-Type': 'application/json',
-      'X-Sentry-Auth': header.join(', ')
-    };
-  };
-  /** Returns the url to the report dialog endpoint. */
-
-
-  API.prototype.getReportDialogEndpoint = function (dialogOptions) {
-    if (dialogOptions === void 0) {
-      dialogOptions = {};
-    }
-
-    var dsn = this.getDsn();
-    var endpoint = this.getBaseApiEndpoint() + "embed/error-page/";
-    var encodedOptions = [];
-    encodedOptions.push("dsn=" + dsn.toString());
-
-    for (var key in dialogOptions) {
-      if (key === 'dsn') {
-        continue;
-      }
-
-      if (key === 'user') {
-        if (!dialogOptions.user) {
-          continue;
-        }
-
-        if (dialogOptions.user.name) {
-          encodedOptions.push("name=" + encodeURIComponent(dialogOptions.user.name));
-        }
-
-        if (dialogOptions.user.email) {
-          encodedOptions.push("email=" + encodeURIComponent(dialogOptions.user.email));
-        }
-      } else {
-        encodedOptions.push(encodeURIComponent(key) + "=" + encodeURIComponent(dialogOptions[key]));
-      }
-    }
-
-    if (encodedOptions.length) {
-      return endpoint + "?" + encodedOptions.join('&');
-    }
-
-    return endpoint;
-  };
-  /** Returns the envelope endpoint URL. */
-
-
-  API.prototype._getEnvelopeEndpoint = function () {
-    return this._getIngestEndpoint('envelope');
-  };
-  /** Returns the ingest API endpoint for target. */
-
-
-  API.prototype._getIngestEndpoint = function (target) {
-    if (this._tunnel) {
-      return this._tunnel;
-    }
-
-    var base = this.getBaseApiEndpoint();
-    var dsn = this.getDsn();
-    return "" + base + dsn.projectId + "/" + target + "/";
-  };
-  /** Returns a URL-encoded string with auth config suitable for a query string. */
-
-
-  API.prototype._encodedAuth = function () {
-    var dsn = this.getDsn();
-    var auth = {
-      // We send only the minimum set of required information. See
-      // https://github.com/getsentry/sentry-javascript/issues/2572.
-      sentry_key: dsn.publicKey,
-      sentry_version: SENTRY_API_VERSION
-    };
-    return (0, _utils.urlEncode)(auth);
+    return getEnvelopeEndpointWithUrlEncodedAuth(this._dsnObject, this._tunnel);
   };
 
   return API;
 }();
 
 exports.API = API;
+
+/** Initializes API Details */
+function initAPIDetails(dsn, metadata, tunnel) {
+  return {
+    initDsn: dsn,
+    metadata: metadata || {},
+    dsn: (0, _utils.makeDsn)(dsn),
+    tunnel: tunnel
+  };
+}
+/** Returns the prefix to construct Sentry ingestion API endpoints. */
+
+
+function getBaseApiEndpoint(dsn) {
+  var protocol = dsn.protocol ? dsn.protocol + ":" : '';
+  var port = dsn.port ? ":" + dsn.port : '';
+  return protocol + "//" + dsn.host + port + (dsn.path ? "/" + dsn.path : '') + "/api/";
+}
+/** Returns the ingest API endpoint for target. */
+
+
+function _getIngestEndpoint(dsn, target) {
+  return "" + getBaseApiEndpoint(dsn) + dsn.projectId + "/" + target + "/";
+}
+/** Returns a URL-encoded string with auth config suitable for a query string. */
+
+
+function _encodedAuth(dsn) {
+  return (0, _utils.urlEncode)({
+    // We send only the minimum set of required information. See
+    // https://github.com/getsentry/sentry-javascript/issues/2572.
+    sentry_key: dsn.publicKey,
+    sentry_version: SENTRY_API_VERSION
+  });
+}
+/** Returns the store endpoint URL. */
+
+
+function getStoreEndpoint(dsn) {
+  return _getIngestEndpoint(dsn, 'store');
+}
+/**
+ * Returns the store endpoint URL with auth in the query string.
+ *
+ * Sending auth as part of the query string and not as custom HTTP headers avoids CORS preflight requests.
+ */
+
+
+function getStoreEndpointWithUrlEncodedAuth(dsn) {
+  return getStoreEndpoint(dsn) + "?" + _encodedAuth(dsn);
+}
+/** Returns the envelope endpoint URL. */
+
+
+function _getEnvelopeEndpoint(dsn) {
+  return _getIngestEndpoint(dsn, 'envelope');
+}
+/**
+ * Returns the envelope endpoint URL with auth in the query string.
+ *
+ * Sending auth as part of the query string and not as custom HTTP headers avoids CORS preflight requests.
+ */
+
+
+function getEnvelopeEndpointWithUrlEncodedAuth(dsn, tunnel) {
+  return tunnel ? tunnel : _getEnvelopeEndpoint(dsn) + "?" + _encodedAuth(dsn);
+}
+/**
+ * Returns an object that can be used in request headers.
+ * This is needed for node and the old /store endpoint in sentry
+ */
+
+
+function getRequestHeaders(dsn, clientName, clientVersion) {
+  // CHANGE THIS to use metadata but keep clientName and clientVersion compatible
+  var header = ["Sentry sentry_version=" + SENTRY_API_VERSION];
+  header.push("sentry_client=" + clientName + "/" + clientVersion);
+  header.push("sentry_key=" + dsn.publicKey);
+
+  if (dsn.pass) {
+    header.push("sentry_secret=" + dsn.pass);
+  }
+
+  return {
+    'Content-Type': 'application/json',
+    'X-Sentry-Auth': header.join(', ')
+  };
+}
+/** Returns the url to the report dialog endpoint. */
+
+
+function getReportDialogEndpoint(dsnLike, dialogOptions) {
+  var dsn = (0, _utils.makeDsn)(dsnLike);
+  var endpoint = getBaseApiEndpoint(dsn) + "embed/error-page/";
+  var encodedOptions = "dsn=" + (0, _utils.dsnToString)(dsn);
+
+  for (var key in dialogOptions) {
+    if (key === 'dsn') {
+      continue;
+    }
+
+    if (key === 'user') {
+      if (!dialogOptions.user) {
+        continue;
+      }
+
+      if (dialogOptions.user.name) {
+        encodedOptions += "&name=" + encodeURIComponent(dialogOptions.user.name);
+      }
+
+      if (dialogOptions.user.email) {
+        encodedOptions += "&email=" + encodeURIComponent(dialogOptions.user.email);
+      }
+    } else {
+      encodedOptions += "&" + encodeURIComponent(key) + "=" + encodeURIComponent(dialogOptions[key]);
+    }
+  }
+
+  return endpoint + "?" + encodedOptions;
+}
 },{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/core/esm/integration.js":[function(require,module,exports) {
 "use strict";
 
@@ -53041,9 +53175,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getIntegrationsToSetup = getIntegrationsToSetup;
+exports.installedIntegrations = void 0;
 exports.setupIntegration = setupIntegration;
 exports.setupIntegrations = setupIntegrations;
-exports.installedIntegrations = void 0;
 
 var _tslib = require("tslib");
 
@@ -53131,9 +53265,7 @@ function setupIntegrations(options) {
   // because by default it creates a property which is nonenumerable, which we want since `initialized` shouldn't be
   // considered a member of the index the way the actual integrations are
 
-  Object.defineProperty(integrations, 'initialized', {
-    value: true
-  });
+  (0, _utils.addNonEnumerableProperty)(integrations, 'initialized', true);
   return integrations;
 }
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/hub":"../../node_modules/@sentry/hub/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/core/esm/baseclient.js":[function(require,module,exports) {
@@ -53148,14 +53280,12 @@ var _tslib = require("tslib");
 
 var _hub = require("@sentry/hub");
 
-var _types = require("@sentry/types");
-
 var _utils = require("@sentry/utils");
 
 var _integration = require("./integration");
 
 /* eslint-disable max-lines */
-
+var ALREADY_SEEN_ERROR = "Not capturing exception because it's already been captured.";
 /**
  * Base implementation for all JavaScript SDK clients.
  *
@@ -53188,7 +53318,10 @@ var _integration = require("./integration");
  *   // ...
  * }
  */
-var BaseClient = function () {
+
+var BaseClient =
+/** @class */
+function () {
   /**
    * Initializes this client instance.
    *
@@ -53205,7 +53338,7 @@ var BaseClient = function () {
     this._options = options;
 
     if (options.dsn) {
-      this._dsn = new _utils.Dsn(options.dsn);
+      this._dsn = (0, _utils.makeDsn)(options.dsn);
     }
   }
   /**
@@ -53215,7 +53348,14 @@ var BaseClient = function () {
 
 
   BaseClient.prototype.captureException = function (exception, hint, scope) {
-    var _this = this;
+    var _this = this; // ensure we haven't captured this very object before
+
+
+    if ((0, _utils.checkOrSetAlreadyCaught)(exception)) {
+      _utils.logger.log(ALREADY_SEEN_ERROR);
+
+      return;
+    }
 
     var eventId = hint && hint.event_id;
 
@@ -53252,6 +53392,13 @@ var BaseClient = function () {
 
 
   BaseClient.prototype.captureEvent = function (event, hint, scope) {
+    // ensure we haven't captured this very object before
+    if (hint && hint.originalException && (0, _utils.checkOrSetAlreadyCaught)(hint.originalException)) {
+      _utils.logger.log(ALREADY_SEEN_ERROR);
+
+      return;
+    }
+
     var eventId = hint && hint.event_id;
 
     this._process(this._captureEvent(event, hint, scope).then(function (result) {
@@ -53267,13 +53414,17 @@ var BaseClient = function () {
 
   BaseClient.prototype.captureSession = function (session) {
     if (!this._isEnabled()) {
-      _utils.logger.warn('SDK not enabled, will not capture session.');
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn('SDK not enabled, will not capture session.');
+      }
 
       return;
     }
 
     if (!(typeof session.release === 'string')) {
-      _utils.logger.warn('Discarded session because of missing or non-string release');
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn('Discarded session because of missing or non-string release');
+      }
     } else {
       this._sendSession(session); // After sending, we set init false to indicate it's not the first occurrence
 
@@ -53304,11 +53455,19 @@ var BaseClient = function () {
    */
 
 
+  BaseClient.prototype.getTransport = function () {
+    return this._getBackend().getTransport();
+  };
+  /**
+   * @inheritDoc
+   */
+
+
   BaseClient.prototype.flush = function (timeout) {
     var _this = this;
 
     return this._isClientDoneProcessing(timeout).then(function (clientFinished) {
-      return _this._getBackend().getTransport().close(timeout).then(function (transportFlushed) {
+      return _this.getTransport().close(timeout).then(function (transportFlushed) {
         return clientFinished && transportFlushed;
       });
     });
@@ -53389,12 +53548,12 @@ var BaseClient = function () {
     // 2. Session with non terminal status and 1 error + a crash occurred -> Will set status crashed and send update
 
 
-    var sessionNonTerminal = session.status === _types.SessionStatus.Ok;
+    var sessionNonTerminal = session.status === 'ok';
     var shouldUpdateAndSend = sessionNonTerminal && session.errors === 0 || sessionNonTerminal && crashed;
 
     if (shouldUpdateAndSend) {
       session.update((0, _tslib.__assign)((0, _tslib.__assign)({}, crashed && {
-        status: _types.SessionStatus.Crashed
+        status: 'crashed'
       }), {
         errors: session.errors || Number(errored || crashed)
       }));
@@ -53491,9 +53650,8 @@ var BaseClient = function () {
     } // We prepare the result here with a resolved Event.
 
 
-    var result = _utils.SyncPromise.resolve(prepared); // This should be the last thing called, since we want that
+    var result = (0, _utils.resolvedSyncPromise)(prepared); // This should be the last thing called, since we want that
     // {@link Hub.addEventProcessor} gets the finished prepared event.
-
 
     if (finalScope) {
       // In case we have a hub we reassign it.
@@ -53550,13 +53708,9 @@ var BaseClient = function () {
       normalized.contexts.trace = event.contexts.trace;
     }
 
-    var _a = this.getOptions()._experiments,
-        _experiments = _a === void 0 ? {} : _a;
-
-    if (_experiments.ensureNoCircularStructures) {
-      return (0, _utils.normalize)(normalized);
-    }
-
+    event.sdkProcessingMetadata = (0, _tslib.__assign)((0, _tslib.__assign)({}, event.sdkProcessingMetadata), {
+      baseClientNormalized: true
+    });
     return normalized;
   };
   /**
@@ -53666,8 +53820,16 @@ var BaseClient = function () {
         beforeSend = _a.beforeSend,
         sampleRate = _a.sampleRate;
 
+    var transport = this.getTransport();
+
+    function recordLostEvent(outcome, category) {
+      if (transport.recordLostEvent) {
+        transport.recordLostEvent(outcome, category);
+      }
+    }
+
     if (!this._isEnabled()) {
-      return _utils.SyncPromise.reject(new _utils.SentryError('SDK not enabled, will not capture event.'));
+      return (0, _utils.rejectedSyncPromise)(new _utils.SentryError('SDK not enabled, will not capture event.'));
     }
 
     var isTransaction = event.type === 'transaction'; // 1.0 === 100% events are sent
@@ -53675,11 +53837,13 @@ var BaseClient = function () {
     // Sampling for transaction happens somewhere else
 
     if (!isTransaction && typeof sampleRate === 'number' && Math.random() > sampleRate) {
-      return _utils.SyncPromise.reject(new _utils.SentryError("Discarding event because it's not included in the random sample (sampling rate = " + sampleRate + ")"));
+      recordLostEvent('sample_rate', 'event');
+      return (0, _utils.rejectedSyncPromise)(new _utils.SentryError("Discarding event because it's not included in the random sample (sampling rate = " + sampleRate + ")"));
     }
 
     return this._prepareEvent(event, scope, hint).then(function (prepared) {
       if (prepared === null) {
+        recordLostEvent('event_processor', event.type || 'event');
         throw new _utils.SentryError('An event processor returned null, will not send event.');
       }
 
@@ -53690,9 +53854,10 @@ var BaseClient = function () {
       }
 
       var beforeSendResult = beforeSend(prepared, hint);
-      return _this._ensureBeforeSendRv(beforeSendResult);
+      return _ensureBeforeSendRv(beforeSendResult);
     }).then(function (processedEvent) {
       if (processedEvent === null) {
+        recordLostEvent('before_send', event.type || 'event');
         throw new _utils.SentryError('`beforeSend` returned `null`, will not send event.');
       }
 
@@ -53737,36 +53902,35 @@ var BaseClient = function () {
       return reason;
     });
   };
-  /**
-   * Verifies that return value of configured `beforeSend` is of expected type.
-   */
-
-
-  BaseClient.prototype._ensureBeforeSendRv = function (rv) {
-    var nullErr = '`beforeSend` method has to return `null` or a valid event.';
-
-    if ((0, _utils.isThenable)(rv)) {
-      return rv.then(function (event) {
-        if (!((0, _utils.isPlainObject)(event) || event === null)) {
-          throw new _utils.SentryError(nullErr);
-        }
-
-        return event;
-      }, function (e) {
-        throw new _utils.SentryError("beforeSend rejected with " + e);
-      });
-    } else if (!((0, _utils.isPlainObject)(rv) || rv === null)) {
-      throw new _utils.SentryError(nullErr);
-    }
-
-    return rv;
-  };
 
   return BaseClient;
 }();
 
 exports.BaseClient = BaseClient;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/hub":"../../node_modules/@sentry/hub/esm/index.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./integration":"../../node_modules/@sentry/core/esm/integration.js"}],"../../node_modules/@sentry/core/esm/transports/noop.js":[function(require,module,exports) {
+
+/**
+ * Verifies that return value of configured `beforeSend` is of expected type.
+ */
+function _ensureBeforeSendRv(rv) {
+  var nullErr = '`beforeSend` method has to return `null` or a valid event.';
+
+  if ((0, _utils.isThenable)(rv)) {
+    return rv.then(function (event) {
+      if (!((0, _utils.isPlainObject)(event) || event === null)) {
+        throw new _utils.SentryError(nullErr);
+      }
+
+      return event;
+    }, function (e) {
+      throw new _utils.SentryError("beforeSend rejected with " + e);
+    });
+  } else if (!((0, _utils.isPlainObject)(rv) || rv === null)) {
+    throw new _utils.SentryError(nullErr);
+  }
+
+  return rv;
+}
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/hub":"../../node_modules/@sentry/hub/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./integration":"../../node_modules/@sentry/core/esm/integration.js"}],"../../node_modules/@sentry/core/esm/transports/noop.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53774,12 +53938,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.NoopTransport = void 0;
 
-var _types = require("@sentry/types");
-
 var _utils = require("@sentry/utils");
 
 /** Noop transport */
-var NoopTransport = function () {
+var NoopTransport =
+/** @class */
+function () {
   function NoopTransport() {}
   /**
    * @inheritDoc
@@ -53787,9 +53951,9 @@ var NoopTransport = function () {
 
 
   NoopTransport.prototype.sendEvent = function (_) {
-    return _utils.SyncPromise.resolve({
+    return (0, _utils.resolvedSyncPromise)({
       reason: "NoopTransport: Event has been skipped because no Dsn is configured.",
-      status: _types.Status.Skipped
+      status: 'skipped'
     });
   };
   /**
@@ -53798,14 +53962,14 @@ var NoopTransport = function () {
 
 
   NoopTransport.prototype.close = function (_) {
-    return _utils.SyncPromise.resolve(true);
+    return (0, _utils.resolvedSyncPromise)(true);
   };
 
   return NoopTransport;
 }();
 
 exports.NoopTransport = NoopTransport;
-},{"@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/core/esm/basebackend.js":[function(require,module,exports) {
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/core/esm/basebackend.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53821,7 +53985,9 @@ var _noop = require("./transports/noop");
  * This is the base implemention of a Backend.
  * @hidden
  */
-var BaseBackend = function () {
+var BaseBackend =
+/** @class */
+function () {
   /** Creates a new backend instance. */
   function BaseBackend(options) {
     this._options = options;
@@ -53856,7 +54022,9 @@ var BaseBackend = function () {
 
   BaseBackend.prototype.sendEvent = function (event) {
     void this._transport.sendEvent(event).then(null, function (reason) {
-      _utils.logger.error("Error while sending event: " + reason);
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.error("Error while sending event: " + reason);
+      }
     });
   };
   /**
@@ -53866,13 +54034,17 @@ var BaseBackend = function () {
 
   BaseBackend.prototype.sendSession = function (session) {
     if (!this._transport.sendSession) {
-      _utils.logger.warn("Dropping session because custom transport doesn't implement sendSession");
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn("Dropping session because custom transport doesn't implement sendSession");
+      }
 
       return;
     }
 
     void this._transport.sendSession(session).then(null, function (reason) {
-      _utils.logger.error("Error while sending session: " + reason);
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.error("Error while sending session: " + reason);
+      }
     });
   };
   /**
@@ -53902,10 +54074,14 @@ exports.BaseBackend = BaseBackend;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sessionToSentryRequest = sessionToSentryRequest;
 exports.eventToSentryRequest = eventToSentryRequest;
+exports.sessionToSentryRequest = sessionToSentryRequest;
 
 var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+var _api = require("./api");
 
 /** Extract sdk info from from the API metadata */
 function getSdkMetadataForEnvelopeHeader(api) {
@@ -53948,8 +54124,8 @@ function sessionToSentryRequest(session, api) {
     sent_at: new Date().toISOString()
   }, sdkInfo && {
     sdk: sdkInfo
-  }), api.forceEnvelope() && {
-    dsn: api.getDsn().toString()
+  }), !!api.tunnel && {
+    dsn: (0, _utils.dsnToString)(api.dsn)
   })); // I know this is hacky but we don't want to add `session` to request type since it's never rate limited
 
   var type = 'aggregates' in session ? 'sessions' : 'session';
@@ -53959,7 +54135,7 @@ function sessionToSentryRequest(session, api) {
   return {
     body: envelopeHeaders + "\n" + itemHeaders + "\n" + JSON.stringify(session),
     type: type,
-    url: api.getEnvelopeEndpointWithUrlEncodedAuth()
+    url: (0, _api.getEnvelopeEndpointWithUrlEncodedAuth)(api.dsn, api.tunnel)
   };
 }
 /** Creates a SentryRequest from an event. */
@@ -53968,26 +54144,70 @@ function sessionToSentryRequest(session, api) {
 function eventToSentryRequest(event, api) {
   var sdkInfo = getSdkMetadataForEnvelopeHeader(api);
   var eventType = event.type || 'event';
-  var useEnvelope = eventType === 'transaction' || api.forceEnvelope();
+  var useEnvelope = eventType === 'transaction' || !!api.tunnel;
+  var transactionSampling = (event.sdkProcessingMetadata || {}).transactionSampling;
 
-  var _a = event.debug_meta || {},
-      transactionSampling = _a.transactionSampling,
-      metadata = (0, _tslib.__rest)(_a, ["transactionSampling"]);
+  var _a = transactionSampling || {},
+      samplingMethod = _a.method,
+      sampleRate = _a.rate; // TODO: Below is a temporary hack in order to debug a serialization error - see
+  // https://github.com/getsentry/sentry-javascript/issues/2809 and
+  // https://github.com/getsentry/sentry-javascript/pull/4425. TL;DR: even though we normalize all events (which should
+  // prevent this), something is causing `JSON.stringify` to throw a circular reference error.
+  //
+  // When it's time to remove it:
+  // 1. Delete everything between here and where the request object `req` is created, EXCEPT the line deleting
+  //    `sdkProcessingMetadata`
+  // 2. Restore the original version of the request body, which is commented out
+  // 3. Search for `skippedNormalization` and pull out the companion hack in the browser playwright tests
 
-  var _b = transactionSampling || {},
-      samplingMethod = _b.method,
-      sampleRate = _b.rate;
 
-  if (Object.keys(metadata).length === 0) {
-    delete event.debug_meta;
-  } else {
-    event.debug_meta = metadata;
+  enhanceEventWithSdkInfo(event, api.metadata.sdk);
+  event.tags = event.tags || {};
+  event.extra = event.extra || {}; // In theory, all events should be marked as having gone through normalization and so
+  // we should never set this tag
+
+  if (!(event.sdkProcessingMetadata && event.sdkProcessingMetadata.baseClientNormalized)) {
+    event.tags.skippedNormalization = true;
+  } // prevent this data from being sent to sentry
+  // TODO: This is NOT part of the hack - DO NOT DELETE
+
+
+  delete event.sdkProcessingMetadata;
+  var body;
+
+  try {
+    // 99.9% of events should get through just fine - no change in behavior for them
+    body = JSON.stringify(event);
+  } catch (err) {
+    // Record data about the error without replacing original event data, then force renormalization
+    event.tags.JSONStringifyError = true;
+    event.extra.JSONStringifyError = err;
+
+    try {
+      body = JSON.stringify((0, _utils.normalize)(event));
+    } catch (newErr) {
+      // At this point even renormalization hasn't worked, meaning something about the event data has gone very wrong.
+      // Time to cut our losses and record only the new error. With luck, even in the problematic cases we're trying to
+      // debug with this hack, we won't ever land here.
+      var innerErr = newErr;
+      body = JSON.stringify({
+        message: 'JSON.stringify error after renormalization',
+        // setting `extra: { innerErr }` here for some reason results in an empty object, so unpack manually
+        extra: {
+          message: innerErr.message,
+          stack: innerErr.stack
+        }
+      });
+    }
   }
 
   var req = {
-    body: JSON.stringify(sdkInfo ? enhanceEventWithSdkInfo(event, api.metadata.sdk) : event),
+    // this is the relevant line of code before the hack was added, to make it easy to undo said hack once we've solved
+    // the mystery
+    // body: JSON.stringify(sdkInfo ? enhanceEventWithSdkInfo(event, api.metadata.sdk) : event),
+    body: body,
     type: eventType,
-    url: useEnvelope ? api.getEnvelopeEndpointWithUrlEncodedAuth() : api.getStoreEndpointWithUrlEncodedAuth()
+    url: useEnvelope ? (0, _api.getEnvelopeEndpointWithUrlEncodedAuth)(api.dsn, api.tunnel) : (0, _api.getStoreEndpointWithUrlEncodedAuth)(api.dsn)
   }; // https://develop.sentry.dev/sdk/envelopes/
   // Since we don't need to manipulate envelopes nor store them, there is no
   // exported concept of an Envelope with operations including serialization and
@@ -54000,8 +54220,8 @@ function eventToSentryRequest(event, api) {
       sent_at: new Date().toISOString()
     }, sdkInfo && {
       sdk: sdkInfo
-    }), api.forceEnvelope() && {
-      dsn: api.getDsn().toString()
+    }), !!api.tunnel && {
+      dsn: (0, _utils.dsnToString)(api.dsn)
     }));
     var itemHeaders = JSON.stringify({
       type: eventType,
@@ -54022,7 +54242,7 @@ function eventToSentryRequest(event, api) {
 
   return req;
 }
-},{"tslib":"../../node_modules/tslib/tslib.es6.js"}],"../../node_modules/@sentry/core/esm/sdk.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./api":"../../node_modules/@sentry/core/esm/api.js"}],"../../node_modules/@sentry/core/esm/sdk.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -54042,14 +54262,17 @@ var _utils = require("@sentry/utils");
  * @param options Options to pass to the client.
  */
 function initAndBind(clientClass, options) {
-  var _a;
-
   if (options.debug === true) {
     _utils.logger.enable();
   }
 
   var hub = (0, _hub.getCurrentHub)();
-  (_a = hub.getScope()) === null || _a === void 0 ? void 0 : _a.update(options.initialScope);
+  var scope = hub.getScope();
+
+  if (scope) {
+    scope.update(options.initialScope);
+  }
+
   var client = new clientClass(options);
   hub.bindClient(client);
 }
@@ -54060,7 +54283,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.SDK_VERSION = void 0;
-var SDK_VERSION = '6.11.0';
+var SDK_VERSION = '6.17.2';
 exports.SDK_VERSION = SDK_VERSION;
 },{}],"../../node_modules/@sentry/core/esm/integrations/functiontostring.js":[function(require,module,exports) {
 "use strict";
@@ -54069,10 +54292,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.FunctionToString = void 0;
+
+var _utils = require("@sentry/utils");
+
 var originalFunctionToString;
 /** Patch toString calls to return proper name for wrapped functions */
 
-var FunctionToString = function () {
+var FunctionToString =
+/** @class */
+function () {
   function FunctionToString() {
     /**
      * @inheritDoc
@@ -54095,7 +54323,7 @@ var FunctionToString = function () {
         args[_i] = arguments[_i];
       }
 
-      var context = this.__sentry_original__ || this;
+      var context = (0, _utils.getOriginalFunction)(this) || this;
       return originalFunctionToString.apply(context, args);
     };
   };
@@ -54109,7 +54337,7 @@ var FunctionToString = function () {
 }();
 
 exports.FunctionToString = FunctionToString;
-},{}],"../../node_modules/@sentry/core/esm/integrations/inboundfilters.js":[function(require,module,exports) {
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/core/esm/integrations/inboundfilters.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -54128,7 +54356,9 @@ var _utils = require("@sentry/utils");
 var DEFAULT_IGNORE_ERRORS = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/];
 /** Inbound filters configurable by the user */
 
-var InboundFilters = function () {
+var InboundFilters =
+/** @class */
+function () {
   function InboundFilters(_options) {
     if (_options === void 0) {
       _options = {};
@@ -54181,25 +54411,33 @@ var InboundFilters = function () {
 
   InboundFilters.prototype._shouldDropEvent = function (event, options) {
     if (this._isSentryError(event, options)) {
-      _utils.logger.warn("Event dropped due to being internal Sentry Error.\nEvent: " + (0, _utils.getEventDescription)(event));
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn("Event dropped due to being internal Sentry Error.\nEvent: " + (0, _utils.getEventDescription)(event));
+      }
 
       return true;
     }
 
     if (this._isIgnoredError(event, options)) {
-      _utils.logger.warn("Event dropped due to being matched by `ignoreErrors` option.\nEvent: " + (0, _utils.getEventDescription)(event));
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn("Event dropped due to being matched by `ignoreErrors` option.\nEvent: " + (0, _utils.getEventDescription)(event));
+      }
 
       return true;
     }
 
     if (this._isDeniedUrl(event, options)) {
-      _utils.logger.warn("Event dropped due to being matched by `denyUrls` option.\nEvent: " + (0, _utils.getEventDescription)(event) + ".\nUrl: " + this._getEventFilterUrl(event));
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn("Event dropped due to being matched by `denyUrls` option.\nEvent: " + (0, _utils.getEventDescription)(event) + ".\nUrl: " + this._getEventFilterUrl(event));
+      }
 
       return true;
     }
 
     if (!this._isAllowedUrl(event, options)) {
-      _utils.logger.warn("Event dropped due to not being matched by `allowUrls` option.\nEvent: " + (0, _utils.getEventDescription)(event) + ".\nUrl: " + this._getEventFilterUrl(event));
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn("Event dropped due to not being matched by `allowUrls` option.\nEvent: " + (0, _utils.getEventDescription)(event) + ".\nUrl: " + this._getEventFilterUrl(event));
+      }
 
       return true;
     }
@@ -54215,10 +54453,13 @@ var InboundFilters = function () {
     }
 
     try {
-      return event && event.exception && event.exception.values && event.exception.values[0] && event.exception.values[0].type === 'SentryError' || false;
-    } catch (_oO) {
-      return false;
+      // @ts-ignore can't be a sentry error if undefined
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      return event.exception.values[0].type === 'SentryError';
+    } catch (e) {// ignore
     }
+
+    return false;
   };
   /** JSDoc */
 
@@ -54298,7 +54539,9 @@ var InboundFilters = function () {
 
         return ["" + value, type + ": " + value];
       } catch (oO) {
-        _utils.logger.error("Cannot extract message for event " + (0, _utils.getEventDescription)(event));
+        if ((0, _utils.isDebugBuild)()) {
+          _utils.logger.error("Cannot extract message for event " + (0, _utils.getEventDescription)(event));
+        }
 
         return [];
       }
@@ -54314,12 +54557,10 @@ var InboundFilters = function () {
       frames = [];
     }
 
-    var _a;
-
     for (var i = frames.length - 1; i >= 0; i--) {
       var frame = frames[i];
 
-      if (((_a = frame) === null || _a === void 0 ? void 0 : _a.filename) !== '<anonymous>') {
+      if (frame && frame.filename !== '<anonymous>' && frame.filename !== '[native code]') {
         return frame.filename || null;
       }
     }
@@ -54332,18 +54573,22 @@ var InboundFilters = function () {
   InboundFilters.prototype._getEventFilterUrl = function (event) {
     try {
       if (event.stacktrace) {
-        var frames_1 = event.stacktrace.frames;
-        return this._getLastValidUrl(frames_1);
+        return this._getLastValidUrl(event.stacktrace.frames);
       }
 
-      if (event.exception) {
-        var frames_2 = event.exception.values && event.exception.values[0].stacktrace && event.exception.values[0].stacktrace.frames;
-        return this._getLastValidUrl(frames_2);
+      var frames_1;
+
+      try {
+        // @ts-ignore we only care about frames if the whole thing here is defined
+        frames_1 = event.exception.values[0].stacktrace.frames;
+      } catch (e) {// ignore
       }
 
-      return null;
+      return frames_1 ? this._getLastValidUrl(frames_1) : null;
     } catch (oO) {
-      _utils.logger.error("Cannot extract url for event " + (0, _utils.getEventDescription)(event));
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.error("Cannot extract url for event " + (0, _utils.getEventDescription)(event));
+      }
 
       return null;
     }
@@ -54386,22 +54631,71 @@ var _inboundfilters = require("./inboundfilters");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+Object.defineProperty(exports, "API", {
+  enumerable: true,
+  get: function () {
+    return _api.API;
+  }
+});
+Object.defineProperty(exports, "BaseBackend", {
+  enumerable: true,
+  get: function () {
+    return _basebackend.BaseBackend;
+  }
+});
+Object.defineProperty(exports, "BaseClient", {
+  enumerable: true,
+  get: function () {
+    return _baseclient.BaseClient;
+  }
+});
+Object.defineProperty(exports, "Hub", {
+  enumerable: true,
+  get: function () {
+    return _hub.Hub;
+  }
+});
+exports.Integrations = void 0;
+Object.defineProperty(exports, "NoopTransport", {
+  enumerable: true,
+  get: function () {
+    return _noop.NoopTransport;
+  }
+});
+Object.defineProperty(exports, "SDK_VERSION", {
+  enumerable: true,
+  get: function () {
+    return _version.SDK_VERSION;
+  }
+});
+Object.defineProperty(exports, "Scope", {
+  enumerable: true,
+  get: function () {
+    return _hub.Scope;
+  }
+});
 Object.defineProperty(exports, "addBreadcrumb", {
   enumerable: true,
   get: function () {
     return _minimal.addBreadcrumb;
   }
 });
-Object.defineProperty(exports, "captureException", {
+Object.defineProperty(exports, "addGlobalEventProcessor", {
   enumerable: true,
   get: function () {
-    return _minimal.captureException;
+    return _hub.addGlobalEventProcessor;
   }
 });
 Object.defineProperty(exports, "captureEvent", {
   enumerable: true,
   get: function () {
     return _minimal.captureEvent;
+  }
+});
+Object.defineProperty(exports, "captureException", {
+  enumerable: true,
+  get: function () {
+    return _minimal.captureException;
   }
 });
 Object.defineProperty(exports, "captureMessage", {
@@ -54416,10 +54710,70 @@ Object.defineProperty(exports, "configureScope", {
     return _minimal.configureScope;
   }
 });
-Object.defineProperty(exports, "startTransaction", {
+Object.defineProperty(exports, "eventToSentryRequest", {
   enumerable: true,
   get: function () {
-    return _minimal.startTransaction;
+    return _request.eventToSentryRequest;
+  }
+});
+Object.defineProperty(exports, "getCurrentHub", {
+  enumerable: true,
+  get: function () {
+    return _hub.getCurrentHub;
+  }
+});
+Object.defineProperty(exports, "getEnvelopeEndpointWithUrlEncodedAuth", {
+  enumerable: true,
+  get: function () {
+    return _api.getEnvelopeEndpointWithUrlEncodedAuth;
+  }
+});
+Object.defineProperty(exports, "getHubFromCarrier", {
+  enumerable: true,
+  get: function () {
+    return _hub.getHubFromCarrier;
+  }
+});
+Object.defineProperty(exports, "getReportDialogEndpoint", {
+  enumerable: true,
+  get: function () {
+    return _api.getReportDialogEndpoint;
+  }
+});
+Object.defineProperty(exports, "getRequestHeaders", {
+  enumerable: true,
+  get: function () {
+    return _api.getRequestHeaders;
+  }
+});
+Object.defineProperty(exports, "getStoreEndpointWithUrlEncodedAuth", {
+  enumerable: true,
+  get: function () {
+    return _api.getStoreEndpointWithUrlEncodedAuth;
+  }
+});
+Object.defineProperty(exports, "initAPIDetails", {
+  enumerable: true,
+  get: function () {
+    return _api.initAPIDetails;
+  }
+});
+Object.defineProperty(exports, "initAndBind", {
+  enumerable: true,
+  get: function () {
+    return _sdk.initAndBind;
+  }
+});
+Object.defineProperty(exports, "makeMain", {
+  enumerable: true,
+  get: function () {
+    return _hub.makeMain;
+  }
+});
+Object.defineProperty(exports, "sessionToSentryRequest", {
+  enumerable: true,
+  get: function () {
+    return _request.sessionToSentryRequest;
   }
 });
 Object.defineProperty(exports, "setContext", {
@@ -54458,97 +54812,18 @@ Object.defineProperty(exports, "setUser", {
     return _minimal.setUser;
   }
 });
+Object.defineProperty(exports, "startTransaction", {
+  enumerable: true,
+  get: function () {
+    return _minimal.startTransaction;
+  }
+});
 Object.defineProperty(exports, "withScope", {
   enumerable: true,
   get: function () {
     return _minimal.withScope;
   }
 });
-Object.defineProperty(exports, "addGlobalEventProcessor", {
-  enumerable: true,
-  get: function () {
-    return _hub.addGlobalEventProcessor;
-  }
-});
-Object.defineProperty(exports, "getCurrentHub", {
-  enumerable: true,
-  get: function () {
-    return _hub.getCurrentHub;
-  }
-});
-Object.defineProperty(exports, "getHubFromCarrier", {
-  enumerable: true,
-  get: function () {
-    return _hub.getHubFromCarrier;
-  }
-});
-Object.defineProperty(exports, "Hub", {
-  enumerable: true,
-  get: function () {
-    return _hub.Hub;
-  }
-});
-Object.defineProperty(exports, "makeMain", {
-  enumerable: true,
-  get: function () {
-    return _hub.makeMain;
-  }
-});
-Object.defineProperty(exports, "Scope", {
-  enumerable: true,
-  get: function () {
-    return _hub.Scope;
-  }
-});
-Object.defineProperty(exports, "API", {
-  enumerable: true,
-  get: function () {
-    return _api.API;
-  }
-});
-Object.defineProperty(exports, "BaseClient", {
-  enumerable: true,
-  get: function () {
-    return _baseclient.BaseClient;
-  }
-});
-Object.defineProperty(exports, "BaseBackend", {
-  enumerable: true,
-  get: function () {
-    return _basebackend.BaseBackend;
-  }
-});
-Object.defineProperty(exports, "eventToSentryRequest", {
-  enumerable: true,
-  get: function () {
-    return _request.eventToSentryRequest;
-  }
-});
-Object.defineProperty(exports, "sessionToSentryRequest", {
-  enumerable: true,
-  get: function () {
-    return _request.sessionToSentryRequest;
-  }
-});
-Object.defineProperty(exports, "initAndBind", {
-  enumerable: true,
-  get: function () {
-    return _sdk.initAndBind;
-  }
-});
-Object.defineProperty(exports, "NoopTransport", {
-  enumerable: true,
-  get: function () {
-    return _noop.NoopTransport;
-  }
-});
-Object.defineProperty(exports, "SDK_VERSION", {
-  enumerable: true,
-  get: function () {
-    return _version.SDK_VERSION;
-  }
-});
-exports.Integrations = void 0;
 
 var _minimal = require("@sentry/minimal");
 
@@ -54650,6 +54925,8 @@ function computeStackTrace(ex) {
 
 
 function computeStackTraceFromStackProp(ex) {
+  var _a, _b;
+
   if (!ex || !ex.stack) {
     return null;
   }
@@ -54682,14 +54959,7 @@ function computeStackTraceFromStackProp(ex) {
       // would be way too time consuming. (TODO: Rewrite whole RegExp to be more readable)
 
       var func = parts[1] || UNKNOWN_FUNCTION;
-      var isSafariExtension = func.indexOf('safari-extension') !== -1;
-      var isSafariWebExtension = func.indexOf('safari-web-extension') !== -1;
-
-      if (isSafariExtension || isSafariWebExtension) {
-        func = func.indexOf('@') !== -1 ? func.split('@')[0] : UNKNOWN_FUNCTION;
-        url = isSafariExtension ? "safari-extension:" + url : "safari-web-extension:" + url;
-      }
-
+      _a = (0, _tslib.__read)(extractSafariExtensionDetails(func, url), 2), func = _a[0], url = _a[1];
       element = {
         url: url,
         func: func,
@@ -54722,9 +54992,12 @@ function computeStackTraceFromStackProp(ex) {
         stack[0].column = ex.columnNumber + 1;
       }
 
+      var url = parts[3];
+      var func = parts[1] || UNKNOWN_FUNCTION;
+      _b = (0, _tslib.__read)(extractSafariExtensionDetails(func, url), 2), func = _b[0], url = _b[1];
       element = {
-        url: parts[3],
-        func: parts[1] || UNKNOWN_FUNCTION,
+        url: url,
+        func: func,
         args: parts[2] ? parts[2].split(',') : [],
         line: parts[4] ? +parts[4] : null,
         column: parts[5] ? +parts[5] : null
@@ -54809,6 +55082,33 @@ function computeStackTraceFromStacktraceProp(ex) {
     stack: stack
   };
 }
+/**
+ * Safari web extensions, starting version unknown, can produce "frames-only" stacktraces.
+ * What it means, is that instead of format like:
+ *
+ * Error: wat
+ *   at function@url:row:col
+ *   at function@url:row:col
+ *   at function@url:row:col
+ *
+ * it produces something like:
+ *
+ *   function@url:row:col
+ *   function@url:row:col
+ *   function@url:row:col
+ *
+ * Because of that, it won't be captured by `chrome` RegExp and will fall into `Gecko` branch.
+ * This function is extracted so that we can use it in both places without duplicating the logic.
+ * Unfortunatelly "just" changing RegExp is too complicated now and making it pass all tests
+ * and fix this case seems like an impossible, or at least way too time-consuming task.
+ */
+
+
+var extractSafariExtensionDetails = function (func, url) {
+  var isSafariExtension = func.indexOf('safari-extension') !== -1;
+  var isSafariWebExtension = func.indexOf('safari-web-extension') !== -1;
+  return isSafariExtension || isSafariWebExtension ? [func.indexOf('@') !== -1 ? func.split('@')[0] : UNKNOWN_FUNCTION, isSafariExtension ? "safari-extension:" + url : "safari-web-extension:" + url] : [func, url];
+};
 /** Remove N number of frames from the stack */
 
 
@@ -54848,9 +55148,9 @@ function extractMessage(ex) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.exceptionFromStacktrace = exceptionFromStacktrace;
 exports.eventFromPlainObject = eventFromPlainObject;
 exports.eventFromStacktrace = eventFromStacktrace;
+exports.exceptionFromStacktrace = exceptionFromStacktrace;
 exports.prepareFramesForEvent = prepareFramesForEvent;
 
 var _utils = require("@sentry/utils");
@@ -54966,8 +55266,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.eventFromException = eventFromException;
 exports.eventFromMessage = eventFromMessage;
-exports.eventFromUnknownInput = eventFromUnknownInput;
 exports.eventFromString = eventFromString;
+exports.eventFromUnknownInput = eventFromUnknownInput;
 
 var _tslib = require("tslib");
 
@@ -54980,7 +55280,7 @@ var _parsers = require("./parsers");
 var _tracekit = require("./tracekit");
 
 /**
- * Builds and Event from a Exception
+ * Creates an {@link Event} from all inputs to `captureException` and non-primitive inputs to `captureMessage`.
  * @hidden
  */
 function eventFromException(options, exception, hint) {
@@ -54988,17 +55288,15 @@ function eventFromException(options, exception, hint) {
   var event = eventFromUnknownInput(exception, syntheticException, {
     attachStacktrace: options.attachStacktrace
   });
-  (0, _utils.addExceptionMechanism)(event, {
-    handled: true,
-    type: 'generic'
-  });
+  (0, _utils.addExceptionMechanism)(event); // defaults to { type: 'generic', handled: true }
+
   event.level = _types.Severity.Error;
 
   if (hint && hint.event_id) {
     event.event_id = hint.event_id;
   }
 
-  return _utils.SyncPromise.resolve(event);
+  return (0, _utils.resolvedSyncPromise)(event);
 }
 /**
  * Builds and Event from a Message
@@ -55021,7 +55319,7 @@ function eventFromMessage(options, message, level, hint) {
     event.event_id = hint.event_id;
   }
 
-  return _utils.SyncPromise.resolve(event);
+  return (0, _utils.resolvedSyncPromise)(event);
 }
 /**
  * @hidden
@@ -55042,18 +55340,26 @@ function eventFromUnknownInput(exception, syntheticException, options) {
     exception = errorEvent.error;
     event = (0, _parsers.eventFromStacktrace)((0, _tracekit.computeStackTrace)(exception));
     return event;
-  }
+  } // If it is a `DOMError` (which is a legacy API, but still supported in some browsers) then we just extract the name
+  // and message, as it doesn't provide anything else. According to the spec, all `DOMExceptions` should also be
+  // `Error`s, but that's not the case in IE11, so in that case we treat it the same as we do a `DOMError`.
+  //
+  // https://developer.mozilla.org/en-US/docs/Web/API/DOMError
+  // https://developer.mozilla.org/en-US/docs/Web/API/DOMException
+  // https://webidl.spec.whatwg.org/#es-DOMException-specialness
+
 
   if ((0, _utils.isDOMError)(exception) || (0, _utils.isDOMException)(exception)) {
-    // If it is a DOMError or DOMException (which are legacy APIs, but still supported in some browsers)
-    // then we just extract the name, code, and message, as they don't provide anything else
-    // https://developer.mozilla.org/en-US/docs/Web/API/DOMError
-    // https://developer.mozilla.org/en-US/docs/Web/API/DOMException
     var domException = exception;
-    var name_1 = domException.name || ((0, _utils.isDOMError)(domException) ? 'DOMError' : 'DOMException');
-    var message = domException.message ? name_1 + ": " + domException.message : name_1;
-    event = eventFromString(message, syntheticException, options);
-    (0, _utils.addExceptionTypeValue)(event, message);
+
+    if ('stack' in exception) {
+      event = (0, _parsers.eventFromStacktrace)((0, _tracekit.computeStackTrace)(exception));
+    } else {
+      var name_1 = domException.name || ((0, _utils.isDOMError)(domException) ? 'DOMError' : 'DOMException');
+      var message = domException.message ? name_1 + ": " + domException.message : name_1;
+      event = eventFromString(message, syntheticException, options);
+      (0, _utils.addExceptionTypeValue)(event, message);
+    }
 
     if ('code' in domException) {
       event.tags = (0, _tslib.__assign)((0, _tslib.__assign)({}, event.tags), {
@@ -55071,11 +55377,11 @@ function eventFromUnknownInput(exception, syntheticException, options) {
   }
 
   if ((0, _utils.isPlainObject)(exception) || (0, _utils.isEvent)(exception)) {
-    // If it is plain Object or Event, serialize it manually and extract options
-    // This will allow us to group events based on top-level keys
-    // which is much better than creating new group when any key/value change
+    // If it's a plain object or an instance of `Event` (the built-in JS kind, not this SDK's `Event` type), serialize
+    // it manually. This will allow us to group events based on top-level keys which is much better than creating a new
+    // group on any key/value change.
     var objectException = exception;
-    event = (0, _parsers.eventFromPlainObject)(objectException, syntheticException, options.rejection);
+    event = (0, _parsers.eventFromPlainObject)(objectException, syntheticException, options.isRejection);
     (0, _utils.addExceptionMechanism)(event, {
       synthetic: true
     });
@@ -55122,7 +55428,126 @@ function eventFromString(input, syntheticException, options) {
 
   return event;
 }
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./parsers":"../../node_modules/@sentry/browser/esm/parsers.js","./tracekit":"../../node_modules/@sentry/browser/esm/tracekit.js"}],"../../node_modules/@sentry/browser/esm/transports/base.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./parsers":"../../node_modules/@sentry/browser/esm/parsers.js","./tracekit":"../../node_modules/@sentry/browser/esm/tracekit.js"}],"../../node_modules/@sentry/browser/esm/transports/utils.js":[function(require,module,exports) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getNativeFetchImplementation = getNativeFetchImplementation;
+exports.sendReport = sendReport;
+
+var _utils = require("@sentry/utils");
+
+var global = (0, _utils.getGlobalObject)();
+var cachedFetchImpl;
+/**
+ * A special usecase for incorrectly wrapped Fetch APIs in conjunction with ad-blockers.
+ * Whenever someone wraps the Fetch API and returns the wrong promise chain,
+ * this chain becomes orphaned and there is no possible way to capture it's rejections
+ * other than allowing it bubble up to this very handler. eg.
+ *
+ * const f = window.fetch;
+ * window.fetch = function () {
+ *   const p = f.apply(this, arguments);
+ *
+ *   p.then(function() {
+ *     console.log('hi.');
+ *   });
+ *
+ *   return p;
+ * }
+ *
+ * `p.then(function () { ... })` is producing a completely separate promise chain,
+ * however, what's returned is `p` - the result of original `fetch` call.
+ *
+ * This mean, that whenever we use the Fetch API to send our own requests, _and_
+ * some ad-blocker blocks it, this orphaned chain will _always_ reject,
+ * effectively causing another event to be captured.
+ * This makes a whole process become an infinite loop, which we need to somehow
+ * deal with, and break it in one way or another.
+ *
+ * To deal with this issue, we are making sure that we _always_ use the real
+ * browser Fetch API, instead of relying on what `window.fetch` exposes.
+ * The only downside to this would be missing our own requests as breadcrumbs,
+ * but because we are already not doing this, it should be just fine.
+ *
+ * Possible failed fetch error messages per-browser:
+ *
+ * Chrome:  Failed to fetch
+ * Edge:    Failed to Fetch
+ * Firefox: NetworkError when attempting to fetch resource
+ * Safari:  resource blocked by content blocker
+ */
+
+function getNativeFetchImplementation() {
+  if (cachedFetchImpl) {
+    return cachedFetchImpl;
+  }
+  /* eslint-disable @typescript-eslint/unbound-method */
+  // Fast path to avoid DOM I/O
+
+
+  if ((0, _utils.isNativeFetch)(global.fetch)) {
+    return cachedFetchImpl = global.fetch.bind(global);
+  }
+
+  var document = global.document;
+  var fetchImpl = global.fetch; // eslint-disable-next-line deprecation/deprecation
+
+  if (document && typeof document.createElement === "function") {
+    try {
+      var sandbox = document.createElement('iframe');
+      sandbox.hidden = true;
+      document.head.appendChild(sandbox);
+      var contentWindow = sandbox.contentWindow;
+
+      if (contentWindow && contentWindow.fetch) {
+        fetchImpl = contentWindow.fetch;
+      }
+
+      document.head.removeChild(sandbox);
+    } catch (e) {
+      if ((0, _utils.isDebugBuild)()) {
+        _utils.logger.warn('Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ', e);
+      }
+    }
+  }
+
+  return cachedFetchImpl = fetchImpl.bind(global);
+  /* eslint-enable @typescript-eslint/unbound-method */
+}
+/**
+ * Sends sdk client report using sendBeacon or fetch as a fallback if available
+ *
+ * @param url report endpoint
+ * @param body report payload
+ */
+
+
+function sendReport(url, body) {
+  var isRealNavigator = Object.prototype.toString.call(global && global.navigator) === '[object Navigator]';
+  var hasSendBeacon = isRealNavigator && typeof global.navigator.sendBeacon === 'function';
+
+  if (hasSendBeacon) {
+    // Prevent illegal invocations - https://xgwang.me/posts/you-may-not-know-beacon/#it-may-throw-error%2C-be-sure-to-catch
+    var sendBeacon = global.navigator.sendBeacon.bind(global.navigator);
+    return sendBeacon(url, body);
+  }
+
+  if ((0, _utils.supportsFetch)()) {
+    var fetch_1 = getNativeFetchImplementation();
+    return (0, _utils.forget)(fetch_1(url, {
+      body: body,
+      method: 'POST',
+      credentials: 'omit',
+      keepalive: true
+    }));
+  }
+}
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/browser/esm/transports/base.js":[function(require,module,exports) {
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55134,38 +55559,59 @@ var _tslib = require("tslib");
 
 var _core = require("@sentry/core");
 
-var _types = require("@sentry/types");
-
 var _utils = require("@sentry/utils");
 
-var CATEGORY_MAPPING = {
-  event: 'error',
-  transaction: 'transaction',
-  session: 'session',
-  attachment: 'attachment'
-};
+var _utils2 = require("./utils");
+
+function requestTypeToCategory(ty) {
+  var tyStr = ty;
+  return tyStr === 'event' ? 'error' : tyStr;
+}
+
+var global = (0, _utils.getGlobalObject)();
 /** Base Transport class implementation */
 
-var BaseTransport = function () {
+var BaseTransport =
+/** @class */
+function () {
   function BaseTransport(options) {
+    var _this = this;
+
     this.options = options;
     /** A simple buffer holding all requests. */
 
-    this._buffer = new _utils.PromiseBuffer(30);
+    this._buffer = (0, _utils.makePromiseBuffer)(30);
     /** Locks transport after receiving rate limits in a response */
 
     this._rateLimits = {};
-    this._api = new _core.API(options.dsn, options._metadata, options.tunnel); // eslint-disable-next-line deprecation/deprecation
+    this._outcomes = {};
+    this._api = (0, _core.initAPIDetails)(options.dsn, options._metadata, options.tunnel); // eslint-disable-next-line deprecation/deprecation
 
-    this.url = this._api.getStoreEndpointWithUrlEncodedAuth();
+    this.url = (0, _core.getStoreEndpointWithUrlEncodedAuth)(this._api.dsn);
+
+    if (this.options.sendClientReports && global.document) {
+      global.document.addEventListener('visibilitychange', function () {
+        if (global.document.visibilityState === 'hidden') {
+          _this._flushOutcomes();
+        }
+      });
+    }
   }
   /**
    * @inheritDoc
    */
 
 
-  BaseTransport.prototype.sendEvent = function (_) {
-    throw new _utils.SentryError('Transport Class has to implement `sendEvent` method');
+  BaseTransport.prototype.sendEvent = function (event) {
+    return this._sendRequest((0, _core.eventToSentryRequest)(event, this._api), event);
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  BaseTransport.prototype.sendSession = function (session) {
+    return this._sendRequest((0, _core.sessionToSentryRequest)(session, this._api), session);
   };
   /**
    * @inheritDoc
@@ -55174,6 +55620,80 @@ var BaseTransport = function () {
 
   BaseTransport.prototype.close = function (timeout) {
     return this._buffer.drain(timeout);
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  BaseTransport.prototype.recordLostEvent = function (reason, category) {
+    var _a;
+
+    if (!this.options.sendClientReports) {
+      return;
+    } // We want to track each category (event, transaction, session) separately
+    // but still keep the distinction between different type of outcomes.
+    // We could use nested maps, but it's much easier to read and type this way.
+    // A correct type for map-based implementation if we want to go that route
+    // would be `Partial<Record<SentryRequestType, Partial<Record<Outcome, number>>>>`
+
+
+    var key = requestTypeToCategory(category) + ":" + reason;
+
+    _utils.logger.log("Adding outcome: " + key);
+
+    this._outcomes[key] = (_a = this._outcomes[key], _a !== null && _a !== void 0 ? _a : 0) + 1;
+  };
+  /**
+   * Send outcomes as an envelope
+   */
+
+
+  BaseTransport.prototype._flushOutcomes = function () {
+    if (!this.options.sendClientReports) {
+      return;
+    }
+
+    var outcomes = this._outcomes;
+    this._outcomes = {}; // Nothing to send
+
+    if (!Object.keys(outcomes).length) {
+      _utils.logger.log('No outcomes to flush');
+
+      return;
+    }
+
+    _utils.logger.log("Flushing outcomes:\n" + JSON.stringify(outcomes, null, 2));
+
+    var url = (0, _core.getEnvelopeEndpointWithUrlEncodedAuth)(this._api.dsn, this._api.tunnel); // Envelope header is required to be at least an empty object
+
+    var envelopeHeader = JSON.stringify((0, _tslib.__assign)({}, this._api.tunnel && {
+      dsn: (0, _utils.dsnToString)(this._api.dsn)
+    }));
+    var itemHeaders = JSON.stringify({
+      type: 'client_report'
+    });
+    var item = JSON.stringify({
+      timestamp: (0, _utils.dateTimestampInSeconds)(),
+      discarded_events: Object.keys(outcomes).map(function (key) {
+        var _a = (0, _tslib.__read)(key.split(':'), 2),
+            category = _a[0],
+            reason = _a[1];
+
+        return {
+          reason: reason,
+          category: category,
+          quantity: outcomes[key]
+        };
+      })
+    });
+    var envelope = envelopeHeader + "\n" + itemHeaders + "\n" + item;
+
+    try {
+      (0, _utils2.sendReport)(url, envelope);
+    } catch (e) {
+      _utils.logger.error(e);
+    }
   };
   /**
    * Handle Sentry repsonse for promise-based transports.
@@ -55186,19 +55706,19 @@ var BaseTransport = function () {
         headers = _a.headers,
         resolve = _a.resolve,
         reject = _a.reject;
-
-    var status = _types.Status.fromHttpCode(response.status);
+    var status = (0, _utils.eventStatusFromHttpCode)(response.status);
     /**
      * "The name is case-insensitive."
      * https://developer.mozilla.org/en-US/docs/Web/API/Headers/get
      */
 
-
     var limited = this._handleRateLimit(headers);
 
-    if (limited) _utils.logger.warn("Too many " + requestType + " requests, backing off until: " + this._disabledUntil(requestType));
+    if (limited && (0, _utils.isDebugBuild)()) {
+      _utils.logger.warn("Too many " + requestType + " requests, backing off until: " + this._disabledUntil(requestType));
+    }
 
-    if (status === _types.Status.Success) {
+    if (status === 'success') {
       resolve({
         status: status
       });
@@ -55213,7 +55733,7 @@ var BaseTransport = function () {
 
 
   BaseTransport.prototype._disabledUntil = function (requestType) {
-    var category = CATEGORY_MAPPING[requestType];
+    var category = requestTypeToCategory(requestType);
     return this._rateLimits[category] || this._rateLimits.all;
   };
   /**
@@ -55296,8 +55816,7 @@ var BaseTransport = function () {
 }();
 
 exports.BaseTransport = BaseTransport;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/browser/esm/transports/fetch.js":[function(require,module,exports) {
-var global = arguments[3];
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./utils":"../../node_modules/@sentry/browser/esm/transports/utils.js"}],"../../node_modules/@sentry/browser/esm/transports/fetch.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55307,92 +55826,21 @@ exports.FetchTransport = void 0;
 
 var _tslib = require("tslib");
 
-var _core = require("@sentry/core");
-
 var _utils = require("@sentry/utils");
 
 var _base = require("./base");
 
-/**
- * A special usecase for incorrectly wrapped Fetch APIs in conjunction with ad-blockers.
- * Whenever someone wraps the Fetch API and returns the wrong promise chain,
- * this chain becomes orphaned and there is no possible way to capture it's rejections
- * other than allowing it bubble up to this very handler. eg.
- *
- * const f = window.fetch;
- * window.fetch = function () {
- *   const p = f.apply(this, arguments);
- *
- *   p.then(function() {
- *     console.log('hi.');
- *   });
- *
- *   return p;
- * }
- *
- * `p.then(function () { ... })` is producing a completely separate promise chain,
- * however, what's returned is `p` - the result of original `fetch` call.
- *
- * This mean, that whenever we use the Fetch API to send our own requests, _and_
- * some ad-blocker blocks it, this orphaned chain will _always_ reject,
- * effectively causing another event to be captured.
- * This makes a whole process become an infinite loop, which we need to somehow
- * deal with, and break it in one way or another.
- *
- * To deal with this issue, we are making sure that we _always_ use the real
- * browser Fetch API, instead of relying on what `window.fetch` exposes.
- * The only downside to this would be missing our own requests as breadcrumbs,
- * but because we are already not doing this, it should be just fine.
- *
- * Possible failed fetch error messages per-browser:
- *
- * Chrome:  Failed to fetch
- * Edge:    Failed to Fetch
- * Firefox: NetworkError when attempting to fetch resource
- * Safari:  resource blocked by content blocker
- */
-function getNativeFetchImplementation() {
-  /* eslint-disable @typescript-eslint/unbound-method */
-  var _a, _b; // Fast path to avoid DOM I/O
+var _utils2 = require("./utils");
 
-
-  var global = (0, _utils.getGlobalObject)();
-
-  if ((0, _utils.isNativeFetch)(global.fetch)) {
-    return global.fetch.bind(global);
-  }
-
-  var document = global.document;
-  var fetchImpl = global.fetch; // eslint-disable-next-line deprecation/deprecation
-
-  if (typeof ((_a = document) === null || _a === void 0 ? void 0 : _a.createElement) === "function") {
-    try {
-      var sandbox = document.createElement('iframe');
-      sandbox.hidden = true;
-      document.head.appendChild(sandbox);
-
-      if ((_b = sandbox.contentWindow) === null || _b === void 0 ? void 0 : _b.fetch) {
-        fetchImpl = sandbox.contentWindow.fetch;
-      }
-
-      document.head.removeChild(sandbox);
-    } catch (e) {
-      _utils.logger.warn('Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ', e);
-    }
-  }
-
-  return fetchImpl.bind(global);
-  /* eslint-enable @typescript-eslint/unbound-method */
-}
 /** `fetch` based transport */
-
-
-var FetchTransport = function (_super) {
+var FetchTransport =
+/** @class */
+function (_super) {
   (0, _tslib.__extends)(FetchTransport, _super);
 
   function FetchTransport(options, fetchImpl) {
     if (fetchImpl === void 0) {
-      fetchImpl = getNativeFetchImplementation();
+      fetchImpl = (0, _utils2.getNativeFetchImplementation)();
     }
 
     var _this = _super.call(this, options) || this;
@@ -55400,22 +55848,6 @@ var FetchTransport = function (_super) {
     _this._fetch = fetchImpl;
     return _this;
   }
-  /**
-   * @inheritDoc
-   */
-
-
-  FetchTransport.prototype.sendEvent = function (event) {
-    return this._sendRequest((0, _core.eventToSentryRequest)(event, this._api), event);
-  };
-  /**
-   * @inheritDoc
-   */
-
-
-  FetchTransport.prototype.sendSession = function (session) {
-    return this._sendRequest((0, _core.sessionToSentryRequest)(session, this._api), session);
-  };
   /**
    * @param sentryRequest Prepared SentryRequest to be delivered
    * @param originalPayload Original payload used to create SentryRequest
@@ -55426,6 +55858,7 @@ var FetchTransport = function (_super) {
     var _this = this;
 
     if (this._isRateLimited(sentryRequest.type)) {
+      this.recordLostEvent('ratelimit_backoff', sentryRequest.type);
       return Promise.reject({
         event: originalPayload,
         type: sentryRequest.type,
@@ -55437,9 +55870,9 @@ var FetchTransport = function (_super) {
     var options = {
       body: sentryRequest.body,
       method: 'POST',
-      // Despite all stars in the sky saying that Edge supports old draft syntax, aka 'never', 'always', 'origin' and 'default
-      // https://caniuse.com/#feat=referrer-policy
-      // It doesn't. And it throw exception instead of ignoring this parameter...
+      // Despite all stars in the sky saying that Edge supports old draft syntax, aka 'never', 'always', 'origin' and 'default'
+      // (see https://caniuse.com/#feat=referrer-policy),
+      // it doesn't. And it throws an exception instead of ignoring this parameter...
       // REF: https://github.com/getsentry/raven-js/issues/1233
       referrerPolicy: (0, _utils.supportsReferrerPolicy)() ? 'origin' : ''
     };
@@ -55469,6 +55902,15 @@ var FetchTransport = function (_super) {
           });
         }).catch(reject);
       });
+    }).then(undefined, function (reason) {
+      // It's either buffer rejection or any other xhr/fetch error, which are treated as NetworkError.
+      if (reason instanceof _utils.SentryError) {
+        _this.recordLostEvent('queue_overflow', sentryRequest.type);
+      } else {
+        _this.recordLostEvent('network_error', sentryRequest.type);
+      }
+
+      throw reason;
     });
   };
 
@@ -55476,7 +55918,7 @@ var FetchTransport = function (_super) {
 }(_base.BaseTransport);
 
 exports.FetchTransport = FetchTransport;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./base":"../../node_modules/@sentry/browser/esm/transports/base.js"}],"../../node_modules/@sentry/browser/esm/transports/xhr.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./base":"../../node_modules/@sentry/browser/esm/transports/base.js","./utils":"../../node_modules/@sentry/browser/esm/transports/utils.js"}],"../../node_modules/@sentry/browser/esm/transports/xhr.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55486,35 +55928,19 @@ exports.XHRTransport = void 0;
 
 var _tslib = require("tslib");
 
-var _core = require("@sentry/core");
-
 var _utils = require("@sentry/utils");
 
 var _base = require("./base");
 
 /** `XHR` based transport */
-var XHRTransport = function (_super) {
+var XHRTransport =
+/** @class */
+function (_super) {
   (0, _tslib.__extends)(XHRTransport, _super);
 
   function XHRTransport() {
     return _super !== null && _super.apply(this, arguments) || this;
   }
-  /**
-   * @inheritDoc
-   */
-
-
-  XHRTransport.prototype.sendEvent = function (event) {
-    return this._sendRequest((0, _core.eventToSentryRequest)(event, this._api), event);
-  };
-  /**
-   * @inheritDoc
-   */
-
-
-  XHRTransport.prototype.sendSession = function (session) {
-    return this._sendRequest((0, _core.sessionToSentryRequest)(session, this._api), session);
-  };
   /**
    * @param sentryRequest Prepared SentryRequest to be delivered
    * @param originalPayload Original payload used to create SentryRequest
@@ -55525,6 +55951,7 @@ var XHRTransport = function (_super) {
     var _this = this;
 
     if (this._isRateLimited(sentryRequest.type)) {
+      this.recordLostEvent('ratelimit_backoff', sentryRequest.type);
       return Promise.reject({
         event: originalPayload,
         type: sentryRequest.type,
@@ -55557,13 +55984,22 @@ var XHRTransport = function (_super) {
         request.open('POST', sentryRequest.url);
 
         for (var header in _this.options.headers) {
-          if (_this.options.headers.hasOwnProperty(header)) {
+          if (Object.prototype.hasOwnProperty.call(_this.options.headers, header)) {
             request.setRequestHeader(header, _this.options.headers[header]);
           }
         }
 
         request.send(sentryRequest.body);
       });
+    }).then(undefined, function (reason) {
+      // It's either buffer rejection or any other xhr/fetch error, which are treated as NetworkError.
+      if (reason instanceof _utils.SentryError) {
+        _this.recordLostEvent('queue_overflow', sentryRequest.type);
+      } else {
+        _this.recordLostEvent('network_error', sentryRequest.type);
+      }
+
+      throw reason;
     });
   };
 
@@ -55571,7 +56007,7 @@ var XHRTransport = function (_super) {
 }(_base.BaseTransport);
 
 exports.XHRTransport = XHRTransport;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./base":"../../node_modules/@sentry/browser/esm/transports/base.js"}],"../../node_modules/@sentry/browser/esm/transports/index.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./base":"../../node_modules/@sentry/browser/esm/transports/base.js"}],"../../node_modules/@sentry/browser/esm/transports/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -55625,7 +56061,9 @@ var _transports = require("./transports");
  * The Sentry Browser SDK Backend.
  * @hidden
  */
-var BrowserBackend = function (_super) {
+var BrowserBackend =
+/** @class */
+function (_super) {
   (0, _tslib.__extends)(BrowserBackend, _super);
 
   function BrowserBackend() {
@@ -55665,6 +56103,7 @@ var BrowserBackend = function (_super) {
     var transportOptions = (0, _tslib.__assign)((0, _tslib.__assign)({}, this._options.transportOptions), {
       dsn: this._options.dsn,
       tunnel: this._options.tunnel,
+      sendClientReports: this._options.sendClientReports,
       _metadata: this._options._metadata
     });
 
@@ -55684,15 +56123,16 @@ var BrowserBackend = function (_super) {
 
 exports.BrowserBackend = BrowserBackend;
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./eventbuilder":"../../node_modules/@sentry/browser/esm/eventbuilder.js","./transports":"../../node_modules/@sentry/browser/esm/transports/index.js"}],"../../node_modules/@sentry/browser/esm/helpers.js":[function(require,module,exports) {
+
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.shouldIgnoreOnError = shouldIgnoreOnError;
 exports.ignoreNextOnError = ignoreNextOnError;
-exports.wrap = wrap;
 exports.injectReportDialog = injectReportDialog;
+exports.shouldIgnoreOnError = shouldIgnoreOnError;
+exports.wrap = wrap;
 
 var _tslib = require("tslib");
 
@@ -55700,6 +56140,7 @@ var _core = require("@sentry/core");
 
 var _utils = require("@sentry/utils");
 
+var global = (0, _utils.getGlobalObject)();
 var ignoreOnError = 0;
 /**
  * @hidden
@@ -55731,6 +56172,12 @@ function ignoreNextOnError() {
 
 
 function wrap(fn, options, before) {
+  // for future readers what this does is wrap a function and then create
+  // a bi-directional wrapping between them.
+  //
+  // example: wrapped = wrap(original);
+  //  original.__sentry_wrapped__ -> wrapped
+  //  wrapped.__sentry_original__ -> original
   if (options === void 0) {
     options = {};
   }
@@ -55740,14 +56187,17 @@ function wrap(fn, options, before) {
   }
 
   try {
-    // We don't wanna wrap it twice
-    if (fn.__sentry__) {
+    // if we're dealing with a function that was previously wrapped, return
+    // the original wrapper.
+    var wrapper = fn.__sentry_wrapped__;
+
+    if (wrapper) {
+      return wrapper;
+    } // We don't wanna wrap it twice
+
+
+    if ((0, _utils.getOriginalFunction)(fn)) {
       return fn;
-    } // If this has already been wrapped in the past, return that wrapped function
-
-
-    if (fn.__sentry_wrapped__) {
-      return fn.__sentry_wrapped__;
     }
   } catch (e) {
     // Just accessing custom props in some Selenium environments
@@ -55770,37 +56220,25 @@ function wrap(fn, options, before) {
 
       var wrappedArguments = args.map(function (arg) {
         return wrap(arg, options);
-      });
-
-      if (fn.handleEvent) {
-        // Attempt to invoke user-land function
-        // NOTE: If you are a Sentry user, and you are seeing this stack frame, it
-        //       means the sentry.javascript SDK caught an error invoking your application code. This
-        //       is expected behavior and NOT indicative of a bug with sentry.javascript.
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-        return fn.handleEvent.apply(this, wrappedArguments);
-      } // Attempt to invoke user-land function
+      }); // Attempt to invoke user-land function
       // NOTE: If you are a Sentry user, and you are seeing this stack frame, it
       //       means the sentry.javascript SDK caught an error invoking your application code. This
       //       is expected behavior and NOT indicative of a bug with sentry.javascript.
-
 
       return fn.apply(this, wrappedArguments);
     } catch (ex) {
       ignoreNextOnError();
       (0, _core.withScope)(function (scope) {
         scope.addEventProcessor(function (event) {
-          var processedEvent = (0, _tslib.__assign)({}, event);
-
           if (options.mechanism) {
-            (0, _utils.addExceptionTypeValue)(processedEvent, undefined, undefined);
-            (0, _utils.addExceptionMechanism)(processedEvent, options.mechanism);
+            (0, _utils.addExceptionTypeValue)(event, undefined, undefined);
+            (0, _utils.addExceptionMechanism)(event, options.mechanism);
           }
 
-          processedEvent.extra = (0, _tslib.__assign)((0, _tslib.__assign)({}, processedEvent.extra), {
+          event.extra = (0, _tslib.__assign)((0, _tslib.__assign)({}, event.extra), {
             arguments: args
           });
-          return processedEvent;
+          return event;
         });
         (0, _core.captureException)(ex);
       });
@@ -55819,26 +56257,12 @@ function wrap(fn, options, before) {
       }
     }
   } catch (_oO) {} // eslint-disable-line no-empty
-
-
-  fn.prototype = fn.prototype || {};
-  sentryWrapped.prototype = fn.prototype;
-  Object.defineProperty(fn, '__sentry_wrapped__', {
-    enumerable: false,
-    value: sentryWrapped
-  }); // Signal that this function has been wrapped/filled already
+  // Signal that this function has been wrapped/filled already
   // for both debugging and to prevent it to being wrapped/filled twice
 
-  Object.defineProperties(sentryWrapped, {
-    __sentry__: {
-      enumerable: false,
-      value: true
-    },
-    __sentry_original__: {
-      enumerable: false,
-      value: fn
-    }
-  }); // Restore original function name (not all browsers allow that)
+
+  (0, _utils.markFunctionWrapped)(sentryWrapped, fn);
+  (0, _utils.addNonEnumerableProperty)(fn, '__sentry_wrapped__', sentryWrapped); // Restore original function name (not all browsers allow that)
 
   try {
     var descriptor = Object.getOwnPropertyDescriptor(sentryWrapped, 'name');
@@ -55866,28 +56290,40 @@ function injectReportDialog(options) {
     options = {};
   }
 
+  if (!global.document) {
+    return;
+  }
+
   if (!options.eventId) {
-    _utils.logger.error("Missing eventId option in showReportDialog call");
+    if ((0, _utils.isDebugBuild)()) {
+      _utils.logger.error("Missing eventId option in showReportDialog call");
+    }
 
     return;
   }
 
   if (!options.dsn) {
-    _utils.logger.error("Missing dsn option in showReportDialog call");
+    if ((0, _utils.isDebugBuild)()) {
+      _utils.logger.error("Missing dsn option in showReportDialog call");
+    }
 
     return;
   }
 
-  var script = document.createElement('script');
+  var script = global.document.createElement('script');
   script.async = true;
-  script.src = new _core.API(options.dsn).getReportDialogEndpoint(options);
+  script.src = (0, _core.getReportDialogEndpoint)(options.dsn, options);
 
   if (options.onLoad) {
     // eslint-disable-next-line @typescript-eslint/unbound-method
     script.onload = options.onLoad;
   }
 
-  (document.head || document.body).appendChild(script);
+  var injectionPoint = global.document.head || global.document.body;
+
+  if (injectionPoint) {
+    injectionPoint.appendChild(script);
+  }
 }
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/browser/esm/integrations/globalhandlers.js":[function(require,module,exports) {
 "use strict";
@@ -55912,19 +56348,24 @@ var _helpers = require("../helpers");
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 
 /** Global handlers */
-var GlobalHandlers = function () {
+var GlobalHandlers =
+/** @class */
+function () {
   /** JSDoc */
   function GlobalHandlers(options) {
     /**
      * @inheritDoc
      */
     this.name = GlobalHandlers.id;
-    /** JSDoc */
+    /**
+     * Stores references functions to installing handlers. Will set to undefined
+     * after they have been run so that they are not used twice.
+     */
 
-    this._onErrorHandlerInstalled = false;
-    /** JSDoc */
-
-    this._onUnhandledRejectionHandlerInstalled = false;
+    this._installFunc = {
+      onerror: _installGlobalOnErrorHandler,
+      onunhandledrejection: _installGlobalOnUnhandledRejectionHandler
+    };
     this._options = (0, _tslib.__assign)({
       onerror: true,
       onunhandledrejection: true
@@ -55937,188 +56378,19 @@ var GlobalHandlers = function () {
 
   GlobalHandlers.prototype.setupOnce = function () {
     Error.stackTraceLimit = 50;
+    var options = this._options; // We can disable guard-for-in as we construct the options object above + do checks against
+    // `this._installFunc` for the property.
+    // eslint-disable-next-line guard-for-in
 
-    if (this._options.onerror) {
-      _utils.logger.log('Global Handler attached: onerror');
+    for (var key in options) {
+      var installFunc = this._installFunc[key];
 
-      this._installGlobalOnErrorHandler();
-    }
-
-    if (this._options.onunhandledrejection) {
-      _utils.logger.log('Global Handler attached: onunhandledrejection');
-
-      this._installGlobalOnUnhandledRejectionHandler();
-    }
-  };
-  /** JSDoc */
-
-
-  GlobalHandlers.prototype._installGlobalOnErrorHandler = function () {
-    var _this = this;
-
-    if (this._onErrorHandlerInstalled) {
-      return;
-    }
-
-    (0, _utils.addInstrumentationHandler)({
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      callback: function (data) {
-        var error = data.error;
-        var currentHub = (0, _core.getCurrentHub)();
-        var hasIntegration = currentHub.getIntegration(GlobalHandlers);
-        var isFailedOwnDelivery = error && error.__sentry_own_request__ === true;
-
-        if (!hasIntegration || (0, _helpers.shouldIgnoreOnError)() || isFailedOwnDelivery) {
-          return;
-        }
-
-        var client = currentHub.getClient();
-        var event = error === undefined && (0, _utils.isString)(data.msg) ? _this._eventFromIncompleteOnError(data.msg, data.url, data.line, data.column) : _this._enhanceEventWithInitialFrame((0, _eventbuilder.eventFromUnknownInput)(error || data.msg, undefined, {
-          attachStacktrace: client && client.getOptions().attachStacktrace,
-          rejection: false
-        }), data.url, data.line, data.column);
-        (0, _utils.addExceptionMechanism)(event, {
-          handled: false,
-          type: 'onerror'
-        });
-        currentHub.captureEvent(event, {
-          originalException: error
-        });
-      },
-      type: 'error'
-    });
-    this._onErrorHandlerInstalled = true;
-  };
-  /** JSDoc */
-
-
-  GlobalHandlers.prototype._installGlobalOnUnhandledRejectionHandler = function () {
-    var _this = this;
-
-    if (this._onUnhandledRejectionHandlerInstalled) {
-      return;
-    }
-
-    (0, _utils.addInstrumentationHandler)({
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      callback: function (e) {
-        var error = e; // dig the object of the rejection out of known event types
-
-        try {
-          // PromiseRejectionEvents store the object of the rejection under 'reason'
-          // see https://developer.mozilla.org/en-US/docs/Web/API/PromiseRejectionEvent
-          if ('reason' in e) {
-            error = e.reason;
-          } // something, somewhere, (likely a browser extension) effectively casts PromiseRejectionEvents
-          // to CustomEvents, moving the `promise` and `reason` attributes of the PRE into
-          // the CustomEvent's `detail` attribute, since they're not part of CustomEvent's spec
-          // see https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent and
-          // https://github.com/getsentry/sentry-javascript/issues/2380
-          else if ('detail' in e && 'reason' in e.detail) {
-            error = e.detail.reason;
-          }
-        } catch (_oO) {// no-empty
-        }
-
-        var currentHub = (0, _core.getCurrentHub)();
-        var hasIntegration = currentHub.getIntegration(GlobalHandlers);
-        var isFailedOwnDelivery = error && error.__sentry_own_request__ === true;
-
-        if (!hasIntegration || (0, _helpers.shouldIgnoreOnError)() || isFailedOwnDelivery) {
-          return true;
-        }
-
-        var client = currentHub.getClient();
-        var event = (0, _utils.isPrimitive)(error) ? _this._eventFromRejectionWithPrimitive(error) : (0, _eventbuilder.eventFromUnknownInput)(error, undefined, {
-          attachStacktrace: client && client.getOptions().attachStacktrace,
-          rejection: true
-        });
-        event.level = _types.Severity.Error;
-        (0, _utils.addExceptionMechanism)(event, {
-          handled: false,
-          type: 'onunhandledrejection'
-        });
-        currentHub.captureEvent(event, {
-          originalException: error
-        });
-        return;
-      },
-      type: 'unhandledrejection'
-    });
-    this._onUnhandledRejectionHandlerInstalled = true;
-  };
-  /**
-   * This function creates a stack from an old, error-less onerror handler.
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  GlobalHandlers.prototype._eventFromIncompleteOnError = function (msg, url, line, column) {
-    var ERROR_TYPES_RE = /^(?:[Uu]ncaught (?:exception: )?)?(?:((?:Eval|Internal|Range|Reference|Syntax|Type|URI|)Error): )?(.*)$/i; // If 'message' is ErrorEvent, get real message from inside
-
-    var message = (0, _utils.isErrorEvent)(msg) ? msg.message : msg;
-    var name;
-    var groups = message.match(ERROR_TYPES_RE);
-
-    if (groups) {
-      name = groups[1];
-      message = groups[2];
-    }
-
-    var event = {
-      exception: {
-        values: [{
-          type: name || 'Error',
-          value: message
-        }]
+      if (installFunc && options[key]) {
+        globalHandlerLog(key);
+        installFunc();
+        this._installFunc[key] = undefined;
       }
-    };
-    return this._enhanceEventWithInitialFrame(event, url, line, column);
-  };
-  /**
-   * Create an event from a promise rejection where the `reason` is a primitive.
-   *
-   * @param reason: The `reason` property of the promise rejection
-   * @returns An Event object with an appropriate `exception` value
-   */
-
-
-  GlobalHandlers.prototype._eventFromRejectionWithPrimitive = function (reason) {
-    return {
-      exception: {
-        values: [{
-          type: 'UnhandledRejection',
-          // String() is needed because the Primitive type includes symbols (which can't be automatically stringified)
-          value: "Non-Error promise rejection captured with value: " + String(reason)
-        }]
-      }
-    };
-  };
-  /** JSDoc */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  GlobalHandlers.prototype._enhanceEventWithInitialFrame = function (event, url, line, column) {
-    event.exception = event.exception || {};
-    event.exception.values = event.exception.values || [];
-    event.exception.values[0] = event.exception.values[0] || {};
-    event.exception.values[0].stacktrace = event.exception.values[0].stacktrace || {};
-    event.exception.values[0].stacktrace.frames = event.exception.values[0].stacktrace.frames || [];
-    var colno = isNaN(parseInt(column, 10)) ? undefined : column;
-    var lineno = isNaN(parseInt(line, 10)) ? undefined : line;
-    var filename = (0, _utils.isString)(url) && url.length > 0 ? url : (0, _utils.getLocationHref)();
-
-    if (event.exception.values[0].stacktrace.frames.length === 0) {
-      event.exception.values[0].stacktrace.frames.push({
-        colno: colno,
-        filename: filename,
-        function: '?',
-        in_app: true,
-        lineno: lineno
-      });
     }
-
-    return event;
   };
   /**
    * @inheritDoc
@@ -56130,6 +56402,182 @@ var GlobalHandlers = function () {
 }();
 
 exports.GlobalHandlers = GlobalHandlers;
+
+/** JSDoc */
+function _installGlobalOnErrorHandler() {
+  (0, _utils.addInstrumentationHandler)('error', // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function (data) {
+    var _a = (0, _tslib.__read)(getHubAndAttachStacktrace(), 2),
+        hub = _a[0],
+        attachStacktrace = _a[1];
+
+    if (!hub.getIntegration(GlobalHandlers)) {
+      return;
+    }
+
+    var msg = data.msg,
+        url = data.url,
+        line = data.line,
+        column = data.column,
+        error = data.error;
+
+    if ((0, _helpers.shouldIgnoreOnError)() || error && error.__sentry_own_request__) {
+      return;
+    }
+
+    var event = error === undefined && (0, _utils.isString)(msg) ? _eventFromIncompleteOnError(msg, url, line, column) : _enhanceEventWithInitialFrame((0, _eventbuilder.eventFromUnknownInput)(error || msg, undefined, {
+      attachStacktrace: attachStacktrace,
+      isRejection: false
+    }), url, line, column);
+    addMechanismAndCapture(hub, error, event, 'onerror');
+  });
+}
+/** JSDoc */
+
+
+function _installGlobalOnUnhandledRejectionHandler() {
+  (0, _utils.addInstrumentationHandler)('unhandledrejection', // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function (e) {
+    var _a = (0, _tslib.__read)(getHubAndAttachStacktrace(), 2),
+        hub = _a[0],
+        attachStacktrace = _a[1];
+
+    if (!hub.getIntegration(GlobalHandlers)) {
+      return;
+    }
+
+    var error = e; // dig the object of the rejection out of known event types
+
+    try {
+      // PromiseRejectionEvents store the object of the rejection under 'reason'
+      // see https://developer.mozilla.org/en-US/docs/Web/API/PromiseRejectionEvent
+      if ('reason' in e) {
+        error = e.reason;
+      } // something, somewhere, (likely a browser extension) effectively casts PromiseRejectionEvents
+      // to CustomEvents, moving the `promise` and `reason` attributes of the PRE into
+      // the CustomEvent's `detail` attribute, since they're not part of CustomEvent's spec
+      // see https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent and
+      // https://github.com/getsentry/sentry-javascript/issues/2380
+      else if ('detail' in e && 'reason' in e.detail) {
+        error = e.detail.reason;
+      }
+    } catch (_oO) {// no-empty
+    }
+
+    if ((0, _helpers.shouldIgnoreOnError)() || error && error.__sentry_own_request__) {
+      return true;
+    }
+
+    var event = (0, _utils.isPrimitive)(error) ? _eventFromRejectionWithPrimitive(error) : (0, _eventbuilder.eventFromUnknownInput)(error, undefined, {
+      attachStacktrace: attachStacktrace,
+      isRejection: true
+    });
+    event.level = _types.Severity.Error;
+    addMechanismAndCapture(hub, error, event, 'onunhandledrejection');
+    return;
+  });
+}
+/**
+ * Create an event from a promise rejection where the `reason` is a primitive.
+ *
+ * @param reason: The `reason` property of the promise rejection
+ * @returns An Event object with an appropriate `exception` value
+ */
+
+
+function _eventFromRejectionWithPrimitive(reason) {
+  return {
+    exception: {
+      values: [{
+        type: 'UnhandledRejection',
+        // String() is needed because the Primitive type includes symbols (which can't be automatically stringified)
+        value: "Non-Error promise rejection captured with value: " + String(reason)
+      }]
+    }
+  };
+}
+/**
+ * This function creates a stack from an old, error-less onerror handler.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+function _eventFromIncompleteOnError(msg, url, line, column) {
+  var ERROR_TYPES_RE = /^(?:[Uu]ncaught (?:exception: )?)?(?:((?:Eval|Internal|Range|Reference|Syntax|Type|URI|)Error): )?(.*)$/i; // If 'message' is ErrorEvent, get real message from inside
+
+  var message = (0, _utils.isErrorEvent)(msg) ? msg.message : msg;
+  var name = 'Error';
+  var groups = message.match(ERROR_TYPES_RE);
+
+  if (groups) {
+    name = groups[1];
+    message = groups[2];
+  }
+
+  var event = {
+    exception: {
+      values: [{
+        type: name,
+        value: message
+      }]
+    }
+  };
+  return _enhanceEventWithInitialFrame(event, url, line, column);
+}
+/** JSDoc */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+function _enhanceEventWithInitialFrame(event, url, line, column) {
+  // event.exception
+  var e = event.exception = event.exception || {}; // event.exception.values
+
+  var ev = e.values = e.values || []; // event.exception.values[0]
+
+  var ev0 = ev[0] = ev[0] || {}; // event.exception.values[0].stacktrace
+
+  var ev0s = ev0.stacktrace = ev0.stacktrace || {}; // event.exception.values[0].stacktrace.frames
+
+  var ev0sf = ev0s.frames = ev0s.frames || [];
+  var colno = isNaN(parseInt(column, 10)) ? undefined : column;
+  var lineno = isNaN(parseInt(line, 10)) ? undefined : line;
+  var filename = (0, _utils.isString)(url) && url.length > 0 ? url : (0, _utils.getLocationHref)(); // event.exception.values[0].stacktrace.frames
+
+  if (ev0sf.length === 0) {
+    ev0sf.push({
+      colno: colno,
+      filename: filename,
+      function: '?',
+      in_app: true,
+      lineno: lineno
+    });
+  }
+
+  return event;
+}
+
+function globalHandlerLog(type) {
+  if ((0, _utils.isDebugBuild)()) {
+    _utils.logger.log("Global Handler attached: " + type);
+  }
+}
+
+function addMechanismAndCapture(hub, error, event, type) {
+  (0, _utils.addExceptionMechanism)(event, {
+    handled: false,
+    type: type
+  });
+  hub.captureEvent(event, {
+    originalException: error
+  });
+}
+
+function getHubAndAttachStacktrace() {
+  var hub = (0, _core.getCurrentHub)();
+  var client = hub.getClient();
+  var attachStacktrace = client && client.getOptions().attachStacktrace;
+  return [hub, attachStacktrace];
+}
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","../eventbuilder":"../../node_modules/@sentry/browser/esm/eventbuilder.js","../helpers":"../../node_modules/@sentry/browser/esm/helpers.js"}],"../../node_modules/@sentry/browser/esm/integrations/trycatch.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -56148,7 +56596,9 @@ var _helpers = require("../helpers");
 var DEFAULT_EVENT_TARGET = ['EventTarget', 'Window', 'Node', 'ApplicationCache', 'AudioTrackList', 'ChannelMergerNode', 'CryptoOperation', 'EventSource', 'FileReader', 'HTMLUnknownElement', 'IDBDatabase', 'IDBRequest', 'IDBTransaction', 'KeyOperation', 'MediaController', 'MessagePort', 'ModalWindow', 'Notification', 'SVGElementInstance', 'Screen', 'TextTrack', 'TextTrackCue', 'TextTrackList', 'WebSocket', 'WebSocketWorker', 'Worker', 'XMLHttpRequest', 'XMLHttpRequestEventTarget', 'XMLHttpRequestUpload'];
 /** Wrap timer functions and event targets to catch errors and provide better meta data */
 
-var TryCatch = function () {
+var TryCatch =
+/** @class */
+function () {
   /**
    * @inheritDoc
    */
@@ -56175,195 +56625,27 @@ var TryCatch = function () {
     var global = (0, _utils.getGlobalObject)();
 
     if (this._options.setTimeout) {
-      (0, _utils.fill)(global, 'setTimeout', this._wrapTimeFunction.bind(this));
+      (0, _utils.fill)(global, 'setTimeout', _wrapTimeFunction);
     }
 
     if (this._options.setInterval) {
-      (0, _utils.fill)(global, 'setInterval', this._wrapTimeFunction.bind(this));
+      (0, _utils.fill)(global, 'setInterval', _wrapTimeFunction);
     }
 
     if (this._options.requestAnimationFrame) {
-      (0, _utils.fill)(global, 'requestAnimationFrame', this._wrapRAF.bind(this));
+      (0, _utils.fill)(global, 'requestAnimationFrame', _wrapRAF);
     }
 
     if (this._options.XMLHttpRequest && 'XMLHttpRequest' in global) {
-      (0, _utils.fill)(XMLHttpRequest.prototype, 'send', this._wrapXHR.bind(this));
+      (0, _utils.fill)(XMLHttpRequest.prototype, 'send', _wrapXHR);
     }
 
-    if (this._options.eventTarget) {
-      var eventTarget = Array.isArray(this._options.eventTarget) ? this._options.eventTarget : DEFAULT_EVENT_TARGET;
-      eventTarget.forEach(this._wrapEventTarget.bind(this));
+    var eventTargetOption = this._options.eventTarget;
+
+    if (eventTargetOption) {
+      var eventTarget = Array.isArray(eventTargetOption) ? eventTargetOption : DEFAULT_EVENT_TARGET;
+      eventTarget.forEach(_wrapEventTarget);
     }
-  };
-  /** JSDoc */
-
-
-  TryCatch.prototype._wrapTimeFunction = function (original) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return function () {
-      var args = [];
-
-      for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-      }
-
-      var originalCallback = args[0];
-      args[0] = (0, _helpers.wrap)(originalCallback, {
-        mechanism: {
-          data: {
-            function: (0, _utils.getFunctionName)(original)
-          },
-          handled: true,
-          type: 'instrument'
-        }
-      });
-      return original.apply(this, args);
-    };
-  };
-  /** JSDoc */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  TryCatch.prototype._wrapRAF = function (original) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return function (callback) {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-      return original.call(this, (0, _helpers.wrap)(callback, {
-        mechanism: {
-          data: {
-            function: 'requestAnimationFrame',
-            handler: (0, _utils.getFunctionName)(original)
-          },
-          handled: true,
-          type: 'instrument'
-        }
-      }));
-    };
-  };
-  /** JSDoc */
-
-
-  TryCatch.prototype._wrapEventTarget = function (target) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    var global = (0, _utils.getGlobalObject)(); // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-
-    var proto = global[target] && global[target].prototype; // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-
-    if (!proto || !proto.hasOwnProperty || !proto.hasOwnProperty('addEventListener')) {
-      return;
-    }
-
-    (0, _utils.fill)(proto, 'addEventListener', function (original) {
-      return function (eventName, fn, options) {
-        try {
-          if (typeof fn.handleEvent === 'function') {
-            fn.handleEvent = (0, _helpers.wrap)(fn.handleEvent.bind(fn), {
-              mechanism: {
-                data: {
-                  function: 'handleEvent',
-                  handler: (0, _utils.getFunctionName)(fn),
-                  target: target
-                },
-                handled: true,
-                type: 'instrument'
-              }
-            });
-          }
-        } catch (err) {// can sometimes get 'Permission denied to access property "handle Event'
-        }
-
-        return original.call(this, eventName, // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (0, _helpers.wrap)(fn, {
-          mechanism: {
-            data: {
-              function: 'addEventListener',
-              handler: (0, _utils.getFunctionName)(fn),
-              target: target
-            },
-            handled: true,
-            type: 'instrument'
-          }
-        }), options);
-      };
-    });
-    (0, _utils.fill)(proto, 'removeEventListener', function (originalRemoveEventListener) {
-      return function (eventName, fn, options) {
-        var _a;
-        /**
-         * There are 2 possible scenarios here:
-         *
-         * 1. Someone passes a callback, which was attached prior to Sentry initialization, or by using unmodified
-         * method, eg. `document.addEventListener.call(el, name, handler). In this case, we treat this function
-         * as a pass-through, and call original `removeEventListener` with it.
-         *
-         * 2. Someone passes a callback, which was attached after Sentry was initialized, which means that it was using
-         * our wrapped version of `addEventListener`, which internally calls `wrap` helper.
-         * This helper "wraps" whole callback inside a try/catch statement, and attached appropriate metadata to it,
-         * in order for us to make a distinction between wrapped/non-wrapped functions possible.
-         * If a function was wrapped, it has additional property of `__sentry_wrapped__`, holding the handler.
-         *
-         * When someone adds a handler prior to initialization, and then do it again, but after,
-         * then we have to detach both of them. Otherwise, if we'd detach only wrapped one, it'd be impossible
-         * to get rid of the initial handler and it'd stick there forever.
-         */
-
-
-        var wrappedEventHandler = fn;
-
-        try {
-          var originalEventHandler = (_a = wrappedEventHandler) === null || _a === void 0 ? void 0 : _a.__sentry_wrapped__;
-
-          if (originalEventHandler) {
-            originalRemoveEventListener.call(this, eventName, originalEventHandler, options);
-          }
-        } catch (e) {// ignore, accessing __sentry_wrapped__ will throw in some Selenium environments
-        }
-
-        return originalRemoveEventListener.call(this, eventName, wrappedEventHandler, options);
-      };
-    });
-  };
-  /** JSDoc */
-
-
-  TryCatch.prototype._wrapXHR = function (originalSend) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return function () {
-      var args = [];
-
-      for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-      } // eslint-disable-next-line @typescript-eslint/no-this-alias
-
-
-      var xhr = this;
-      var xmlHttpRequestProps = ['onload', 'onerror', 'onprogress', 'onreadystatechange'];
-      xmlHttpRequestProps.forEach(function (prop) {
-        if (prop in xhr && typeof xhr[prop] === 'function') {
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (0, _utils.fill)(xhr, prop, function (original) {
-            var wrapOptions = {
-              mechanism: {
-                data: {
-                  function: prop,
-                  handler: (0, _utils.getFunctionName)(original)
-                },
-                handled: true,
-                type: 'instrument'
-              }
-            }; // If Instrument integration has been called before TryCatch, get the name of original function
-
-            if (original.__sentry_original__) {
-              wrapOptions.mechanism.data.handler = (0, _utils.getFunctionName)(original.__sentry_original__);
-            } // Otherwise wrap directly
-
-
-            return (0, _helpers.wrap)(original, wrapOptions);
-          });
-        }
-      });
-      return originalSend.apply(this, args);
-    };
   };
   /**
    * @inheritDoc
@@ -56375,6 +56657,174 @@ var TryCatch = function () {
 }();
 
 exports.TryCatch = TryCatch;
+
+/** JSDoc */
+function _wrapTimeFunction(original) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return function () {
+    var args = [];
+
+    for (var _i = 0; _i < arguments.length; _i++) {
+      args[_i] = arguments[_i];
+    }
+
+    var originalCallback = args[0];
+    args[0] = (0, _helpers.wrap)(originalCallback, {
+      mechanism: {
+        data: {
+          function: (0, _utils.getFunctionName)(original)
+        },
+        handled: true,
+        type: 'instrument'
+      }
+    });
+    return original.apply(this, args);
+  };
+}
+/** JSDoc */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+function _wrapRAF(original) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return function (callback) {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    return original.call(this, (0, _helpers.wrap)(callback, {
+      mechanism: {
+        data: {
+          function: 'requestAnimationFrame',
+          handler: (0, _utils.getFunctionName)(original)
+        },
+        handled: true,
+        type: 'instrument'
+      }
+    }));
+  };
+}
+/** JSDoc */
+
+
+function _wrapXHR(originalSend) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return function () {
+    var args = [];
+
+    for (var _i = 0; _i < arguments.length; _i++) {
+      args[_i] = arguments[_i];
+    } // eslint-disable-next-line @typescript-eslint/no-this-alias
+
+
+    var xhr = this;
+    var xmlHttpRequestProps = ['onload', 'onerror', 'onprogress', 'onreadystatechange'];
+    xmlHttpRequestProps.forEach(function (prop) {
+      if (prop in xhr && typeof xhr[prop] === 'function') {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (0, _utils.fill)(xhr, prop, function (original) {
+          var wrapOptions = {
+            mechanism: {
+              data: {
+                function: prop,
+                handler: (0, _utils.getFunctionName)(original)
+              },
+              handled: true,
+              type: 'instrument'
+            }
+          }; // If Instrument integration has been called before TryCatch, get the name of original function
+
+          var originalFunction = (0, _utils.getOriginalFunction)(original);
+
+          if (originalFunction) {
+            wrapOptions.mechanism.data.handler = (0, _utils.getFunctionName)(originalFunction);
+          } // Otherwise wrap directly
+
+
+          return (0, _helpers.wrap)(original, wrapOptions);
+        });
+      }
+    });
+    return originalSend.apply(this, args);
+  };
+}
+/** JSDoc */
+
+
+function _wrapEventTarget(target) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  var global = (0, _utils.getGlobalObject)(); // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+  var proto = global[target] && global[target].prototype; // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access, no-prototype-builtins
+
+  if (!proto || !proto.hasOwnProperty || !proto.hasOwnProperty('addEventListener')) {
+    return;
+  }
+
+  (0, _utils.fill)(proto, 'addEventListener', function (original) {
+    return function (eventName, fn, options) {
+      try {
+        if (typeof fn.handleEvent === 'function') {
+          fn.handleEvent = (0, _helpers.wrap)(fn.handleEvent.bind(fn), {
+            mechanism: {
+              data: {
+                function: 'handleEvent',
+                handler: (0, _utils.getFunctionName)(fn),
+                target: target
+              },
+              handled: true,
+              type: 'instrument'
+            }
+          });
+        }
+      } catch (err) {// can sometimes get 'Permission denied to access property "handle Event'
+      }
+
+      return original.call(this, eventName, // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (0, _helpers.wrap)(fn, {
+        mechanism: {
+          data: {
+            function: 'addEventListener',
+            handler: (0, _utils.getFunctionName)(fn),
+            target: target
+          },
+          handled: true,
+          type: 'instrument'
+        }
+      }), options);
+    };
+  });
+  (0, _utils.fill)(proto, 'removeEventListener', function (originalRemoveEventListener) {
+    return function (eventName, fn, options) {
+      /**
+       * There are 2 possible scenarios here:
+       *
+       * 1. Someone passes a callback, which was attached prior to Sentry initialization, or by using unmodified
+       * method, eg. `document.addEventListener.call(el, name, handler). In this case, we treat this function
+       * as a pass-through, and call original `removeEventListener` with it.
+       *
+       * 2. Someone passes a callback, which was attached after Sentry was initialized, which means that it was using
+       * our wrapped version of `addEventListener`, which internally calls `wrap` helper.
+       * This helper "wraps" whole callback inside a try/catch statement, and attached appropriate metadata to it,
+       * in order for us to make a distinction between wrapped/non-wrapped functions possible.
+       * If a function was wrapped, it has additional property of `__sentry_wrapped__`, holding the handler.
+       *
+       * When someone adds a handler prior to initialization, and then do it again, but after,
+       * then we have to detach both of them. Otherwise, if we'd detach only wrapped one, it'd be impossible
+       * to get rid of the initial handler and it'd stick there forever.
+       */
+      var wrappedEventHandler = fn;
+
+      try {
+        var originalEventHandler = wrappedEventHandler && wrappedEventHandler.__sentry_wrapped__;
+
+        if (originalEventHandler) {
+          originalRemoveEventListener.call(this, eventName, originalEventHandler, options);
+        }
+      } catch (e) {// ignore, accessing __sentry_wrapped__ will throw in some Selenium environments
+      }
+
+      return originalRemoveEventListener.call(this, eventName, wrappedEventHandler, options);
+    };
+  });
+}
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","../helpers":"../../node_modules/@sentry/browser/esm/helpers.js"}],"../../node_modules/@sentry/browser/esm/integrations/breadcrumbs.js":[function(require,module,exports) {
 var global = arguments[3];
 "use strict";
@@ -56392,13 +56842,15 @@ var _types = require("@sentry/types");
 
 var _utils = require("@sentry/utils");
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function (obj) { return typeof obj; }; } else { _typeof = function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 /**
  * Default Breadcrumbs instrumentations
  * TODO: Deprecated - with v6, this will be renamed to `Instrument`
  */
-var Breadcrumbs = function () {
+var Breadcrumbs =
+/** @class */
+function () {
   /**
    * @inheritDoc
    */
@@ -56446,124 +56898,47 @@ var Breadcrumbs = function () {
 
 
   Breadcrumbs.prototype.setupOnce = function () {
-    var _this = this;
-
     if (this._options.console) {
-      (0, _utils.addInstrumentationHandler)({
-        callback: function () {
-          var args = [];
-
-          for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-          }
-
-          _this._consoleBreadcrumb.apply(_this, (0, _tslib.__spread)(args));
-        },
-        type: 'console'
-      });
+      (0, _utils.addInstrumentationHandler)('console', _consoleBreadcrumb);
     }
 
     if (this._options.dom) {
-      (0, _utils.addInstrumentationHandler)({
-        callback: function () {
-          var args = [];
-
-          for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-          }
-
-          _this._domBreadcrumb.apply(_this, (0, _tslib.__spread)(args));
-        },
-        type: 'dom'
-      });
+      (0, _utils.addInstrumentationHandler)('dom', _domBreadcrumb(this._options.dom));
     }
 
     if (this._options.xhr) {
-      (0, _utils.addInstrumentationHandler)({
-        callback: function () {
-          var args = [];
-
-          for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-          }
-
-          _this._xhrBreadcrumb.apply(_this, (0, _tslib.__spread)(args));
-        },
-        type: 'xhr'
-      });
+      (0, _utils.addInstrumentationHandler)('xhr', _xhrBreadcrumb);
     }
 
     if (this._options.fetch) {
-      (0, _utils.addInstrumentationHandler)({
-        callback: function () {
-          var args = [];
-
-          for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-          }
-
-          _this._fetchBreadcrumb.apply(_this, (0, _tslib.__spread)(args));
-        },
-        type: 'fetch'
-      });
+      (0, _utils.addInstrumentationHandler)('fetch', _fetchBreadcrumb);
     }
 
     if (this._options.history) {
-      (0, _utils.addInstrumentationHandler)({
-        callback: function () {
-          var args = [];
-
-          for (var _i = 0; _i < arguments.length; _i++) {
-            args[_i] = arguments[_i];
-          }
-
-          _this._historyBreadcrumb.apply(_this, (0, _tslib.__spread)(args));
-        },
-        type: 'history'
-      });
+      (0, _utils.addInstrumentationHandler)('history', _historyBreadcrumb);
     }
   };
   /**
-   * Creates breadcrumbs from console API calls
+   * @inheritDoc
    */
+
+
+  Breadcrumbs.id = 'Breadcrumbs';
+  return Breadcrumbs;
+}();
+
+exports.Breadcrumbs = Breadcrumbs;
+
+/**
+ * A HOC that creaes a function that creates breadcrumbs from DOM API calls.
+ * This is a HOC so that we get access to dom options in the closure.
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function _domBreadcrumb(dom) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  Breadcrumbs.prototype._consoleBreadcrumb = function (handlerData) {
-    var breadcrumb = {
-      category: 'console',
-      data: {
-        arguments: handlerData.args,
-        logger: 'console'
-      },
-      level: _types.Severity.fromString(handlerData.level),
-      message: (0, _utils.safeJoin)(handlerData.args, ' ')
-    };
-
-    if (handlerData.level === 'assert') {
-      if (handlerData.args[0] === false) {
-        breadcrumb.message = "Assertion failed: " + ((0, _utils.safeJoin)(handlerData.args.slice(1), ' ') || 'console.assert');
-        breadcrumb.data.arguments = handlerData.args.slice(1);
-      } else {
-        // Don't capture a breadcrumb for passed assertions
-        return;
-      }
-    }
-
-    (0, _core.getCurrentHub)().addBreadcrumb(breadcrumb, {
-      input: handlerData.args,
-      level: handlerData.level
-    });
-  };
-  /**
-   * Creates breadcrumbs from DOM API calls
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  Breadcrumbs.prototype._domBreadcrumb = function (handlerData) {
+  function _innerDomBreadcrumb(handlerData) {
     var target;
-    var keyAttrs = _typeof(this._options.dom) === 'object' ? this._options.dom.serializeAttribute : undefined;
+    var keyAttrs = _typeof(dom) === 'object' ? dom.serializeAttribute : undefined;
 
     if (typeof keyAttrs === 'string') {
       keyAttrs = [keyAttrs];
@@ -56588,127 +56963,152 @@ var Breadcrumbs = function () {
       name: handlerData.name,
       global: handlerData.global
     });
+  }
+
+  return _innerDomBreadcrumb;
+}
+/**
+ * Creates breadcrumbs from console API calls
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+function _consoleBreadcrumb(handlerData) {
+  var breadcrumb = {
+    category: 'console',
+    data: {
+      arguments: handlerData.args,
+      logger: 'console'
+    },
+    level: (0, _utils.severityFromString)(handlerData.level),
+    message: (0, _utils.safeJoin)(handlerData.args, ' ')
   };
-  /**
-   * Creates breadcrumbs from XHR API calls
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
-
-  Breadcrumbs.prototype._xhrBreadcrumb = function (handlerData) {
-    if (handlerData.endTimestamp) {
-      // We only capture complete, non-sentry requests
-      if (handlerData.xhr.__sentry_own_request__) {
-        return;
-      }
-
-      var _a = handlerData.xhr.__sentry_xhr__ || {},
-          method = _a.method,
-          url = _a.url,
-          status_code = _a.status_code,
-          body = _a.body;
-
-      (0, _core.getCurrentHub)().addBreadcrumb({
-        category: 'xhr',
-        data: {
-          method: method,
-          url: url,
-          status_code: status_code
-        },
-        type: 'http'
-      }, {
-        xhr: handlerData.xhr,
-        input: body
-      });
-      return;
-    }
-  };
-  /**
-   * Creates breadcrumbs from fetch API calls
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-
-
-  Breadcrumbs.prototype._fetchBreadcrumb = function (handlerData) {
-    // We only capture complete fetch requests
-    if (!handlerData.endTimestamp) {
-      return;
-    }
-
-    if (handlerData.fetchData.url.match(/sentry_key/) && handlerData.fetchData.method === 'POST') {
-      // We will not create breadcrumbs for fetch requests that contain `sentry_key` (internal sentry requests)
-      return;
-    }
-
-    if (handlerData.error) {
-      (0, _core.getCurrentHub)().addBreadcrumb({
-        category: 'fetch',
-        data: handlerData.fetchData,
-        level: _types.Severity.Error,
-        type: 'http'
-      }, {
-        data: handlerData.error,
-        input: handlerData.args
-      });
+  if (handlerData.level === 'assert') {
+    if (handlerData.args[0] === false) {
+      breadcrumb.message = "Assertion failed: " + ((0, _utils.safeJoin)(handlerData.args.slice(1), ' ') || 'console.assert');
+      breadcrumb.data.arguments = handlerData.args.slice(1);
     } else {
-      (0, _core.getCurrentHub)().addBreadcrumb({
-        category: 'fetch',
-        data: (0, _tslib.__assign)((0, _tslib.__assign)({}, handlerData.fetchData), {
-          status_code: handlerData.response.status
-        }),
-        type: 'http'
-      }, {
-        input: handlerData.args,
-        response: handlerData.response
-      });
+      // Don't capture a breadcrumb for passed assertions
+      return;
     }
-  };
-  /**
-   * Creates breadcrumbs from history API calls
-   */
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  }
+
+  (0, _core.getCurrentHub)().addBreadcrumb(breadcrumb, {
+    input: handlerData.args,
+    level: handlerData.level
+  });
+}
+/**
+ * Creates breadcrumbs from XHR API calls
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 
-  Breadcrumbs.prototype._historyBreadcrumb = function (handlerData) {
-    var global = (0, _utils.getGlobalObject)();
-    var from = handlerData.from;
-    var to = handlerData.to;
-    var parsedLoc = (0, _utils.parseUrl)(global.location.href);
-    var parsedFrom = (0, _utils.parseUrl)(from);
-    var parsedTo = (0, _utils.parseUrl)(to); // Initial pushState doesn't provide `from` information
-
-    if (!parsedFrom.path) {
-      parsedFrom = parsedLoc;
-    } // Use only the path component of the URL if the URL matches the current
-    // document (almost all the time when using pushState)
-
-
-    if (parsedLoc.protocol === parsedTo.protocol && parsedLoc.host === parsedTo.host) {
-      to = parsedTo.relative;
+function _xhrBreadcrumb(handlerData) {
+  if (handlerData.endTimestamp) {
+    // We only capture complete, non-sentry requests
+    if (handlerData.xhr.__sentry_own_request__) {
+      return;
     }
 
-    if (parsedLoc.protocol === parsedFrom.protocol && parsedLoc.host === parsedFrom.host) {
-      from = parsedFrom.relative;
-    }
+    var _a = handlerData.xhr.__sentry_xhr__ || {},
+        method = _a.method,
+        url = _a.url,
+        status_code = _a.status_code,
+        body = _a.body;
 
     (0, _core.getCurrentHub)().addBreadcrumb({
-      category: 'navigation',
+      category: 'xhr',
       data: {
-        from: from,
-        to: to
-      }
+        method: method,
+        url: url,
+        status_code: status_code
+      },
+      type: 'http'
+    }, {
+      xhr: handlerData.xhr,
+      input: body
     });
-  };
-  /**
-   * @inheritDoc
-   */
+    return;
+  }
+}
+/**
+ * Creates breadcrumbs from fetch API calls
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 
 
-  Breadcrumbs.id = 'Breadcrumbs';
-  return Breadcrumbs;
-}();
+function _fetchBreadcrumb(handlerData) {
+  // We only capture complete fetch requests
+  if (!handlerData.endTimestamp) {
+    return;
+  }
 
-exports.Breadcrumbs = Breadcrumbs;
+  if (handlerData.fetchData.url.match(/sentry_key/) && handlerData.fetchData.method === 'POST') {
+    // We will not create breadcrumbs for fetch requests that contain `sentry_key` (internal sentry requests)
+    return;
+  }
+
+  if (handlerData.error) {
+    (0, _core.getCurrentHub)().addBreadcrumb({
+      category: 'fetch',
+      data: handlerData.fetchData,
+      level: _types.Severity.Error,
+      type: 'http'
+    }, {
+      data: handlerData.error,
+      input: handlerData.args
+    });
+  } else {
+    (0, _core.getCurrentHub)().addBreadcrumb({
+      category: 'fetch',
+      data: (0, _tslib.__assign)((0, _tslib.__assign)({}, handlerData.fetchData), {
+        status_code: handlerData.response.status
+      }),
+      type: 'http'
+    }, {
+      input: handlerData.args,
+      response: handlerData.response
+    });
+  }
+}
+/**
+ * Creates breadcrumbs from history API calls
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+function _historyBreadcrumb(handlerData) {
+  var global = (0, _utils.getGlobalObject)();
+  var from = handlerData.from;
+  var to = handlerData.to;
+  var parsedLoc = (0, _utils.parseUrl)(global.location.href);
+  var parsedFrom = (0, _utils.parseUrl)(from);
+  var parsedTo = (0, _utils.parseUrl)(to); // Initial pushState doesn't provide `from` information
+
+  if (!parsedFrom.path) {
+    parsedFrom = parsedLoc;
+  } // Use only the path component of the URL if the URL matches the current
+  // document (almost all the time when using pushState)
+
+
+  if (parsedLoc.protocol === parsedTo.protocol && parsedLoc.host === parsedTo.host) {
+    to = parsedTo.relative;
+  }
+
+  if (parsedLoc.protocol === parsedFrom.protocol && parsedLoc.host === parsedFrom.host) {
+    from = parsedFrom.relative;
+  }
+
+  (0, _core.getCurrentHub)().addBreadcrumb({
+    category: 'navigation',
+    data: {
+      from: from,
+      to: to
+    }
+  });
+}
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/types":"../../node_modules/@sentry/types/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/browser/esm/integrations/linkederrors.js":[function(require,module,exports) {
 "use strict";
 
@@ -56716,6 +57116,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.LinkedErrors = void 0;
+exports._handler = _handler;
+exports._walkErrorTree = _walkErrorTree;
 
 var _tslib = require("tslib");
 
@@ -56731,7 +57133,9 @@ var DEFAULT_KEY = 'cause';
 var DEFAULT_LIMIT = 5;
 /** Adds SDK info to an event. */
 
-var LinkedErrors = function () {
+var LinkedErrors =
+/** @class */
+function () {
   /**
    * @inheritDoc
    */
@@ -56756,48 +57160,8 @@ var LinkedErrors = function () {
   LinkedErrors.prototype.setupOnce = function () {
     (0, _core.addGlobalEventProcessor)(function (event, hint) {
       var self = (0, _core.getCurrentHub)().getIntegration(LinkedErrors);
-
-      if (self) {
-        var handler = self._handler && self._handler.bind(self);
-
-        return typeof handler === 'function' ? handler(event, hint) : event;
-      }
-
-      return event;
+      return self ? _handler(self._key, self._limit, event, hint) : event;
     });
-  };
-  /**
-   * @inheritDoc
-   */
-
-
-  LinkedErrors.prototype._handler = function (event, hint) {
-    if (!event.exception || !event.exception.values || !hint || !(0, _utils.isInstanceOf)(hint.originalException, Error)) {
-      return event;
-    }
-
-    var linkedErrors = this._walkErrorTree(hint.originalException, this._key);
-
-    event.exception.values = (0, _tslib.__spread)(linkedErrors, event.exception.values);
-    return event;
-  };
-  /**
-   * @inheritDoc
-   */
-
-
-  LinkedErrors.prototype._walkErrorTree = function (error, key, stack) {
-    if (stack === void 0) {
-      stack = [];
-    }
-
-    if (!(0, _utils.isInstanceOf)(error[key], Error) || stack.length + 1 >= this._limit) {
-      return stack;
-    }
-
-    var stacktrace = (0, _tracekit.computeStackTrace)(error[key]);
-    var exception = (0, _parsers.exceptionFromStacktrace)(stacktrace);
-    return this._walkErrorTree(error[key], key, (0, _tslib.__spread)([exception], stack));
   };
   /**
    * @inheritDoc
@@ -56809,6 +57173,38 @@ var LinkedErrors = function () {
 }();
 
 exports.LinkedErrors = LinkedErrors;
+
+/**
+ * @inheritDoc
+ */
+function _handler(key, limit, event, hint) {
+  if (!event.exception || !event.exception.values || !hint || !(0, _utils.isInstanceOf)(hint.originalException, Error)) {
+    return event;
+  }
+
+  var linkedErrors = _walkErrorTree(limit, hint.originalException, key);
+
+  event.exception.values = (0, _tslib.__spread)(linkedErrors, event.exception.values);
+  return event;
+}
+/**
+ * JSDOC
+ */
+
+
+function _walkErrorTree(limit, error, key, stack) {
+  if (stack === void 0) {
+    stack = [];
+  }
+
+  if (!(0, _utils.isInstanceOf)(error[key], Error) || stack.length + 1 >= limit) {
+    return stack;
+  }
+
+  var stacktrace = (0, _tracekit.computeStackTrace)(error[key]);
+  var exception = (0, _parsers.exceptionFromStacktrace)(stacktrace);
+  return _walkErrorTree(limit, error[key], key, (0, _tslib.__spread)([exception], stack));
+}
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","../parsers":"../../node_modules/@sentry/browser/esm/parsers.js","../tracekit":"../../node_modules/@sentry/browser/esm/tracekit.js"}],"../../node_modules/@sentry/browser/esm/integrations/useragent.js":[function(require,module,exports) {
 
 "use strict";
@@ -56827,7 +57223,9 @@ var _utils = require("@sentry/utils");
 var global = (0, _utils.getGlobalObject)();
 /** UserAgent */
 
-var UserAgent = function () {
+var UserAgent =
+/** @class */
+function () {
   function UserAgent() {
     /**
      * @inheritDoc
@@ -56841,8 +57239,6 @@ var UserAgent = function () {
 
   UserAgent.prototype.setupOnce = function () {
     (0, _core.addGlobalEventProcessor)(function (event) {
-      var _a, _b, _c;
-
       if ((0, _core.getCurrentHub)().getIntegration(UserAgent)) {
         // if none of the information we want exists, don't bother
         if (!global.navigator && !global.location && !global.document) {
@@ -56850,10 +57246,10 @@ var UserAgent = function () {
         } // grab as much info as exists and add it to the event
 
 
-        var url = ((_a = event.request) === null || _a === void 0 ? void 0 : _a.url) || ((_b = global.location) === null || _b === void 0 ? void 0 : _b.href);
+        var url = event.request && event.request.url || global.location && global.location.href;
         var referrer = (global.document || {}).referrer;
         var userAgent = (global.navigator || {}).userAgent;
-        var headers = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, (_c = event.request) === null || _c === void 0 ? void 0 : _c.headers), referrer && {
+        var headers = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, event.request && event.request.headers), referrer && {
           Referer: referrer
         }), userAgent && {
           'User-Agent': userAgent
@@ -56889,8 +57285,12 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.Dedupe = void 0;
 
+var _utils = require("@sentry/utils");
+
 /** Deduplication filter */
-var Dedupe = function () {
+var Dedupe =
+/** @class */
+function () {
   function Dedupe() {
     /**
      * @inheritDoc
@@ -56909,7 +57309,9 @@ var Dedupe = function () {
       if (self) {
         // Juuust in case something goes wrong
         try {
-          if (self._shouldDropEvent(currentEvent, self._previousEvent)) {
+          if (_shouldDropEvent(currentEvent, self._previousEvent)) {
+            _utils.logger.warn("Event dropped due to being a duplicate of previously captured event.");
+
             return null;
           }
         } catch (_oO) {
@@ -56922,167 +57324,6 @@ var Dedupe = function () {
       return currentEvent;
     });
   };
-  /** JSDoc */
-
-
-  Dedupe.prototype._shouldDropEvent = function (currentEvent, previousEvent) {
-    if (!previousEvent) {
-      return false;
-    }
-
-    if (this._isSameMessageEvent(currentEvent, previousEvent)) {
-      return true;
-    }
-
-    if (this._isSameExceptionEvent(currentEvent, previousEvent)) {
-      return true;
-    }
-
-    return false;
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._isSameMessageEvent = function (currentEvent, previousEvent) {
-    var currentMessage = currentEvent.message;
-    var previousMessage = previousEvent.message; // If neither event has a message property, they were both exceptions, so bail out
-
-    if (!currentMessage && !previousMessage) {
-      return false;
-    } // If only one event has a stacktrace, but not the other one, they are not the same
-
-
-    if (currentMessage && !previousMessage || !currentMessage && previousMessage) {
-      return false;
-    }
-
-    if (currentMessage !== previousMessage) {
-      return false;
-    }
-
-    if (!this._isSameFingerprint(currentEvent, previousEvent)) {
-      return false;
-    }
-
-    if (!this._isSameStacktrace(currentEvent, previousEvent)) {
-      return false;
-    }
-
-    return true;
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._getFramesFromEvent = function (event) {
-    var exception = event.exception;
-
-    if (exception) {
-      try {
-        // @ts-ignore Object could be undefined
-        return exception.values[0].stacktrace.frames;
-      } catch (_oO) {
-        return undefined;
-      }
-    } else if (event.stacktrace) {
-      return event.stacktrace.frames;
-    }
-
-    return undefined;
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._isSameStacktrace = function (currentEvent, previousEvent) {
-    var currentFrames = this._getFramesFromEvent(currentEvent);
-
-    var previousFrames = this._getFramesFromEvent(previousEvent); // If neither event has a stacktrace, they are assumed to be the same
-
-
-    if (!currentFrames && !previousFrames) {
-      return true;
-    } // If only one event has a stacktrace, but not the other one, they are not the same
-
-
-    if (currentFrames && !previousFrames || !currentFrames && previousFrames) {
-      return false;
-    }
-
-    currentFrames = currentFrames;
-    previousFrames = previousFrames; // If number of frames differ, they are not the same
-
-    if (previousFrames.length !== currentFrames.length) {
-      return false;
-    } // Otherwise, compare the two
-
-
-    for (var i = 0; i < previousFrames.length; i++) {
-      var frameA = previousFrames[i];
-      var frameB = currentFrames[i];
-
-      if (frameA.filename !== frameB.filename || frameA.lineno !== frameB.lineno || frameA.colno !== frameB.colno || frameA.function !== frameB.function) {
-        return false;
-      }
-    }
-
-    return true;
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._getExceptionFromEvent = function (event) {
-    return event.exception && event.exception.values && event.exception.values[0];
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._isSameExceptionEvent = function (currentEvent, previousEvent) {
-    var previousException = this._getExceptionFromEvent(previousEvent);
-
-    var currentException = this._getExceptionFromEvent(currentEvent);
-
-    if (!previousException || !currentException) {
-      return false;
-    }
-
-    if (previousException.type !== currentException.type || previousException.value !== currentException.value) {
-      return false;
-    }
-
-    if (!this._isSameFingerprint(currentEvent, previousEvent)) {
-      return false;
-    }
-
-    if (!this._isSameStacktrace(currentEvent, previousEvent)) {
-      return false;
-    }
-
-    return true;
-  };
-  /** JSDoc */
-
-
-  Dedupe.prototype._isSameFingerprint = function (currentEvent, previousEvent) {
-    var currentFingerprint = currentEvent.fingerprint;
-    var previousFingerprint = previousEvent.fingerprint; // If neither event has a fingerprint, they are assumed to be the same
-
-    if (!currentFingerprint && !previousFingerprint) {
-      return true;
-    } // If only one event has a fingerprint, but not the other one, they are not the same
-
-
-    if (currentFingerprint && !previousFingerprint || !currentFingerprint && previousFingerprint) {
-      return false;
-    }
-
-    currentFingerprint = currentFingerprint;
-    previousFingerprint = previousFingerprint; // Otherwise, compare the two
-
-    try {
-      return !!(currentFingerprint.join('') === previousFingerprint.join(''));
-    } catch (_oO) {
-      return false;
-    }
-  };
   /**
    * @inheritDoc
    */
@@ -57093,28 +57334,188 @@ var Dedupe = function () {
 }();
 
 exports.Dedupe = Dedupe;
-},{}],"../../node_modules/@sentry/browser/esm/integrations/index.js":[function(require,module,exports) {
+
+/** JSDoc */
+function _shouldDropEvent(currentEvent, previousEvent) {
+  if (!previousEvent) {
+    return false;
+  }
+
+  if (_isSameMessageEvent(currentEvent, previousEvent)) {
+    return true;
+  }
+
+  if (_isSameExceptionEvent(currentEvent, previousEvent)) {
+    return true;
+  }
+
+  return false;
+}
+/** JSDoc */
+
+
+function _isSameMessageEvent(currentEvent, previousEvent) {
+  var currentMessage = currentEvent.message;
+  var previousMessage = previousEvent.message; // If neither event has a message property, they were both exceptions, so bail out
+
+  if (!currentMessage && !previousMessage) {
+    return false;
+  } // If only one event has a stacktrace, but not the other one, they are not the same
+
+
+  if (currentMessage && !previousMessage || !currentMessage && previousMessage) {
+    return false;
+  }
+
+  if (currentMessage !== previousMessage) {
+    return false;
+  }
+
+  if (!_isSameFingerprint(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  if (!_isSameStacktrace(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameExceptionEvent(currentEvent, previousEvent) {
+  var previousException = _getExceptionFromEvent(previousEvent);
+
+  var currentException = _getExceptionFromEvent(currentEvent);
+
+  if (!previousException || !currentException) {
+    return false;
+  }
+
+  if (previousException.type !== currentException.type || previousException.value !== currentException.value) {
+    return false;
+  }
+
+  if (!_isSameFingerprint(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  if (!_isSameStacktrace(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameStacktrace(currentEvent, previousEvent) {
+  var currentFrames = _getFramesFromEvent(currentEvent);
+
+  var previousFrames = _getFramesFromEvent(previousEvent); // If neither event has a stacktrace, they are assumed to be the same
+
+
+  if (!currentFrames && !previousFrames) {
+    return true;
+  } // If only one event has a stacktrace, but not the other one, they are not the same
+
+
+  if (currentFrames && !previousFrames || !currentFrames && previousFrames) {
+    return false;
+  }
+
+  currentFrames = currentFrames;
+  previousFrames = previousFrames; // If number of frames differ, they are not the same
+
+  if (previousFrames.length !== currentFrames.length) {
+    return false;
+  } // Otherwise, compare the two
+
+
+  for (var i = 0; i < previousFrames.length; i++) {
+    var frameA = previousFrames[i];
+    var frameB = currentFrames[i];
+
+    if (frameA.filename !== frameB.filename || frameA.lineno !== frameB.lineno || frameA.colno !== frameB.colno || frameA.function !== frameB.function) {
+      return false;
+    }
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameFingerprint(currentEvent, previousEvent) {
+  var currentFingerprint = currentEvent.fingerprint;
+  var previousFingerprint = previousEvent.fingerprint; // If neither event has a fingerprint, they are assumed to be the same
+
+  if (!currentFingerprint && !previousFingerprint) {
+    return true;
+  } // If only one event has a fingerprint, but not the other one, they are not the same
+
+
+  if (currentFingerprint && !previousFingerprint || !currentFingerprint && previousFingerprint) {
+    return false;
+  }
+
+  currentFingerprint = currentFingerprint;
+  previousFingerprint = previousFingerprint; // Otherwise, compare the two
+
+  try {
+    return !!(currentFingerprint.join('') === previousFingerprint.join(''));
+  } catch (_oO) {
+    return false;
+  }
+}
+/** JSDoc */
+
+
+function _getExceptionFromEvent(event) {
+  return event.exception && event.exception.values && event.exception.values[0];
+}
+/** JSDoc */
+
+
+function _getFramesFromEvent(event) {
+  var exception = event.exception;
+
+  if (exception) {
+    try {
+      // @ts-ignore Object could be undefined
+      return exception.values[0].stacktrace.frames;
+    } catch (_oO) {
+      return undefined;
+    }
+  } else if (event.stacktrace) {
+    return event.stacktrace.frames;
+  }
+
+  return undefined;
+}
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/browser/esm/integrations/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "GlobalHandlers", {
-  enumerable: true,
-  get: function () {
-    return _globalhandlers.GlobalHandlers;
-  }
-});
-Object.defineProperty(exports, "TryCatch", {
-  enumerable: true,
-  get: function () {
-    return _trycatch.TryCatch;
-  }
-});
 Object.defineProperty(exports, "Breadcrumbs", {
   enumerable: true,
   get: function () {
     return _breadcrumbs.Breadcrumbs;
+  }
+});
+Object.defineProperty(exports, "Dedupe", {
+  enumerable: true,
+  get: function () {
+    return _dedupe.Dedupe;
+  }
+});
+Object.defineProperty(exports, "GlobalHandlers", {
+  enumerable: true,
+  get: function () {
+    return _globalhandlers.GlobalHandlers;
   }
 });
 Object.defineProperty(exports, "LinkedErrors", {
@@ -57123,16 +57524,16 @@ Object.defineProperty(exports, "LinkedErrors", {
     return _linkederrors.LinkedErrors;
   }
 });
+Object.defineProperty(exports, "TryCatch", {
+  enumerable: true,
+  get: function () {
+    return _trycatch.TryCatch;
+  }
+});
 Object.defineProperty(exports, "UserAgent", {
   enumerable: true,
   get: function () {
     return _useragent.UserAgent;
-  }
-});
-Object.defineProperty(exports, "Dedupe", {
-  enumerable: true,
-  get: function () {
-    return _dedupe.Dedupe;
   }
 });
 
@@ -57173,7 +57574,9 @@ var _integrations = require("./integrations");
  * @see BrowserOptions for documentation on configuration options.
  * @see SentryClient for usage documentation.
  */
-var BrowserClient = function (_super) {
+var BrowserClient =
+/** @class */
+function (_super) {
   (0, _tslib.__extends)(BrowserClient, _super);
   /**
    * Creates a new Browser SDK instance.
@@ -57263,15 +57666,15 @@ exports.BrowserClient = BrowserClient;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.init = init;
-exports.showReportDialog = showReportDialog;
-exports.lastEventId = lastEventId;
-exports.forceLoad = forceLoad;
-exports.onLoad = onLoad;
-exports.flush = flush;
 exports.close = close;
-exports.wrap = wrap;
 exports.defaultIntegrations = void 0;
+exports.flush = flush;
+exports.forceLoad = forceLoad;
+exports.init = init;
+exports.lastEventId = lastEventId;
+exports.onLoad = onLoad;
+exports.showReportDialog = showReportDialog;
+exports.wrap = wrap;
 
 var _tslib = require("tslib");
 
@@ -57367,6 +57770,10 @@ function init(options) {
     options.autoSessionTracking = true;
   }
 
+  if (options.sendClientReports === undefined) {
+    options.sendClientReports = true;
+  }
+
   (0, _core.initAndBind)(_client.BrowserClient, options);
 
   if (options.autoSessionTracking) {
@@ -57446,9 +57853,11 @@ function flush(timeout) {
     return client.flush(timeout);
   }
 
-  _utils.logger.warn('Cannot flush events. No client defined.');
+  if ((0, _utils.isDebugBuild)()) {
+    _utils.logger.warn('Cannot flush events. No client defined.');
+  }
 
-  return _utils.SyncPromise.resolve(false);
+  return (0, _utils.resolvedSyncPromise)(false);
 }
 /**
  * Call `close()` on the current client, if there is one. See {@link Client.close}.
@@ -57467,9 +57876,11 @@ function close(timeout) {
     return client.close(timeout);
   }
 
-  _utils.logger.warn('Cannot flush events and disable SDK. No client defined.');
+  if ((0, _utils.isDebugBuild)()) {
+    _utils.logger.warn('Cannot flush events and disable SDK. No client defined.');
+  }
 
-  return _utils.SyncPromise.resolve(false);
+  return (0, _utils.resolvedSyncPromise)(false);
 }
 /**
  * Wrap code within a try/catch block so the SDK is able to capture errors.
@@ -57484,6 +57895,13 @@ function close(timeout) {
 function wrap(fn) {
   return (0, _helpers.wrap)(fn)();
 }
+
+function startSessionOnHub(hub) {
+  hub.startSession({
+    ignoreDuration: true
+  });
+  hub.captureSession();
+}
 /**
  * Enable automatic Session Tracking for the initial page load.
  */
@@ -57494,7 +57912,9 @@ function startSessionTracking() {
   var document = window.document;
 
   if (typeof document === 'undefined') {
-    _utils.logger.warn('Session tracking in non-browser environment with @sentry/browser is not supported.');
+    if ((0, _utils.isDebugBuild)()) {
+      _utils.logger.warn('Session tracking in non-browser environment with @sentry/browser is not supported.');
+    }
 
     return;
   }
@@ -57506,7 +57926,7 @@ function startSessionTracking() {
   // https://github.com/getsentry/sentry-javascript/issues/3234 and
   // https://github.com/getsentry/sentry-javascript/issues/3278.
 
-  if (typeof hub.startSession !== 'function' || typeof hub.captureSession !== 'function') {
+  if (!hub.captureSession) {
     return;
   } // The session duration for browser sessions does not track a meaningful
   // concept that can be used as a metric.
@@ -57514,26 +57934,15 @@ function startSessionTracking() {
   // discard their duration.
 
 
-  hub.startSession({
-    ignoreDuration: true
-  });
-  hub.captureSession(); // We want to create a session for every navigation as well
+  startSessionOnHub(hub); // We want to create a session for every navigation as well
 
-  (0, _utils.addInstrumentationHandler)({
-    callback: function (_a) {
-      var from = _a.from,
-          to = _a.to; // Don't create an additional session for the initial route or if the location did not change
+  (0, _utils.addInstrumentationHandler)('history', function (_a) {
+    var from = _a.from,
+        to = _a.to; // Don't create an additional session for the initial route or if the location did not change
 
-      if (from === undefined || from === to) {
-        return;
-      }
-
-      hub.startSession({
-        ignoreDuration: true
-      });
-      hub.captureSession();
-    },
-    type: 'history'
+    if (!(from === undefined || from === to)) {
+      startSessionOnHub((0, _core.getCurrentHub)());
+    }
   });
 }
 },{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./client":"../../node_modules/@sentry/browser/esm/client.js","./helpers":"../../node_modules/@sentry/browser/esm/helpers.js","./integrations":"../../node_modules/@sentry/browser/esm/integrations/index.js"}],"../../node_modules/@sentry/browser/esm/version.js":[function(require,module,exports) {
@@ -57552,64 +57961,10 @@ exports.SDK_NAME = SDK_NAME;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Severity", {
+Object.defineProperty(exports, "BrowserClient", {
   enumerable: true,
   get: function () {
-    return _types.Severity;
-  }
-});
-Object.defineProperty(exports, "Status", {
-  enumerable: true,
-  get: function () {
-    return _types.Status;
-  }
-});
-Object.defineProperty(exports, "addGlobalEventProcessor", {
-  enumerable: true,
-  get: function () {
-    return _core.addGlobalEventProcessor;
-  }
-});
-Object.defineProperty(exports, "addBreadcrumb", {
-  enumerable: true,
-  get: function () {
-    return _core.addBreadcrumb;
-  }
-});
-Object.defineProperty(exports, "captureException", {
-  enumerable: true,
-  get: function () {
-    return _core.captureException;
-  }
-});
-Object.defineProperty(exports, "captureEvent", {
-  enumerable: true,
-  get: function () {
-    return _core.captureEvent;
-  }
-});
-Object.defineProperty(exports, "captureMessage", {
-  enumerable: true,
-  get: function () {
-    return _core.captureMessage;
-  }
-});
-Object.defineProperty(exports, "configureScope", {
-  enumerable: true,
-  get: function () {
-    return _core.configureScope;
-  }
-});
-Object.defineProperty(exports, "getHubFromCarrier", {
-  enumerable: true,
-  get: function () {
-    return _core.getHubFromCarrier;
-  }
-});
-Object.defineProperty(exports, "getCurrentHub", {
-  enumerable: true,
-  get: function () {
-    return _core.getCurrentHub;
+    return _client.BrowserClient;
   }
 });
 Object.defineProperty(exports, "Hub", {
@@ -57618,10 +57973,16 @@ Object.defineProperty(exports, "Hub", {
     return _core.Hub;
   }
 });
-Object.defineProperty(exports, "makeMain", {
+Object.defineProperty(exports, "SDK_NAME", {
   enumerable: true,
   get: function () {
-    return _core.makeMain;
+    return _version.SDK_NAME;
+  }
+});
+Object.defineProperty(exports, "SDK_VERSION", {
+  enumerable: true,
+  get: function () {
+    return _core.SDK_VERSION;
   }
 });
 Object.defineProperty(exports, "Scope", {
@@ -57630,16 +57991,124 @@ Object.defineProperty(exports, "Scope", {
     return _core.Scope;
   }
 });
-Object.defineProperty(exports, "startTransaction", {
+Object.defineProperty(exports, "Severity", {
   enumerable: true,
   get: function () {
-    return _core.startTransaction;
+    return _types.Severity;
   }
 });
-Object.defineProperty(exports, "SDK_VERSION", {
+Object.defineProperty(exports, "addBreadcrumb", {
   enumerable: true,
   get: function () {
-    return _core.SDK_VERSION;
+    return _core.addBreadcrumb;
+  }
+});
+Object.defineProperty(exports, "addGlobalEventProcessor", {
+  enumerable: true,
+  get: function () {
+    return _core.addGlobalEventProcessor;
+  }
+});
+Object.defineProperty(exports, "captureEvent", {
+  enumerable: true,
+  get: function () {
+    return _core.captureEvent;
+  }
+});
+Object.defineProperty(exports, "captureException", {
+  enumerable: true,
+  get: function () {
+    return _core.captureException;
+  }
+});
+Object.defineProperty(exports, "captureMessage", {
+  enumerable: true,
+  get: function () {
+    return _core.captureMessage;
+  }
+});
+Object.defineProperty(exports, "close", {
+  enumerable: true,
+  get: function () {
+    return _sdk.close;
+  }
+});
+Object.defineProperty(exports, "configureScope", {
+  enumerable: true,
+  get: function () {
+    return _core.configureScope;
+  }
+});
+Object.defineProperty(exports, "defaultIntegrations", {
+  enumerable: true,
+  get: function () {
+    return _sdk.defaultIntegrations;
+  }
+});
+Object.defineProperty(exports, "eventFromException", {
+  enumerable: true,
+  get: function () {
+    return _eventbuilder.eventFromException;
+  }
+});
+Object.defineProperty(exports, "eventFromMessage", {
+  enumerable: true,
+  get: function () {
+    return _eventbuilder.eventFromMessage;
+  }
+});
+Object.defineProperty(exports, "flush", {
+  enumerable: true,
+  get: function () {
+    return _sdk.flush;
+  }
+});
+Object.defineProperty(exports, "forceLoad", {
+  enumerable: true,
+  get: function () {
+    return _sdk.forceLoad;
+  }
+});
+Object.defineProperty(exports, "getCurrentHub", {
+  enumerable: true,
+  get: function () {
+    return _core.getCurrentHub;
+  }
+});
+Object.defineProperty(exports, "getHubFromCarrier", {
+  enumerable: true,
+  get: function () {
+    return _core.getHubFromCarrier;
+  }
+});
+Object.defineProperty(exports, "init", {
+  enumerable: true,
+  get: function () {
+    return _sdk.init;
+  }
+});
+Object.defineProperty(exports, "injectReportDialog", {
+  enumerable: true,
+  get: function () {
+    return _helpers.injectReportDialog;
+  }
+});
+Object.defineProperty(exports, "lastEventId", {
+  enumerable: true,
+  get: function () {
+    return _sdk.lastEventId;
+  }
+});
+Object.defineProperty(exports, "makeMain", {
+  enumerable: true,
+  get: function () {
+    return _core.makeMain;
+  }
+});
+Object.defineProperty(exports, "onLoad", {
+  enumerable: true,
+  get: function () {
+    return _sdk.onLoad;
   }
 });
 Object.defineProperty(exports, "setContext", {
@@ -57678,94 +58147,28 @@ Object.defineProperty(exports, "setUser", {
     return _core.setUser;
   }
 });
-Object.defineProperty(exports, "withScope", {
-  enumerable: true,
-  get: function () {
-    return _core.withScope;
-  }
-});
-Object.defineProperty(exports, "BrowserClient", {
-  enumerable: true,
-  get: function () {
-    return _client.BrowserClient;
-  }
-});
-Object.defineProperty(exports, "injectReportDialog", {
-  enumerable: true,
-  get: function () {
-    return _helpers.injectReportDialog;
-  }
-});
-Object.defineProperty(exports, "eventFromException", {
-  enumerable: true,
-  get: function () {
-    return _eventbuilder.eventFromException;
-  }
-});
-Object.defineProperty(exports, "eventFromMessage", {
-  enumerable: true,
-  get: function () {
-    return _eventbuilder.eventFromMessage;
-  }
-});
-Object.defineProperty(exports, "defaultIntegrations", {
-  enumerable: true,
-  get: function () {
-    return _sdk.defaultIntegrations;
-  }
-});
-Object.defineProperty(exports, "forceLoad", {
-  enumerable: true,
-  get: function () {
-    return _sdk.forceLoad;
-  }
-});
-Object.defineProperty(exports, "init", {
-  enumerable: true,
-  get: function () {
-    return _sdk.init;
-  }
-});
-Object.defineProperty(exports, "lastEventId", {
-  enumerable: true,
-  get: function () {
-    return _sdk.lastEventId;
-  }
-});
-Object.defineProperty(exports, "onLoad", {
-  enumerable: true,
-  get: function () {
-    return _sdk.onLoad;
-  }
-});
 Object.defineProperty(exports, "showReportDialog", {
   enumerable: true,
   get: function () {
     return _sdk.showReportDialog;
   }
 });
-Object.defineProperty(exports, "flush", {
+Object.defineProperty(exports, "startTransaction", {
   enumerable: true,
   get: function () {
-    return _sdk.flush;
+    return _core.startTransaction;
   }
 });
-Object.defineProperty(exports, "close", {
+Object.defineProperty(exports, "withScope", {
   enumerable: true,
   get: function () {
-    return _sdk.close;
+    return _core.withScope;
   }
 });
 Object.defineProperty(exports, "wrap", {
   enumerable: true,
   get: function () {
     return _sdk.wrap;
-  }
-});
-Object.defineProperty(exports, "SDK_NAME", {
-  enumerable: true,
-  get: function () {
-    return _version.SDK_NAME;
   }
 });
 
@@ -57834,7 +58237,4721 @@ if (_window.Sentry && _window.Sentry.Integrations) {
 
 var INTEGRATIONS = (0, _tslib.__assign)((0, _tslib.__assign)((0, _tslib.__assign)({}, windowIntegrations), _core.Integrations), BrowserIntegrations);
 exports.Integrations = INTEGRATIONS;
-},{"tslib":"../../node_modules/tslib/tslib.es6.js","./exports":"../../node_modules/@sentry/browser/esm/exports.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./integrations":"../../node_modules/@sentry/browser/esm/integrations/index.js","./transports":"../../node_modules/@sentry/browser/esm/transports/index.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","./exports":"../../node_modules/@sentry/browser/esm/exports.js","@sentry/core":"../../node_modules/@sentry/core/esm/index.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","./integrations":"../../node_modules/@sentry/browser/esm/integrations/index.js","./transports":"../../node_modules/@sentry/browser/esm/transports/index.js"}],"../../node_modules/@sentry/integrations/esm/angular.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Angular = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+// See https://github.com/angular/angular.js/blob/v1.4.7/src/minErr.js
+var angularPattern = /^\[((?:[$a-zA-Z0-9]+:)?(?:[$a-zA-Z0-9]+))\] (.*?)\n?(\S+)$/;
+/**
+ * AngularJS integration
+ *
+ * Provides an $exceptionHandler for AngularJS
+ */
+
+var Angular =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function Angular(options) {
+    if (options === void 0) {
+      options = {};
+    }
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = Angular.id;
+
+    _utils.logger.log('You are still using the Angular integration, consider moving to @sentry/angular'); // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+
+
+    this._angular = options.angular || (0, _utils.getGlobalObject)().angular;
+
+    if (!this._angular) {
+      _utils.logger.error('AngularIntegration is missing an Angular instance');
+
+      return;
+    } // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+
+    this._module = this._angular.module(Angular.moduleName, []);
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Angular.prototype.setupOnce = function (_, getCurrentHub) {
+    var _this = this;
+
+    if (!this._module) {
+      return;
+    }
+
+    this._getCurrentHub = getCurrentHub; // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+    this._module.config(['$provide', // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function ($provide) {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      $provide.decorator('$exceptionHandler', ['$delegate', _this._$exceptionHandlerDecorator.bind(_this)]);
+    }]);
+  };
+  /**
+   * Angular's exceptionHandler for Sentry integration
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+  Angular.prototype._$exceptionHandlerDecorator = function ($delegate) {
+    var _this = this;
+
+    return function (exception, cause) {
+      var hub = _this._getCurrentHub && _this._getCurrentHub();
+
+      if (hub && hub.getIntegration(Angular)) {
+        hub.withScope(function (scope) {
+          if (cause) {
+            scope.setExtra('cause', cause);
+          }
+
+          scope.addEventProcessor(function (event) {
+            var ex = event.exception && event.exception.values && event.exception.values[0];
+
+            if (ex) {
+              var matches = angularPattern.exec(ex.value || '');
+
+              if (matches) {
+                // This type now becomes something like: $rootScope:inprog
+                ex.type = matches[1];
+                ex.value = matches[2];
+                event.message = ex.type + ": " + ex.value; // auto set a new tag specifically for the angular error url
+
+                event.extra = (0, _tslib.__assign)((0, _tslib.__assign)({}, event.extra), {
+                  angularDocs: matches[3].substr(0, 250)
+                });
+              }
+            }
+
+            return event;
+          });
+          hub.captureException(exception);
+        });
+      }
+
+      $delegate(exception, cause);
+    };
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Angular.id = 'AngularJS';
+  /**
+   * moduleName used in Angular's DI resolution algorithm
+   */
+
+  Angular.moduleName = 'ngSentry';
+  return Angular;
+}();
+
+exports.Angular = Angular;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/captureconsole.js":[function(require,module,exports) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.CaptureConsole = void 0;
+
+var _utils = require("@sentry/utils");
+
+var global = (0, _utils.getGlobalObject)();
+/** Send Console API calls as Sentry Events */
+
+var CaptureConsole =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function CaptureConsole(options) {
+    if (options === void 0) {
+      options = {};
+    }
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = CaptureConsole.id;
+    /**
+     * @inheritDoc
+     */
+
+    this._levels = ['log', 'info', 'warn', 'error', 'debug', 'assert'];
+
+    if (options.levels) {
+      this._levels = options.levels;
+    }
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  CaptureConsole.prototype.setupOnce = function (_, getCurrentHub) {
+    if (!('console' in global)) {
+      return;
+    }
+
+    this._levels.forEach(function (level) {
+      if (!(level in global.console)) {
+        return;
+      } // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+      (0, _utils.fill)(global.console, level, function (originalConsoleLevel) {
+        return function () {
+          var args = [];
+
+          for (var _i = 0; _i < arguments.length; _i++) {
+            args[_i] = arguments[_i];
+          }
+
+          var hub = getCurrentHub();
+
+          if (hub.getIntegration(CaptureConsole)) {
+            hub.withScope(function (scope) {
+              scope.setLevel((0, _utils.severityFromString)(level));
+              scope.setExtra('arguments', args);
+              scope.addEventProcessor(function (event) {
+                event.logger = 'console';
+                return event;
+              });
+              var message = (0, _utils.safeJoin)(args, ' ');
+
+              if (level === 'assert') {
+                if (args[0] === false) {
+                  message = "Assertion failed: " + ((0, _utils.safeJoin)(args.slice(1), ' ') || 'console.assert');
+                  scope.setExtra('arguments', args.slice(1));
+                  hub.captureMessage(message);
+                }
+              } else if (level === 'error' && args[0] instanceof Error) {
+                hub.captureException(args[0]);
+              } else {
+                hub.captureMessage(message);
+              }
+            });
+          } // this fails for some browsers. :(
+
+
+          if (originalConsoleLevel) {
+            Function.prototype.apply.call(originalConsoleLevel, global.console, args);
+          }
+        };
+      });
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  CaptureConsole.id = 'CaptureConsole';
+  return CaptureConsole;
+}();
+
+exports.CaptureConsole = CaptureConsole;
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/debug.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Debug = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+/** JSDoc */
+var Debug =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function Debug(options) {
+    /**
+     * @inheritDoc
+     */
+    this.name = Debug.id;
+    this._options = (0, _tslib.__assign)({
+      debugger: false,
+      stringify: false
+    }, options);
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Debug.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (event, hint) {
+      var self = getCurrentHub().getIntegration(Debug);
+
+      if (self) {
+        if (self._options.debugger) {
+          // eslint-disable-next-line no-debugger
+          debugger;
+        }
+        /* eslint-disable no-console */
+
+
+        (0, _utils.consoleSandbox)(function () {
+          if (self._options.stringify) {
+            console.log(JSON.stringify(event, null, 2));
+
+            if (hint) {
+              console.log(JSON.stringify(hint, null, 2));
+            }
+          } else {
+            console.log(event);
+
+            if (hint) {
+              console.log(hint);
+            }
+          }
+        });
+        /* eslint-enable no-console */
+      }
+
+      return event;
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Debug.id = 'Debug';
+  return Debug;
+}();
+
+exports.Debug = Debug;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/dedupe.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Dedupe = void 0;
+exports._shouldDropEvent = _shouldDropEvent;
+
+var _utils = require("@sentry/utils");
+
+/** Deduplication filter */
+var Dedupe =
+/** @class */
+function () {
+  function Dedupe() {
+    /**
+     * @inheritDoc
+     */
+    this.name = Dedupe.id;
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Dedupe.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (currentEvent) {
+      var self = getCurrentHub().getIntegration(Dedupe);
+
+      if (self) {
+        // Juuust in case something goes wrong
+        try {
+          if (_shouldDropEvent(currentEvent, self._previousEvent)) {
+            _utils.logger.warn("Event dropped due to being a duplicate of previously captured event.");
+
+            return null;
+          }
+        } catch (_oO) {
+          return self._previousEvent = currentEvent;
+        }
+
+        return self._previousEvent = currentEvent;
+      }
+
+      return currentEvent;
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Dedupe.id = 'Dedupe';
+  return Dedupe;
+}();
+
+exports.Dedupe = Dedupe;
+
+/** JSDoc */
+function _shouldDropEvent(currentEvent, previousEvent) {
+  if (!previousEvent) {
+    return false;
+  }
+
+  if (_isSameMessageEvent(currentEvent, previousEvent)) {
+    return true;
+  }
+
+  if (_isSameExceptionEvent(currentEvent, previousEvent)) {
+    return true;
+  }
+
+  return false;
+}
+/** JSDoc */
+
+
+function _isSameMessageEvent(currentEvent, previousEvent) {
+  var currentMessage = currentEvent.message;
+  var previousMessage = previousEvent.message; // If neither event has a message property, they were both exceptions, so bail out
+
+  if (!currentMessage && !previousMessage) {
+    return false;
+  } // If only one event has a stacktrace, but not the other one, they are not the same
+
+
+  if (currentMessage && !previousMessage || !currentMessage && previousMessage) {
+    return false;
+  }
+
+  if (currentMessage !== previousMessage) {
+    return false;
+  }
+
+  if (!_isSameFingerprint(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  if (!_isSameStacktrace(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameExceptionEvent(currentEvent, previousEvent) {
+  var previousException = _getExceptionFromEvent(previousEvent);
+
+  var currentException = _getExceptionFromEvent(currentEvent);
+
+  if (!previousException || !currentException) {
+    return false;
+  }
+
+  if (previousException.type !== currentException.type || previousException.value !== currentException.value) {
+    return false;
+  }
+
+  if (!_isSameFingerprint(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  if (!_isSameStacktrace(currentEvent, previousEvent)) {
+    return false;
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameStacktrace(currentEvent, previousEvent) {
+  var currentFrames = _getFramesFromEvent(currentEvent);
+
+  var previousFrames = _getFramesFromEvent(previousEvent); // If neither event has a stacktrace, they are assumed to be the same
+
+
+  if (!currentFrames && !previousFrames) {
+    return true;
+  } // If only one event has a stacktrace, but not the other one, they are not the same
+
+
+  if (currentFrames && !previousFrames || !currentFrames && previousFrames) {
+    return false;
+  }
+
+  currentFrames = currentFrames;
+  previousFrames = previousFrames; // If number of frames differ, they are not the same
+
+  if (previousFrames.length !== currentFrames.length) {
+    return false;
+  } // Otherwise, compare the two
+
+
+  for (var i = 0; i < previousFrames.length; i++) {
+    var frameA = previousFrames[i];
+    var frameB = currentFrames[i];
+
+    if (frameA.filename !== frameB.filename || frameA.lineno !== frameB.lineno || frameA.colno !== frameB.colno || frameA.function !== frameB.function) {
+      return false;
+    }
+  }
+
+  return true;
+}
+/** JSDoc */
+
+
+function _isSameFingerprint(currentEvent, previousEvent) {
+  var currentFingerprint = currentEvent.fingerprint;
+  var previousFingerprint = previousEvent.fingerprint; // If neither event has a fingerprint, they are assumed to be the same
+
+  if (!currentFingerprint && !previousFingerprint) {
+    return true;
+  } // If only one event has a fingerprint, but not the other one, they are not the same
+
+
+  if (currentFingerprint && !previousFingerprint || !currentFingerprint && previousFingerprint) {
+    return false;
+  }
+
+  currentFingerprint = currentFingerprint;
+  previousFingerprint = previousFingerprint; // Otherwise, compare the two
+
+  try {
+    return !!(currentFingerprint.join('') === previousFingerprint.join(''));
+  } catch (_oO) {
+    return false;
+  }
+}
+/** JSDoc */
+
+
+function _getExceptionFromEvent(event) {
+  return event.exception && event.exception.values && event.exception.values[0];
+}
+/** JSDoc */
+
+
+function _getFramesFromEvent(event) {
+  var exception = event.exception;
+
+  if (exception) {
+    try {
+      // @ts-ignore Object could be undefined
+      return exception.values[0].stacktrace.frames;
+    } catch (_oO) {
+      return undefined;
+    }
+  } else if (event.stacktrace) {
+    return event.stacktrace.frames;
+  }
+
+  return undefined;
+}
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/ember.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Ember = void 0;
+
+var _utils = require("@sentry/utils");
+
+/** JSDoc */
+var Ember =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function Ember(options) {
+    if (options === void 0) {
+      options = {};
+    }
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = Ember.id; // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unsafe-member-access
+
+    this._Ember = options.Ember || (0, _utils.getGlobalObject)().Ember;
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Ember.prototype.setupOnce = function (_, getCurrentHub) {
+    var _this = this;
+
+    if (!this._Ember) {
+      _utils.logger.error('EmberIntegration is missing an Ember instance');
+
+      return;
+    }
+    /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+
+
+    var oldOnError = this._Ember.onerror;
+
+    this._Ember.onerror = function (error) {
+      if (getCurrentHub().getIntegration(Ember)) {
+        getCurrentHub().captureException(error, {
+          originalException: error
+        });
+      }
+
+      if (typeof oldOnError === 'function') {
+        oldOnError.call(_this._Ember, error);
+      } else if (_this._Ember.testing) {
+        throw error;
+      }
+    }; // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+
+    this._Ember.RSVP.on('error', function (reason) {
+      if (getCurrentHub().getIntegration(Ember)) {
+        getCurrentHub().withScope(function (scope) {
+          if ((0, _utils.isInstanceOf)(reason, Error)) {
+            scope.setExtra('context', 'Unhandled Promise error detected');
+            getCurrentHub().captureException(reason, {
+              originalException: reason
+            });
+          } else {
+            scope.setExtra('reason', reason);
+            getCurrentHub().captureMessage('Unhandled Promise error detected');
+          }
+        });
+      }
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Ember.id = 'Ember';
+  return Ember;
+}();
+
+exports.Ember = Ember;
+},{"@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/extraerrordata.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ExtraErrorData = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+/** Patch toString calls to return proper name for wrapped functions */
+var ExtraErrorData =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function ExtraErrorData(_options) {
+    if (_options === void 0) {
+      _options = {
+        depth: 3
+      };
+    }
+
+    this._options = _options;
+    /**
+     * @inheritDoc
+     */
+
+    this.name = ExtraErrorData.id;
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  ExtraErrorData.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (event, hint) {
+      var self = getCurrentHub().getIntegration(ExtraErrorData);
+
+      if (!self) {
+        return event;
+      }
+
+      return self.enhanceEventWithErrorData(event, hint);
+    });
+  };
+  /**
+   * Attaches extracted information from the Error object to extra field in the Event
+   */
+
+
+  ExtraErrorData.prototype.enhanceEventWithErrorData = function (event, hint) {
+    var _a;
+
+    if (!hint || !hint.originalException || !(0, _utils.isError)(hint.originalException)) {
+      return event;
+    }
+
+    var name = hint.originalException.name || hint.originalException.constructor.name;
+
+    var errorData = this._extractErrorData(hint.originalException);
+
+    if (errorData) {
+      var contexts = (0, _tslib.__assign)({}, event.contexts);
+      var normalizedErrorData = (0, _utils.normalize)(errorData, this._options.depth);
+
+      if ((0, _utils.isPlainObject)(normalizedErrorData)) {
+        contexts = (0, _tslib.__assign)((0, _tslib.__assign)({}, event.contexts), (_a = {}, _a[name] = (0, _tslib.__assign)({}, normalizedErrorData), _a));
+      }
+
+      return (0, _tslib.__assign)((0, _tslib.__assign)({}, event), {
+        contexts: contexts
+      });
+    }
+
+    return event;
+  };
+  /**
+   * Extract extra information from the Error object
+   */
+
+
+  ExtraErrorData.prototype._extractErrorData = function (error) {
+    var e_1, _a, e_2, _b; // We are trying to enhance already existing event, so no harm done if it won't succeed
+
+
+    try {
+      var nativeKeys = ['name', 'message', 'stack', 'line', 'column', 'fileName', 'lineNumber', 'columnNumber', 'toJSON'];
+      var extraErrorInfo = {};
+
+      try {
+        // We want only enumerable properties, thus `getOwnPropertyNames` is redundant here, as we filter keys anyway.
+        for (var _c = (0, _tslib.__values)(Object.keys(error)), _d = _c.next(); !_d.done; _d = _c.next()) {
+          var key = _d.value;
+
+          if (nativeKeys.indexOf(key) !== -1) {
+            continue;
+          }
+
+          var value = error[key];
+          extraErrorInfo[key] = (0, _utils.isError)(value) ? value.toString() : value;
+        }
+      } catch (e_1_1) {
+        e_1 = {
+          error: e_1_1
+        };
+      } finally {
+        try {
+          if (_d && !_d.done && (_a = _c.return)) _a.call(_c);
+        } finally {
+          if (e_1) throw e_1.error;
+        }
+      } // Check if someone attached `toJSON` method to grab even more properties (eg. axios is doing that)
+
+
+      if (typeof error.toJSON === 'function') {
+        var serializedError = error.toJSON();
+
+        try {
+          for (var _e = (0, _tslib.__values)(Object.keys(serializedError)), _f = _e.next(); !_f.done; _f = _e.next()) {
+            var key = _f.value;
+            var value = serializedError[key];
+            extraErrorInfo[key] = (0, _utils.isError)(value) ? value.toString() : value;
+          }
+        } catch (e_2_1) {
+          e_2 = {
+            error: e_2_1
+          };
+        } finally {
+          try {
+            if (_f && !_f.done && (_b = _e.return)) _b.call(_e);
+          } finally {
+            if (e_2) throw e_2.error;
+          }
+        }
+      }
+
+      return extraErrorInfo;
+    } catch (oO) {
+      _utils.logger.error('Unable to extract extra data from the Error object:', oO);
+    }
+
+    return null;
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  ExtraErrorData.id = 'ExtraErrorData';
+  return ExtraErrorData;
+}();
+
+exports.ExtraErrorData = ExtraErrorData;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/localforage/dist/localforage.js":[function(require,module,exports) {
+var define;
+var global = arguments[3];
+/*!
+    localForage -- Offline Storage, Improved
+    Version 1.10.0
+    https://localforage.github.io/localForage
+    (c) 2013-2017 Mozilla, Apache License 2.0
+*/
+(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.localforage = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw (f.code="MODULE_NOT_FOUND", f)}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+(function (global){
+'use strict';
+var Mutation = global.MutationObserver || global.WebKitMutationObserver;
+
+var scheduleDrain;
+
+{
+  if (Mutation) {
+    var called = 0;
+    var observer = new Mutation(nextTick);
+    var element = global.document.createTextNode('');
+    observer.observe(element, {
+      characterData: true
+    });
+    scheduleDrain = function () {
+      element.data = (called = ++called % 2);
+    };
+  } else if (!global.setImmediate && typeof global.MessageChannel !== 'undefined') {
+    var channel = new global.MessageChannel();
+    channel.port1.onmessage = nextTick;
+    scheduleDrain = function () {
+      channel.port2.postMessage(0);
+    };
+  } else if ('document' in global && 'onreadystatechange' in global.document.createElement('script')) {
+    scheduleDrain = function () {
+
+      // Create a <script> element; its readystatechange event will be fired asynchronously once it is inserted
+      // into the document. Do so, thus queuing up the task. Remember to clean up once it's been called.
+      var scriptEl = global.document.createElement('script');
+      scriptEl.onreadystatechange = function () {
+        nextTick();
+
+        scriptEl.onreadystatechange = null;
+        scriptEl.parentNode.removeChild(scriptEl);
+        scriptEl = null;
+      };
+      global.document.documentElement.appendChild(scriptEl);
+    };
+  } else {
+    scheduleDrain = function () {
+      setTimeout(nextTick, 0);
+    };
+  }
+}
+
+var draining;
+var queue = [];
+//named nextTick for less confusing stack traces
+function nextTick() {
+  draining = true;
+  var i, oldQueue;
+  var len = queue.length;
+  while (len) {
+    oldQueue = queue;
+    queue = [];
+    i = -1;
+    while (++i < len) {
+      oldQueue[i]();
+    }
+    len = queue.length;
+  }
+  draining = false;
+}
+
+module.exports = immediate;
+function immediate(task) {
+  if (queue.push(task) === 1 && !draining) {
+    scheduleDrain();
+  }
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],2:[function(_dereq_,module,exports){
+'use strict';
+var immediate = _dereq_(1);
+
+/* istanbul ignore next */
+function INTERNAL() {}
+
+var handlers = {};
+
+var REJECTED = ['REJECTED'];
+var FULFILLED = ['FULFILLED'];
+var PENDING = ['PENDING'];
+
+module.exports = Promise;
+
+function Promise(resolver) {
+  if (typeof resolver !== 'function') {
+    throw new TypeError('resolver must be a function');
+  }
+  this.state = PENDING;
+  this.queue = [];
+  this.outcome = void 0;
+  if (resolver !== INTERNAL) {
+    safelyResolveThenable(this, resolver);
+  }
+}
+
+Promise.prototype["catch"] = function (onRejected) {
+  return this.then(null, onRejected);
+};
+Promise.prototype.then = function (onFulfilled, onRejected) {
+  if (typeof onFulfilled !== 'function' && this.state === FULFILLED ||
+    typeof onRejected !== 'function' && this.state === REJECTED) {
+    return this;
+  }
+  var promise = new this.constructor(INTERNAL);
+  if (this.state !== PENDING) {
+    var resolver = this.state === FULFILLED ? onFulfilled : onRejected;
+    unwrap(promise, resolver, this.outcome);
+  } else {
+    this.queue.push(new QueueItem(promise, onFulfilled, onRejected));
+  }
+
+  return promise;
+};
+function QueueItem(promise, onFulfilled, onRejected) {
+  this.promise = promise;
+  if (typeof onFulfilled === 'function') {
+    this.onFulfilled = onFulfilled;
+    this.callFulfilled = this.otherCallFulfilled;
+  }
+  if (typeof onRejected === 'function') {
+    this.onRejected = onRejected;
+    this.callRejected = this.otherCallRejected;
+  }
+}
+QueueItem.prototype.callFulfilled = function (value) {
+  handlers.resolve(this.promise, value);
+};
+QueueItem.prototype.otherCallFulfilled = function (value) {
+  unwrap(this.promise, this.onFulfilled, value);
+};
+QueueItem.prototype.callRejected = function (value) {
+  handlers.reject(this.promise, value);
+};
+QueueItem.prototype.otherCallRejected = function (value) {
+  unwrap(this.promise, this.onRejected, value);
+};
+
+function unwrap(promise, func, value) {
+  immediate(function () {
+    var returnValue;
+    try {
+      returnValue = func(value);
+    } catch (e) {
+      return handlers.reject(promise, e);
+    }
+    if (returnValue === promise) {
+      handlers.reject(promise, new TypeError('Cannot resolve promise with itself'));
+    } else {
+      handlers.resolve(promise, returnValue);
+    }
+  });
+}
+
+handlers.resolve = function (self, value) {
+  var result = tryCatch(getThen, value);
+  if (result.status === 'error') {
+    return handlers.reject(self, result.value);
+  }
+  var thenable = result.value;
+
+  if (thenable) {
+    safelyResolveThenable(self, thenable);
+  } else {
+    self.state = FULFILLED;
+    self.outcome = value;
+    var i = -1;
+    var len = self.queue.length;
+    while (++i < len) {
+      self.queue[i].callFulfilled(value);
+    }
+  }
+  return self;
+};
+handlers.reject = function (self, error) {
+  self.state = REJECTED;
+  self.outcome = error;
+  var i = -1;
+  var len = self.queue.length;
+  while (++i < len) {
+    self.queue[i].callRejected(error);
+  }
+  return self;
+};
+
+function getThen(obj) {
+  // Make sure we only access the accessor once as required by the spec
+  var then = obj && obj.then;
+  if (obj && (typeof obj === 'object' || typeof obj === 'function') && typeof then === 'function') {
+    return function appyThen() {
+      then.apply(obj, arguments);
+    };
+  }
+}
+
+function safelyResolveThenable(self, thenable) {
+  // Either fulfill, reject or reject with error
+  var called = false;
+  function onError(value) {
+    if (called) {
+      return;
+    }
+    called = true;
+    handlers.reject(self, value);
+  }
+
+  function onSuccess(value) {
+    if (called) {
+      return;
+    }
+    called = true;
+    handlers.resolve(self, value);
+  }
+
+  function tryToUnwrap() {
+    thenable(onSuccess, onError);
+  }
+
+  var result = tryCatch(tryToUnwrap);
+  if (result.status === 'error') {
+    onError(result.value);
+  }
+}
+
+function tryCatch(func, value) {
+  var out = {};
+  try {
+    out.value = func(value);
+    out.status = 'success';
+  } catch (e) {
+    out.status = 'error';
+    out.value = e;
+  }
+  return out;
+}
+
+Promise.resolve = resolve;
+function resolve(value) {
+  if (value instanceof this) {
+    return value;
+  }
+  return handlers.resolve(new this(INTERNAL), value);
+}
+
+Promise.reject = reject;
+function reject(reason) {
+  var promise = new this(INTERNAL);
+  return handlers.reject(promise, reason);
+}
+
+Promise.all = all;
+function all(iterable) {
+  var self = this;
+  if (Object.prototype.toString.call(iterable) !== '[object Array]') {
+    return this.reject(new TypeError('must be an array'));
+  }
+
+  var len = iterable.length;
+  var called = false;
+  if (!len) {
+    return this.resolve([]);
+  }
+
+  var values = new Array(len);
+  var resolved = 0;
+  var i = -1;
+  var promise = new this(INTERNAL);
+
+  while (++i < len) {
+    allResolver(iterable[i], i);
+  }
+  return promise;
+  function allResolver(value, i) {
+    self.resolve(value).then(resolveFromAll, function (error) {
+      if (!called) {
+        called = true;
+        handlers.reject(promise, error);
+      }
+    });
+    function resolveFromAll(outValue) {
+      values[i] = outValue;
+      if (++resolved === len && !called) {
+        called = true;
+        handlers.resolve(promise, values);
+      }
+    }
+  }
+}
+
+Promise.race = race;
+function race(iterable) {
+  var self = this;
+  if (Object.prototype.toString.call(iterable) !== '[object Array]') {
+    return this.reject(new TypeError('must be an array'));
+  }
+
+  var len = iterable.length;
+  var called = false;
+  if (!len) {
+    return this.resolve([]);
+  }
+
+  var i = -1;
+  var promise = new this(INTERNAL);
+
+  while (++i < len) {
+    resolver(iterable[i]);
+  }
+  return promise;
+  function resolver(value) {
+    self.resolve(value).then(function (response) {
+      if (!called) {
+        called = true;
+        handlers.resolve(promise, response);
+      }
+    }, function (error) {
+      if (!called) {
+        called = true;
+        handlers.reject(promise, error);
+      }
+    });
+  }
+}
+
+},{"1":1}],3:[function(_dereq_,module,exports){
+(function (global){
+'use strict';
+if (typeof global.Promise !== 'function') {
+  global.Promise = _dereq_(2);
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{"2":2}],4:[function(_dereq_,module,exports){
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function getIDB() {
+    /* global indexedDB,webkitIndexedDB,mozIndexedDB,OIndexedDB,msIndexedDB */
+    try {
+        if (typeof indexedDB !== 'undefined') {
+            return indexedDB;
+        }
+        if (typeof webkitIndexedDB !== 'undefined') {
+            return webkitIndexedDB;
+        }
+        if (typeof mozIndexedDB !== 'undefined') {
+            return mozIndexedDB;
+        }
+        if (typeof OIndexedDB !== 'undefined') {
+            return OIndexedDB;
+        }
+        if (typeof msIndexedDB !== 'undefined') {
+            return msIndexedDB;
+        }
+    } catch (e) {
+        return;
+    }
+}
+
+var idb = getIDB();
+
+function isIndexedDBValid() {
+    try {
+        // Initialize IndexedDB; fall back to vendor-prefixed versions
+        // if needed.
+        if (!idb || !idb.open) {
+            return false;
+        }
+        // We mimic PouchDB here;
+        //
+        // We test for openDatabase because IE Mobile identifies itself
+        // as Safari. Oh the lulz...
+        var isSafari = typeof openDatabase !== 'undefined' && /(Safari|iPhone|iPad|iPod)/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent) && !/BlackBerry/.test(navigator.platform);
+
+        var hasFetch = typeof fetch === 'function' && fetch.toString().indexOf('[native code') !== -1;
+
+        // Safari <10.1 does not meet our requirements for IDB support
+        // (see: https://github.com/pouchdb/pouchdb/issues/5572).
+        // Safari 10.1 shipped with fetch, we can use that to detect it.
+        // Note: this creates issues with `window.fetch` polyfills and
+        // overrides; see:
+        // https://github.com/localForage/localForage/issues/856
+        return (!isSafari || hasFetch) && typeof indexedDB !== 'undefined' &&
+        // some outdated implementations of IDB that appear on Samsung
+        // and HTC Android devices <4.4 are missing IDBKeyRange
+        // See: https://github.com/mozilla/localForage/issues/128
+        // See: https://github.com/mozilla/localForage/issues/272
+        typeof IDBKeyRange !== 'undefined';
+    } catch (e) {
+        return false;
+    }
+}
+
+// Abstracts constructing a Blob object, so it also works in older
+// browsers that don't support the native Blob constructor. (i.e.
+// old QtWebKit versions, at least).
+// Abstracts constructing a Blob object, so it also works in older
+// browsers that don't support the native Blob constructor. (i.e.
+// old QtWebKit versions, at least).
+function createBlob(parts, properties) {
+    /* global BlobBuilder,MSBlobBuilder,MozBlobBuilder,WebKitBlobBuilder */
+    parts = parts || [];
+    properties = properties || {};
+    try {
+        return new Blob(parts, properties);
+    } catch (e) {
+        if (e.name !== 'TypeError') {
+            throw e;
+        }
+        var Builder = typeof BlobBuilder !== 'undefined' ? BlobBuilder : typeof MSBlobBuilder !== 'undefined' ? MSBlobBuilder : typeof MozBlobBuilder !== 'undefined' ? MozBlobBuilder : WebKitBlobBuilder;
+        var builder = new Builder();
+        for (var i = 0; i < parts.length; i += 1) {
+            builder.append(parts[i]);
+        }
+        return builder.getBlob(properties.type);
+    }
+}
+
+// This is CommonJS because lie is an external dependency, so Rollup
+// can just ignore it.
+if (typeof Promise === 'undefined') {
+    // In the "nopromises" build this will just throw if you don't have
+    // a global promise object, but it would throw anyway later.
+    _dereq_(3);
+}
+var Promise$1 = Promise;
+
+function executeCallback(promise, callback) {
+    if (callback) {
+        promise.then(function (result) {
+            callback(null, result);
+        }, function (error) {
+            callback(error);
+        });
+    }
+}
+
+function executeTwoCallbacks(promise, callback, errorCallback) {
+    if (typeof callback === 'function') {
+        promise.then(callback);
+    }
+
+    if (typeof errorCallback === 'function') {
+        promise["catch"](errorCallback);
+    }
+}
+
+function normalizeKey(key) {
+    // Cast the key to a string, as that's all we can set as a key.
+    if (typeof key !== 'string') {
+        console.warn(key + ' used as a key, but it is not a string.');
+        key = String(key);
+    }
+
+    return key;
+}
+
+function getCallback() {
+    if (arguments.length && typeof arguments[arguments.length - 1] === 'function') {
+        return arguments[arguments.length - 1];
+    }
+}
+
+// Some code originally from async_storage.js in
+// [Gaia](https://github.com/mozilla-b2g/gaia).
+
+var DETECT_BLOB_SUPPORT_STORE = 'local-forage-detect-blob-support';
+var supportsBlobs = void 0;
+var dbContexts = {};
+var toString = Object.prototype.toString;
+
+// Transaction Modes
+var READ_ONLY = 'readonly';
+var READ_WRITE = 'readwrite';
+
+// Transform a binary string to an array buffer, because otherwise
+// weird stuff happens when you try to work with the binary string directly.
+// It is known.
+// From http://stackoverflow.com/questions/14967647/ (continues on next line)
+// encode-decode-image-with-base64-breaks-image (2013-04-21)
+function _binStringToArrayBuffer(bin) {
+    var length = bin.length;
+    var buf = new ArrayBuffer(length);
+    var arr = new Uint8Array(buf);
+    for (var i = 0; i < length; i++) {
+        arr[i] = bin.charCodeAt(i);
+    }
+    return buf;
+}
+
+//
+// Blobs are not supported in all versions of IndexedDB, notably
+// Chrome <37 and Android <5. In those versions, storing a blob will throw.
+//
+// Various other blob bugs exist in Chrome v37-42 (inclusive).
+// Detecting them is expensive and confusing to users, and Chrome 37-42
+// is at very low usage worldwide, so we do a hacky userAgent check instead.
+//
+// content-type bug: https://code.google.com/p/chromium/issues/detail?id=408120
+// 404 bug: https://code.google.com/p/chromium/issues/detail?id=447916
+// FileReader bug: https://code.google.com/p/chromium/issues/detail?id=447836
+//
+// Code borrowed from PouchDB. See:
+// https://github.com/pouchdb/pouchdb/blob/master/packages/node_modules/pouchdb-adapter-idb/src/blobSupport.js
+//
+function _checkBlobSupportWithoutCaching(idb) {
+    return new Promise$1(function (resolve) {
+        var txn = idb.transaction(DETECT_BLOB_SUPPORT_STORE, READ_WRITE);
+        var blob = createBlob(['']);
+        txn.objectStore(DETECT_BLOB_SUPPORT_STORE).put(blob, 'key');
+
+        txn.onabort = function (e) {
+            // If the transaction aborts now its due to not being able to
+            // write to the database, likely due to the disk being full
+            e.preventDefault();
+            e.stopPropagation();
+            resolve(false);
+        };
+
+        txn.oncomplete = function () {
+            var matchedChrome = navigator.userAgent.match(/Chrome\/(\d+)/);
+            var matchedEdge = navigator.userAgent.match(/Edge\//);
+            // MS Edge pretends to be Chrome 42:
+            // https://msdn.microsoft.com/en-us/library/hh869301%28v=vs.85%29.aspx
+            resolve(matchedEdge || !matchedChrome || parseInt(matchedChrome[1], 10) >= 43);
+        };
+    })["catch"](function () {
+        return false; // error, so assume unsupported
+    });
+}
+
+function _checkBlobSupport(idb) {
+    if (typeof supportsBlobs === 'boolean') {
+        return Promise$1.resolve(supportsBlobs);
+    }
+    return _checkBlobSupportWithoutCaching(idb).then(function (value) {
+        supportsBlobs = value;
+        return supportsBlobs;
+    });
+}
+
+function _deferReadiness(dbInfo) {
+    var dbContext = dbContexts[dbInfo.name];
+
+    // Create a deferred object representing the current database operation.
+    var deferredOperation = {};
+
+    deferredOperation.promise = new Promise$1(function (resolve, reject) {
+        deferredOperation.resolve = resolve;
+        deferredOperation.reject = reject;
+    });
+
+    // Enqueue the deferred operation.
+    dbContext.deferredOperations.push(deferredOperation);
+
+    // Chain its promise to the database readiness.
+    if (!dbContext.dbReady) {
+        dbContext.dbReady = deferredOperation.promise;
+    } else {
+        dbContext.dbReady = dbContext.dbReady.then(function () {
+            return deferredOperation.promise;
+        });
+    }
+}
+
+function _advanceReadiness(dbInfo) {
+    var dbContext = dbContexts[dbInfo.name];
+
+    // Dequeue a deferred operation.
+    var deferredOperation = dbContext.deferredOperations.pop();
+
+    // Resolve its promise (which is part of the database readiness
+    // chain of promises).
+    if (deferredOperation) {
+        deferredOperation.resolve();
+        return deferredOperation.promise;
+    }
+}
+
+function _rejectReadiness(dbInfo, err) {
+    var dbContext = dbContexts[dbInfo.name];
+
+    // Dequeue a deferred operation.
+    var deferredOperation = dbContext.deferredOperations.pop();
+
+    // Reject its promise (which is part of the database readiness
+    // chain of promises).
+    if (deferredOperation) {
+        deferredOperation.reject(err);
+        return deferredOperation.promise;
+    }
+}
+
+function _getConnection(dbInfo, upgradeNeeded) {
+    return new Promise$1(function (resolve, reject) {
+        dbContexts[dbInfo.name] = dbContexts[dbInfo.name] || createDbContext();
+
+        if (dbInfo.db) {
+            if (upgradeNeeded) {
+                _deferReadiness(dbInfo);
+                dbInfo.db.close();
+            } else {
+                return resolve(dbInfo.db);
+            }
+        }
+
+        var dbArgs = [dbInfo.name];
+
+        if (upgradeNeeded) {
+            dbArgs.push(dbInfo.version);
+        }
+
+        var openreq = idb.open.apply(idb, dbArgs);
+
+        if (upgradeNeeded) {
+            openreq.onupgradeneeded = function (e) {
+                var db = openreq.result;
+                try {
+                    db.createObjectStore(dbInfo.storeName);
+                    if (e.oldVersion <= 1) {
+                        // Added when support for blob shims was added
+                        db.createObjectStore(DETECT_BLOB_SUPPORT_STORE);
+                    }
+                } catch (ex) {
+                    if (ex.name === 'ConstraintError') {
+                        console.warn('The database "' + dbInfo.name + '"' + ' has been upgraded from version ' + e.oldVersion + ' to version ' + e.newVersion + ', but the storage "' + dbInfo.storeName + '" already exists.');
+                    } else {
+                        throw ex;
+                    }
+                }
+            };
+        }
+
+        openreq.onerror = function (e) {
+            e.preventDefault();
+            reject(openreq.error);
+        };
+
+        openreq.onsuccess = function () {
+            var db = openreq.result;
+            db.onversionchange = function (e) {
+                // Triggered when the database is modified (e.g. adding an objectStore) or
+                // deleted (even when initiated by other sessions in different tabs).
+                // Closing the connection here prevents those operations from being blocked.
+                // If the database is accessed again later by this instance, the connection
+                // will be reopened or the database recreated as needed.
+                e.target.close();
+            };
+            resolve(db);
+            _advanceReadiness(dbInfo);
+        };
+    });
+}
+
+function _getOriginalConnection(dbInfo) {
+    return _getConnection(dbInfo, false);
+}
+
+function _getUpgradedConnection(dbInfo) {
+    return _getConnection(dbInfo, true);
+}
+
+function _isUpgradeNeeded(dbInfo, defaultVersion) {
+    if (!dbInfo.db) {
+        return true;
+    }
+
+    var isNewStore = !dbInfo.db.objectStoreNames.contains(dbInfo.storeName);
+    var isDowngrade = dbInfo.version < dbInfo.db.version;
+    var isUpgrade = dbInfo.version > dbInfo.db.version;
+
+    if (isDowngrade) {
+        // If the version is not the default one
+        // then warn for impossible downgrade.
+        if (dbInfo.version !== defaultVersion) {
+            console.warn('The database "' + dbInfo.name + '"' + " can't be downgraded from version " + dbInfo.db.version + ' to version ' + dbInfo.version + '.');
+        }
+        // Align the versions to prevent errors.
+        dbInfo.version = dbInfo.db.version;
+    }
+
+    if (isUpgrade || isNewStore) {
+        // If the store is new then increment the version (if needed).
+        // This will trigger an "upgradeneeded" event which is required
+        // for creating a store.
+        if (isNewStore) {
+            var incVersion = dbInfo.db.version + 1;
+            if (incVersion > dbInfo.version) {
+                dbInfo.version = incVersion;
+            }
+        }
+
+        return true;
+    }
+
+    return false;
+}
+
+// encode a blob for indexeddb engines that don't support blobs
+function _encodeBlob(blob) {
+    return new Promise$1(function (resolve, reject) {
+        var reader = new FileReader();
+        reader.onerror = reject;
+        reader.onloadend = function (e) {
+            var base64 = btoa(e.target.result || '');
+            resolve({
+                __local_forage_encoded_blob: true,
+                data: base64,
+                type: blob.type
+            });
+        };
+        reader.readAsBinaryString(blob);
+    });
+}
+
+// decode an encoded blob
+function _decodeBlob(encodedBlob) {
+    var arrayBuff = _binStringToArrayBuffer(atob(encodedBlob.data));
+    return createBlob([arrayBuff], { type: encodedBlob.type });
+}
+
+// is this one of our fancy encoded blobs?
+function _isEncodedBlob(value) {
+    return value && value.__local_forage_encoded_blob;
+}
+
+// Specialize the default `ready()` function by making it dependent
+// on the current database operations. Thus, the driver will be actually
+// ready when it's been initialized (default) *and* there are no pending
+// operations on the database (initiated by some other instances).
+function _fullyReady(callback) {
+    var self = this;
+
+    var promise = self._initReady().then(function () {
+        var dbContext = dbContexts[self._dbInfo.name];
+
+        if (dbContext && dbContext.dbReady) {
+            return dbContext.dbReady;
+        }
+    });
+
+    executeTwoCallbacks(promise, callback, callback);
+    return promise;
+}
+
+// Try to establish a new db connection to replace the
+// current one which is broken (i.e. experiencing
+// InvalidStateError while creating a transaction).
+function _tryReconnect(dbInfo) {
+    _deferReadiness(dbInfo);
+
+    var dbContext = dbContexts[dbInfo.name];
+    var forages = dbContext.forages;
+
+    for (var i = 0; i < forages.length; i++) {
+        var forage = forages[i];
+        if (forage._dbInfo.db) {
+            forage._dbInfo.db.close();
+            forage._dbInfo.db = null;
+        }
+    }
+    dbInfo.db = null;
+
+    return _getOriginalConnection(dbInfo).then(function (db) {
+        dbInfo.db = db;
+        if (_isUpgradeNeeded(dbInfo)) {
+            // Reopen the database for upgrading.
+            return _getUpgradedConnection(dbInfo);
+        }
+        return db;
+    }).then(function (db) {
+        // store the latest db reference
+        // in case the db was upgraded
+        dbInfo.db = dbContext.db = db;
+        for (var i = 0; i < forages.length; i++) {
+            forages[i]._dbInfo.db = db;
+        }
+    })["catch"](function (err) {
+        _rejectReadiness(dbInfo, err);
+        throw err;
+    });
+}
+
+// FF doesn't like Promises (micro-tasks) and IDDB store operations,
+// so we have to do it with callbacks
+function createTransaction(dbInfo, mode, callback, retries) {
+    if (retries === undefined) {
+        retries = 1;
+    }
+
+    try {
+        var tx = dbInfo.db.transaction(dbInfo.storeName, mode);
+        callback(null, tx);
+    } catch (err) {
+        if (retries > 0 && (!dbInfo.db || err.name === 'InvalidStateError' || err.name === 'NotFoundError')) {
+            return Promise$1.resolve().then(function () {
+                if (!dbInfo.db || err.name === 'NotFoundError' && !dbInfo.db.objectStoreNames.contains(dbInfo.storeName) && dbInfo.version <= dbInfo.db.version) {
+                    // increase the db version, to create the new ObjectStore
+                    if (dbInfo.db) {
+                        dbInfo.version = dbInfo.db.version + 1;
+                    }
+                    // Reopen the database for upgrading.
+                    return _getUpgradedConnection(dbInfo);
+                }
+            }).then(function () {
+                return _tryReconnect(dbInfo).then(function () {
+                    createTransaction(dbInfo, mode, callback, retries - 1);
+                });
+            })["catch"](callback);
+        }
+
+        callback(err);
+    }
+}
+
+function createDbContext() {
+    return {
+        // Running localForages sharing a database.
+        forages: [],
+        // Shared database.
+        db: null,
+        // Database readiness (promise).
+        dbReady: null,
+        // Deferred operations on the database.
+        deferredOperations: []
+    };
+}
+
+// Open the IndexedDB database (automatically creates one if one didn't
+// previously exist), using any options set in the config.
+function _initStorage(options) {
+    var self = this;
+    var dbInfo = {
+        db: null
+    };
+
+    if (options) {
+        for (var i in options) {
+            dbInfo[i] = options[i];
+        }
+    }
+
+    // Get the current context of the database;
+    var dbContext = dbContexts[dbInfo.name];
+
+    // ...or create a new context.
+    if (!dbContext) {
+        dbContext = createDbContext();
+        // Register the new context in the global container.
+        dbContexts[dbInfo.name] = dbContext;
+    }
+
+    // Register itself as a running localForage in the current context.
+    dbContext.forages.push(self);
+
+    // Replace the default `ready()` function with the specialized one.
+    if (!self._initReady) {
+        self._initReady = self.ready;
+        self.ready = _fullyReady;
+    }
+
+    // Create an array of initialization states of the related localForages.
+    var initPromises = [];
+
+    function ignoreErrors() {
+        // Don't handle errors here,
+        // just makes sure related localForages aren't pending.
+        return Promise$1.resolve();
+    }
+
+    for (var j = 0; j < dbContext.forages.length; j++) {
+        var forage = dbContext.forages[j];
+        if (forage !== self) {
+            // Don't wait for itself...
+            initPromises.push(forage._initReady()["catch"](ignoreErrors));
+        }
+    }
+
+    // Take a snapshot of the related localForages.
+    var forages = dbContext.forages.slice(0);
+
+    // Initialize the connection process only when
+    // all the related localForages aren't pending.
+    return Promise$1.all(initPromises).then(function () {
+        dbInfo.db = dbContext.db;
+        // Get the connection or open a new one without upgrade.
+        return _getOriginalConnection(dbInfo);
+    }).then(function (db) {
+        dbInfo.db = db;
+        if (_isUpgradeNeeded(dbInfo, self._defaultConfig.version)) {
+            // Reopen the database for upgrading.
+            return _getUpgradedConnection(dbInfo);
+        }
+        return db;
+    }).then(function (db) {
+        dbInfo.db = dbContext.db = db;
+        self._dbInfo = dbInfo;
+        // Share the final connection amongst related localForages.
+        for (var k = 0; k < forages.length; k++) {
+            var forage = forages[k];
+            if (forage !== self) {
+                // Self is already up-to-date.
+                forage._dbInfo.db = dbInfo.db;
+                forage._dbInfo.version = dbInfo.version;
+            }
+        }
+    });
+}
+
+function getItem(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_ONLY, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var req = store.get(key);
+
+                    req.onsuccess = function () {
+                        var value = req.result;
+                        if (value === undefined) {
+                            value = null;
+                        }
+                        if (_isEncodedBlob(value)) {
+                            value = _decodeBlob(value);
+                        }
+                        resolve(value);
+                    };
+
+                    req.onerror = function () {
+                        reject(req.error);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Iterate over all items stored in database.
+function iterate(iterator, callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_ONLY, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var req = store.openCursor();
+                    var iterationNumber = 1;
+
+                    req.onsuccess = function () {
+                        var cursor = req.result;
+
+                        if (cursor) {
+                            var value = cursor.value;
+                            if (_isEncodedBlob(value)) {
+                                value = _decodeBlob(value);
+                            }
+                            var result = iterator(value, cursor.key, iterationNumber++);
+
+                            // when the iterator callback returns any
+                            // (non-`undefined`) value, then we stop
+                            // the iteration immediately
+                            if (result !== void 0) {
+                                resolve(result);
+                            } else {
+                                cursor["continue"]();
+                            }
+                        } else {
+                            resolve();
+                        }
+                    };
+
+                    req.onerror = function () {
+                        reject(req.error);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+
+    return promise;
+}
+
+function setItem(key, value, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        var dbInfo;
+        self.ready().then(function () {
+            dbInfo = self._dbInfo;
+            if (toString.call(value) === '[object Blob]') {
+                return _checkBlobSupport(dbInfo.db).then(function (blobSupport) {
+                    if (blobSupport) {
+                        return value;
+                    }
+                    return _encodeBlob(value);
+                });
+            }
+            return value;
+        }).then(function (value) {
+            createTransaction(self._dbInfo, READ_WRITE, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+
+                    // The reason we don't _save_ null is because IE 10 does
+                    // not support saving the `null` type in IndexedDB. How
+                    // ironic, given the bug below!
+                    // See: https://github.com/mozilla/localForage/issues/161
+                    if (value === null) {
+                        value = undefined;
+                    }
+
+                    var req = store.put(value, key);
+
+                    transaction.oncomplete = function () {
+                        // Cast to undefined so the value passed to
+                        // callback/promise is the same as what one would get out
+                        // of `getItem()` later. This leads to some weirdness
+                        // (setItem('foo', undefined) will return `null`), but
+                        // it's not my fault localStorage is our baseline and that
+                        // it's weird.
+                        if (value === undefined) {
+                            value = null;
+                        }
+
+                        resolve(value);
+                    };
+                    transaction.onabort = transaction.onerror = function () {
+                        var err = req.error ? req.error : req.transaction.error;
+                        reject(err);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function removeItem(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_WRITE, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    // We use a Grunt task to make this safe for IE and some
+                    // versions of Android (including those used by Cordova).
+                    // Normally IE won't like `.delete()` and will insist on
+                    // using `['delete']()`, but we have a build step that
+                    // fixes this for us now.
+                    var req = store["delete"](key);
+                    transaction.oncomplete = function () {
+                        resolve();
+                    };
+
+                    transaction.onerror = function () {
+                        reject(req.error);
+                    };
+
+                    // The request will be also be aborted if we've exceeded our storage
+                    // space.
+                    transaction.onabort = function () {
+                        var err = req.error ? req.error : req.transaction.error;
+                        reject(err);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function clear(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_WRITE, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var req = store.clear();
+
+                    transaction.oncomplete = function () {
+                        resolve();
+                    };
+
+                    transaction.onabort = transaction.onerror = function () {
+                        var err = req.error ? req.error : req.transaction.error;
+                        reject(err);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function length(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_ONLY, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var req = store.count();
+
+                    req.onsuccess = function () {
+                        resolve(req.result);
+                    };
+
+                    req.onerror = function () {
+                        reject(req.error);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function key(n, callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        if (n < 0) {
+            resolve(null);
+
+            return;
+        }
+
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_ONLY, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var advanced = false;
+                    var req = store.openKeyCursor();
+
+                    req.onsuccess = function () {
+                        var cursor = req.result;
+                        if (!cursor) {
+                            // this means there weren't enough keys
+                            resolve(null);
+
+                            return;
+                        }
+
+                        if (n === 0) {
+                            // We have the first key, return it if that's what they
+                            // wanted.
+                            resolve(cursor.key);
+                        } else {
+                            if (!advanced) {
+                                // Otherwise, ask the cursor to skip ahead n
+                                // records.
+                                advanced = true;
+                                cursor.advance(n);
+                            } else {
+                                // When we get here, we've got the nth key.
+                                resolve(cursor.key);
+                            }
+                        }
+                    };
+
+                    req.onerror = function () {
+                        reject(req.error);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function keys(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            createTransaction(self._dbInfo, READ_ONLY, function (err, transaction) {
+                if (err) {
+                    return reject(err);
+                }
+
+                try {
+                    var store = transaction.objectStore(self._dbInfo.storeName);
+                    var req = store.openKeyCursor();
+                    var keys = [];
+
+                    req.onsuccess = function () {
+                        var cursor = req.result;
+
+                        if (!cursor) {
+                            resolve(keys);
+                            return;
+                        }
+
+                        keys.push(cursor.key);
+                        cursor["continue"]();
+                    };
+
+                    req.onerror = function () {
+                        reject(req.error);
+                    };
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function dropInstance(options, callback) {
+    callback = getCallback.apply(this, arguments);
+
+    var currentConfig = this.config();
+    options = typeof options !== 'function' && options || {};
+    if (!options.name) {
+        options.name = options.name || currentConfig.name;
+        options.storeName = options.storeName || currentConfig.storeName;
+    }
+
+    var self = this;
+    var promise;
+    if (!options.name) {
+        promise = Promise$1.reject('Invalid arguments');
+    } else {
+        var isCurrentDb = options.name === currentConfig.name && self._dbInfo.db;
+
+        var dbPromise = isCurrentDb ? Promise$1.resolve(self._dbInfo.db) : _getOriginalConnection(options).then(function (db) {
+            var dbContext = dbContexts[options.name];
+            var forages = dbContext.forages;
+            dbContext.db = db;
+            for (var i = 0; i < forages.length; i++) {
+                forages[i]._dbInfo.db = db;
+            }
+            return db;
+        });
+
+        if (!options.storeName) {
+            promise = dbPromise.then(function (db) {
+                _deferReadiness(options);
+
+                var dbContext = dbContexts[options.name];
+                var forages = dbContext.forages;
+
+                db.close();
+                for (var i = 0; i < forages.length; i++) {
+                    var forage = forages[i];
+                    forage._dbInfo.db = null;
+                }
+
+                var dropDBPromise = new Promise$1(function (resolve, reject) {
+                    var req = idb.deleteDatabase(options.name);
+
+                    req.onerror = function () {
+                        var db = req.result;
+                        if (db) {
+                            db.close();
+                        }
+                        reject(req.error);
+                    };
+
+                    req.onblocked = function () {
+                        // Closing all open connections in onversionchange handler should prevent this situation, but if
+                        // we do get here, it just means the request remains pending - eventually it will succeed or error
+                        console.warn('dropInstance blocked for database "' + options.name + '" until all open connections are closed');
+                    };
+
+                    req.onsuccess = function () {
+                        var db = req.result;
+                        if (db) {
+                            db.close();
+                        }
+                        resolve(db);
+                    };
+                });
+
+                return dropDBPromise.then(function (db) {
+                    dbContext.db = db;
+                    for (var i = 0; i < forages.length; i++) {
+                        var _forage = forages[i];
+                        _advanceReadiness(_forage._dbInfo);
+                    }
+                })["catch"](function (err) {
+                    (_rejectReadiness(options, err) || Promise$1.resolve())["catch"](function () {});
+                    throw err;
+                });
+            });
+        } else {
+            promise = dbPromise.then(function (db) {
+                if (!db.objectStoreNames.contains(options.storeName)) {
+                    return;
+                }
+
+                var newVersion = db.version + 1;
+
+                _deferReadiness(options);
+
+                var dbContext = dbContexts[options.name];
+                var forages = dbContext.forages;
+
+                db.close();
+                for (var i = 0; i < forages.length; i++) {
+                    var forage = forages[i];
+                    forage._dbInfo.db = null;
+                    forage._dbInfo.version = newVersion;
+                }
+
+                var dropObjectPromise = new Promise$1(function (resolve, reject) {
+                    var req = idb.open(options.name, newVersion);
+
+                    req.onerror = function (err) {
+                        var db = req.result;
+                        db.close();
+                        reject(err);
+                    };
+
+                    req.onupgradeneeded = function () {
+                        var db = req.result;
+                        db.deleteObjectStore(options.storeName);
+                    };
+
+                    req.onsuccess = function () {
+                        var db = req.result;
+                        db.close();
+                        resolve(db);
+                    };
+                });
+
+                return dropObjectPromise.then(function (db) {
+                    dbContext.db = db;
+                    for (var j = 0; j < forages.length; j++) {
+                        var _forage2 = forages[j];
+                        _forage2._dbInfo.db = db;
+                        _advanceReadiness(_forage2._dbInfo);
+                    }
+                })["catch"](function (err) {
+                    (_rejectReadiness(options, err) || Promise$1.resolve())["catch"](function () {});
+                    throw err;
+                });
+            });
+        }
+    }
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+var asyncStorage = {
+    _driver: 'asyncStorage',
+    _initStorage: _initStorage,
+    _support: isIndexedDBValid(),
+    iterate: iterate,
+    getItem: getItem,
+    setItem: setItem,
+    removeItem: removeItem,
+    clear: clear,
+    length: length,
+    key: key,
+    keys: keys,
+    dropInstance: dropInstance
+};
+
+function isWebSQLValid() {
+    return typeof openDatabase === 'function';
+}
+
+// Sadly, the best way to save binary data in WebSQL/localStorage is serializing
+// it to Base64, so this is how we store it to prevent very strange errors with less
+// verbose ways of binary <-> string data storage.
+var BASE_CHARS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+
+var BLOB_TYPE_PREFIX = '~~local_forage_type~';
+var BLOB_TYPE_PREFIX_REGEX = /^~~local_forage_type~([^~]+)~/;
+
+var SERIALIZED_MARKER = '__lfsc__:';
+var SERIALIZED_MARKER_LENGTH = SERIALIZED_MARKER.length;
+
+// OMG the serializations!
+var TYPE_ARRAYBUFFER = 'arbf';
+var TYPE_BLOB = 'blob';
+var TYPE_INT8ARRAY = 'si08';
+var TYPE_UINT8ARRAY = 'ui08';
+var TYPE_UINT8CLAMPEDARRAY = 'uic8';
+var TYPE_INT16ARRAY = 'si16';
+var TYPE_INT32ARRAY = 'si32';
+var TYPE_UINT16ARRAY = 'ur16';
+var TYPE_UINT32ARRAY = 'ui32';
+var TYPE_FLOAT32ARRAY = 'fl32';
+var TYPE_FLOAT64ARRAY = 'fl64';
+var TYPE_SERIALIZED_MARKER_LENGTH = SERIALIZED_MARKER_LENGTH + TYPE_ARRAYBUFFER.length;
+
+var toString$1 = Object.prototype.toString;
+
+function stringToBuffer(serializedString) {
+    // Fill the string into a ArrayBuffer.
+    var bufferLength = serializedString.length * 0.75;
+    var len = serializedString.length;
+    var i;
+    var p = 0;
+    var encoded1, encoded2, encoded3, encoded4;
+
+    if (serializedString[serializedString.length - 1] === '=') {
+        bufferLength--;
+        if (serializedString[serializedString.length - 2] === '=') {
+            bufferLength--;
+        }
+    }
+
+    var buffer = new ArrayBuffer(bufferLength);
+    var bytes = new Uint8Array(buffer);
+
+    for (i = 0; i < len; i += 4) {
+        encoded1 = BASE_CHARS.indexOf(serializedString[i]);
+        encoded2 = BASE_CHARS.indexOf(serializedString[i + 1]);
+        encoded3 = BASE_CHARS.indexOf(serializedString[i + 2]);
+        encoded4 = BASE_CHARS.indexOf(serializedString[i + 3]);
+
+        /*jslint bitwise: true */
+        bytes[p++] = encoded1 << 2 | encoded2 >> 4;
+        bytes[p++] = (encoded2 & 15) << 4 | encoded3 >> 2;
+        bytes[p++] = (encoded3 & 3) << 6 | encoded4 & 63;
+    }
+    return buffer;
+}
+
+// Converts a buffer to a string to store, serialized, in the backend
+// storage library.
+function bufferToString(buffer) {
+    // base64-arraybuffer
+    var bytes = new Uint8Array(buffer);
+    var base64String = '';
+    var i;
+
+    for (i = 0; i < bytes.length; i += 3) {
+        /*jslint bitwise: true */
+        base64String += BASE_CHARS[bytes[i] >> 2];
+        base64String += BASE_CHARS[(bytes[i] & 3) << 4 | bytes[i + 1] >> 4];
+        base64String += BASE_CHARS[(bytes[i + 1] & 15) << 2 | bytes[i + 2] >> 6];
+        base64String += BASE_CHARS[bytes[i + 2] & 63];
+    }
+
+    if (bytes.length % 3 === 2) {
+        base64String = base64String.substring(0, base64String.length - 1) + '=';
+    } else if (bytes.length % 3 === 1) {
+        base64String = base64String.substring(0, base64String.length - 2) + '==';
+    }
+
+    return base64String;
+}
+
+// Serialize a value, afterwards executing a callback (which usually
+// instructs the `setItem()` callback/promise to be executed). This is how
+// we store binary data with localStorage.
+function serialize(value, callback) {
+    var valueType = '';
+    if (value) {
+        valueType = toString$1.call(value);
+    }
+
+    // Cannot use `value instanceof ArrayBuffer` or such here, as these
+    // checks fail when running the tests using casper.js...
+    //
+    // TODO: See why those tests fail and use a better solution.
+    if (value && (valueType === '[object ArrayBuffer]' || value.buffer && toString$1.call(value.buffer) === '[object ArrayBuffer]')) {
+        // Convert binary arrays to a string and prefix the string with
+        // a special marker.
+        var buffer;
+        var marker = SERIALIZED_MARKER;
+
+        if (value instanceof ArrayBuffer) {
+            buffer = value;
+            marker += TYPE_ARRAYBUFFER;
+        } else {
+            buffer = value.buffer;
+
+            if (valueType === '[object Int8Array]') {
+                marker += TYPE_INT8ARRAY;
+            } else if (valueType === '[object Uint8Array]') {
+                marker += TYPE_UINT8ARRAY;
+            } else if (valueType === '[object Uint8ClampedArray]') {
+                marker += TYPE_UINT8CLAMPEDARRAY;
+            } else if (valueType === '[object Int16Array]') {
+                marker += TYPE_INT16ARRAY;
+            } else if (valueType === '[object Uint16Array]') {
+                marker += TYPE_UINT16ARRAY;
+            } else if (valueType === '[object Int32Array]') {
+                marker += TYPE_INT32ARRAY;
+            } else if (valueType === '[object Uint32Array]') {
+                marker += TYPE_UINT32ARRAY;
+            } else if (valueType === '[object Float32Array]') {
+                marker += TYPE_FLOAT32ARRAY;
+            } else if (valueType === '[object Float64Array]') {
+                marker += TYPE_FLOAT64ARRAY;
+            } else {
+                callback(new Error('Failed to get type for BinaryArray'));
+            }
+        }
+
+        callback(marker + bufferToString(buffer));
+    } else if (valueType === '[object Blob]') {
+        // Conver the blob to a binaryArray and then to a string.
+        var fileReader = new FileReader();
+
+        fileReader.onload = function () {
+            // Backwards-compatible prefix for the blob type.
+            var str = BLOB_TYPE_PREFIX + value.type + '~' + bufferToString(this.result);
+
+            callback(SERIALIZED_MARKER + TYPE_BLOB + str);
+        };
+
+        fileReader.readAsArrayBuffer(value);
+    } else {
+        try {
+            callback(JSON.stringify(value));
+        } catch (e) {
+            console.error("Couldn't convert value into a JSON string: ", value);
+
+            callback(null, e);
+        }
+    }
+}
+
+// Deserialize data we've inserted into a value column/field. We place
+// special markers into our strings to mark them as encoded; this isn't
+// as nice as a meta field, but it's the only sane thing we can do whilst
+// keeping localStorage support intact.
+//
+// Oftentimes this will just deserialize JSON content, but if we have a
+// special marker (SERIALIZED_MARKER, defined above), we will extract
+// some kind of arraybuffer/binary data/typed array out of the string.
+function deserialize(value) {
+    // If we haven't marked this string as being specially serialized (i.e.
+    // something other than serialized JSON), we can just return it and be
+    // done with it.
+    if (value.substring(0, SERIALIZED_MARKER_LENGTH) !== SERIALIZED_MARKER) {
+        return JSON.parse(value);
+    }
+
+    // The following code deals with deserializing some kind of Blob or
+    // TypedArray. First we separate out the type of data we're dealing
+    // with from the data itself.
+    var serializedString = value.substring(TYPE_SERIALIZED_MARKER_LENGTH);
+    var type = value.substring(SERIALIZED_MARKER_LENGTH, TYPE_SERIALIZED_MARKER_LENGTH);
+
+    var blobType;
+    // Backwards-compatible blob type serialization strategy.
+    // DBs created with older versions of localForage will simply not have the blob type.
+    if (type === TYPE_BLOB && BLOB_TYPE_PREFIX_REGEX.test(serializedString)) {
+        var matcher = serializedString.match(BLOB_TYPE_PREFIX_REGEX);
+        blobType = matcher[1];
+        serializedString = serializedString.substring(matcher[0].length);
+    }
+    var buffer = stringToBuffer(serializedString);
+
+    // Return the right type based on the code/type set during
+    // serialization.
+    switch (type) {
+        case TYPE_ARRAYBUFFER:
+            return buffer;
+        case TYPE_BLOB:
+            return createBlob([buffer], { type: blobType });
+        case TYPE_INT8ARRAY:
+            return new Int8Array(buffer);
+        case TYPE_UINT8ARRAY:
+            return new Uint8Array(buffer);
+        case TYPE_UINT8CLAMPEDARRAY:
+            return new Uint8ClampedArray(buffer);
+        case TYPE_INT16ARRAY:
+            return new Int16Array(buffer);
+        case TYPE_UINT16ARRAY:
+            return new Uint16Array(buffer);
+        case TYPE_INT32ARRAY:
+            return new Int32Array(buffer);
+        case TYPE_UINT32ARRAY:
+            return new Uint32Array(buffer);
+        case TYPE_FLOAT32ARRAY:
+            return new Float32Array(buffer);
+        case TYPE_FLOAT64ARRAY:
+            return new Float64Array(buffer);
+        default:
+            throw new Error('Unkown type: ' + type);
+    }
+}
+
+var localforageSerializer = {
+    serialize: serialize,
+    deserialize: deserialize,
+    stringToBuffer: stringToBuffer,
+    bufferToString: bufferToString
+};
+
+/*
+ * Includes code from:
+ *
+ * base64-arraybuffer
+ * https://github.com/niklasvh/base64-arraybuffer
+ *
+ * Copyright (c) 2012 Niklas von Hertzen
+ * Licensed under the MIT license.
+ */
+
+function createDbTable(t, dbInfo, callback, errorCallback) {
+    t.executeSql('CREATE TABLE IF NOT EXISTS ' + dbInfo.storeName + ' ' + '(id INTEGER PRIMARY KEY, key unique, value)', [], callback, errorCallback);
+}
+
+// Open the WebSQL database (automatically creates one if one didn't
+// previously exist), using any options set in the config.
+function _initStorage$1(options) {
+    var self = this;
+    var dbInfo = {
+        db: null
+    };
+
+    if (options) {
+        for (var i in options) {
+            dbInfo[i] = typeof options[i] !== 'string' ? options[i].toString() : options[i];
+        }
+    }
+
+    var dbInfoPromise = new Promise$1(function (resolve, reject) {
+        // Open the database; the openDatabase API will automatically
+        // create it for us if it doesn't exist.
+        try {
+            dbInfo.db = openDatabase(dbInfo.name, String(dbInfo.version), dbInfo.description, dbInfo.size);
+        } catch (e) {
+            return reject(e);
+        }
+
+        // Create our key/value table if it doesn't exist.
+        dbInfo.db.transaction(function (t) {
+            createDbTable(t, dbInfo, function () {
+                self._dbInfo = dbInfo;
+                resolve();
+            }, function (t, error) {
+                reject(error);
+            });
+        }, reject);
+    });
+
+    dbInfo.serializer = localforageSerializer;
+    return dbInfoPromise;
+}
+
+function tryExecuteSql(t, dbInfo, sqlStatement, args, callback, errorCallback) {
+    t.executeSql(sqlStatement, args, callback, function (t, error) {
+        if (error.code === error.SYNTAX_ERR) {
+            t.executeSql('SELECT name FROM sqlite_master ' + "WHERE type='table' AND name = ?", [dbInfo.storeName], function (t, results) {
+                if (!results.rows.length) {
+                    // if the table is missing (was deleted)
+                    // re-create it table and retry
+                    createDbTable(t, dbInfo, function () {
+                        t.executeSql(sqlStatement, args, callback, errorCallback);
+                    }, errorCallback);
+                } else {
+                    errorCallback(t, error);
+                }
+            }, errorCallback);
+        } else {
+            errorCallback(t, error);
+        }
+    }, errorCallback);
+}
+
+function getItem$1(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'SELECT * FROM ' + dbInfo.storeName + ' WHERE key = ? LIMIT 1', [key], function (t, results) {
+                    var result = results.rows.length ? results.rows.item(0).value : null;
+
+                    // Check to see if this is serialized content we need to
+                    // unpack.
+                    if (result) {
+                        result = dbInfo.serializer.deserialize(result);
+                    }
+
+                    resolve(result);
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function iterate$1(iterator, callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'SELECT * FROM ' + dbInfo.storeName, [], function (t, results) {
+                    var rows = results.rows;
+                    var length = rows.length;
+
+                    for (var i = 0; i < length; i++) {
+                        var item = rows.item(i);
+                        var result = item.value;
+
+                        // Check to see if this is serialized content
+                        // we need to unpack.
+                        if (result) {
+                            result = dbInfo.serializer.deserialize(result);
+                        }
+
+                        result = iterator(result, item.key, i + 1);
+
+                        // void(0) prevents problems with redefinition
+                        // of `undefined`.
+                        if (result !== void 0) {
+                            resolve(result);
+                            return;
+                        }
+                    }
+
+                    resolve();
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function _setItem(key, value, callback, retriesLeft) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            // The localStorage API doesn't return undefined values in an
+            // "expected" way, so undefined is always cast to null in all
+            // drivers. See: https://github.com/mozilla/localForage/pull/42
+            if (value === undefined) {
+                value = null;
+            }
+
+            // Save the original value to pass to the callback.
+            var originalValue = value;
+
+            var dbInfo = self._dbInfo;
+            dbInfo.serializer.serialize(value, function (value, error) {
+                if (error) {
+                    reject(error);
+                } else {
+                    dbInfo.db.transaction(function (t) {
+                        tryExecuteSql(t, dbInfo, 'INSERT OR REPLACE INTO ' + dbInfo.storeName + ' ' + '(key, value) VALUES (?, ?)', [key, value], function () {
+                            resolve(originalValue);
+                        }, function (t, error) {
+                            reject(error);
+                        });
+                    }, function (sqlError) {
+                        // The transaction failed; check
+                        // to see if it's a quota error.
+                        if (sqlError.code === sqlError.QUOTA_ERR) {
+                            // We reject the callback outright for now, but
+                            // it's worth trying to re-run the transaction.
+                            // Even if the user accepts the prompt to use
+                            // more storage on Safari, this error will
+                            // be called.
+                            //
+                            // Try to re-run the transaction.
+                            if (retriesLeft > 0) {
+                                resolve(_setItem.apply(self, [key, originalValue, callback, retriesLeft - 1]));
+                                return;
+                            }
+                            reject(sqlError);
+                        }
+                    });
+                }
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function setItem$1(key, value, callback) {
+    return _setItem.apply(this, [key, value, callback, 1]);
+}
+
+function removeItem$1(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'DELETE FROM ' + dbInfo.storeName + ' WHERE key = ?', [key], function () {
+                    resolve();
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Deletes every item in the table.
+// TODO: Find out if this resets the AUTO_INCREMENT number.
+function clear$1(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'DELETE FROM ' + dbInfo.storeName, [], function () {
+                    resolve();
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Does a simple `COUNT(key)` to get the number of items stored in
+// localForage.
+function length$1(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                // Ahhh, SQL makes this one soooooo easy.
+                tryExecuteSql(t, dbInfo, 'SELECT COUNT(key) as c FROM ' + dbInfo.storeName, [], function (t, results) {
+                    var result = results.rows.item(0).c;
+                    resolve(result);
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Return the key located at key index X; essentially gets the key from a
+// `WHERE id = ?`. This is the most efficient way I can think to implement
+// this rarely-used (in my experience) part of the API, but it can seem
+// inconsistent, because we do `INSERT OR REPLACE INTO` on `setItem()`, so
+// the ID of each key will change every time it's updated. Perhaps a stored
+// procedure for the `setItem()` SQL would solve this problem?
+// TODO: Don't change ID on `setItem()`.
+function key$1(n, callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'SELECT key FROM ' + dbInfo.storeName + ' WHERE id = ? LIMIT 1', [n + 1], function (t, results) {
+                    var result = results.rows.length ? results.rows.item(0).key : null;
+                    resolve(result);
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function keys$1(callback) {
+    var self = this;
+
+    var promise = new Promise$1(function (resolve, reject) {
+        self.ready().then(function () {
+            var dbInfo = self._dbInfo;
+            dbInfo.db.transaction(function (t) {
+                tryExecuteSql(t, dbInfo, 'SELECT key FROM ' + dbInfo.storeName, [], function (t, results) {
+                    var keys = [];
+
+                    for (var i = 0; i < results.rows.length; i++) {
+                        keys.push(results.rows.item(i).key);
+                    }
+
+                    resolve(keys);
+                }, function (t, error) {
+                    reject(error);
+                });
+            });
+        })["catch"](reject);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// https://www.w3.org/TR/webdatabase/#databases
+// > There is no way to enumerate or delete the databases available for an origin from this API.
+function getAllStoreNames(db) {
+    return new Promise$1(function (resolve, reject) {
+        db.transaction(function (t) {
+            t.executeSql('SELECT name FROM sqlite_master ' + "WHERE type='table' AND name <> '__WebKitDatabaseInfoTable__'", [], function (t, results) {
+                var storeNames = [];
+
+                for (var i = 0; i < results.rows.length; i++) {
+                    storeNames.push(results.rows.item(i).name);
+                }
+
+                resolve({
+                    db: db,
+                    storeNames: storeNames
+                });
+            }, function (t, error) {
+                reject(error);
+            });
+        }, function (sqlError) {
+            reject(sqlError);
+        });
+    });
+}
+
+function dropInstance$1(options, callback) {
+    callback = getCallback.apply(this, arguments);
+
+    var currentConfig = this.config();
+    options = typeof options !== 'function' && options || {};
+    if (!options.name) {
+        options.name = options.name || currentConfig.name;
+        options.storeName = options.storeName || currentConfig.storeName;
+    }
+
+    var self = this;
+    var promise;
+    if (!options.name) {
+        promise = Promise$1.reject('Invalid arguments');
+    } else {
+        promise = new Promise$1(function (resolve) {
+            var db;
+            if (options.name === currentConfig.name) {
+                // use the db reference of the current instance
+                db = self._dbInfo.db;
+            } else {
+                db = openDatabase(options.name, '', '', 0);
+            }
+
+            if (!options.storeName) {
+                // drop all database tables
+                resolve(getAllStoreNames(db));
+            } else {
+                resolve({
+                    db: db,
+                    storeNames: [options.storeName]
+                });
+            }
+        }).then(function (operationInfo) {
+            return new Promise$1(function (resolve, reject) {
+                operationInfo.db.transaction(function (t) {
+                    function dropTable(storeName) {
+                        return new Promise$1(function (resolve, reject) {
+                            t.executeSql('DROP TABLE IF EXISTS ' + storeName, [], function () {
+                                resolve();
+                            }, function (t, error) {
+                                reject(error);
+                            });
+                        });
+                    }
+
+                    var operations = [];
+                    for (var i = 0, len = operationInfo.storeNames.length; i < len; i++) {
+                        operations.push(dropTable(operationInfo.storeNames[i]));
+                    }
+
+                    Promise$1.all(operations).then(function () {
+                        resolve();
+                    })["catch"](function (e) {
+                        reject(e);
+                    });
+                }, function (sqlError) {
+                    reject(sqlError);
+                });
+            });
+        });
+    }
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+var webSQLStorage = {
+    _driver: 'webSQLStorage',
+    _initStorage: _initStorage$1,
+    _support: isWebSQLValid(),
+    iterate: iterate$1,
+    getItem: getItem$1,
+    setItem: setItem$1,
+    removeItem: removeItem$1,
+    clear: clear$1,
+    length: length$1,
+    key: key$1,
+    keys: keys$1,
+    dropInstance: dropInstance$1
+};
+
+function isLocalStorageValid() {
+    try {
+        return typeof localStorage !== 'undefined' && 'setItem' in localStorage &&
+        // in IE8 typeof localStorage.setItem === 'object'
+        !!localStorage.setItem;
+    } catch (e) {
+        return false;
+    }
+}
+
+function _getKeyPrefix(options, defaultConfig) {
+    var keyPrefix = options.name + '/';
+
+    if (options.storeName !== defaultConfig.storeName) {
+        keyPrefix += options.storeName + '/';
+    }
+    return keyPrefix;
+}
+
+// Check if localStorage throws when saving an item
+function checkIfLocalStorageThrows() {
+    var localStorageTestKey = '_localforage_support_test';
+
+    try {
+        localStorage.setItem(localStorageTestKey, true);
+        localStorage.removeItem(localStorageTestKey);
+
+        return false;
+    } catch (e) {
+        return true;
+    }
+}
+
+// Check if localStorage is usable and allows to save an item
+// This method checks if localStorage is usable in Safari Private Browsing
+// mode, or in any other case where the available quota for localStorage
+// is 0 and there wasn't any saved items yet.
+function _isLocalStorageUsable() {
+    return !checkIfLocalStorageThrows() || localStorage.length > 0;
+}
+
+// Config the localStorage backend, using options set in the config.
+function _initStorage$2(options) {
+    var self = this;
+    var dbInfo = {};
+    if (options) {
+        for (var i in options) {
+            dbInfo[i] = options[i];
+        }
+    }
+
+    dbInfo.keyPrefix = _getKeyPrefix(options, self._defaultConfig);
+
+    if (!_isLocalStorageUsable()) {
+        return Promise$1.reject();
+    }
+
+    self._dbInfo = dbInfo;
+    dbInfo.serializer = localforageSerializer;
+
+    return Promise$1.resolve();
+}
+
+// Remove all keys from the datastore, effectively destroying all data in
+// the app's key/value store!
+function clear$2(callback) {
+    var self = this;
+    var promise = self.ready().then(function () {
+        var keyPrefix = self._dbInfo.keyPrefix;
+
+        for (var i = localStorage.length - 1; i >= 0; i--) {
+            var key = localStorage.key(i);
+
+            if (key.indexOf(keyPrefix) === 0) {
+                localStorage.removeItem(key);
+            }
+        }
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Retrieve an item from the store. Unlike the original async_storage
+// library in Gaia, we don't modify return values at all. If a key's value
+// is `undefined`, we pass that value to the callback function.
+function getItem$2(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = self.ready().then(function () {
+        var dbInfo = self._dbInfo;
+        var result = localStorage.getItem(dbInfo.keyPrefix + key);
+
+        // If a result was found, parse it from the serialized
+        // string into a JS object. If result isn't truthy, the key
+        // is likely undefined and we'll pass it straight to the
+        // callback.
+        if (result) {
+            result = dbInfo.serializer.deserialize(result);
+        }
+
+        return result;
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Iterate over all items in the store.
+function iterate$2(iterator, callback) {
+    var self = this;
+
+    var promise = self.ready().then(function () {
+        var dbInfo = self._dbInfo;
+        var keyPrefix = dbInfo.keyPrefix;
+        var keyPrefixLength = keyPrefix.length;
+        var length = localStorage.length;
+
+        // We use a dedicated iterator instead of the `i` variable below
+        // so other keys we fetch in localStorage aren't counted in
+        // the `iterationNumber` argument passed to the `iterate()`
+        // callback.
+        //
+        // See: github.com/mozilla/localForage/pull/435#discussion_r38061530
+        var iterationNumber = 1;
+
+        for (var i = 0; i < length; i++) {
+            var key = localStorage.key(i);
+            if (key.indexOf(keyPrefix) !== 0) {
+                continue;
+            }
+            var value = localStorage.getItem(key);
+
+            // If a result was found, parse it from the serialized
+            // string into a JS object. If result isn't truthy, the
+            // key is likely undefined and we'll pass it straight
+            // to the iterator.
+            if (value) {
+                value = dbInfo.serializer.deserialize(value);
+            }
+
+            value = iterator(value, key.substring(keyPrefixLength), iterationNumber++);
+
+            if (value !== void 0) {
+                return value;
+            }
+        }
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Same as localStorage's key() method, except takes a callback.
+function key$2(n, callback) {
+    var self = this;
+    var promise = self.ready().then(function () {
+        var dbInfo = self._dbInfo;
+        var result;
+        try {
+            result = localStorage.key(n);
+        } catch (error) {
+            result = null;
+        }
+
+        // Remove the prefix from the key, if a key is found.
+        if (result) {
+            result = result.substring(dbInfo.keyPrefix.length);
+        }
+
+        return result;
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function keys$2(callback) {
+    var self = this;
+    var promise = self.ready().then(function () {
+        var dbInfo = self._dbInfo;
+        var length = localStorage.length;
+        var keys = [];
+
+        for (var i = 0; i < length; i++) {
+            var itemKey = localStorage.key(i);
+            if (itemKey.indexOf(dbInfo.keyPrefix) === 0) {
+                keys.push(itemKey.substring(dbInfo.keyPrefix.length));
+            }
+        }
+
+        return keys;
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Supply the number of keys in the datastore to the callback function.
+function length$2(callback) {
+    var self = this;
+    var promise = self.keys().then(function (keys) {
+        return keys.length;
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Remove an item from the store, nice and simple.
+function removeItem$2(key, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = self.ready().then(function () {
+        var dbInfo = self._dbInfo;
+        localStorage.removeItem(dbInfo.keyPrefix + key);
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+// Set a key's value and run an optional callback once the value is set.
+// Unlike Gaia's implementation, the callback function is passed the value,
+// in case you want to operate on that value only after you're sure it
+// saved, or something like that.
+function setItem$2(key, value, callback) {
+    var self = this;
+
+    key = normalizeKey(key);
+
+    var promise = self.ready().then(function () {
+        // Convert undefined values to null.
+        // https://github.com/mozilla/localForage/pull/42
+        if (value === undefined) {
+            value = null;
+        }
+
+        // Save the original value to pass to the callback.
+        var originalValue = value;
+
+        return new Promise$1(function (resolve, reject) {
+            var dbInfo = self._dbInfo;
+            dbInfo.serializer.serialize(value, function (value, error) {
+                if (error) {
+                    reject(error);
+                } else {
+                    try {
+                        localStorage.setItem(dbInfo.keyPrefix + key, value);
+                        resolve(originalValue);
+                    } catch (e) {
+                        // localStorage capacity exceeded.
+                        // TODO: Make this a specific error/event.
+                        if (e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') {
+                            reject(e);
+                        }
+                        reject(e);
+                    }
+                }
+            });
+        });
+    });
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+function dropInstance$2(options, callback) {
+    callback = getCallback.apply(this, arguments);
+
+    options = typeof options !== 'function' && options || {};
+    if (!options.name) {
+        var currentConfig = this.config();
+        options.name = options.name || currentConfig.name;
+        options.storeName = options.storeName || currentConfig.storeName;
+    }
+
+    var self = this;
+    var promise;
+    if (!options.name) {
+        promise = Promise$1.reject('Invalid arguments');
+    } else {
+        promise = new Promise$1(function (resolve) {
+            if (!options.storeName) {
+                resolve(options.name + '/');
+            } else {
+                resolve(_getKeyPrefix(options, self._defaultConfig));
+            }
+        }).then(function (keyPrefix) {
+            for (var i = localStorage.length - 1; i >= 0; i--) {
+                var key = localStorage.key(i);
+
+                if (key.indexOf(keyPrefix) === 0) {
+                    localStorage.removeItem(key);
+                }
+            }
+        });
+    }
+
+    executeCallback(promise, callback);
+    return promise;
+}
+
+var localStorageWrapper = {
+    _driver: 'localStorageWrapper',
+    _initStorage: _initStorage$2,
+    _support: isLocalStorageValid(),
+    iterate: iterate$2,
+    getItem: getItem$2,
+    setItem: setItem$2,
+    removeItem: removeItem$2,
+    clear: clear$2,
+    length: length$2,
+    key: key$2,
+    keys: keys$2,
+    dropInstance: dropInstance$2
+};
+
+var sameValue = function sameValue(x, y) {
+    return x === y || typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y);
+};
+
+var includes = function includes(array, searchElement) {
+    var len = array.length;
+    var i = 0;
+    while (i < len) {
+        if (sameValue(array[i], searchElement)) {
+            return true;
+        }
+        i++;
+    }
+
+    return false;
+};
+
+var isArray = Array.isArray || function (arg) {
+    return Object.prototype.toString.call(arg) === '[object Array]';
+};
+
+// Drivers are stored here when `defineDriver()` is called.
+// They are shared across all instances of localForage.
+var DefinedDrivers = {};
+
+var DriverSupport = {};
+
+var DefaultDrivers = {
+    INDEXEDDB: asyncStorage,
+    WEBSQL: webSQLStorage,
+    LOCALSTORAGE: localStorageWrapper
+};
+
+var DefaultDriverOrder = [DefaultDrivers.INDEXEDDB._driver, DefaultDrivers.WEBSQL._driver, DefaultDrivers.LOCALSTORAGE._driver];
+
+var OptionalDriverMethods = ['dropInstance'];
+
+var LibraryMethods = ['clear', 'getItem', 'iterate', 'key', 'keys', 'length', 'removeItem', 'setItem'].concat(OptionalDriverMethods);
+
+var DefaultConfig = {
+    description: '',
+    driver: DefaultDriverOrder.slice(),
+    name: 'localforage',
+    // Default DB size is _JUST UNDER_ 5MB, as it's the highest size
+    // we can use without a prompt.
+    size: 4980736,
+    storeName: 'keyvaluepairs',
+    version: 1.0
+};
+
+function callWhenReady(localForageInstance, libraryMethod) {
+    localForageInstance[libraryMethod] = function () {
+        var _args = arguments;
+        return localForageInstance.ready().then(function () {
+            return localForageInstance[libraryMethod].apply(localForageInstance, _args);
+        });
+    };
+}
+
+function extend() {
+    for (var i = 1; i < arguments.length; i++) {
+        var arg = arguments[i];
+
+        if (arg) {
+            for (var _key in arg) {
+                if (arg.hasOwnProperty(_key)) {
+                    if (isArray(arg[_key])) {
+                        arguments[0][_key] = arg[_key].slice();
+                    } else {
+                        arguments[0][_key] = arg[_key];
+                    }
+                }
+            }
+        }
+    }
+
+    return arguments[0];
+}
+
+var LocalForage = function () {
+    function LocalForage(options) {
+        _classCallCheck(this, LocalForage);
+
+        for (var driverTypeKey in DefaultDrivers) {
+            if (DefaultDrivers.hasOwnProperty(driverTypeKey)) {
+                var driver = DefaultDrivers[driverTypeKey];
+                var driverName = driver._driver;
+                this[driverTypeKey] = driverName;
+
+                if (!DefinedDrivers[driverName]) {
+                    // we don't need to wait for the promise,
+                    // since the default drivers can be defined
+                    // in a blocking manner
+                    this.defineDriver(driver);
+                }
+            }
+        }
+
+        this._defaultConfig = extend({}, DefaultConfig);
+        this._config = extend({}, this._defaultConfig, options);
+        this._driverSet = null;
+        this._initDriver = null;
+        this._ready = false;
+        this._dbInfo = null;
+
+        this._wrapLibraryMethodsWithReady();
+        this.setDriver(this._config.driver)["catch"](function () {});
+    }
+
+    // Set any config values for localForage; can be called anytime before
+    // the first API call (e.g. `getItem`, `setItem`).
+    // We loop through options so we don't overwrite existing config
+    // values.
+
+
+    LocalForage.prototype.config = function config(options) {
+        // If the options argument is an object, we use it to set values.
+        // Otherwise, we return either a specified config value or all
+        // config values.
+        if ((typeof options === 'undefined' ? 'undefined' : _typeof(options)) === 'object') {
+            // If localforage is ready and fully initialized, we can't set
+            // any new configuration values. Instead, we return an error.
+            if (this._ready) {
+                return new Error("Can't call config() after localforage " + 'has been used.');
+            }
+
+            for (var i in options) {
+                if (i === 'storeName') {
+                    options[i] = options[i].replace(/\W/g, '_');
+                }
+
+                if (i === 'version' && typeof options[i] !== 'number') {
+                    return new Error('Database version must be a number.');
+                }
+
+                this._config[i] = options[i];
+            }
+
+            // after all config options are set and
+            // the driver option is used, try setting it
+            if ('driver' in options && options.driver) {
+                return this.setDriver(this._config.driver);
+            }
+
+            return true;
+        } else if (typeof options === 'string') {
+            return this._config[options];
+        } else {
+            return this._config;
+        }
+    };
+
+    // Used to define a custom driver, shared across all instances of
+    // localForage.
+
+
+    LocalForage.prototype.defineDriver = function defineDriver(driverObject, callback, errorCallback) {
+        var promise = new Promise$1(function (resolve, reject) {
+            try {
+                var driverName = driverObject._driver;
+                var complianceError = new Error('Custom driver not compliant; see ' + 'https://mozilla.github.io/localForage/#definedriver');
+
+                // A driver name should be defined and not overlap with the
+                // library-defined, default drivers.
+                if (!driverObject._driver) {
+                    reject(complianceError);
+                    return;
+                }
+
+                var driverMethods = LibraryMethods.concat('_initStorage');
+                for (var i = 0, len = driverMethods.length; i < len; i++) {
+                    var driverMethodName = driverMethods[i];
+
+                    // when the property is there,
+                    // it should be a method even when optional
+                    var isRequired = !includes(OptionalDriverMethods, driverMethodName);
+                    if ((isRequired || driverObject[driverMethodName]) && typeof driverObject[driverMethodName] !== 'function') {
+                        reject(complianceError);
+                        return;
+                    }
+                }
+
+                var configureMissingMethods = function configureMissingMethods() {
+                    var methodNotImplementedFactory = function methodNotImplementedFactory(methodName) {
+                        return function () {
+                            var error = new Error('Method ' + methodName + ' is not implemented by the current driver');
+                            var promise = Promise$1.reject(error);
+                            executeCallback(promise, arguments[arguments.length - 1]);
+                            return promise;
+                        };
+                    };
+
+                    for (var _i = 0, _len = OptionalDriverMethods.length; _i < _len; _i++) {
+                        var optionalDriverMethod = OptionalDriverMethods[_i];
+                        if (!driverObject[optionalDriverMethod]) {
+                            driverObject[optionalDriverMethod] = methodNotImplementedFactory(optionalDriverMethod);
+                        }
+                    }
+                };
+
+                configureMissingMethods();
+
+                var setDriverSupport = function setDriverSupport(support) {
+                    if (DefinedDrivers[driverName]) {
+                        console.info('Redefining LocalForage driver: ' + driverName);
+                    }
+                    DefinedDrivers[driverName] = driverObject;
+                    DriverSupport[driverName] = support;
+                    // don't use a then, so that we can define
+                    // drivers that have simple _support methods
+                    // in a blocking manner
+                    resolve();
+                };
+
+                if ('_support' in driverObject) {
+                    if (driverObject._support && typeof driverObject._support === 'function') {
+                        driverObject._support().then(setDriverSupport, reject);
+                    } else {
+                        setDriverSupport(!!driverObject._support);
+                    }
+                } else {
+                    setDriverSupport(true);
+                }
+            } catch (e) {
+                reject(e);
+            }
+        });
+
+        executeTwoCallbacks(promise, callback, errorCallback);
+        return promise;
+    };
+
+    LocalForage.prototype.driver = function driver() {
+        return this._driver || null;
+    };
+
+    LocalForage.prototype.getDriver = function getDriver(driverName, callback, errorCallback) {
+        var getDriverPromise = DefinedDrivers[driverName] ? Promise$1.resolve(DefinedDrivers[driverName]) : Promise$1.reject(new Error('Driver not found.'));
+
+        executeTwoCallbacks(getDriverPromise, callback, errorCallback);
+        return getDriverPromise;
+    };
+
+    LocalForage.prototype.getSerializer = function getSerializer(callback) {
+        var serializerPromise = Promise$1.resolve(localforageSerializer);
+        executeTwoCallbacks(serializerPromise, callback);
+        return serializerPromise;
+    };
+
+    LocalForage.prototype.ready = function ready(callback) {
+        var self = this;
+
+        var promise = self._driverSet.then(function () {
+            if (self._ready === null) {
+                self._ready = self._initDriver();
+            }
+
+            return self._ready;
+        });
+
+        executeTwoCallbacks(promise, callback, callback);
+        return promise;
+    };
+
+    LocalForage.prototype.setDriver = function setDriver(drivers, callback, errorCallback) {
+        var self = this;
+
+        if (!isArray(drivers)) {
+            drivers = [drivers];
+        }
+
+        var supportedDrivers = this._getSupportedDrivers(drivers);
+
+        function setDriverToConfig() {
+            self._config.driver = self.driver();
+        }
+
+        function extendSelfWithDriver(driver) {
+            self._extend(driver);
+            setDriverToConfig();
+
+            self._ready = self._initStorage(self._config);
+            return self._ready;
+        }
+
+        function initDriver(supportedDrivers) {
+            return function () {
+                var currentDriverIndex = 0;
+
+                function driverPromiseLoop() {
+                    while (currentDriverIndex < supportedDrivers.length) {
+                        var driverName = supportedDrivers[currentDriverIndex];
+                        currentDriverIndex++;
+
+                        self._dbInfo = null;
+                        self._ready = null;
+
+                        return self.getDriver(driverName).then(extendSelfWithDriver)["catch"](driverPromiseLoop);
+                    }
+
+                    setDriverToConfig();
+                    var error = new Error('No available storage method found.');
+                    self._driverSet = Promise$1.reject(error);
+                    return self._driverSet;
+                }
+
+                return driverPromiseLoop();
+            };
+        }
+
+        // There might be a driver initialization in progress
+        // so wait for it to finish in order to avoid a possible
+        // race condition to set _dbInfo
+        var oldDriverSetDone = this._driverSet !== null ? this._driverSet["catch"](function () {
+            return Promise$1.resolve();
+        }) : Promise$1.resolve();
+
+        this._driverSet = oldDriverSetDone.then(function () {
+            var driverName = supportedDrivers[0];
+            self._dbInfo = null;
+            self._ready = null;
+
+            return self.getDriver(driverName).then(function (driver) {
+                self._driver = driver._driver;
+                setDriverToConfig();
+                self._wrapLibraryMethodsWithReady();
+                self._initDriver = initDriver(supportedDrivers);
+            });
+        })["catch"](function () {
+            setDriverToConfig();
+            var error = new Error('No available storage method found.');
+            self._driverSet = Promise$1.reject(error);
+            return self._driverSet;
+        });
+
+        executeTwoCallbacks(this._driverSet, callback, errorCallback);
+        return this._driverSet;
+    };
+
+    LocalForage.prototype.supports = function supports(driverName) {
+        return !!DriverSupport[driverName];
+    };
+
+    LocalForage.prototype._extend = function _extend(libraryMethodsAndProperties) {
+        extend(this, libraryMethodsAndProperties);
+    };
+
+    LocalForage.prototype._getSupportedDrivers = function _getSupportedDrivers(drivers) {
+        var supportedDrivers = [];
+        for (var i = 0, len = drivers.length; i < len; i++) {
+            var driverName = drivers[i];
+            if (this.supports(driverName)) {
+                supportedDrivers.push(driverName);
+            }
+        }
+        return supportedDrivers;
+    };
+
+    LocalForage.prototype._wrapLibraryMethodsWithReady = function _wrapLibraryMethodsWithReady() {
+        // Add a stub for each driver API method that delays the call to the
+        // corresponding driver method until localForage is ready. These stubs
+        // will be replaced by the driver methods as soon as the driver is
+        // loaded, so there is no performance impact.
+        for (var i = 0, len = LibraryMethods.length; i < len; i++) {
+            callWhenReady(this, LibraryMethods[i]);
+        }
+    };
+
+    LocalForage.prototype.createInstance = function createInstance(options) {
+        return new LocalForage(options);
+    };
+
+    return LocalForage;
+}();
+
+// The actual localForage object that we expose as a module or via a
+// global. It's extended by pulling in one of our other libraries.
+
+
+var localforage_js = new LocalForage();
+
+module.exports = localforage_js;
+
+},{"3":3}]},{},[4])(4)
+});
+
+},{}],"../../node_modules/@sentry/integrations/esm/offline.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Offline = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+var _localforage = _interopRequireDefault(require("localforage"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * cache offline errors and send when connected
+ */
+var Offline =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function Offline(options) {
+    if (options === void 0) {
+      options = {};
+    }
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = Offline.id; // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
+    this.global = (0, _utils.getGlobalObject)();
+    this.maxStoredEvents = options.maxStoredEvents || 30; // set a reasonable default
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+    this.offlineEventStore = _localforage.default.createInstance({
+      name: 'sentry/offlineEventStore'
+    });
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Offline.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    var _this = this;
+
+    this.hub = getCurrentHub();
+
+    if ('addEventListener' in this.global) {
+      this.global.addEventListener('online', function () {
+        void _this._sendEvents().catch(function () {
+          _utils.logger.warn('could not send cached events');
+        });
+      });
+    }
+
+    addGlobalEventProcessor(function (event) {
+      if (_this.hub && _this.hub.getIntegration(Offline)) {
+        // cache if we are positively offline
+        if ('navigator' in _this.global && 'onLine' in _this.global.navigator && !_this.global.navigator.onLine) {
+          void _this._cacheEvent(event).then(function (_event) {
+            return _this._enforceMaxEvents();
+          }).catch(function (_error) {
+            _utils.logger.warn('could not cache event while offline');
+          }); // return null on success or failure, because being offline will still result in an error
+
+          return null;
+        }
+      }
+
+      return event;
+    }); // if online now, send any events stored in a previous offline session
+
+    if ('navigator' in this.global && 'onLine' in this.global.navigator && this.global.navigator.onLine) {
+      void this._sendEvents().catch(function () {
+        _utils.logger.warn('could not send cached events');
+      });
+    }
+  };
+  /**
+   * cache an event to send later
+   * @param event an event
+   */
+
+
+  Offline.prototype._cacheEvent = function (event) {
+    return (0, _tslib.__awaiter)(this, void 0, void 0, function () {
+      return (0, _tslib.__generator)(this, function (_a) {
+        return [2
+        /*return*/
+        , this.offlineEventStore.setItem((0, _utils.uuid4)(), (0, _utils.normalize)(event))];
+      });
+    });
+  };
+  /**
+   * purge excess events if necessary
+   */
+
+
+  Offline.prototype._enforceMaxEvents = function () {
+    return (0, _tslib.__awaiter)(this, void 0, void 0, function () {
+      var events;
+
+      var _this = this;
+
+      return (0, _tslib.__generator)(this, function (_a) {
+        events = [];
+        return [2
+        /*return*/
+        , this.offlineEventStore.iterate(function (event, cacheKey, _index) {
+          // aggregate events
+          events.push({
+            cacheKey: cacheKey,
+            event: event
+          });
+        }).then(function () {
+          // this promise resolves when the iteration is finished
+          return _this._purgeEvents( // purge all events past maxStoredEvents in reverse chronological order
+          events.sort(function (a, b) {
+            return (b.event.timestamp || 0) - (a.event.timestamp || 0);
+          }).slice(_this.maxStoredEvents < events.length ? _this.maxStoredEvents : events.length).map(function (event) {
+            return event.cacheKey;
+          }));
+        }).catch(function (_error) {
+          _utils.logger.warn('could not enforce max events');
+        })];
+      });
+    });
+  };
+  /**
+   * purge event from cache
+   */
+
+
+  Offline.prototype._purgeEvent = function (cacheKey) {
+    return (0, _tslib.__awaiter)(this, void 0, void 0, function () {
+      return (0, _tslib.__generator)(this, function (_a) {
+        return [2
+        /*return*/
+        , this.offlineEventStore.removeItem(cacheKey)];
+      });
+    });
+  };
+  /**
+   * purge events from cache
+   */
+
+
+  Offline.prototype._purgeEvents = function (cacheKeys) {
+    return (0, _tslib.__awaiter)(this, void 0, void 0, function () {
+      var _this = this;
+
+      return (0, _tslib.__generator)(this, function (_a) {
+        // trail with .then to ensure the return type as void and not void|void[]
+        return [2
+        /*return*/
+        , Promise.all(cacheKeys.map(function (cacheKey) {
+          return _this._purgeEvent(cacheKey);
+        })).then()];
+      });
+    });
+  };
+  /**
+   * send all events
+   */
+
+
+  Offline.prototype._sendEvents = function () {
+    return (0, _tslib.__awaiter)(this, void 0, void 0, function () {
+      var _this = this;
+
+      return (0, _tslib.__generator)(this, function (_a) {
+        return [2
+        /*return*/
+        , this.offlineEventStore.iterate(function (event, cacheKey, _index) {
+          if (_this.hub) {
+            _this.hub.captureEvent(event);
+
+            void _this._purgeEvent(cacheKey).catch(function (_error) {
+              _utils.logger.warn('could not purge event from cache');
+            });
+          } else {
+            _utils.logger.warn('no hub found - could not send cached event');
+          }
+        })];
+      });
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Offline.id = 'Offline';
+  return Offline;
+}();
+
+exports.Offline = Offline;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js","localforage":"../../node_modules/localforage/dist/localforage.js"}],"../../node_modules/@sentry/integrations/esm/reportingobserver.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ReportingObserver = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+/** Reporting API integration - https://w3c.github.io/reporting/ */
+var ReportingObserver =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function ReportingObserver(_options) {
+    if (_options === void 0) {
+      _options = {
+        types: ["crash"
+        /* Crash */
+        , "deprecation"
+        /* Deprecation */
+        , "intervention"
+        /* Intervention */
+        ]
+      };
+    }
+
+    this._options = _options;
+    /**
+     * @inheritDoc
+     */
+
+    this.name = ReportingObserver.id;
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  ReportingObserver.prototype.setupOnce = function (_, getCurrentHub) {
+    if (!(0, _utils.supportsReportingObserver)()) {
+      return;
+    }
+
+    this._getCurrentHub = getCurrentHub; // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+    var observer = new ((0, _utils.getGlobalObject)().ReportingObserver)(this.handler.bind(this), {
+      buffered: true,
+      types: this._options.types
+    }); // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
+    observer.observe();
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  ReportingObserver.prototype.handler = function (reports) {
+    var e_1, _a;
+
+    var hub = this._getCurrentHub && this._getCurrentHub();
+
+    if (!hub || !hub.getIntegration(ReportingObserver)) {
+      return;
+    }
+
+    var _loop_1 = function (report) {
+      hub.withScope(function (scope) {
+        scope.setExtra('url', report.url);
+        var label = "ReportingObserver [" + report.type + "]";
+        var details = 'No details available';
+
+        if (report.body) {
+          // Object.keys doesn't work on ReportBody, as all properties are inheirted
+          var plainBody = {}; // eslint-disable-next-line guard-for-in
+
+          for (var prop in report.body) {
+            plainBody[prop] = report.body[prop];
+          }
+
+          scope.setExtra('body', plainBody);
+
+          if (report.type === "crash"
+          /* Crash */
+          ) {
+            var body = report.body; // A fancy way to create a message out of crashId OR reason OR both OR fallback
+
+            details = [body.crashId || '', body.reason || ''].join(' ').trim() || details;
+          } else {
+            var body = report.body;
+            details = body.message || details;
+          }
+        }
+
+        hub.captureMessage(label + ": " + details);
+      });
+    };
+
+    try {
+      for (var reports_1 = (0, _tslib.__values)(reports), reports_1_1 = reports_1.next(); !reports_1_1.done; reports_1_1 = reports_1.next()) {
+        var report = reports_1_1.value;
+
+        _loop_1(report);
+      }
+    } catch (e_1_1) {
+      e_1 = {
+        error: e_1_1
+      };
+    } finally {
+      try {
+        if (reports_1_1 && !reports_1_1.done && (_a = reports_1.return)) _a.call(reports_1);
+      } finally {
+        if (e_1) throw e_1.error;
+      }
+    }
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  ReportingObserver.id = 'ReportingObserver';
+  return ReportingObserver;
+}();
+
+exports.ReportingObserver = ReportingObserver;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/rewriteframes.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.RewriteFrames = void 0;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+/** Rewrite event frames paths */
+var RewriteFrames =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function RewriteFrames(options) {
+    var _this = this;
+
+    if (options === void 0) {
+      options = {};
+    }
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = RewriteFrames.id;
+    /**
+     * @inheritDoc
+     */
+
+    this._prefix = 'app:///';
+    /**
+     * @inheritDoc
+     */
+
+    this._iteratee = function (frame) {
+      if (!frame.filename) {
+        return frame;
+      } // Check if the frame filename begins with `/` or a Windows-style prefix such as `C:\`
+
+
+      var isWindowsFrame = /^[A-Z]:\\/.test(frame.filename);
+      var startsWithSlash = /^\//.test(frame.filename);
+
+      if (isWindowsFrame || startsWithSlash) {
+        var filename = isWindowsFrame ? frame.filename.replace(/^[A-Z]:/, '') // remove Windows-style prefix
+        .replace(/\\/g, '/') // replace all `\\` instances with `/`
+        : frame.filename;
+        var base = _this._root ? (0, _utils.relative)(_this._root, filename) : (0, _utils.basename)(filename);
+        frame.filename = "" + _this._prefix + base;
+      }
+
+      return frame;
+    };
+
+    if (options.root) {
+      this._root = options.root;
+    }
+
+    if (options.prefix) {
+      this._prefix = options.prefix;
+    }
+
+    if (options.iteratee) {
+      this._iteratee = options.iteratee;
+    }
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  RewriteFrames.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (event) {
+      var self = getCurrentHub().getIntegration(RewriteFrames);
+
+      if (self) {
+        return self.process(event);
+      }
+
+      return event;
+    });
+  };
+  /** JSDoc */
+
+
+  RewriteFrames.prototype.process = function (originalEvent) {
+    var processedEvent = originalEvent;
+
+    if (originalEvent.exception && Array.isArray(originalEvent.exception.values)) {
+      processedEvent = this._processExceptionsEvent(processedEvent);
+    }
+
+    if (originalEvent.stacktrace) {
+      processedEvent = this._processStacktraceEvent(processedEvent);
+    }
+
+    return processedEvent;
+  };
+  /** JSDoc */
+
+
+  RewriteFrames.prototype._processExceptionsEvent = function (event) {
+    var _this = this;
+
+    try {
+      return (0, _tslib.__assign)((0, _tslib.__assign)({}, event), {
+        exception: (0, _tslib.__assign)((0, _tslib.__assign)({}, event.exception), {
+          // The check for this is performed inside `process` call itself, safe to skip here
+          // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+          values: event.exception.values.map(function (value) {
+            return (0, _tslib.__assign)((0, _tslib.__assign)({}, value), {
+              stacktrace: _this._processStacktrace(value.stacktrace)
+            });
+          })
+        })
+      });
+    } catch (_oO) {
+      return event;
+    }
+  };
+  /** JSDoc */
+
+
+  RewriteFrames.prototype._processStacktraceEvent = function (event) {
+    try {
+      return (0, _tslib.__assign)((0, _tslib.__assign)({}, event), {
+        stacktrace: this._processStacktrace(event.stacktrace)
+      });
+    } catch (_oO) {
+      return event;
+    }
+  };
+  /** JSDoc */
+
+
+  RewriteFrames.prototype._processStacktrace = function (stacktrace) {
+    var _this = this;
+
+    return (0, _tslib.__assign)((0, _tslib.__assign)({}, stacktrace), {
+      frames: stacktrace && stacktrace.frames && stacktrace.frames.map(function (f) {
+        return _this._iteratee(f);
+      })
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  RewriteFrames.id = 'RewriteFrames';
+  return RewriteFrames;
+}();
+
+exports.RewriteFrames = RewriteFrames;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/sessiontiming.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.SessionTiming = void 0;
+
+var _tslib = require("tslib");
+
+/** This function adds duration since Sentry was initialized till the time event was sent */
+var SessionTiming =
+/** @class */
+function () {
+  function SessionTiming() {
+    /**
+     * @inheritDoc
+     */
+    this.name = SessionTiming.id;
+    /** Exact time Client was initialized expressed in milliseconds since Unix Epoch. */
+
+    this._startTime = Date.now();
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  SessionTiming.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (event) {
+      var self = getCurrentHub().getIntegration(SessionTiming);
+
+      if (self) {
+        return self.process(event);
+      }
+
+      return event;
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  SessionTiming.prototype.process = function (event) {
+    var _a;
+
+    var now = Date.now();
+    return (0, _tslib.__assign)((0, _tslib.__assign)({}, event), {
+      extra: (0, _tslib.__assign)((0, _tslib.__assign)({}, event.extra), (_a = {}, _a['session:start'] = this._startTime, _a['session:duration'] = now - this._startTime, _a['session:end'] = now, _a))
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  SessionTiming.id = 'SessionTiming';
+  return SessionTiming;
+}();
+
+exports.SessionTiming = SessionTiming;
+},{"tslib":"../../node_modules/tslib/tslib.es6.js"}],"../../node_modules/@sentry/integrations/esm/transaction.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Transaction = void 0;
+
+/** Add node transaction to the event */
+var Transaction =
+/** @class */
+function () {
+  function Transaction() {
+    /**
+     * @inheritDoc
+     */
+    this.name = Transaction.id;
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Transaction.prototype.setupOnce = function (addGlobalEventProcessor, getCurrentHub) {
+    addGlobalEventProcessor(function (event) {
+      var self = getCurrentHub().getIntegration(Transaction);
+
+      if (self) {
+        return self.process(event);
+      }
+
+      return event;
+    });
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Transaction.prototype.process = function (event) {
+    var frames = this._getFramesFromEvent(event); // use for loop so we don't have to reverse whole frames array
+
+
+    for (var i = frames.length - 1; i >= 0; i--) {
+      var frame = frames[i];
+
+      if (frame.in_app === true) {
+        event.transaction = this._getTransaction(frame);
+        break;
+      }
+    }
+
+    return event;
+  };
+  /** JSDoc */
+
+
+  Transaction.prototype._getFramesFromEvent = function (event) {
+    var exception = event.exception && event.exception.values && event.exception.values[0];
+    return exception && exception.stacktrace && exception.stacktrace.frames || [];
+  };
+  /** JSDoc */
+
+
+  Transaction.prototype._getTransaction = function (frame) {
+    return frame.module || frame.function ? (frame.module || '?') + "/" + (frame.function || '?') : '<unknown>';
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Transaction.id = 'Transaction';
+  return Transaction;
+}();
+
+exports.Transaction = Transaction;
+},{}],"../../node_modules/@sentry/integrations/esm/vue.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Vue = void 0;
+exports.getActiveTransaction = getActiveTransaction;
+
+var _tslib = require("tslib");
+
+var _utils = require("@sentry/utils");
+
+/**
+ * Used to extract Tracing integration from the current client,
+ * without the need to import `Tracing` itself from the @sentry/apm package.
+ * @deprecated as @sentry/tracing should be used over @sentry/apm.
+ */
+var TRACING_GETTER = {
+  id: 'Tracing'
+};
+/**
+ * Used to extract BrowserTracing integration from @sentry/tracing
+ */
+
+var BROWSER_TRACING_GETTER = {
+  id: 'BrowserTracing'
+};
+var VUE_OP = 'ui.vue'; // Mappings from operation to corresponding lifecycle hook.
+
+var HOOKS = {
+  activate: ['activated', 'deactivated'],
+  create: ['beforeCreate', 'created'],
+  destroy: ['beforeDestroy', 'destroyed'],
+  mount: ['beforeMount', 'mounted'],
+  update: ['beforeUpdate', 'updated']
+};
+var COMPONENT_NAME_REGEXP = /(?:^|[-_/])(\w)/g;
+var ROOT_COMPONENT_NAME = 'root';
+var ANONYMOUS_COMPONENT_NAME = 'anonymous component';
+/** JSDoc */
+
+var Vue =
+/** @class */
+function () {
+  /**
+   * @inheritDoc
+   */
+  function Vue(options) {
+    var _this = this;
+    /**
+     * @inheritDoc
+     */
+
+
+    this.name = Vue.id;
+    /**
+     * Cache holding already processed component names
+     */
+
+    this._componentsCache = {};
+    /** Keep it as attribute function, to keep correct `this` binding inside the hooks callbacks  */
+    // eslint-disable-next-line @typescript-eslint/typedef
+
+    this._applyTracingHooks = function (vm, getCurrentHub) {
+      // Don't attach twice, just in case
+      if (vm.$options.$_sentryPerfHook) {
+        return;
+      }
+
+      vm.$options.$_sentryPerfHook = true;
+
+      var name = _this._getComponentName(vm);
+
+      var rootMount = name === ROOT_COMPONENT_NAME;
+      var spans = {}; // Render hook starts after once event is emitted,
+      // but it ends before the second event of the same type.
+      //
+      // Because of this, we start measuring inside the first event,
+      // but finish it before it triggers, to skip the event emitter timing itself.
+
+      var rootHandler = function (hook) {
+        var now = (0, _utils.timestampWithMs)(); // On the first handler call (before), it'll be undefined, as `$once` will add it in the future.
+        // However, on the second call (after), it'll be already in place.
+
+        if (_this._rootSpan) {
+          _this._finishRootSpan(now, getCurrentHub);
+        } else {
+          vm.$once("hook:" + hook, function () {
+            // Create an activity on the first event call. There'll be no second call, as rootSpan will be in place,
+            // thus new event handler won't be attached.
+            // We do this whole dance with `TRACING_GETTER` to prevent `@sentry/apm` from becoming a peerDependency.
+            // We also need to ask for the `.constructor`, as `pushActivity` and `popActivity` are static, not instance methods.
+
+            /* eslint-disable @typescript-eslint/no-unsafe-member-access */
+            // eslint-disable-next-line deprecation/deprecation
+            var tracingIntegration = getCurrentHub().getIntegration(TRACING_GETTER);
+
+            if (tracingIntegration) {
+              _this._tracingActivity = tracingIntegration.constructor.pushActivity('Vue Application Render');
+              var transaction = tracingIntegration.constructor.getTransaction();
+
+              if (transaction) {
+                _this._rootSpan = transaction.startChild({
+                  description: 'Application Render',
+                  op: VUE_OP
+                });
+              } // Use functionality from @sentry/tracing
+
+            } else {
+              var activeTransaction = getActiveTransaction(getCurrentHub());
+
+              if (activeTransaction) {
+                _this._rootSpan = activeTransaction.startChild({
+                  description: 'Application Render',
+                  op: VUE_OP
+                });
+              }
+            }
+            /* eslint-enable @typescript-eslint/no-unsafe-member-access */
+
+          });
+        }
+      };
+
+      var childHandler = function (hook, operation) {
+        // Skip components that we don't want to track to minimize the noise and give a more granular control to the user
+        var shouldTrack = Array.isArray(_this._options.tracingOptions.trackComponents) ? _this._options.tracingOptions.trackComponents.indexOf(name) > -1 : _this._options.tracingOptions.trackComponents;
+
+        if (!_this._rootSpan || !shouldTrack) {
+          return;
+        }
+
+        var now = (0, _utils.timestampWithMs)();
+        var span = spans[operation]; // On the first handler call (before), it'll be undefined, as `$once` will add it in the future.
+        // However, on the second call (after), it'll be already in place.
+
+        if (span) {
+          span.finish();
+
+          _this._finishRootSpan(now, getCurrentHub);
+        } else {
+          vm.$once("hook:" + hook, function () {
+            if (_this._rootSpan) {
+              spans[operation] = _this._rootSpan.startChild({
+                description: "Vue <" + name + ">",
+                op: VUE_OP + "." + operation
+              });
+            }
+          });
+        }
+      }; // Each component has it's own scope, so all activities are only related to one of them
+
+
+      _this._options.tracingOptions.hooks.forEach(function (operation) {
+        // Retrieve corresponding hooks from Vue lifecycle.
+        // eg. mount => ['beforeMount', 'mounted']
+        var internalHooks = HOOKS[operation];
+
+        if (!internalHooks) {
+          _utils.logger.warn("Unknown hook: " + operation);
+
+          return;
+        }
+
+        internalHooks.forEach(function (internalHook) {
+          var handler = rootMount ? rootHandler.bind(_this, internalHook) : childHandler.bind(_this, internalHook, operation);
+          var currentValue = vm.$options[internalHook];
+
+          if (Array.isArray(currentValue)) {
+            vm.$options[internalHook] = (0, _tslib.__spread)([handler], currentValue);
+          } else if (typeof currentValue === 'function') {
+            vm.$options[internalHook] = [handler, currentValue];
+          } else {
+            vm.$options[internalHook] = [handler];
+          }
+        });
+      });
+    };
+
+    _utils.logger.log('You are still using the Vue.js integration, consider moving to @sentry/vue');
+
+    this._options = (0, _tslib.__assign)((0, _tslib.__assign)({
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      Vue: (0, _utils.getGlobalObject)().Vue,
+      attachProps: true,
+      logErrors: false,
+      tracing: false
+    }, options), {
+      tracingOptions: (0, _tslib.__assign)({
+        hooks: ['mount', 'update'],
+        timeout: 2000,
+        trackComponents: false
+      }, options.tracingOptions)
+    });
+  }
+  /**
+   * @inheritDoc
+   */
+
+
+  Vue.prototype.setupOnce = function (_, getCurrentHub) {
+    if (!this._options.Vue) {
+      _utils.logger.error('Vue integration is missing a Vue instance');
+
+      return;
+    }
+
+    this._attachErrorHandler(getCurrentHub);
+
+    if (this._options.tracing) {
+      this._startTracing(getCurrentHub);
+    }
+  };
+  /**
+   * Extract component name from the ViewModel
+   */
+
+
+  Vue.prototype._getComponentName = function (vm) {
+    // Such level of granularity is most likely not necessary, but better safe than sorry. — Kamil
+    if (!vm) {
+      return ANONYMOUS_COMPONENT_NAME;
+    }
+
+    if (vm.$root === vm) {
+      return ROOT_COMPONENT_NAME;
+    }
+
+    if (!vm.$options) {
+      return ANONYMOUS_COMPONENT_NAME;
+    }
+
+    if (vm.$options.name) {
+      return vm.$options.name;
+    }
+
+    if (vm.$options._componentTag) {
+      return vm.$options._componentTag;
+    } // injected by vue-loader
+
+
+    if (vm.$options.__file) {
+      var unifiedFile = vm.$options.__file.replace(/^[a-zA-Z]:/, '').replace(/\\/g, '/');
+
+      var filename = (0, _utils.basename)(unifiedFile, '.vue');
+      return this._componentsCache[filename] || (this._componentsCache[filename] = filename.replace(COMPONENT_NAME_REGEXP, function (_, c) {
+        return c ? c.toUpperCase() : '';
+      }));
+    }
+
+    return ANONYMOUS_COMPONENT_NAME;
+  };
+  /** Finish top-level span and activity with a debounce configured using `timeout` option */
+
+
+  Vue.prototype._finishRootSpan = function (timestamp, getCurrentHub) {
+    var _this = this;
+
+    if (this._rootSpanTimer) {
+      clearTimeout(this._rootSpanTimer);
+    }
+
+    this._rootSpanTimer = setTimeout(function () {
+      if (_this._tracingActivity) {
+        // We do this whole dance with `TRACING_GETTER` to prevent `@sentry/apm` from becoming a peerDependency.
+        // We also need to ask for the `.constructor`, as `pushActivity` and `popActivity` are static, not instance methods.
+        // eslint-disable-next-line deprecation/deprecation
+        var tracingIntegration = getCurrentHub().getIntegration(TRACING_GETTER);
+
+        if (tracingIntegration) {
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+          tracingIntegration.constructor.popActivity(_this._tracingActivity);
+        }
+      } // We should always finish the span, only should pop activity if using @sentry/apm
+
+
+      if (_this._rootSpan) {
+        _this._rootSpan.finish(timestamp);
+      }
+    }, this._options.tracingOptions.timeout);
+  };
+  /** Inject configured tracing hooks into Vue's component lifecycles */
+
+
+  Vue.prototype._startTracing = function (getCurrentHub) {
+    var applyTracingHooks = this._applyTracingHooks;
+
+    this._options.Vue.mixin({
+      beforeCreate: function () {
+        // eslint-disable-next-line deprecation/deprecation
+        if (getCurrentHub().getIntegration(TRACING_GETTER) || getCurrentHub().getIntegration(BROWSER_TRACING_GETTER)) {
+          // `this` points to currently rendered component
+          applyTracingHooks(this, getCurrentHub);
+        } else {
+          _utils.logger.error('Vue integration has tracing enabled, but Tracing integration is not configured');
+        }
+      }
+    });
+  };
+  /** Inject Sentry's handler into owns Vue's error handler  */
+
+
+  Vue.prototype._attachErrorHandler = function (getCurrentHub) {
+    var _this = this; // eslint-disable-next-line @typescript-eslint/unbound-method
+
+
+    var currentErrorHandler = this._options.Vue.config.errorHandler;
+
+    this._options.Vue.config.errorHandler = function (error, vm, info) {
+      var metadata = {};
+
+      if (vm) {
+        try {
+          metadata.componentName = _this._getComponentName(vm);
+
+          if (_this._options.attachProps) {
+            metadata.propsData = vm.$options.propsData;
+          }
+        } catch (_oO) {
+          _utils.logger.warn('Unable to extract metadata from Vue component.');
+        }
+      }
+
+      if (info) {
+        metadata.lifecycleHook = info;
+      }
+
+      if (getCurrentHub().getIntegration(Vue)) {
+        // Capture exception in the next event loop, to make sure that all breadcrumbs are recorded in time.
+        setTimeout(function () {
+          getCurrentHub().withScope(function (scope) {
+            scope.setContext('vue', metadata);
+            getCurrentHub().captureException(error);
+          });
+        });
+      }
+
+      if (typeof currentErrorHandler === 'function') {
+        currentErrorHandler.call(_this._options.Vue, error, vm, info);
+      }
+
+      if (_this._options.logErrors) {
+        if (_this._options.Vue.util) {
+          _this._options.Vue.util.warn("Error in " + info + ": \"" + (error && error.toString()) + "\"", vm);
+        } // eslint-disable-next-line no-console
+
+
+        console.error(error);
+      }
+    };
+  };
+  /**
+   * @inheritDoc
+   */
+
+
+  Vue.id = 'Vue';
+  return Vue;
+}();
+
+exports.Vue = Vue;
+
+/** Grabs active transaction off scope */
+function getActiveTransaction(hub) {
+  if (hub && hub.getScope) {
+    var scope = hub.getScope();
+
+    if (scope) {
+      return scope.getTransaction();
+    }
+  }
+
+  return undefined;
+}
+},{"tslib":"../../node_modules/tslib/tslib.es6.js","@sentry/utils":"../../node_modules/@sentry/utils/esm/index.js"}],"../../node_modules/@sentry/integrations/esm/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Angular", {
+  enumerable: true,
+  get: function () {
+    return _angular.Angular;
+  }
+});
+Object.defineProperty(exports, "CaptureConsole", {
+  enumerable: true,
+  get: function () {
+    return _captureconsole.CaptureConsole;
+  }
+});
+Object.defineProperty(exports, "Debug", {
+  enumerable: true,
+  get: function () {
+    return _debug.Debug;
+  }
+});
+Object.defineProperty(exports, "Dedupe", {
+  enumerable: true,
+  get: function () {
+    return _dedupe.Dedupe;
+  }
+});
+Object.defineProperty(exports, "Ember", {
+  enumerable: true,
+  get: function () {
+    return _ember.Ember;
+  }
+});
+Object.defineProperty(exports, "ExtraErrorData", {
+  enumerable: true,
+  get: function () {
+    return _extraerrordata.ExtraErrorData;
+  }
+});
+Object.defineProperty(exports, "Offline", {
+  enumerable: true,
+  get: function () {
+    return _offline.Offline;
+  }
+});
+Object.defineProperty(exports, "ReportingObserver", {
+  enumerable: true,
+  get: function () {
+    return _reportingobserver.ReportingObserver;
+  }
+});
+Object.defineProperty(exports, "RewriteFrames", {
+  enumerable: true,
+  get: function () {
+    return _rewriteframes.RewriteFrames;
+  }
+});
+Object.defineProperty(exports, "SessionTiming", {
+  enumerable: true,
+  get: function () {
+    return _sessiontiming.SessionTiming;
+  }
+});
+Object.defineProperty(exports, "Transaction", {
+  enumerable: true,
+  get: function () {
+    return _transaction.Transaction;
+  }
+});
+Object.defineProperty(exports, "Vue", {
+  enumerable: true,
+  get: function () {
+    return _vue.Vue;
+  }
+});
+
+var _angular = require("./angular");
+
+var _captureconsole = require("./captureconsole");
+
+var _debug = require("./debug");
+
+var _dedupe = require("./dedupe");
+
+var _ember = require("./ember");
+
+var _extraerrordata = require("./extraerrordata");
+
+var _offline = require("./offline");
+
+var _reportingobserver = require("./reportingobserver");
+
+var _rewriteframes = require("./rewriteframes");
+
+var _sessiontiming = require("./sessiontiming");
+
+var _transaction = require("./transaction");
+
+var _vue = require("./vue");
+},{"./angular":"../../node_modules/@sentry/integrations/esm/angular.js","./captureconsole":"../../node_modules/@sentry/integrations/esm/captureconsole.js","./debug":"../../node_modules/@sentry/integrations/esm/debug.js","./dedupe":"../../node_modules/@sentry/integrations/esm/dedupe.js","./ember":"../../node_modules/@sentry/integrations/esm/ember.js","./extraerrordata":"../../node_modules/@sentry/integrations/esm/extraerrordata.js","./offline":"../../node_modules/@sentry/integrations/esm/offline.js","./reportingobserver":"../../node_modules/@sentry/integrations/esm/reportingobserver.js","./rewriteframes":"../../node_modules/@sentry/integrations/esm/rewriteframes.js","./sessiontiming":"../../node_modules/@sentry/integrations/esm/sessiontiming.js","./transaction":"../../node_modules/@sentry/integrations/esm/transaction.js","./vue":"../../node_modules/@sentry/integrations/esm/vue.js"}],"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js":[function(require,module,exports) {
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -59437,8 +64554,8 @@ function deprecatedPropType(validator, reason) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.teardown = teardown;
 exports.default = useIsFocusVisible;
+exports.teardown = teardown;
 
 var React = _interopRequireWildcard(require("react"));
 
@@ -59686,7 +64803,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.classNamesShape = exports.timeoutsShape = void 0;
+exports.timeoutsShape = exports.classNamesShape = void 0;
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
@@ -59732,7 +64849,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.EXITING = exports.ENTERED = exports.ENTERING = exports.EXITED = exports.UNMOUNTED = void 0;
+exports.default = exports.UNMOUNTED = exports.EXITING = exports.EXITED = exports.ENTERING = exports.ENTERED = void 0;
 
 var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutPropertiesLoose"));
 
@@ -60803,9 +65920,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.getChildMapping = getChildMapping;
-exports.mergeChildMappings = mergeChildMappings;
 exports.getInitialChildMapping = getInitialChildMapping;
 exports.getNextChildMapping = getNextChildMapping;
+exports.mergeChildMappings = mergeChildMappings;
 
 var _react = require("react");
 
@@ -61314,7 +66431,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.modes = void 0;
+exports.modes = exports.default = void 0;
 
 var _inheritsLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/inheritsLoose"));
 
@@ -61604,16 +66721,16 @@ Object.defineProperty(exports, "SwitchTransition", {
     return _SwitchTransition.default;
   }
 });
-Object.defineProperty(exports, "TransitionGroup", {
-  enumerable: true,
-  get: function () {
-    return _TransitionGroup.default;
-  }
-});
 Object.defineProperty(exports, "Transition", {
   enumerable: true,
   get: function () {
     return _Transition.default;
+  }
+});
+Object.defineProperty(exports, "TransitionGroup", {
+  enumerable: true,
+  get: function () {
+    return _TransitionGroup.default;
   }
 });
 Object.defineProperty(exports, "config", {
@@ -61760,7 +66877,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = exports.DELAY_RIPPLE = void 0;
+exports.styles = exports.default = exports.DELAY_RIPPLE = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -62103,7 +67220,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -62666,7 +67783,7 @@ function capitalize(string) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -63894,7 +69011,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -63965,7 +69082,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -64394,16 +69511,16 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function () {
-    return _Modal.default;
-  }
-});
 Object.defineProperty(exports, "ModalManager", {
   enumerable: true,
   get: function () {
     return _ModalManager.default;
+  }
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _Modal.default;
   }
 });
 
@@ -64675,7 +69792,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -64811,7 +69928,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -64965,7 +70082,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -65444,7 +70561,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -65548,7 +70665,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -65659,7 +70776,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -65954,7 +71071,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -66032,7 +71149,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -66128,10 +71245,698 @@ Object.defineProperty(exports, "default", {
 var _DialogTitle = _interopRequireDefault(require("./DialogTitle"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./DialogTitle":"../../node_modules/@material-ui/core/esm/DialogTitle/DialogTitle.js"}],"../../node_modules/@iobroker/adapter-react/Dialogs/Error.js":[function(require,module,exports) {
+},{"./DialogTitle":"../../node_modules/@material-ui/core/esm/DialogTitle/DialogTitle.js"}],"../../node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    module.exports = _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  } else {
+    module.exports = _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+  }
+
+  return _typeof(obj);
+}
+
+module.exports = _typeof;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+},{}],"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js":[function(require,module,exports) {
+var _typeof = require("@babel/runtime/helpers/typeof")["default"];
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== "function") return null;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
+}
+
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+module.exports = _interopRequireWildcard;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+},{"@babel/runtime/helpers/typeof":"../../node_modules/@babel/runtime/helpers/typeof.js"}],"../../node_modules/@material-ui/core/esm/SvgIcon/SvgIcon.js":[function(require,module,exports) {
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.styles = exports.default = void 0;
+
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
+
+var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
+
+var React = _interopRequireWildcard(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _clsx = _interopRequireDefault(require("clsx"));
+
+var _utils = require("@material-ui/utils");
+
+var _withStyles = _interopRequireDefault(require("../styles/withStyles"));
+
+var _capitalize = _interopRequireDefault(require("../utils/capitalize"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var styles = function styles(theme) {
+  return {
+    /* Styles applied to the root element. */
+    root: {
+      userSelect: 'none',
+      width: '1em',
+      height: '1em',
+      display: 'inline-block',
+      fill: 'currentColor',
+      flexShrink: 0,
+      fontSize: theme.typography.pxToRem(24),
+      transition: theme.transitions.create('fill', {
+        duration: theme.transitions.duration.shorter
+      })
+    },
+
+    /* Styles applied to the root element if `color="primary"`. */
+    colorPrimary: {
+      color: theme.palette.primary.main
+    },
+
+    /* Styles applied to the root element if `color="secondary"`. */
+    colorSecondary: {
+      color: theme.palette.secondary.main
+    },
+
+    /* Styles applied to the root element if `color="action"`. */
+    colorAction: {
+      color: theme.palette.action.active
+    },
+
+    /* Styles applied to the root element if `color="error"`. */
+    colorError: {
+      color: theme.palette.error.main
+    },
+
+    /* Styles applied to the root element if `color="disabled"`. */
+    colorDisabled: {
+      color: theme.palette.action.disabled
+    },
+
+    /* Styles applied to the root element if `fontSize="inherit"`. */
+    fontSizeInherit: {
+      fontSize: 'inherit'
+    },
+
+    /* Styles applied to the root element if `fontSize="small"`. */
+    fontSizeSmall: {
+      fontSize: theme.typography.pxToRem(20)
+    },
+
+    /* Styles applied to the root element if `fontSize="large"`. */
+    fontSizeLarge: {
+      fontSize: theme.typography.pxToRem(35)
+    }
+  };
+};
+
+exports.styles = styles;
+var SvgIcon = /*#__PURE__*/React.forwardRef(function SvgIcon(props, ref) {
+  var children = props.children,
+      classes = props.classes,
+      className = props.className,
+      _props$color = props.color,
+      color = _props$color === void 0 ? 'inherit' : _props$color,
+      _props$component = props.component,
+      Component = _props$component === void 0 ? 'svg' : _props$component,
+      _props$fontSize = props.fontSize,
+      fontSize = _props$fontSize === void 0 ? 'medium' : _props$fontSize,
+      htmlColor = props.htmlColor,
+      titleAccess = props.titleAccess,
+      _props$viewBox = props.viewBox,
+      viewBox = _props$viewBox === void 0 ? '0 0 24 24' : _props$viewBox,
+      other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
+  return /*#__PURE__*/React.createElement(Component, (0, _extends2.default)({
+    className: (0, _clsx.default)(classes.root, className, color !== 'inherit' && classes["color".concat((0, _capitalize.default)(color))], fontSize !== 'default' && fontSize !== 'medium' && classes["fontSize".concat((0, _capitalize.default)(fontSize))]),
+    focusable: "false",
+    viewBox: viewBox,
+    color: htmlColor,
+    "aria-hidden": titleAccess ? undefined : true,
+    role: titleAccess ? 'img' : undefined,
+    ref: ref
+  }, other), children, titleAccess ? /*#__PURE__*/React.createElement("title", null, titleAccess) : null);
+});
+"development" !== "production" ? SvgIcon.propTypes = {
+  // ----------------------------- Warning --------------------------------
+  // | These PropTypes are generated from the TypeScript type definitions |
+  // |     To update them edit the d.ts file and run "yarn proptypes"     |
+  // ----------------------------------------------------------------------
+
+  /**
+   * Node passed into the SVG element.
+   */
+  children: _propTypes.default.node,
+
+  /**
+   * Override or extend the styles applied to the component.
+   * See [CSS API](#css) below for more details.
+   */
+  classes: _propTypes.default.object,
+
+  /**
+   * @ignore
+   */
+  className: _propTypes.default.string,
+
+  /**
+   * The color of the component. It supports those theme colors that make sense for this component.
+   * You can use the `htmlColor` prop to apply a color attribute to the SVG element.
+   */
+  color: _propTypes.default.oneOf(['action', 'disabled', 'error', 'inherit', 'primary', 'secondary']),
+
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: _propTypes.default
+  /* @typescript-to-proptypes-ignore */
+  .elementType,
+
+  /**
+   * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
+   */
+  fontSize: (0, _utils.chainPropTypes)(_propTypes.default.oneOf(['default', 'inherit', 'large', 'medium', 'small']), function (props) {
+    var fontSize = props.fontSize;
+
+    if (fontSize === 'default') {
+      throw new Error('Material-UI: `fontSize="default"` is deprecated. Use `fontSize="medium"` instead.');
+    }
+
+    return null;
+  }),
+
+  /**
+   * Applies a color attribute to the SVG element.
+   */
+  htmlColor: _propTypes.default.string,
+
+  /**
+   * The shape-rendering attribute. The behavior of the different options is described on the
+   * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering).
+   * If you are having issues with blurry icons you should investigate this property.
+   */
+  shapeRendering: _propTypes.default.string,
+
+  /**
+   * Provides a human-readable title for the element that contains it.
+   * https://www.w3.org/TR/SVG-access/#Equivalent
+   */
+  titleAccess: _propTypes.default.string,
+
+  /**
+   * Allows you to redefine what the coordinates without units mean inside an SVG element.
+   * For example, if the SVG element is 500 (width) by 200 (height),
+   * and you pass viewBox="0 0 50 20",
+   * this means that the coordinates inside the SVG will go from the top left corner (0,0)
+   * to bottom right (50,20) and each unit will be worth 10px.
+   */
+  viewBox: _propTypes.default.string
+} : void 0;
+SvgIcon.muiName = 'SvgIcon';
+
+var _default = (0, _withStyles.default)(styles, {
+  name: 'MuiSvgIcon'
+})(SvgIcon);
+
+exports.default = _default;
+},{"@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutProperties":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js","react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","clsx":"../../node_modules/clsx/dist/clsx.m.js","@material-ui/utils":"../../node_modules/@material-ui/core/node_modules/@material-ui/utils/esm/index.js","../styles/withStyles":"../../node_modules/@material-ui/core/esm/styles/withStyles.js","../utils/capitalize":"../../node_modules/@material-ui/core/esm/utils/capitalize.js"}],"../../node_modules/@material-ui/core/esm/SvgIcon/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function () {
+    return _SvgIcon.default;
+  }
+});
+
+var _SvgIcon = _interopRequireDefault(require("./SvgIcon"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./SvgIcon":"../../node_modules/@material-ui/core/esm/SvgIcon/SvgIcon.js"}],"../../node_modules/@material-ui/core/esm/utils/createSvgIcon.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = createSvgIcon;
+
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _SvgIcon = _interopRequireDefault(require("../SvgIcon"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Private module reserved for @material-ui/x packages.
+ */
+function createSvgIcon(path, displayName) {
+  var Component = function Component(props, ref) {
+    return /*#__PURE__*/_react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
+      ref: ref
+    }, props), path);
+  };
+
+  if ("development" !== 'production') {
+    // Need to set `displayName` on the inner component for React.memo.
+    // React prior to 16.14 ignores `displayName` on the wrapper.
+    Component.displayName = "".concat(displayName, "Icon");
+  }
+
+  Component.muiName = _SvgIcon.default.muiName;
+  return /*#__PURE__*/_react.default.memo( /*#__PURE__*/_react.default.forwardRef(Component));
+}
+},{"@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","react":"../../node_modules/react/index.js","../SvgIcon":"../../node_modules/@material-ui/core/esm/SvgIcon/index.js"}],"../../node_modules/@material-ui/core/esm/utils/debounce.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = debounce;
+
+// Corresponds to 10 frames at 60 Hz.
+// A few bytes payload overhead when lodash/debounce is ~3 kB and debounce ~300 B.
+function debounce(func) {
+  var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 166;
+  var timeout;
+
+  function debounced() {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    } // eslint-disable-next-line consistent-this
+
+
+    var that = this;
+
+    var later = function later() {
+      func.apply(that, args);
+    };
+
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  }
+
+  debounced.clear = function () {
+    clearTimeout(timeout);
+  };
+
+  return debounced;
+}
+},{}],"../../node_modules/@material-ui/core/esm/utils/isMuiElement.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = isMuiElement;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function isMuiElement(element, muiNames) {
+  return /*#__PURE__*/React.isValidElement(element) && muiNames.indexOf(element.type.muiName) !== -1;
+}
+},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/requirePropFactory.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = requirePropFactory;
+
+function requirePropFactory(componentNameInError) {
+  if ("development" === 'production') {
+    return function () {
+      return null;
+    };
+  }
+
+  var requireProp = function requireProp(requiredProp) {
+    return function (props, propName, componentName, location, propFullName) {
+      var propFullNameSafe = propFullName || propName;
+
+      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {
+        return new Error("The prop `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
+      }
+
+      return null;
+    };
+  };
+
+  return requireProp;
+}
+},{}],"../../node_modules/@material-ui/core/esm/utils/unsupportedProp.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = unsupportedProp;
+
+function unsupportedProp(props, propName, componentName, location, propFullName) {
+  if ("development" === 'production') {
+    return null;
+  }
+
+  var propFullNameSafe = propFullName || propName;
+
+  if (typeof props[propName] !== 'undefined') {
+    return new Error("The prop `".concat(propFullNameSafe, "` is not supported. Please remove it."));
+  }
+
+  return null;
+}
+},{}],"../../node_modules/@material-ui/core/esm/utils/useControlled.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useControlled;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+/* eslint-disable react-hooks/rules-of-hooks, react-hooks/exhaustive-deps */
+function useControlled(_ref) {
+  var controlled = _ref.controlled,
+      defaultProp = _ref.default,
+      name = _ref.name,
+      _ref$state = _ref.state,
+      state = _ref$state === void 0 ? 'value' : _ref$state;
+
+  var _React$useRef = React.useRef(controlled !== undefined),
+      isControlled = _React$useRef.current;
+
+  var _React$useState = React.useState(defaultProp),
+      valueState = _React$useState[0],
+      setValue = _React$useState[1];
+
+  var value = isControlled ? controlled : valueState;
+
+  if ("development" !== 'production') {
+    React.useEffect(function () {
+      if (isControlled !== (controlled !== undefined)) {
+        console.error(["Material-UI: A component is changing the ".concat(isControlled ? '' : 'un', "controlled ").concat(state, " state of ").concat(name, " to be ").concat(isControlled ? 'un' : '', "controlled."), 'Elements should not switch from uncontrolled to controlled (or vice versa).', "Decide between using a controlled or uncontrolled ".concat(name, " ") + 'element for the lifetime of the component.', "The nature of the state is determined during the first render, it's considered controlled if the value is not `undefined`.", 'More info: https://fb.me/react-controlled-components'].join('\n'));
+      }
+    }, [controlled]);
+
+    var _React$useRef2 = React.useRef(defaultProp),
+        defaultValue = _React$useRef2.current;
+
+    React.useEffect(function () {
+      if (!isControlled && defaultValue !== defaultProp) {
+        console.error(["Material-UI: A component is changing the default ".concat(state, " state of an uncontrolled ").concat(name, " after being initialized. ") + "To suppress this warning opt to use a controlled ".concat(name, ".")].join('\n'));
+      }
+    }, [JSON.stringify(defaultProp)]);
+  }
+
+  var setValueIfUncontrolled = React.useCallback(function (newValue) {
+    if (!isControlled) {
+      setValue(newValue);
+    }
+  }, []);
+  return [value, setValueIfUncontrolled];
+}
+},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/unstable_useId.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = useId;
+
+var React = _interopRequireWildcard(require("react"));
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+/**
+ * Private module reserved for @material-ui/x packages.
+ */
+function useId(idOverride) {
+  var _React$useState = React.useState(idOverride),
+      defaultId = _React$useState[0],
+      setDefaultId = _React$useState[1];
+
+  var id = idOverride || defaultId;
+  React.useEffect(function () {
+    if (defaultId == null) {
+      // Fallback to this default id when possible.
+      // Use the random value for client-side rendering only.
+      // We can't use it server-side.
+      setDefaultId("mui-".concat(Math.round(Math.random() * 1e5)));
+    }
+  }, [defaultId]);
+  return id;
+}
+},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "capitalize", {
+  enumerable: true,
+  get: function () {
+    return _capitalize.default;
+  }
+});
+Object.defineProperty(exports, "createChainedFunction", {
+  enumerable: true,
+  get: function () {
+    return _createChainedFunction.default;
+  }
+});
+Object.defineProperty(exports, "createSvgIcon", {
+  enumerable: true,
+  get: function () {
+    return _createSvgIcon.default;
+  }
+});
+Object.defineProperty(exports, "debounce", {
+  enumerable: true,
+  get: function () {
+    return _debounce.default;
+  }
+});
+Object.defineProperty(exports, "deprecatedPropType", {
+  enumerable: true,
+  get: function () {
+    return _deprecatedPropType.default;
+  }
+});
+Object.defineProperty(exports, "isMuiElement", {
+  enumerable: true,
+  get: function () {
+    return _isMuiElement.default;
+  }
+});
+Object.defineProperty(exports, "ownerDocument", {
+  enumerable: true,
+  get: function () {
+    return _ownerDocument.default;
+  }
+});
+Object.defineProperty(exports, "ownerWindow", {
+  enumerable: true,
+  get: function () {
+    return _ownerWindow.default;
+  }
+});
+Object.defineProperty(exports, "requirePropFactory", {
+  enumerable: true,
+  get: function () {
+    return _requirePropFactory.default;
+  }
+});
+Object.defineProperty(exports, "setRef", {
+  enumerable: true,
+  get: function () {
+    return _setRef.default;
+  }
+});
+Object.defineProperty(exports, "unstable_useId", {
+  enumerable: true,
+  get: function () {
+    return _unstable_useId.default;
+  }
+});
+Object.defineProperty(exports, "unsupportedProp", {
+  enumerable: true,
+  get: function () {
+    return _unsupportedProp.default;
+  }
+});
+Object.defineProperty(exports, "useControlled", {
+  enumerable: true,
+  get: function () {
+    return _useControlled.default;
+  }
+});
+Object.defineProperty(exports, "useEventCallback", {
+  enumerable: true,
+  get: function () {
+    return _useEventCallback.default;
+  }
+});
+Object.defineProperty(exports, "useForkRef", {
+  enumerable: true,
+  get: function () {
+    return _useForkRef.default;
+  }
+});
+Object.defineProperty(exports, "useIsFocusVisible", {
+  enumerable: true,
+  get: function () {
+    return _useIsFocusVisible.default;
+  }
+});
+
+var _capitalize = _interopRequireDefault(require("./capitalize"));
+
+var _createChainedFunction = _interopRequireDefault(require("./createChainedFunction"));
+
+var _createSvgIcon = _interopRequireDefault(require("./createSvgIcon"));
+
+var _debounce = _interopRequireDefault(require("./debounce"));
+
+var _deprecatedPropType = _interopRequireDefault(require("./deprecatedPropType"));
+
+var _isMuiElement = _interopRequireDefault(require("./isMuiElement"));
+
+var _ownerDocument = _interopRequireDefault(require("./ownerDocument"));
+
+var _ownerWindow = _interopRequireDefault(require("./ownerWindow"));
+
+var _requirePropFactory = _interopRequireDefault(require("./requirePropFactory"));
+
+var _setRef = _interopRequireDefault(require("./setRef"));
+
+var _unsupportedProp = _interopRequireDefault(require("./unsupportedProp"));
+
+var _useControlled = _interopRequireDefault(require("./useControlled"));
+
+var _useEventCallback = _interopRequireDefault(require("./useEventCallback"));
+
+var _useForkRef = _interopRequireDefault(require("./useForkRef"));
+
+var _unstable_useId = _interopRequireDefault(require("./unstable_useId"));
+
+var _useIsFocusVisible = _interopRequireDefault(require("./useIsFocusVisible"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+},{"./capitalize":"../../node_modules/@material-ui/core/esm/utils/capitalize.js","./createChainedFunction":"../../node_modules/@material-ui/core/esm/utils/createChainedFunction.js","./createSvgIcon":"../../node_modules/@material-ui/core/esm/utils/createSvgIcon.js","./debounce":"../../node_modules/@material-ui/core/esm/utils/debounce.js","./deprecatedPropType":"../../node_modules/@material-ui/core/esm/utils/deprecatedPropType.js","./isMuiElement":"../../node_modules/@material-ui/core/esm/utils/isMuiElement.js","./ownerDocument":"../../node_modules/@material-ui/core/esm/utils/ownerDocument.js","./ownerWindow":"../../node_modules/@material-ui/core/esm/utils/ownerWindow.js","./requirePropFactory":"../../node_modules/@material-ui/core/esm/utils/requirePropFactory.js","./setRef":"../../node_modules/@material-ui/core/esm/utils/setRef.js","./unsupportedProp":"../../node_modules/@material-ui/core/esm/utils/unsupportedProp.js","./useControlled":"../../node_modules/@material-ui/core/esm/utils/useControlled.js","./useEventCallback":"../../node_modules/@material-ui/core/esm/utils/useEventCallback.js","./useForkRef":"../../node_modules/@material-ui/core/esm/utils/useForkRef.js","./unstable_useId":"../../node_modules/@material-ui/core/esm/utils/unstable_useId.js","./useIsFocusVisible":"../../node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js"}],"../../node_modules/@material-ui/icons/utils/createSvgIcon.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "default", {
+  enumerable: true,
+  get: function get() {
+    return _utils.createSvgIcon;
+  }
+});
+
+var _utils = require("@material-ui/core/utils");
+},{"@material-ui/core/utils":"../../node_modules/@material-ui/core/esm/utils/index.js"}],"../../node_modules/@material-ui/icons/Check.js":[function(require,module,exports) {
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var React = _interopRequireWildcard(require("react"));
+
+var _createSvgIcon = _interopRequireDefault(require("./utils/createSvgIcon"));
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
+  d: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+}), 'Check');
+
+exports.default = _default;
+},{"@babel/runtime/helpers/interopRequireDefault":"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js","@babel/runtime/helpers/interopRequireWildcard":"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js","react":"../../node_modules/react/index.js","./utils/createSvgIcon":"../../node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"../../node_modules/@iobroker/adapter-react/Dialogs/Error.js":[function(require,module,exports) {
+"use strict";
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -66156,6 +71961,8 @@ var _DialogContentText = _interopRequireDefault(require("@material-ui/core/Dialo
 
 var _DialogTitle = _interopRequireDefault(require("@material-ui/core/DialogTitle"));
 
+var _Check = _interopRequireDefault(require("@material-ui/icons/Check"));
+
 var _i18n = _interopRequireDefault(require("../i18n"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -66164,15 +71971,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -66242,7 +72049,8 @@ var DialogError = /*#__PURE__*/function (_React$Component) {
           return _this.handleOk();
         },
         color: "primary",
-        autoFocus: true
+        autoFocus: true,
+        startIcon: /*#__PURE__*/_react["default"].createElement(_Check["default"], null)
       }, _i18n["default"].t('ra_Ok'))));
     }
   }]);
@@ -66264,7 +72072,7 @@ var _default = _export;
 exports["default"] = _default;
 
 
-},{"react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","@material-ui/core/styles/withStyles":"../../node_modules/@material-ui/core/styles/withStyles.js","@material-ui/core/Button":"../../node_modules/@material-ui/core/esm/Button/index.js","@material-ui/core/Dialog":"../../node_modules/@material-ui/core/esm/Dialog/index.js","@material-ui/core/DialogActions":"../../node_modules/@material-ui/core/esm/DialogActions/index.js","@material-ui/core/DialogContent":"../../node_modules/@material-ui/core/esm/DialogContent/index.js","@material-ui/core/DialogContentText":"../../node_modules/@material-ui/core/esm/DialogContentText/index.js","@material-ui/core/DialogTitle":"../../node_modules/@material-ui/core/esm/DialogTitle/index.js","../i18n":"../../node_modules/@iobroker/adapter-react/i18n.js"}],"../../node_modules/@material-ui/core/esm/ClickAwayListener/ClickAwayListener.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","@material-ui/core/styles/withStyles":"../../node_modules/@material-ui/core/styles/withStyles.js","@material-ui/core/Button":"../../node_modules/@material-ui/core/esm/Button/index.js","@material-ui/core/Dialog":"../../node_modules/@material-ui/core/esm/Dialog/index.js","@material-ui/core/DialogActions":"../../node_modules/@material-ui/core/esm/DialogActions/index.js","@material-ui/core/DialogContent":"../../node_modules/@material-ui/core/esm/DialogContent/index.js","@material-ui/core/DialogContentText":"../../node_modules/@material-ui/core/esm/DialogContentText/index.js","@material-ui/core/DialogTitle":"../../node_modules/@material-ui/core/esm/DialogTitle/index.js","@material-ui/icons/Check":"../../node_modules/@material-ui/icons/Check.js","../i18n":"../../node_modules/@iobroker/adapter-react/i18n.js"}],"../../node_modules/@material-ui/core/esm/ClickAwayListener/ClickAwayListener.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -66784,7 +72592,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -66926,7 +72734,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -67380,7 +73188,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -67617,674 +73425,7 @@ Object.defineProperty(exports, "default", {
 var _IconButton = _interopRequireDefault(require("./IconButton"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./IconButton":"../../node_modules/@material-ui/core/esm/IconButton/IconButton.js"}],"../../node_modules/@babel/runtime/helpers/typeof.js":[function(require,module,exports) {
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    module.exports = _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  } else {
-    module.exports = _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-  }
-
-  return _typeof(obj);
-}
-
-module.exports = _typeof;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{}],"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js":[function(require,module,exports) {
-var _typeof = require("@babel/runtime/helpers/typeof")["default"];
-
-function _getRequireWildcardCache(nodeInterop) {
-  if (typeof WeakMap !== "function") return null;
-  var cacheBabelInterop = new WeakMap();
-  var cacheNodeInterop = new WeakMap();
-  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
-    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
-  })(nodeInterop);
-}
-
-function _interopRequireWildcard(obj, nodeInterop) {
-  if (!nodeInterop && obj && obj.__esModule) {
-    return obj;
-  }
-
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache(nodeInterop);
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-}
-
-module.exports = _interopRequireWildcard;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-},{"@babel/runtime/helpers/typeof":"../../node_modules/@babel/runtime/helpers/typeof.js"}],"../../node_modules/@material-ui/core/esm/SvgIcon/SvgIcon.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.styles = void 0;
-
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
-
-var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
-
-var React = _interopRequireWildcard(require("react"));
-
-var _propTypes = _interopRequireDefault(require("prop-types"));
-
-var _clsx = _interopRequireDefault(require("clsx"));
-
-var _utils = require("@material-ui/utils");
-
-var _withStyles = _interopRequireDefault(require("../styles/withStyles"));
-
-var _capitalize = _interopRequireDefault(require("../utils/capitalize"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: {
-      userSelect: 'none',
-      width: '1em',
-      height: '1em',
-      display: 'inline-block',
-      fill: 'currentColor',
-      flexShrink: 0,
-      fontSize: theme.typography.pxToRem(24),
-      transition: theme.transitions.create('fill', {
-        duration: theme.transitions.duration.shorter
-      })
-    },
-
-    /* Styles applied to the root element if `color="primary"`. */
-    colorPrimary: {
-      color: theme.palette.primary.main
-    },
-
-    /* Styles applied to the root element if `color="secondary"`. */
-    colorSecondary: {
-      color: theme.palette.secondary.main
-    },
-
-    /* Styles applied to the root element if `color="action"`. */
-    colorAction: {
-      color: theme.palette.action.active
-    },
-
-    /* Styles applied to the root element if `color="error"`. */
-    colorError: {
-      color: theme.palette.error.main
-    },
-
-    /* Styles applied to the root element if `color="disabled"`. */
-    colorDisabled: {
-      color: theme.palette.action.disabled
-    },
-
-    /* Styles applied to the root element if `fontSize="inherit"`. */
-    fontSizeInherit: {
-      fontSize: 'inherit'
-    },
-
-    /* Styles applied to the root element if `fontSize="small"`. */
-    fontSizeSmall: {
-      fontSize: theme.typography.pxToRem(20)
-    },
-
-    /* Styles applied to the root element if `fontSize="large"`. */
-    fontSizeLarge: {
-      fontSize: theme.typography.pxToRem(35)
-    }
-  };
-};
-
-exports.styles = styles;
-var SvgIcon = /*#__PURE__*/React.forwardRef(function SvgIcon(props, ref) {
-  var children = props.children,
-      classes = props.classes,
-      className = props.className,
-      _props$color = props.color,
-      color = _props$color === void 0 ? 'inherit' : _props$color,
-      _props$component = props.component,
-      Component = _props$component === void 0 ? 'svg' : _props$component,
-      _props$fontSize = props.fontSize,
-      fontSize = _props$fontSize === void 0 ? 'medium' : _props$fontSize,
-      htmlColor = props.htmlColor,
-      titleAccess = props.titleAccess,
-      _props$viewBox = props.viewBox,
-      viewBox = _props$viewBox === void 0 ? '0 0 24 24' : _props$viewBox,
-      other = (0, _objectWithoutProperties2.default)(props, ["children", "classes", "className", "color", "component", "fontSize", "htmlColor", "titleAccess", "viewBox"]);
-  return /*#__PURE__*/React.createElement(Component, (0, _extends2.default)({
-    className: (0, _clsx.default)(classes.root, className, color !== 'inherit' && classes["color".concat((0, _capitalize.default)(color))], fontSize !== 'default' && fontSize !== 'medium' && classes["fontSize".concat((0, _capitalize.default)(fontSize))]),
-    focusable: "false",
-    viewBox: viewBox,
-    color: htmlColor,
-    "aria-hidden": titleAccess ? undefined : true,
-    role: titleAccess ? 'img' : undefined,
-    ref: ref
-  }, other), children, titleAccess ? /*#__PURE__*/React.createElement("title", null, titleAccess) : null);
-});
-"development" !== "production" ? SvgIcon.propTypes = {
-  // ----------------------------- Warning --------------------------------
-  // | These PropTypes are generated from the TypeScript type definitions |
-  // |     To update them edit the d.ts file and run "yarn proptypes"     |
-  // ----------------------------------------------------------------------
-
-  /**
-   * Node passed into the SVG element.
-   */
-  children: _propTypes.default.node,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: _propTypes.default.object,
-
-  /**
-   * @ignore
-   */
-  className: _propTypes.default.string,
-
-  /**
-   * The color of the component. It supports those theme colors that make sense for this component.
-   * You can use the `htmlColor` prop to apply a color attribute to the SVG element.
-   */
-  color: _propTypes.default.oneOf(['action', 'disabled', 'error', 'inherit', 'primary', 'secondary']),
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: _propTypes.default
-  /* @typescript-to-proptypes-ignore */
-  .elementType,
-
-  /**
-   * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
-   */
-  fontSize: (0, _utils.chainPropTypes)(_propTypes.default.oneOf(['default', 'inherit', 'large', 'medium', 'small']), function (props) {
-    var fontSize = props.fontSize;
-
-    if (fontSize === 'default') {
-      throw new Error('Material-UI: `fontSize="default"` is deprecated. Use `fontSize="medium"` instead.');
-    }
-
-    return null;
-  }),
-
-  /**
-   * Applies a color attribute to the SVG element.
-   */
-  htmlColor: _propTypes.default.string,
-
-  /**
-   * The shape-rendering attribute. The behavior of the different options is described on the
-   * [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/shape-rendering).
-   * If you are having issues with blurry icons you should investigate this property.
-   */
-  shapeRendering: _propTypes.default.string,
-
-  /**
-   * Provides a human-readable title for the element that contains it.
-   * https://www.w3.org/TR/SVG-access/#Equivalent
-   */
-  titleAccess: _propTypes.default.string,
-
-  /**
-   * Allows you to redefine what the coordinates without units mean inside an SVG element.
-   * For example, if the SVG element is 500 (width) by 200 (height),
-   * and you pass viewBox="0 0 50 20",
-   * this means that the coordinates inside the SVG will go from the top left corner (0,0)
-   * to bottom right (50,20) and each unit will be worth 10px.
-   */
-  viewBox: _propTypes.default.string
-} : void 0;
-SvgIcon.muiName = 'SvgIcon';
-
-var _default = (0, _withStyles.default)(styles, {
-  name: 'MuiSvgIcon'
-})(SvgIcon);
-
-exports.default = _default;
-},{"@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutProperties":"../../node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js","react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","clsx":"../../node_modules/clsx/dist/clsx.m.js","@material-ui/utils":"../../node_modules/@material-ui/core/node_modules/@material-ui/utils/esm/index.js","../styles/withStyles":"../../node_modules/@material-ui/core/esm/styles/withStyles.js","../utils/capitalize":"../../node_modules/@material-ui/core/esm/utils/capitalize.js"}],"../../node_modules/@material-ui/core/esm/SvgIcon/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function () {
-    return _SvgIcon.default;
-  }
-});
-
-var _SvgIcon = _interopRequireDefault(require("./SvgIcon"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./SvgIcon":"../../node_modules/@material-ui/core/esm/SvgIcon/SvgIcon.js"}],"../../node_modules/@material-ui/core/esm/utils/createSvgIcon.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = createSvgIcon;
-
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
-
-var _react = _interopRequireDefault(require("react"));
-
-var _SvgIcon = _interopRequireDefault(require("../SvgIcon"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * Private module reserved for @material-ui/x packages.
- */
-function createSvgIcon(path, displayName) {
-  var Component = function Component(props, ref) {
-    return /*#__PURE__*/_react.default.createElement(_SvgIcon.default, (0, _extends2.default)({
-      ref: ref
-    }, props), path);
-  };
-
-  if ("development" !== 'production') {
-    // Need to set `displayName` on the inner component for React.memo.
-    // React prior to 16.14 ignores `displayName` on the wrapper.
-    Component.displayName = "".concat(displayName, "Icon");
-  }
-
-  Component.muiName = _SvgIcon.default.muiName;
-  return /*#__PURE__*/_react.default.memo( /*#__PURE__*/_react.default.forwardRef(Component));
-}
-},{"@babel/runtime/helpers/esm/extends":"../../node_modules/@babel/runtime/helpers/esm/extends.js","react":"../../node_modules/react/index.js","../SvgIcon":"../../node_modules/@material-ui/core/esm/SvgIcon/index.js"}],"../../node_modules/@material-ui/core/esm/utils/debounce.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = debounce;
-
-// Corresponds to 10 frames at 60 Hz.
-// A few bytes payload overhead when lodash/debounce is ~3 kB and debounce ~300 B.
-function debounce(func) {
-  var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 166;
-  var timeout;
-
-  function debounced() {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    } // eslint-disable-next-line consistent-this
-
-
-    var that = this;
-
-    var later = function later() {
-      func.apply(that, args);
-    };
-
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-  }
-
-  debounced.clear = function () {
-    clearTimeout(timeout);
-  };
-
-  return debounced;
-}
-},{}],"../../node_modules/@material-ui/core/esm/utils/isMuiElement.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = isMuiElement;
-
-var React = _interopRequireWildcard(require("react"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-function isMuiElement(element, muiNames) {
-  return /*#__PURE__*/React.isValidElement(element) && muiNames.indexOf(element.type.muiName) !== -1;
-}
-},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/requirePropFactory.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = requirePropFactory;
-
-function requirePropFactory(componentNameInError) {
-  if ("development" === 'production') {
-    return function () {
-      return null;
-    };
-  }
-
-  var requireProp = function requireProp(requiredProp) {
-    return function (props, propName, componentName, location, propFullName) {
-      var propFullNameSafe = propFullName || propName;
-
-      if (typeof props[propName] !== 'undefined' && !props[requiredProp]) {
-        return new Error("The prop `".concat(propFullNameSafe, "` of ") + "`".concat(componentNameInError, "` must be used on `").concat(requiredProp, "`."));
-      }
-
-      return null;
-    };
-  };
-
-  return requireProp;
-}
-},{}],"../../node_modules/@material-ui/core/esm/utils/unsupportedProp.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = unsupportedProp;
-
-function unsupportedProp(props, propName, componentName, location, propFullName) {
-  if ("development" === 'production') {
-    return null;
-  }
-
-  var propFullNameSafe = propFullName || propName;
-
-  if (typeof props[propName] !== 'undefined') {
-    return new Error("The prop `".concat(propFullNameSafe, "` is not supported. Please remove it."));
-  }
-
-  return null;
-}
-},{}],"../../node_modules/@material-ui/core/esm/utils/useControlled.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = useControlled;
-
-var React = _interopRequireWildcard(require("react"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-/* eslint-disable react-hooks/rules-of-hooks, react-hooks/exhaustive-deps */
-function useControlled(_ref) {
-  var controlled = _ref.controlled,
-      defaultProp = _ref.default,
-      name = _ref.name,
-      _ref$state = _ref.state,
-      state = _ref$state === void 0 ? 'value' : _ref$state;
-
-  var _React$useRef = React.useRef(controlled !== undefined),
-      isControlled = _React$useRef.current;
-
-  var _React$useState = React.useState(defaultProp),
-      valueState = _React$useState[0],
-      setValue = _React$useState[1];
-
-  var value = isControlled ? controlled : valueState;
-
-  if ("development" !== 'production') {
-    React.useEffect(function () {
-      if (isControlled !== (controlled !== undefined)) {
-        console.error(["Material-UI: A component is changing the ".concat(isControlled ? '' : 'un', "controlled ").concat(state, " state of ").concat(name, " to be ").concat(isControlled ? 'un' : '', "controlled."), 'Elements should not switch from uncontrolled to controlled (or vice versa).', "Decide between using a controlled or uncontrolled ".concat(name, " ") + 'element for the lifetime of the component.', "The nature of the state is determined during the first render, it's considered controlled if the value is not `undefined`.", 'More info: https://fb.me/react-controlled-components'].join('\n'));
-      }
-    }, [controlled]);
-
-    var _React$useRef2 = React.useRef(defaultProp),
-        defaultValue = _React$useRef2.current;
-
-    React.useEffect(function () {
-      if (!isControlled && defaultValue !== defaultProp) {
-        console.error(["Material-UI: A component is changing the default ".concat(state, " state of an uncontrolled ").concat(name, " after being initialized. ") + "To suppress this warning opt to use a controlled ".concat(name, ".")].join('\n'));
-      }
-    }, [JSON.stringify(defaultProp)]);
-  }
-
-  var setValueIfUncontrolled = React.useCallback(function (newValue) {
-    if (!isControlled) {
-      setValue(newValue);
-    }
-  }, []);
-  return [value, setValueIfUncontrolled];
-}
-},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/unstable_useId.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = useId;
-
-var React = _interopRequireWildcard(require("react"));
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-/**
- * Private module reserved for @material-ui/x packages.
- */
-function useId(idOverride) {
-  var _React$useState = React.useState(idOverride),
-      defaultId = _React$useState[0],
-      setDefaultId = _React$useState[1];
-
-  var id = idOverride || defaultId;
-  React.useEffect(function () {
-    if (defaultId == null) {
-      // Fallback to this default id when possible.
-      // Use the random value for client-side rendering only.
-      // We can't use it server-side.
-      setDefaultId("mui-".concat(Math.round(Math.random() * 1e5)));
-    }
-  }, [defaultId]);
-  return id;
-}
-},{"react":"../../node_modules/react/index.js"}],"../../node_modules/@material-ui/core/esm/utils/index.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "capitalize", {
-  enumerable: true,
-  get: function () {
-    return _capitalize.default;
-  }
-});
-Object.defineProperty(exports, "createChainedFunction", {
-  enumerable: true,
-  get: function () {
-    return _createChainedFunction.default;
-  }
-});
-Object.defineProperty(exports, "createSvgIcon", {
-  enumerable: true,
-  get: function () {
-    return _createSvgIcon.default;
-  }
-});
-Object.defineProperty(exports, "debounce", {
-  enumerable: true,
-  get: function () {
-    return _debounce.default;
-  }
-});
-Object.defineProperty(exports, "deprecatedPropType", {
-  enumerable: true,
-  get: function () {
-    return _deprecatedPropType.default;
-  }
-});
-Object.defineProperty(exports, "isMuiElement", {
-  enumerable: true,
-  get: function () {
-    return _isMuiElement.default;
-  }
-});
-Object.defineProperty(exports, "ownerDocument", {
-  enumerable: true,
-  get: function () {
-    return _ownerDocument.default;
-  }
-});
-Object.defineProperty(exports, "ownerWindow", {
-  enumerable: true,
-  get: function () {
-    return _ownerWindow.default;
-  }
-});
-Object.defineProperty(exports, "requirePropFactory", {
-  enumerable: true,
-  get: function () {
-    return _requirePropFactory.default;
-  }
-});
-Object.defineProperty(exports, "setRef", {
-  enumerable: true,
-  get: function () {
-    return _setRef.default;
-  }
-});
-Object.defineProperty(exports, "unsupportedProp", {
-  enumerable: true,
-  get: function () {
-    return _unsupportedProp.default;
-  }
-});
-Object.defineProperty(exports, "useControlled", {
-  enumerable: true,
-  get: function () {
-    return _useControlled.default;
-  }
-});
-Object.defineProperty(exports, "useEventCallback", {
-  enumerable: true,
-  get: function () {
-    return _useEventCallback.default;
-  }
-});
-Object.defineProperty(exports, "useForkRef", {
-  enumerable: true,
-  get: function () {
-    return _useForkRef.default;
-  }
-});
-Object.defineProperty(exports, "unstable_useId", {
-  enumerable: true,
-  get: function () {
-    return _unstable_useId.default;
-  }
-});
-Object.defineProperty(exports, "useIsFocusVisible", {
-  enumerable: true,
-  get: function () {
-    return _useIsFocusVisible.default;
-  }
-});
-
-var _capitalize = _interopRequireDefault(require("./capitalize"));
-
-var _createChainedFunction = _interopRequireDefault(require("./createChainedFunction"));
-
-var _createSvgIcon = _interopRequireDefault(require("./createSvgIcon"));
-
-var _debounce = _interopRequireDefault(require("./debounce"));
-
-var _deprecatedPropType = _interopRequireDefault(require("./deprecatedPropType"));
-
-var _isMuiElement = _interopRequireDefault(require("./isMuiElement"));
-
-var _ownerDocument = _interopRequireDefault(require("./ownerDocument"));
-
-var _ownerWindow = _interopRequireDefault(require("./ownerWindow"));
-
-var _requirePropFactory = _interopRequireDefault(require("./requirePropFactory"));
-
-var _setRef = _interopRequireDefault(require("./setRef"));
-
-var _unsupportedProp = _interopRequireDefault(require("./unsupportedProp"));
-
-var _useControlled = _interopRequireDefault(require("./useControlled"));
-
-var _useEventCallback = _interopRequireDefault(require("./useEventCallback"));
-
-var _useForkRef = _interopRequireDefault(require("./useForkRef"));
-
-var _unstable_useId = _interopRequireDefault(require("./unstable_useId"));
-
-var _useIsFocusVisible = _interopRequireDefault(require("./useIsFocusVisible"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./capitalize":"../../node_modules/@material-ui/core/esm/utils/capitalize.js","./createChainedFunction":"../../node_modules/@material-ui/core/esm/utils/createChainedFunction.js","./createSvgIcon":"../../node_modules/@material-ui/core/esm/utils/createSvgIcon.js","./debounce":"../../node_modules/@material-ui/core/esm/utils/debounce.js","./deprecatedPropType":"../../node_modules/@material-ui/core/esm/utils/deprecatedPropType.js","./isMuiElement":"../../node_modules/@material-ui/core/esm/utils/isMuiElement.js","./ownerDocument":"../../node_modules/@material-ui/core/esm/utils/ownerDocument.js","./ownerWindow":"../../node_modules/@material-ui/core/esm/utils/ownerWindow.js","./requirePropFactory":"../../node_modules/@material-ui/core/esm/utils/requirePropFactory.js","./setRef":"../../node_modules/@material-ui/core/esm/utils/setRef.js","./unsupportedProp":"../../node_modules/@material-ui/core/esm/utils/unsupportedProp.js","./useControlled":"../../node_modules/@material-ui/core/esm/utils/useControlled.js","./useEventCallback":"../../node_modules/@material-ui/core/esm/utils/useEventCallback.js","./useForkRef":"../../node_modules/@material-ui/core/esm/utils/useForkRef.js","./unstable_useId":"../../node_modules/@material-ui/core/esm/utils/unstable_useId.js","./useIsFocusVisible":"../../node_modules/@material-ui/core/esm/utils/useIsFocusVisible.js"}],"../../node_modules/@material-ui/icons/utils/createSvgIcon.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-Object.defineProperty(exports, "default", {
-  enumerable: true,
-  get: function get() {
-    return _utils.createSvgIcon;
-  }
-});
-
-var _utils = require("@material-ui/core/utils");
-},{"@material-ui/core/utils":"../../node_modules/@material-ui/core/esm/utils/index.js"}],"../../node_modules/@material-ui/icons/Close.js":[function(require,module,exports) {
+},{"./IconButton":"../../node_modules/@material-ui/core/esm/IconButton/IconButton.js"}],"../../node_modules/@material-ui/icons/Close.js":[function(require,module,exports) {
 "use strict";
 
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
@@ -68404,7 +73545,7 @@ module.exports = reloadCSS;
 },{"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/@iobroker/adapter-react/Components/Loader.js":[function(require,module,exports) {
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -68425,15 +73566,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -68540,7 +73681,7 @@ exports["default"] = _default;
 },{"react":"../../node_modules/react/index.js","prop-types":"../../node_modules/prop-types/index.js","@material-ui/core/styles/withStyles":"../../node_modules/@material-ui/core/styles/withStyles.js","./loader.css":"../../node_modules/@iobroker/adapter-react/Components/loader.css"}],"../../node_modules/@iobroker/adapter-react/Components/Router.js":[function(require,module,exports) {
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -68555,15 +73696,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -68697,7 +73838,7 @@ exports["default"] = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -68991,7 +74132,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -69138,7 +74279,7 @@ exports.default = _default;
 },{"@babel/runtime/helpers/interopRequireDefault":"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js","@babel/runtime/helpers/interopRequireWildcard":"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js","react":"../../node_modules/react/index.js","./utils/createSvgIcon":"../../node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"../../node_modules/@iobroker/adapter-react/Components/SaveCloseButtons.js":[function(require,module,exports) {
 "use strict";
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -69167,15 +74308,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -69598,288 +74739,291 @@ module.exports = {
   "ra_Clear": "Delete",
   "ra_Clear icon": "Clear icon",
   "ra_none": "none",
-  "ra_Select predefined icon": "Select predefined icon"
+  "ra_Select predefined icon": "Select predefined icon",
+  "ra_Show lines between rows": "Show lines between rows"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/de.json":[function(require,module,exports) {
 module.exports = {
-  "ra_filter_func": "Funktion",
-  "ra_filter_id": "ID",
-  "ra_filter_name": "Name",
-  "ra_filter_type": "Typ",
-  "ra_filter_customs": "Einstellungen",
-  "ra_filter_role": "Rolle",
-  "ra_filter_room": "Zimmer",
-  "ra_tooltip_ack": "Bestätigt",
-  "ra_tooltip_from": "Von",
-  "ra_tooltip_lc": "Zuletzt geändert",
-  "ra_tooltip_quality": "Qualität",
-  "ra_tooltip_ts": "Zeitstempel",
-  "ra_tooltip_user": "Nutzer",
-  "ra_tooltip_value": "Wert",
-  "ra_Are you sure?": "Bist du sicher?",
-  "ra_Cancel": "Abbrechen",
-  "ra_Copied": "Kopiert",
-  "ra_Copied %s": "%s kopiert",
-  "ra_Define functions": "Funktionen definieren",
-  "ra_Define rooms": "Räume definieren",
-  "ra_Error": "Fehler",
-  "ra_Message": "Meldung",
-  "ra_Ok": "OK",
-  "ra_Please select object ID...": "Bitte Objekt-ID auswählen...",
-  "ra_Selected": "Ausgewählt",
-  "ra_Unknown error!": "Unbekannter Fehler!",
-  "ra_Value": "Wert",
-  "ra_invalidConfig": "Ungültige Einstellungen",
-  "ra_otherConfig": "Einstellungen von anderen Adaptern %s",
-  "ra_tooltip_copyState": "Kopieren Sie den Statuswert",
-  "ra_tooltip_customConfig": "Benutzerdefinierte Einstellungen",
-  "ra_tooltip_deleteObject": "Objekt löschen",
-  "ra_tooltip_editObject": "Objekt bearbeiten",
-  "ra_tooltip_editState": "Bearbeiten Sie den Statuswert",
-  "ra_dow_Fr": "Fr",
-  "ra_dow_Mo": "Mo",
-  "ra_dow_Sa": "Sa",
-  "ra_dow_Su": "So",
-  "ra_dow_Th": "Do",
-  "ra_dow_Tu": "Di",
-  "ra_dow_We": "Mi",
-  "ra_Listen on all IPs": "Zugriff von allen IPs zulassen",
-  "ra_Save": "Speichern",
-  "ra_Save and close": "Speichern und schließen",
-  "ra_Close": "Schließen",
-  "ra_Auto (no custom columns)": "Auto (keine benutzerdefinierten Spalten)",
-  "ra_Transparent dialog": "Transparenter Dialog",
-  "ra_Width": "Breite",
-  "ra_val": "Wert",
-  "ra_buttons": "Tasten",
-  "ra_Configure visible columns": "Spalten Konfigurieren",
-  "ra_close": "Schließen",
-  "ra_Cannot update attribute, because not found in the object": "Attribut kann nicht aktualisiert werden, da es nicht im Objekt gefunden wurde",
-  "ra_Edit object field": "Objektfeld bearbeiten",
-  "ra_Hide empty folders": "Leere Ordner ausblenden",
-  "ra_Reload files": "Dateien neu laden",
-  "ra_Create folder": "Ordner erstellen",
-  "ra_Upload file": "Datei hochladen",
-  "ra_User files": "Benutzerdaten",
-  "ra_Confirm deletion of %s": "Bestätigen Sie das Löschen von %s",
-  "ra_Delete (no confirm for 5 mins)": "Löschen (keine Bestätigung für 5 Minuten)",
-  "ra_Delete": "Löschen",
-  "ra_Toggle expert mode": "Expertenmodus umschalten",
-  "ra_Toggle view mode": "Ansichtsmodus umschalten",
-  "re_Root": "Anfang",
-  "re_Back to %s": "Zurück zu %s",
-  "ra_Place your files here or click here to open the browse dialog": "Platzieren Sie Ihre Dateien hier oder klicken Sie hier, um den Suchdialog zu öffnen",
-  "ra_If no file will be created in the folder, it will disappear after the browser closed": "Wenn im Ordner keine Datei erstellt wird, verschwindet dieser nach dem Schließen des Browsers",
-  "ra_Folder name": "Ordnernamen",
-  "ra_Create new folder in %s": "Neuen Ordner in \"%s\" erstellen",
-  "ra_Duplicate name": "Doppelter Name",
-  "ra_Invalid parent folder!": "Ungültiger übergeordneter Ordner!",
-  "ra_Drop file here": "Datei hier ablegen",
-  "ra_Suppress question for next %s minutes": "Frage für die nächsten %s Minuten unterdrücken",
-  "ra_Clear filter": "Filter löschen",
-  "ra_Update": "Aktualisieren",
-  "ra_Load configuration from file": "Konfiguration aus Datei laden",
-  "ra_Save configuration to file": "Konfiguration in Datei speichern",
-  "sc_cron": "CRON",
-  "sc_date": "Datum",
-  "sc_dates": "Tage",
-  "sc_dows": "Wochentage",
-  "sc_every": "Jeden",
-  "sc_everyN_dates": "alle N Tage",
-  "sc_everyN_dows": "alle N Wochentage",
-  "sc_everyN_hours": "alle N Stunden",
-  "sc_everyN_minutes": "alle N Minuten",
-  "sc_everyN_months": "alle N Monate",
-  "sc_everyN_seconds": "alle N Sekunden",
-  "sc_every_dates": "jeden Tag",
-  "sc_every_dows": "jeden Tag der Woche",
-  "sc_every_hours": "jede Stunde",
-  "sc_every_minutes": "jede Minute",
-  "sc_every_months": "jeden Monat",
-  "sc_every_seconds": "jede Sekunde",
-  "sc_from": "Von",
-  "sc_hours": "Stunden",
-  "sc_interval": "Intervall",
-  "sc_intervalBetween": "Intervall zwischen",
-  "sc_minutes": "Minuten",
-  "sc_months": "Monate",
-  "sc_once": "Einmal",
-  "sc_period": "Zeitraum",
-  "sc_seconds": "Sekunden",
-  "sc_simple": "Einfach",
-  "sc_specific": "Bestimmte Zeit",
-  "sc_specific_dates": "bestimmte Tage",
-  "sc_specific_dows": "bestimmten Wochentag",
-  "sc_specific_hours": "bestimmte Stunden",
-  "sc_specific_minutes": "bestimmte Minuten",
-  "sc_specific_months": "bestimmte Monate",
-  "sc_specific_seconds": "bestimmte Sekunden",
-  "sc_time": "Zeit",
-  "sc_to": "Bis",
-  "sc_wizard": "Wizard",
-  "sch_all": "alle",
-  "sch_astroDay": "Astronomisch Tag",
-  "sch_astroNight": "Astronomisch Nacht",
-  "sch_astro_dawn": "Morgendämmerung",
-  "sch_astro_dusk": "Abenddämmerung",
-  "sch_astro_goldenHour": "Goldene Stunde",
-  "sch_astro_goldenHourEnd": "Goldene Stundenende",
-  "sch_astro_nadir": "Nadir",
-  "sch_astro_nauticalDawn": "Nautische Morgendämmerung",
-  "sch_astro_nauticalDusk": "Nautische Abenddämmerung",
-  "sch_astro_night": "Nacht",
-  "sch_astro_nightEnd": "Nachtende",
-  "sch_astro_solarNoon": "Sonnenmittag",
-  "sch_astro_sunrise": "Sonnenaufgang",
-  "sch_astro_sunriseEnd": "Sonnenaufgangende",
-  "sch_astro_sunset": "Sonnenuntergang",
-  "sch_astro_sunsetStart": "Sonnenuntergangstart",
-  "sch_at": "am",
-  "sch_desc_atTime": "um %s",
-  "sch_desc_everyDay": "jeden Tag",
-  "sch_desc_everyHour": "jede Stunde",
-  "sch_desc_everyMinute": "jede Minute",
-  "sch_desc_everyMonth": "jeden Monat",
-  "sch_desc_everyNDay": "jeden %s Tag",
-  "sch_desc_everyNHours": "alle %s Stunden",
-  "sch_desc_everyNMinutes": "alle %s Minuten",
-  "sch_desc_everyNMonths": "alle %s Monate",
-  "sch_desc_everyNWeeks": "alle %s Wochen",
-  "sch_desc_everyNYears": "alle %s Jahre",
-  "sch_desc_everyWeek": "jede Woche",
-  "sch_desc_everyYear": "jedes Jahr",
-  "sch_desc_intervalFromTo": "von %s bis %s",
-  "sch_desc_never": "noch nie",
-  "sch_desc_onDate": "am %s von %s",
-  "sch_desc_onDates": "am %s und %s von",
-  "sch_desc_onEveryDate": "an jedem Datum von",
-  "sch_desc_onMonth": "%s",
-  "sch_desc_onMonths": "%s und %s",
-  "sch_desc_onWeekday": "auf %s",
-  "sch_desc_onWeekdays": "auf %s und %s",
-  "sch_desc_onWeekends": "an Wochenenden",
-  "sch_desc_onWorkdays": "an Werktagen",
-  "sch_desc_onceInPast": "wird nicht mehr ausgeführt, weil der Start in der Vergangenheit ist",
-  "sch_desc_once_on": "auf %s",
-  "sch_desc_validFrom": "von %s",
-  "sch_desc_validFromTo": "Ausführen von bis",
-  "sch_desc_validTo": "bis %s",
-  "sch_every": "jeden",
-  "sch_exactTime": "Bestimmte Zeit",
-  "sch_from": "von",
-  "sch_fromTo": "Von bis",
-  "sch_intervalTime": "Zeitintervall",
-  "sch_invert": "umkehren",
-  "sch_no_one": "keiner",
-  "sch_on": "am",
-  "sch_period": "Zeitraum",
-  "sch_periodDaily": "Täglich",
-  "sch_periodDates": "Daten",
-  "sch_periodDay": "Tag",
-  "sch_periodEvery": "Jeden",
-  "sch_periodEveryDay": "Jeden Tag",
-  "sch_periodEveryMonth": "Jeden Monat",
-  "sch_periodEveryWeek": "Jede Woche",
-  "sch_periodEveryYear": "Jedes Jahr",
-  "sch_periodHours": "Stunden",
-  "sch_periodMinutes": "Minuten",
-  "sch_periodMonth": "Monat",
-  "sch_periodMonthly": "Monatlich",
-  "sch_periodOnce": "Einmal",
-  "sch_periodSpecificMonths": "Bestimmte Monate",
-  "sch_periodWeek": "Woche",
-  "sch_periodWeekdays": "Wochentage",
-  "sch_periodWeekend": "Wochenende",
-  "sch_periodWeekly": "Wöchentlich",
-  "sch_periodWorkdays": "Arbeitstage",
-  "sch_periodYear": "Jahr",
-  "sch_periodYearly": "Jährlich",
-  "sch_specificTime": "Bestimmte Zeit",
-  "sch_time": "Zeit",
-  "sch_to": "zu",
-  "sch_valid": "Gültigkeit",
-  "sch_validFrom": "von",
-  "sch_validTo": "bis",
-  "sch_wholeDay": "Ganzer Tag",
-  "sch_yearEveryMonth": "jeden Monat",
-  "ra_Define schedule...": "Zeitplan definieren ...",
-  "ra_Repeat": "Wiederholen",
-  "ra_use seconds": "Sekunden benutzen",
-  "ra_months_Apr": "Apr",
-  "ra_months_Aug": "Aug",
-  "ra_months_Dec": "Dez",
-  "ra_months_Jan": "Jan",
-  "ra_months_Feb": "Feb",
-  "ra_months_Jul": "Jul",
-  "ra_months_Jun": "Jun",
-  "ra_months_Mai": "Mai",
-  "ra_months_Mar": "Mär",
-  "ra_months_Nov": "Nov",
-  "ra_months_Oct": "Oct",
-  "ra_months_Sep": "Sep",
-  "ra_Toggle the states view": "Statusansicht umschalten",
-  "ra_Add new child object to selected parent": "Dem ausgewählten übergeordneten Objekt ein neues untergeordnetes Objekt hinzufügen",
-  "ra_Add objects tree from JSON file": "Objektbaum aus JSON-Datei hinzufügen",
-  "ra_Save objects tree as JSON file": "Objektbaum als JSON-Datei speichern",
-  "ra_Objects": "Objekte",
-  "ra_States": "Zustände",
-  "ra_object_changed_by_user": "Objekt zuletzt geändert um",
-  "ra_object_changed_by": "Objekt geändert von",
-  "ra_state_changed_from": "Objekt geändert von",
-  "ra_state_changed_by": "Zustand geändert durch",
-  "ra_aclOwner_read_object": "Besitzer kann Objekt lesen",
-  "ra_aclOwner_read_state": "Besitzer kann Zustand lesen",
-  "ra_aclOwner_write_object": "Besitzer kann Objekt schreiben",
-  "ra_aclOwner_write_state": "Besitzer kann Zustand schreiben",
-  "ra_aclGroup_read_object": "Gruppe kann Objekt lesen",
-  "ra_aclGroup_read_state": "Gruppe kann Status lesen",
-  "ra_aclGroup_write_object": "Gruppe kann Objekt schreiben",
-  "ra_aclGroup_write_state": "Gruppe kann Status schreiben",
-  "ra_aclEveryone_read_object": "Jeder kann Objekt lesen",
-  "ra_aclEveryone_read_state": "Jeder kann Zustand lesen",
-  "ra_aclEveryone_write_object": "Jeder kann ein Objekt schreiben",
-  "ra_aclEveryone_write_state": "Jeder kann Zustand schreiben",
-  "ra_Folders always first": "Ordner immer zuerst",
-  "ra_changedFrom": "Geändert von",
-  "ra_qualityCode": "Qualitätscode",
-  "ra_timestamp": "Zeitstempel",
-  "ra_lastChange": "Letzte Änderung",
-  "ra_Owner group": "Besitzergruppe",
-  "ra_Owner user": "Besitzer Benutzer",
-  "ra_Create": "Erstellen",
-  "ra_Changed from": "Geändert von",
-  "ra_Quality code": "Qualität",
-  "ra_Timestamp": "Zeitstempel",
-  "ra_Last change": "Letzte Änderung",
-  "ra_Collapse all nodes": "Alle Knoten zuklappen",
-  "ra_Edit custom config": "Bearbeite Benutzerdefinierte Konfiguration",
-  "ra_Collapse one step node": "Eine Ebene zuklappen",
-  "ra_Expand one step node": "Eine Ebene aufklappen",
-  "ra_Refresh tree": "Baum aktualisieren",
-  "ra_Expand all nodes": "Alle Knoten aufklappen",
-  "ra_Deselect all": "Alles abwählen",
-  "ra_Select all": "Alle auswählen",
-  "ra_%s object(s) processed": "%s Objekt(e) verarbeitet",
-  "ra_Invalid structure": "Ungültige Struktur",
-  "ra_%s was imported": "%s wurde importiert",
-  "ra_Failed to open JSON File": "Fehler beim Öffnen der JSON-Datei",
-  "ra_Only following structures of objects are available:": "Es stehen nur folgende Objektstrukturen zur Verfügung:",
-  "ra_Folder → State": "Ordner → Zustand",
-  "ra_Folder → Channel → State": "Ordner → Kanal → Zustand",
-  "ra_Folder → Device → Channel → State": "Ordner → Gerät → Kanal → Zustand",
-  "ra_Device → Channel → State": "Gerät → Kanal → Status",
-  "ra_Channel → State": "Kanal → Status",
-  "ra_Non-experts may create new objects only in \"0_userdata.0\" or \"alias.0\".": "Nicht-Experten dürfen neue Objekte nur in \"0_userdata.0\" oder \"alias.0\" erstellen.",
-  "ra_The experts may create objects everywhere but from second level (e.g. \"vis.0\" or \"javascript.0\").": "Die Experten können Objekte überall erstellen, außer auf der zweiten Ebene (z. B. \"vis.0\" oder \"javascript.0\").",
-  "ra_expertMode": "Expertenmodus",
-  "ra_On weekdays": "An Wochentagen",
-  "ra_Drop the files here...": "Datei hier ablegen...",
-  "ra_Drag 'n' drop some files here, or click to select files": "Die Datei hierher ziehen und ablegen, oder klicken, um die Datei auszuwählen",
-  "ra_Clear": "Löschen",
-  "ra_Clear icon": "Symbol löschen",
-  "ra_none": "kein",
-  "ra_Select predefined icon": "Vordefiniertes Symbol auswählen"
-};
+    "ra_filter_func": "Funktion",
+    "ra_filter_id": "ID",
+    "ra_filter_name": "Name",
+    "ra_filter_type": "Typ",
+    "ra_filter_customs": "Einstellungen",
+    "ra_filter_role": "Rolle",
+    "ra_filter_room": "Zimmer",
+    "ra_tooltip_ack": "Bestätigt",
+    "ra_tooltip_from": "Von",
+    "ra_tooltip_lc": "Zuletzt geändert",
+    "ra_tooltip_quality": "Qualität",
+    "ra_tooltip_ts": "Zeitstempel",
+    "ra_tooltip_user": "Benutzer",
+    "ra_tooltip_value": "Wert",
+    "ra_Are you sure?": "Bist du sicher?",
+    "ra_Cancel": "Abbrechen",
+    "ra_Copied": "Kopiert",
+    "ra_Copied %s": "%s kopiert",
+    "ra_Define functions": "Funktionen definieren",
+    "ra_Define rooms": "Räume definieren",
+    "ra_Error": "Fehler",
+    "ra_Message": "Meldung",
+    "ra_Ok": "OK",
+    "ra_Please select object ID...": "Bitte Objekt-ID auswählen...",
+    "ra_Selected": "Ausgewählt",
+    "ra_Unknown error!": "Unbekannter Fehler!",
+    "ra_Value": "Wert",
+    "ra_invalidConfig": "Ungültige Einstellungen",
+    "ra_otherConfig": "Einstellungen von anderen Adaptern %s",
+    "ra_tooltip_copyState": "Kopieren Sie den Statuswert",
+    "ra_tooltip_customConfig": "Benutzerdefinierte Einstellungen",
+    "ra_tooltip_deleteObject": "Objekt löschen",
+    "ra_tooltip_editObject": "Objekt bearbeiten",
+    "ra_tooltip_editState": "Bearbeiten Sie den Statuswert",
+    "ra_dow_Fr": "Fr",
+    "ra_dow_Mo": "Mo",
+    "ra_dow_Sa": "Sa",
+    "ra_dow_Su": "So",
+    "ra_dow_Th": "Do",
+    "ra_dow_Tu": "Di",
+    "ra_dow_We": "Mi",
+    "ra_Listen on all IPs": "Zugriff von allen IPs zulassen",
+    "ra_Save": "Speichern",
+    "ra_Save and close": "Speichern und schließen",
+    "ra_Close": "Schließen",
+    "ra_Auto (no custom columns)": "Auto (keine benutzerdefinierten Spalten)",
+    "ra_Transparent dialog": "Transparenter Dialog",
+    "ra_Width": "Breite",
+    "ra_val": "Wert",
+    "ra_buttons": "Tasten",
+    "ra_Configure visible columns": "Spalten Konfigurieren",
+    "ra_close": "Schließen",
+    "ra_Cannot update attribute, because not found in the object": "Attribut kann nicht aktualisiert werden, da es nicht im Objekt gefunden wurde",
+    "ra_Edit object field": "Objektfeld bearbeiten",
+    "ra_Hide empty folders": "Leere Ordner ausblenden",
+    "ra_Reload files": "Dateien neu laden",
+    "ra_Create folder": "Ordner erstellen",
+    "ra_Upload file": "Datei hochladen",
+    "ra_User files": "Benutzerdaten",
+    "ra_Confirm deletion of %s": "Bestätigen Sie das Löschen von %s",
+    "ra_Delete (no confirm for 5 mins)": "Löschen (keine Bestätigung für 5 Minuten)",
+    "ra_Delete": "Löschen",
+    "ra_Toggle expert mode": "Expertenmodus umschalten",
+    "ra_Toggle view mode": "Ansichtsmodus umschalten",
+    "re_Root": "Anfang",
+    "re_Back to %s": "Zurück zu %s",
+    "ra_Place your files here or click here to open the browse dialog": "Platzieren Sie Ihre Dateien hier oder klicken Sie hier, um den Suchdialog zu öffnen",
+    "ra_If no file will be created in the folder, it will disappear after the browser closed": "Wenn im Ordner keine Datei erstellt wird, verschwindet dieser nach dem Schließen des Browsers",
+    "ra_Folder name": "Ordnernamen",
+    "ra_Create new folder in %s": "Neuen Ordner in \"%s\" erstellen",
+    "ra_Duplicate name": "Doppelter Name",
+    "ra_Invalid parent folder!": "Ungültiger übergeordneter Ordner!",
+    "ra_Drop file here": "Datei hier ablegen",
+    "ra_Suppress question for next %s minutes": "Frage für die nächsten %s Minuten unterdrücken",
+    "ra_Clear filter": "Filter löschen",
+    "ra_Update": "Aktualisieren",
+    "ra_Load configuration from file": "Konfiguration aus Datei laden",
+    "ra_Save configuration to file": "Konfiguration in Datei speichern",
+    "sc_cron": "CRON",
+    "sc_date": "Datum",
+    "sc_dates": "Tage",
+    "sc_dows": "Wochentage",
+    "sc_every": "Jeden",
+    "sc_everyN_dates": "alle N Tage",
+    "sc_everyN_dows": "alle N Wochentage",
+    "sc_everyN_hours": "alle N Stunden",
+    "sc_everyN_minutes": "alle N Minuten",
+    "sc_everyN_months": "alle N Monate",
+    "sc_everyN_seconds": "alle N Sekunden",
+    "sc_every_dates": "jeden Tag",
+    "sc_every_dows": "jeden Tag der Woche",
+    "sc_every_hours": "jede Stunde",
+    "sc_every_minutes": "jede Minute",
+    "sc_every_months": "jeden Monat",
+    "sc_every_seconds": "jede Sekunde",
+    "sc_from": "Von",
+    "sc_hours": "Stunden",
+    "sc_interval": "Intervall",
+    "sc_intervalBetween": "Intervall zwischen",
+    "sc_minutes": "Minuten",
+    "sc_months": "Monate",
+    "sc_once": "Einmal",
+    "sc_period": "Zeitraum",
+    "sc_seconds": "Sekunden",
+    "sc_simple": "Einfach",
+    "sc_specific": "Bestimmte Zeit",
+    "sc_specific_dates": "bestimmte Tage",
+    "sc_specific_dows": "bestimmten Wochentag",
+    "sc_specific_hours": "bestimmte Stunden",
+    "sc_specific_minutes": "bestimmte Minuten",
+    "sc_specific_months": "bestimmte Monate",
+    "sc_specific_seconds": "bestimmte Sekunden",
+    "sc_time": "Zeit",
+    "sc_to": "Bis",
+    "sc_wizard": "Wizard",
+    "sch_all": "alle",
+    "sch_astroDay": "Astronomisch Tag",
+    "sch_astroNight": "Astronomisch Nacht",
+    "sch_astro_dawn": "Morgendämmerung",
+    "sch_astro_dusk": "Abenddämmerung",
+    "sch_astro_goldenHour": "Goldene Stunde",
+    "sch_astro_goldenHourEnd": "Goldene Stundenende",
+    "sch_astro_nadir": "Nadir",
+    "sch_astro_nauticalDawn": "Nautische Morgendämmerung",
+    "sch_astro_nauticalDusk": "Nautische Abenddämmerung",
+    "sch_astro_night": "Nacht",
+    "sch_astro_nightEnd": "Nachtende",
+    "sch_astro_solarNoon": "Sonnenmittag",
+    "sch_astro_sunrise": "Sonnenaufgang",
+    "sch_astro_sunriseEnd": "Sonnenaufgangende",
+    "sch_astro_sunset": "Sonnenuntergang",
+    "sch_astro_sunsetStart": "Sonnenuntergangstart",
+    "sch_at": "am",
+    "sch_desc_atTime": "um %s",
+    "sch_desc_everyDay": "jeden Tag",
+    "sch_desc_everyHour": "jede Stunde",
+    "sch_desc_everyMinute": "jede Minute",
+    "sch_desc_everyMonth": "jeden Monat",
+    "sch_desc_everyNDay": "jeden %s Tag",
+    "sch_desc_everyNHours": "alle %s Stunden",
+    "sch_desc_everyNMinutes": "alle %s Minuten",
+    "sch_desc_everyNMonths": "alle %s Monate",
+    "sch_desc_everyNWeeks": "alle %s Wochen",
+    "sch_desc_everyNYears": "alle %s Jahre",
+    "sch_desc_everyWeek": "jede Woche",
+    "sch_desc_everyYear": "jedes Jahr",
+    "sch_desc_intervalFromTo": "von %s bis %s",
+    "sch_desc_never": "noch nie",
+    "sch_desc_onDate": "am %s von %s",
+    "sch_desc_onDates": "am %s und %s von",
+    "sch_desc_onEveryDate": "an jedem Datum von",
+    "sch_desc_onMonth": "%s",
+    "sch_desc_onMonths": "%s und %s",
+    "sch_desc_onWeekday": "auf %s",
+    "sch_desc_onWeekdays": "auf %s und %s",
+    "sch_desc_onWeekends": "an Wochenenden",
+    "sch_desc_onWorkdays": "an Werktagen",
+    "sch_desc_onceInPast": "wird nicht mehr ausgeführt, weil der Start in der Vergangenheit ist",
+    "sch_desc_once_on": "auf %s",
+    "sch_desc_validFrom": "von %s",
+    "sch_desc_validFromTo": "Ausführen von bis",
+    "sch_desc_validTo": "bis %s",
+    "sch_every": "jeden",
+    "sch_exactTime": "Bestimmte Zeit",
+    "sch_from": "von",
+    "sch_fromTo": "Von bis",
+    "sch_intervalTime": "Zeitintervall",
+    "sch_invert": "umkehren",
+    "sch_no_one": "keiner",
+    "sch_on": "am",
+    "sch_period": "Zeitraum",
+    "sch_periodDaily": "Täglich",
+    "sch_periodDates": "Daten",
+    "sch_periodDay": "Tag",
+    "sch_periodEvery": "Jeden",
+    "sch_periodEveryDay": "Jeden Tag",
+    "sch_periodEveryMonth": "Jeden Monat",
+    "sch_periodEveryWeek": "Jede Woche",
+    "sch_periodEveryYear": "Jedes Jahr",
+    "sch_periodHours": "Stunden",
+    "sch_periodMinutes": "Minuten",
+    "sch_periodMonth": "Monat",
+    "sch_periodMonthly": "Monatlich",
+    "sch_periodOnce": "Einmal",
+    "sch_periodSpecificMonths": "Bestimmte Monate",
+    "sch_periodWeek": "Woche",
+    "sch_periodWeekdays": "Wochentage",
+    "sch_periodWeekend": "Wochenende",
+    "sch_periodWeekly": "Wöchentlich",
+    "sch_periodWorkdays": "Arbeitstage",
+    "sch_periodYear": "Jahr",
+    "sch_periodYearly": "Jährlich",
+    "sch_specificTime": "Bestimmte Zeit",
+    "sch_time": "Zeit",
+    "sch_to": "zu",
+    "sch_valid": "Gültigkeit",
+    "sch_validFrom": "von",
+    "sch_validTo": "bis",
+    "sch_wholeDay": "Ganzer Tag",
+    "sch_yearEveryMonth": "jeden Monat",
+    "ra_Define schedule...": "Zeitplan definieren ...",
+    "ra_Repeat": "Wiederholen",
+    "ra_use seconds": "Sekunden benutzen",
+    "ra_months_Apr": "Apr",
+    "ra_months_Aug": "Aug",
+    "ra_months_Dec": "Dez",
+    "ra_months_Jan": "Jan",
+    "ra_months_Feb": "Feb",
+    "ra_months_Jul": "Jul",
+    "ra_months_Jun": "Jun",
+    "ra_months_Mai": "Mai",
+    "ra_months_Mar": "Mär",
+    "ra_months_Nov": "Nov",
+    "ra_months_Oct": "Oct",
+    "ra_months_Sep": "Sep",
+    "ra_Toggle the states view": "Statusansicht umschalten",
+    "ra_Add new child object to selected parent": "Dem ausgewählten übergeordneten Objekt ein neues untergeordnetes Objekt hinzufügen",
+    "ra_Add objects tree from JSON file": "Objektbaum aus JSON-Datei hinzufügen",
+    "ra_Save objects tree as JSON file": "Objektbaum als JSON-Datei speichern",
+    "ra_Objects": "Objekte",
+    "ra_States": "Zustände",
+    "ra_object_changed_by_user": "Objekt zuletzt geändert um",
+    "ra_object_changed_by": "Objekt geändert von",
+    "ra_state_changed_from": "Objekt geändert von",
+    "ra_state_changed_by": "Zustand geändert durch",
+    "ra_aclOwner_read_object": "Besitzer kann Objekt lesen",
+    "ra_aclOwner_read_state": "Besitzer kann Zustand lesen",
+    "ra_aclOwner_write_object": "Besitzer kann Objekt schreiben",
+    "ra_aclOwner_write_state": "Besitzer kann Zustand schreiben",
+    "ra_aclGroup_read_object": "Gruppe kann Objekt lesen",
+    "ra_aclGroup_read_state": "Gruppe kann Status lesen",
+    "ra_aclGroup_write_object": "Gruppe kann Objekt schreiben",
+    "ra_aclGroup_write_state": "Gruppe kann Status schreiben",
+    "ra_aclEveryone_read_object": "Jeder kann Objekt lesen",
+    "ra_aclEveryone_read_state": "Jeder kann Zustand lesen",
+    "ra_aclEveryone_write_object": "Jeder kann ein Objekt schreiben",
+    "ra_aclEveryone_write_state": "Jeder kann Zustand schreiben",
+    "ra_Folders always first": "Ordner immer zuerst",
+    "ra_changedFrom": "Geändert von",
+    "ra_qualityCode": "Qualitätscode",
+    "ra_timestamp": "Zeitstempel",
+    "ra_lastChange": "Letzte Änderung",
+    "ra_Owner group": "Besitzergruppe",
+    "ra_Owner user": "Besitzer Benutzer",
+    "ra_Create": "Erstellen",
+    "ra_Changed from": "Geändert von",
+    "ra_Quality code": "Qualität",
+    "ra_Timestamp": "Zeitstempel",
+    "ra_Last change": "Letzte Änderung",
+    "ra_Collapse all nodes": "Alle Knoten zuklappen",
+    "ra_Edit custom config": "Bearbeite Benutzerdefinierte Konfiguration",
+    "ra_Collapse one step node": "Eine Ebene zuklappen",
+    "ra_Expand one step node": "Eine Ebene aufklappen",
+    "ra_Refresh tree": "Baum aktualisieren",
+    "ra_Expand all nodes": "Alle Knoten aufklappen",
+    "ra_Deselect all": "Alles abwählen",
+    "ra_Select all": "Alle auswählen",
+    "ra_%s object(s) processed": "%s Objekt(e) verarbeitet",
+    "ra_Invalid structure": "Ungültige Struktur",
+    "ra_%s was imported": "%s wurde importiert",
+    "ra_Failed to open JSON File": "Fehler beim Öffnen der JSON-Datei",
+    "ra_Only following structures of objects are available:": "Es stehen nur folgende Objektstrukturen zur Verfügung:",
+    "ra_Folder → State": "Ordner → Zustand",
+    "ra_Folder → Channel → State": "Ordner → Kanal → Zustand",
+    "ra_Folder → Device → Channel → State": "Ordner → Gerät → Kanal → Zustand",
+    "ra_Device → Channel → State": "Gerät → Kanal → Status",
+    "ra_Channel → State": "Kanal → Status",
+    "ra_Non-experts may create new objects only in \"0_userdata.0\" or \"alias.0\".": "Nicht-Experten dürfen neue Objekte nur in \"0_userdata.0\" oder \"alias.0\" erstellen.",
+    "ra_The experts may create objects everywhere but from second level (e.g. \"vis.0\" or \"javascript.0\").": "Die Experten können Objekte überall erstellen, außer auf der zweiten Ebene (z. B. \"vis.0\" oder \"javascript.0\").",
+    "ra_expertMode": "Expertenmodus",
+    "ra_On weekdays": "An Wochentagen",
+    "ra_Drop the files here...": "Datei hier ablegen...",
+    "ra_Drag 'n' drop some files here, or click to select files": "Die Datei hierher ziehen und ablegen, oder klicken, um die Datei auszuwählen",
+    "ra_Clear": "Löschen",
+    "ra_Clear icon": "Symbol löschen",
+    "ra_none": "kein",
+    "ra_Select predefined icon": "Vordefiniertes Symbol auswählen",
+    "ra_Show lines between rows": "Zeilen zwischen Zeilen anzeigen"
+}
+;
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/ru.json":[function(require,module,exports) {
 module.exports = {
   "ra_filter_func": "функция",
@@ -70158,7 +75302,8 @@ module.exports = {
   "ra_Clear": "Удалить",
   "ra_Clear icon": "Очистить значок",
   "ra_none": "ничего",
-  "ra_Select predefined icon": "Выберите предопределенный значок"
+  "ra_Select predefined icon": "Выберите предопределенный значок",
+  "ra_Show lines between rows": "Показать линии между строками"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/pt.json":[function(require,module,exports) {
 module.exports = {
@@ -70425,7 +75570,8 @@ module.exports = {
   "ra_Clear": "Excluir",
   "ra_Clear icon": "Ícone de limpeza",
   "ra_none": "Nenhum",
-  "ra_Select predefined icon": "Selecione o ícone predefinido"
+  "ra_Select predefined icon": "Selecione o ícone predefinido",
+  "ra_Show lines between rows": "Mostrar linhas entre as linhas"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/nl.json":[function(require,module,exports) {
 module.exports = {
@@ -70692,7 +75838,8 @@ module.exports = {
   "ra_Clear": "Verwijderen",
   "ra_Clear icon": "Pictogram wissen",
   "ra_none": "geen",
-  "ra_Select predefined icon": "Selecteer voorgedefinieerd pictogram"
+  "ra_Select predefined icon": "Selecteer voorgedefinieerd pictogram",
+  "ra_Show lines between rows": "Toon lijnen tussen rijen"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/fr.json":[function(require,module,exports) {
 module.exports = {
@@ -70959,7 +76106,8 @@ module.exports = {
   "ra_Clear": "Effacer",
   "ra_Clear icon": "Effacer l'icône",
   "ra_none": "rien",
-  "ra_Select predefined icon": "Sélectionnez l'icône prédéfinie"
+  "ra_Select predefined icon": "Sélectionnez l'icône prédéfinie",
+  "ra_Show lines between rows": "Afficher les lignes entre les lignes"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/it.json":[function(require,module,exports) {
 module.exports = {
@@ -71226,7 +76374,8 @@ module.exports = {
   "ra_Clear": "Elimina",
   "ra_Clear icon": "Cancella icona",
   "ra_none": "nessuna",
-  "ra_Select predefined icon": "Seleziona l'icona predefinita"
+  "ra_Select predefined icon": "Seleziona l'icona predefinita",
+  "ra_Show lines between rows": "Mostra linee tra le righe"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/es.json":[function(require,module,exports) {
 module.exports = {
@@ -71493,7 +76642,8 @@ module.exports = {
   "ra_Clear": "Borrar",
   "ra_Clear icon": "Icono claro",
   "ra_none": "ninguno",
-  "ra_Select predefined icon": "Seleccionar icono predefinido"
+  "ra_Select predefined icon": "Seleccionar icono predefinido",
+  "ra_Show lines between rows": "Mostrar líneas entre filas"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/pl.json":[function(require,module,exports) {
 module.exports = {
@@ -71760,7 +76910,8 @@ module.exports = {
   "ra_Clear": "Kasować",
   "ra_Clear icon": "Wyczyść ikonę",
   "ra_none": "Żaden",
-  "ra_Select predefined icon": "Wybierz predefiniowaną ikonę"
+  "ra_Select predefined icon": "Wybierz predefiniowaną ikonę",
+  "ra_Show lines between rows": "Pokaż linie między rzędami"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/i18n/zh-cn.json":[function(require,module,exports) {
 module.exports = {
@@ -72027,7 +77178,8 @@ module.exports = {
   "ra_Clear": "删除",
   "ra_Clear icon": "清除图标",
   "ra_none": "没有任何",
-  "ra_Select predefined icon": "选择预定义图标"
+  "ra_Select predefined icon": "选择预定义图标",
+  "ra_Show lines between rows": "显示行之间的线"
 };
 },{}],"../../node_modules/@iobroker/adapter-react/GenericApp.js":[function(require,module,exports) {
 "use strict";
@@ -72041,9 +77193,11 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Connection = _interopRequireWildcard(require("./Connection"));
 
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
 var Sentry = _interopRequireWildcard(require("@sentry/browser"));
 
-var _propTypes = _interopRequireDefault(require("prop-types"));
+var SentryIntegrations = _interopRequireWildcard(require("@sentry/integrations"));
 
 var _Error = _interopRequireDefault(require("./Dialogs/Error"));
 
@@ -72075,29 +77229,29 @@ function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && 
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
-function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
+function _get() { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(arguments.length < 3 ? target : receiver); } return desc.value; }; } return _get.apply(this, arguments); }
 
 function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); Object.defineProperty(subClass, "prototype", { writable: false }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } else if (call !== void 0) { throw new TypeError("Derived constructors may only return object or undefined"); } return _assertThisInitialized(self); }
 
 function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
@@ -72281,6 +77435,7 @@ var GenericApp = /*#__PURE__*/function (_Router) {
     _this.savedNative = {}; // to detect if the config changed
 
     _this.encryptedFields = props.encryptedFields || (settings === null || settings === void 0 ? void 0 : settings.encryptedFields) || [];
+    _this.sentryDSN = settings && settings.sentryDSN || props.sentryDSN;
     _this.socket = new _Connection["default"](_objectSpread(_objectSpread({}, (props === null || props === void 0 ? void 0 : props.socket) || (settings === null || settings === void 0 ? void 0 : settings.socket)), {}, {
       name: _this.adapterName,
       doNotLoadAllObjects: settings === null || settings === void 0 ? void 0 : settings.doNotLoadAllObjects,
@@ -72309,37 +77464,46 @@ var GenericApp = /*#__PURE__*/function (_Router) {
           _this._secret = typeof obj !== 'undefined' && obj["native"] && obj["native"].secret || 'Zgfr56gFe87jJOM';
           _this._systemConfig = (obj === null || obj === void 0 ? void 0 : obj.common) || {};
           return _this.socket.getObject(_this.instanceId);
-        }).then(function (obj) {
-          var waitPromise; // read UUID and init sentry with it.
+        }).then(function (instanceObj) {
+          var waitPromise;
+          var sentryEnabled = _this._systemConfig.diag !== 'none' && instanceObj && instanceObj.common && instanceObj.common.name && instanceObj.common.version && !instanceObj.common.disableDataReporting && window.location.host !== 'localhost:3000'; // activate sentry plugin
 
-          if (!_this.sentryInited) {
+          if (!_this.sentryStarted && _this.sentryDSN && sentryEnabled) {
+            _this.sentryStarted = true;
+            Sentry.init({
+              dsn: _this.sentryDSN,
+              release: "iobroker.".concat(instanceObj.common.name, "@").concat(instanceObj.common.version),
+              integrations: [new SentryIntegrations.Dedupe()]
+            });
+          } // read UUID and init sentry with it.
+          // for backward compatibility it will be processed separately from above logic: some adapters could still have this.sentryDSN as undefined
+
+
+          if (!_this.sentryInited && sentryEnabled) {
             _this.sentryInited = true;
-
-            if (window.location.host !== 'localhost:3000') {
-              waitPromise = _this.socket.getObject('system.meta.uuid').then(function (uuidObj) {
-                if (uuidObj && uuidObj["native"] && uuidObj["native"].uuid) {
-                  Sentry.configureScope(function (scope) {
-                    return scope.setUser({
-                      id: uuidObj["native"].uuid
-                    });
+            waitPromise = _this.socket.getObject('system.meta.uuid').then(function (uuidObj) {
+              if (uuidObj && uuidObj["native"] && uuidObj["native"].uuid) {
+                Sentry.configureScope(function (scope) {
+                  return scope.setUser({
+                    id: uuidObj["native"].uuid
                   });
-                }
-              });
-            }
+                });
+              }
+            });
           }
 
           waitPromise = waitPromise || Promise.resolve();
           waitPromise.then(function () {
-            if (obj) {
-              _this.common = obj && obj.common;
+            if (instanceObj) {
+              _this.common = instanceObj === null || instanceObj === void 0 ? void 0 : instanceObj.common;
 
-              _this.onPrepareLoad(obj["native"], obj.encryptedNative); // decode all secrets
+              _this.onPrepareLoad(instanceObj["native"], instanceObj.encryptedNative); // decode all secrets
 
 
-              _this.savedNative = JSON.parse(JSON.stringify(obj["native"]));
+              _this.savedNative = JSON.parse(JSON.stringify(instanceObj["native"]));
 
               _this.setState({
-                "native": obj["native"],
+                "native": instanceObj["native"],
                 loaded: true,
                 expertMode: _this.getExpertMode()
               }, function () {
@@ -72686,14 +77850,24 @@ var GenericApp = /*#__PURE__*/function (_Router) {
 
         for (var a in _this6.state["native"]) {
           if (_this6.state["native"].hasOwnProperty(a)) {
-            oldObj["native"][a] = _this6.state["native"][a];
+            if (_this6.state["native"][a] === null) {
+              oldObj["native"][a] = null;
+            } else if (_this6.state["native"][a] !== undefined) {
+              oldObj["native"][a] = JSON.parse(JSON.stringify(_this6.state["native"][a]));
+            } else {
+              delete oldObj["native"][a];
+            }
           }
         }
 
         if (_this6.state.common) {
           for (var b in _this6.state.common) {
-            if (_this6.state.common.hasOwnProperty(b)) {
-              oldObj.common[b] = _this6.state.common[b];
+            if (_this6.state.common[b] === null) {
+              oldObj.common[b] = null;
+            } else if (_this6.state.common[b] !== undefined) {
+              oldObj.common[b] = JSON.parse(JSON.stringify(_this6.state.common[b]));
+            } else {
+              delete oldObj.common[b];
             }
           }
         }
@@ -73025,7 +78199,7 @@ var _default = GenericApp;
 exports["default"] = _default;
 
 
-},{"react":"../../node_modules/react/index.js","./Connection":"../../node_modules/@iobroker/adapter-react/Connection.js","@sentry/browser":"../../node_modules/@sentry/browser/esm/index.js","prop-types":"../../node_modules/prop-types/index.js","./Dialogs/Error":"../../node_modules/@iobroker/adapter-react/Dialogs/Error.js","@material-ui/core/Snackbar":"../../node_modules/@material-ui/core/esm/Snackbar/index.js","@material-ui/core/IconButton":"../../node_modules/@material-ui/core/esm/IconButton/index.js","@material-ui/icons/Close":"../../node_modules/@material-ui/icons/Close.js","./Prompt":"../../node_modules/@iobroker/adapter-react/Prompt.js","./Theme":"../../node_modules/@iobroker/adapter-react/Theme.js","./Components/Loader":"../../node_modules/@iobroker/adapter-react/Components/Loader.js","./Components/Router":"../../node_modules/@iobroker/adapter-react/Components/Router.js","./Components/Utils":"../../node_modules/@iobroker/adapter-react/Components/Utils.js","./Components/SaveCloseButtons":"../../node_modules/@iobroker/adapter-react/Components/SaveCloseButtons.js","./i18n":"../../node_modules/@iobroker/adapter-react/i18n.js","./index.css":"../../node_modules/@iobroker/adapter-react/index.css","./i18n/en.json":"../../node_modules/@iobroker/adapter-react/i18n/en.json","./i18n/de.json":"../../node_modules/@iobroker/adapter-react/i18n/de.json","./i18n/ru.json":"../../node_modules/@iobroker/adapter-react/i18n/ru.json","./i18n/pt.json":"../../node_modules/@iobroker/adapter-react/i18n/pt.json","./i18n/nl.json":"../../node_modules/@iobroker/adapter-react/i18n/nl.json","./i18n/fr.json":"../../node_modules/@iobroker/adapter-react/i18n/fr.json","./i18n/it.json":"../../node_modules/@iobroker/adapter-react/i18n/it.json","./i18n/es.json":"../../node_modules/@iobroker/adapter-react/i18n/es.json","./i18n/pl.json":"../../node_modules/@iobroker/adapter-react/i18n/pl.json","./i18n/zh-cn.json":"../../node_modules/@iobroker/adapter-react/i18n/zh-cn.json"}],"../../node_modules/@material-ui/core/esm/colors/purple.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","./Connection":"../../node_modules/@iobroker/adapter-react/Connection.js","prop-types":"../../node_modules/prop-types/index.js","@sentry/browser":"../../node_modules/@sentry/browser/esm/index.js","@sentry/integrations":"../../node_modules/@sentry/integrations/esm/index.js","./Dialogs/Error":"../../node_modules/@iobroker/adapter-react/Dialogs/Error.js","@material-ui/core/Snackbar":"../../node_modules/@material-ui/core/esm/Snackbar/index.js","@material-ui/core/IconButton":"../../node_modules/@material-ui/core/esm/IconButton/index.js","@material-ui/icons/Close":"../../node_modules/@material-ui/icons/Close.js","./Prompt":"../../node_modules/@iobroker/adapter-react/Prompt.js","./Theme":"../../node_modules/@iobroker/adapter-react/Theme.js","./Components/Loader":"../../node_modules/@iobroker/adapter-react/Components/Loader.js","./Components/Router":"../../node_modules/@iobroker/adapter-react/Components/Router.js","./Components/Utils":"../../node_modules/@iobroker/adapter-react/Components/Utils.js","./Components/SaveCloseButtons":"../../node_modules/@iobroker/adapter-react/Components/SaveCloseButtons.js","./i18n":"../../node_modules/@iobroker/adapter-react/i18n.js","./index.css":"../../node_modules/@iobroker/adapter-react/index.css","./i18n/en.json":"../../node_modules/@iobroker/adapter-react/i18n/en.json","./i18n/de.json":"../../node_modules/@iobroker/adapter-react/i18n/de.json","./i18n/ru.json":"../../node_modules/@iobroker/adapter-react/i18n/ru.json","./i18n/pt.json":"../../node_modules/@iobroker/adapter-react/i18n/pt.json","./i18n/nl.json":"../../node_modules/@iobroker/adapter-react/i18n/nl.json","./i18n/fr.json":"../../node_modules/@iobroker/adapter-react/i18n/fr.json","./i18n/it.json":"../../node_modules/@iobroker/adapter-react/i18n/it.json","./i18n/es.json":"../../node_modules/@iobroker/adapter-react/i18n/es.json","./i18n/pl.json":"../../node_modules/@iobroker/adapter-react/i18n/pl.json","./i18n/zh-cn.json":"../../node_modules/@iobroker/adapter-react/i18n/zh-cn.json"}],"../../node_modules/@material-ui/core/esm/colors/purple.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -73331,40 +78505,10 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "common", {
+Object.defineProperty(exports, "amber", {
   enumerable: true,
   get: function () {
-    return _common.default;
-  }
-});
-Object.defineProperty(exports, "red", {
-  enumerable: true,
-  get: function () {
-    return _red.default;
-  }
-});
-Object.defineProperty(exports, "pink", {
-  enumerable: true,
-  get: function () {
-    return _pink.default;
-  }
-});
-Object.defineProperty(exports, "purple", {
-  enumerable: true,
-  get: function () {
-    return _purple.default;
-  }
-});
-Object.defineProperty(exports, "deepPurple", {
-  enumerable: true,
-  get: function () {
-    return _deepPurple.default;
-  }
-});
-Object.defineProperty(exports, "indigo", {
-  enumerable: true,
-  get: function () {
-    return _indigo.default;
+    return _amber.default;
   }
 });
 Object.defineProperty(exports, "blue", {
@@ -73373,10 +78517,22 @@ Object.defineProperty(exports, "blue", {
     return _blue.default;
   }
 });
-Object.defineProperty(exports, "lightBlue", {
+Object.defineProperty(exports, "blueGrey", {
   enumerable: true,
   get: function () {
-    return _lightBlue.default;
+    return _blueGrey.default;
+  }
+});
+Object.defineProperty(exports, "brown", {
+  enumerable: true,
+  get: function () {
+    return _brown.default;
+  }
+});
+Object.defineProperty(exports, "common", {
+  enumerable: true,
+  get: function () {
+    return _common.default;
   }
 });
 Object.defineProperty(exports, "cyan", {
@@ -73385,16 +78541,40 @@ Object.defineProperty(exports, "cyan", {
     return _cyan.default;
   }
 });
-Object.defineProperty(exports, "teal", {
+Object.defineProperty(exports, "deepOrange", {
   enumerable: true,
   get: function () {
-    return _teal.default;
+    return _deepOrange.default;
+  }
+});
+Object.defineProperty(exports, "deepPurple", {
+  enumerable: true,
+  get: function () {
+    return _deepPurple.default;
   }
 });
 Object.defineProperty(exports, "green", {
   enumerable: true,
   get: function () {
     return _green.default;
+  }
+});
+Object.defineProperty(exports, "grey", {
+  enumerable: true,
+  get: function () {
+    return _grey.default;
+  }
+});
+Object.defineProperty(exports, "indigo", {
+  enumerable: true,
+  get: function () {
+    return _indigo.default;
+  }
+});
+Object.defineProperty(exports, "lightBlue", {
+  enumerable: true,
+  get: function () {
+    return _lightBlue.default;
   }
 });
 Object.defineProperty(exports, "lightGreen", {
@@ -73409,46 +78589,40 @@ Object.defineProperty(exports, "lime", {
     return _lime.default;
   }
 });
-Object.defineProperty(exports, "yellow", {
-  enumerable: true,
-  get: function () {
-    return _yellow.default;
-  }
-});
-Object.defineProperty(exports, "amber", {
-  enumerable: true,
-  get: function () {
-    return _amber.default;
-  }
-});
 Object.defineProperty(exports, "orange", {
   enumerable: true,
   get: function () {
     return _orange.default;
   }
 });
-Object.defineProperty(exports, "deepOrange", {
+Object.defineProperty(exports, "pink", {
   enumerable: true,
   get: function () {
-    return _deepOrange.default;
+    return _pink.default;
   }
 });
-Object.defineProperty(exports, "brown", {
+Object.defineProperty(exports, "purple", {
   enumerable: true,
   get: function () {
-    return _brown.default;
+    return _purple.default;
   }
 });
-Object.defineProperty(exports, "grey", {
+Object.defineProperty(exports, "red", {
   enumerable: true,
   get: function () {
-    return _grey.default;
+    return _red.default;
   }
 });
-Object.defineProperty(exports, "blueGrey", {
+Object.defineProperty(exports, "teal", {
   enumerable: true,
   get: function () {
-    return _blueGrey.default;
+    return _teal.default;
+  }
+});
+Object.defineProperty(exports, "yellow", {
+  enumerable: true,
+  get: function () {
+    return _yellow.default;
   }
 });
 
@@ -73520,7 +78694,7 @@ function _toArray(arr) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -73924,7 +79098,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -74198,7 +79372,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -74301,7 +79475,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -74391,7 +79565,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -74617,7 +79791,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -74830,7 +80004,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -75119,7 +80293,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _slicedToArray2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/slicedToArray"));
 
@@ -75572,7 +80746,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -75718,7 +80892,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -75918,7 +81092,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styleFunction = void 0;
+exports.styleFunction = exports.default = void 0;
 
 var _system = require("@material-ui/system");
 
@@ -76076,7 +81250,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -76308,7 +81482,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -76668,7 +81842,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -76764,7 +81938,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -76893,7 +82067,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -76995,7 +82169,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -77094,7 +82268,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -77296,7 +82470,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -77444,8 +82618,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.useFormControl = useFormControl;
 exports.default = void 0;
+exports.useFormControl = useFormControl;
 
 var React = _interopRequireWildcard(require("react"));
 
@@ -77495,7 +82669,7 @@ function useFormControl() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -77847,7 +83021,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -78124,7 +83298,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -78692,7 +83866,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -78979,7 +84153,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -79163,7 +84337,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = exports.body = exports.html = void 0;
+exports.styles = exports.html = exports.default = exports.body = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -79295,7 +84469,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -79481,8 +84655,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.setTranslateValue = setTranslateValue;
 exports.default = void 0;
+exports.setTranslateValue = setTranslateValue;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -79811,9 +84985,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isHorizontal = isHorizontal;
+exports.default = void 0;
 exports.getAnchor = getAnchor;
-exports.default = exports.styles = void 0;
+exports.isHorizontal = isHorizontal;
+exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -80167,7 +85342,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -80456,7 +85631,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -80574,7 +85749,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -80679,7 +85854,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -81214,8 +86389,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.hasValue = hasValue;
-exports.isFilled = isFilled;
 exports.isAdornedStart = isAdornedStart;
+exports.isFilled = isFilled;
 
 // Supports determination of isControlled().
 // Controlled input accepts its current value as a prop.
@@ -81254,7 +86429,7 @@ function isAdornedStart(obj) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -81965,7 +87140,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -82350,7 +87525,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -82689,7 +87864,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -82907,7 +88082,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -83013,7 +88188,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -83211,7 +88386,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -83403,7 +88578,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -83843,7 +89018,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -84009,7 +89184,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -84228,7 +89403,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -84560,7 +89735,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.isWidthDown = exports.isWidthUp = void 0;
+exports.isWidthUp = exports.isWidthDown = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -85280,7 +90455,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -85449,7 +90624,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -85623,7 +90798,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -85830,7 +91005,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -86039,7 +91214,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -86370,7 +91545,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -86552,7 +91727,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -86800,7 +91975,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -87144,7 +92319,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -87396,7 +92571,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -87536,7 +92711,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -87881,7 +93056,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -87980,7 +93155,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -88085,7 +93260,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -88179,7 +93354,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -88363,7 +93538,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -88522,9 +93697,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getOffsetTop = getOffsetTop;
+exports.default = void 0;
 exports.getOffsetLeft = getOffsetLeft;
-exports.default = exports.styles = void 0;
+exports.getOffsetTop = getOffsetTop;
+exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -89475,7 +94651,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -89817,7 +94993,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -89992,7 +95168,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -90333,7 +95509,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -90694,7 +95870,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/defineProperty"));
 
@@ -90885,7 +96061,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -94268,7 +99444,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var React = _interopRequireWildcard(require("react"));
 
@@ -94410,7 +99586,7 @@ function useRadioGroup() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -95668,7 +100844,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -96067,7 +101243,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _toConsumableArray2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/toConsumableArray"));
 
@@ -97195,7 +102371,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -97421,7 +102597,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var React = _interopRequireWildcard(require("react"));
 
@@ -97586,7 +102762,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -97814,7 +102990,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -97994,7 +103170,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -98137,7 +103313,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -98296,7 +103472,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -98471,7 +103647,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -98577,8 +103753,8 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.reset = reset;
 exports.default = void 0;
+exports.reset = reset;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -99227,7 +104403,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -99572,7 +104748,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -99900,7 +105076,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -100078,7 +105254,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -100178,7 +105354,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _objectWithoutProperties2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/objectWithoutProperties"));
 
@@ -100461,7 +105637,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -100553,7 +105729,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -100653,7 +105829,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -100925,7 +106101,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -101317,7 +106493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -101488,7 +106664,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -101879,7 +107055,7 @@ function ScrollbarSize(props) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -101975,7 +107151,7 @@ exports.default = _default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -102115,7 +107291,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -102776,7 +107952,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.styles = void 0;
+exports.styles = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -103212,8 +108388,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.styles = exports.default = void 0;
 exports.testReset = testReset;
-exports.default = exports.styles = void 0;
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
@@ -105063,6 +110239,12 @@ Object.defineProperty(exports, "Tab", {
     return _Tab.default;
   }
 });
+Object.defineProperty(exports, "TabScrollButton", {
+  enumerable: true,
+  get: function () {
+    return _TabScrollButton.default;
+  }
+});
 Object.defineProperty(exports, "Table", {
   enumerable: true,
   get: function () {
@@ -105123,12 +110305,6 @@ Object.defineProperty(exports, "Tabs", {
     return _Tabs.default;
   }
 });
-Object.defineProperty(exports, "TabScrollButton", {
-  enumerable: true,
-  get: function () {
-    return _TabScrollButton.default;
-  }
-});
 Object.defineProperty(exports, "TextField", {
   enumerable: true,
   get: function () {
@@ -105165,6 +110341,13 @@ Object.defineProperty(exports, "Unstable_TrapFocus", {
     return _Unstable_TrapFocus.default;
   }
 });
+Object.defineProperty(exports, "Zoom", {
+  enumerable: true,
+  get: function () {
+    return _Zoom.default;
+  }
+});
+exports.colors = void 0;
 Object.defineProperty(exports, "useMediaQuery", {
   enumerable: true,
   get: function () {
@@ -105189,13 +110372,6 @@ Object.defineProperty(exports, "withWidth", {
     return _withWidth.default;
   }
 });
-Object.defineProperty(exports, "Zoom", {
-  enumerable: true,
-  get: function () {
-    return _Zoom.default;
-  }
-});
-exports.colors = void 0;
 
 var colors = _interopRequireWildcard(require("./colors"));
 
@@ -107010,20 +112186,7 @@ var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("pa
 }), 'Delete');
 
 exports.default = _default;
-},{"@babel/runtime/helpers/interopRequireDefault":"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js","@babel/runtime/helpers/interopRequireWildcard":"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js","react":"../../node_modules/react/index.js","./utils/createSvgIcon":"../../node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"../../src/types/vendor.enum.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Vendor = void 0;
-var Vendor;
-
-(function (Vendor) {
-  Vendor["zalando"] = "zalando";
-  Vendor["universal"] = "universal";
-})(Vendor = exports.Vendor || (exports.Vendor = {}));
-},{}],"components/settings.tsx":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"../../node_modules/@babel/runtime/helpers/interopRequireDefault.js","@babel/runtime/helpers/interopRequireWildcard":"../../node_modules/@babel/runtime/helpers/interopRequireWildcard.js","react":"../../node_modules/react/index.js","./utils/createSvgIcon":"../../node_modules/@material-ui/icons/utils/createSvgIcon.js"}],"components/settings.tsx":[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -107102,8 +112265,6 @@ var Delete_1 = __importDefault(require("@material-ui/icons/Delete"));
 
 var react_1 = __importDefault(require("react"));
 
-var vendor_enum_1 = require("../../../src/types/vendor.enum");
-
 var styles = function styles() {
   return {
     input: {
@@ -107139,15 +112300,9 @@ var styles = function styles() {
   };
 };
 
-var vendors = [{
-  title: 'universal',
-  value: vendor_enum_1.Vendor.universal
-}, {
-  title: 'zalando',
-  value: vendor_enum_1.Vendor.zalando
-}];
-
-var Settings = function (_super) {
+var Settings =
+/** @class */
+function (_super) {
   __extends(Settings, _super);
 
   function Settings(props) {
@@ -107255,7 +112410,7 @@ var Settings = function (_super) {
           marginTop: 20
         },
         key: i
-      }, _this.renderInput('productName', 'productName', 'text', i), _this.renderInput('url', 'url', 'text', i), _this.renderInput('unavailableKeyword', 'unavailableKeyword', 'text', i), _this.renderInput('priceQuerySelector', 'priceQuerySelector', 'text', i), _this.renderSelect('vendor', 'vendor', i, vendors), react_1.default.createElement(core_1.IconButton, {
+      }, _this.renderInput('productName', 'productName', 'text', i), _this.renderInput('url', 'url', 'text', i), react_1.default.createElement(core_1.IconButton, {
         onClick: function onClick() {
           return _this.deleteRow(i);
         }
@@ -107271,16 +112426,11 @@ var Settings = function (_super) {
 }(react_1.default.Component);
 
 exports.default = styles_1.withStyles(styles)(Settings);
-},{"@iobroker/adapter-react/i18n":"../../node_modules/@iobroker/adapter-react/i18n.js","@material-ui/core":"../../node_modules/@material-ui/core/esm/index.js","@material-ui/core/styles":"../../node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/TextField":"../../node_modules/@material-ui/core/esm/TextField/index.js","@material-ui/icons/Add":"../../node_modules/@material-ui/icons/Add.js","@material-ui/icons/Delete":"../../node_modules/@material-ui/icons/Delete.js","react":"../../node_modules/react/index.js","../../../src/types/vendor.enum":"../../src/types/vendor.enum.ts"}],"i18n/en.json":[function(require,module,exports) {
+},{"@iobroker/adapter-react/i18n":"../../node_modules/@iobroker/adapter-react/i18n.js","@material-ui/core":"../../node_modules/@material-ui/core/esm/index.js","@material-ui/core/styles":"../../node_modules/@material-ui/core/esm/styles/index.js","@material-ui/core/TextField":"../../node_modules/@material-ui/core/esm/TextField/index.js","@material-ui/icons/Add":"../../node_modules/@material-ui/icons/Add.js","@material-ui/icons/Delete":"../../node_modules/@material-ui/icons/Delete.js","react":"../../node_modules/react/index.js"}],"i18n/en.json":[function(require,module,exports) {
 module.exports = {
   "product-alert adapter settings": "Adapter settings for product-alert",
   "productName": "Product Name",
-  "url": "URL",
-  "priceQuerySelector": "Query Selector for price tag",
-  "unavailableKeyword": "Keyword(s) to check if unavailable",
-  "vendor": "Vendor",
-  "zalando": "Zalando",
-  "universal": "Universal HTML"
+  "url": "URL"
 };
 },{}],"i18n/de.json":[function(require,module,exports) {
 module.exports = {
@@ -107407,7 +112557,9 @@ var styles = function styles(_theme) {
   };
 };
 
-var App = function (_super) {
+var App =
+/** @class */
+function (_super) {
   __extends(App, _super);
 
   function App(props) {
@@ -107525,7 +112677,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56643" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60456" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -5,9 +5,9 @@
 // The adapter-core module gives you access to the core ioBroker functions
 // you need to create an adapter
 import * as utils from '@iobroker/adapter-core';
-import axios from 'axios';
-import * as cheerio from 'cheerio';
-import { Item } from './types/item.interface';
+import puppeteer from 'puppeteer-extra';
+import StealthPlugin from 'puppeteer-extra-plugin-stealth';
+import { Record } from './types/record.interface';
 
 // Load your modules here, e.g.:
 // import * as fs from "fs";
@@ -27,23 +27,66 @@ class ProductAlert extends utils.Adapter {
      * Is called when databases are connected and adapter received configuration.
      */
     private async onReady(): Promise<void> {
-        const promises: Promise<string | void>[] = []
+        const promises: Promise<string | void>[] = [];
+
+        puppeteer.use(StealthPlugin());
+        const browser = await puppeteer.launch({ defaultViewport: { width: 1920, height: 1080 } });
 
         for (const item of this.config.items || []) {
-            if (!item.productName || !item.url || (!item.unavailableKeyword && !item.priceQuerySelector)) continue;
+            if (!item.productName || !item.url) continue;
 
-            promises.push(
-                axios.get(item.url)
-                    .then(res => {
-                        if (res.status !== 200) throw new Error('URL not available.');
-                        return res.data;
-                    })
-                    .then(data => this.handlePriceDetection(data, item))
-                    .then(data => this.handleAvailable(data, item))
-                    .catch(err => this.log.error(err)),
-            );
+            const page = await browser.newPage();
+            await page.goto(item.url);
+            await page.waitForTimeout(2000);
+
+            const record = await page.evaluate(() => {
+                return [...document.querySelectorAll('body *')]
+                    .map(createRecordFromElement)
+                    .filter(canBePrice)
+                    .sort(sortNodes);
+
+                function createRecordFromElement(element: Element): Record {
+                    if (!element || !element.textContent) return {} as Record;
+                    const text = element.textContent.trim();
+                    const boundingBox = element.getBoundingClientRect();
+
+                    return {
+                        x: boundingBox.x,
+                        y: boundingBox.y,
+                        text,
+                        fontSize: boundingBox.x && boundingBox.y && text.length <= 30 ? parseInt(getComputedStyle(element)['fontSize']) : 0,
+                    };
+                }
+
+                function canBePrice(record: Record): boolean {
+                    return record['y'] < 600
+                        && !!record['fontSize']
+                        && !!record['text'].match(/€/)
+                        && !!record['text'].match(/\d+/);
+                }
+
+                function sortNodes(a: Record, b: Record): number {
+                    if (a['fontSize'] === b['fontSize']) {
+                        if (a['y'] === b['y']) {
+                            if (a['x'] < b['x']) return -1;
+                            return 1;
+                        }
+                        if (a['y'] < b['y']) return -1;
+                        return 1;
+                    }
+                    if (a['fontSize'] > b['fontSize']) return -1;
+                    return 1;
+                }
+            });
+
+            await this.extendAdapterObjectAsync(item.productName, item.productName, 'channel');
+            await this.createAdapterStateIfNotExistsAsync(`${item.productName}.price`, 'product price', 'number');
+            await this.setStateAsync(`${item.productName}.price`, record[0].text);
+            console.log(record[0].text);
+            await page.close();
 
         }
+        await browser.close();
 
         await Promise.all(promises)
             .catch(err => this.log.error(err));
@@ -68,13 +111,13 @@ class ProductAlert extends utils.Adapter {
         }
     }
 
-    createAdapterStateIfNotExists(id: string, name: string, type: ioBroker.CommonType): ioBroker.SetObjectPromise {
+    private createAdapterStateIfNotExistsAsync(id: string, name: string, type: ioBroker.CommonType): ioBroker.SetObjectPromise {
         return this.setObjectNotExistsAsync(id, {
             type: 'state',
             common: {
                 name: name,
                 type: type,
-                role: 'indicator',
+                role: 'state',
                 read: true,
                 write: false,
             },
@@ -82,20 +125,14 @@ class ProductAlert extends utils.Adapter {
         });
     }
 
-    handleAvailable(data: any, item: Item): Promise<string> {
-        if (!data || !item || !item.unavailableKeyword) throw new Error();
-        return this.createAdapterStateIfNotExists(item.productName + '.available', 'available', 'boolean')
-            .then(() => !data.toLowerCase().includes(item.unavailableKeyword.toLowerCase()))
-            .then(res => this.setStateAsync(item.productName + '.available', res, true))
-            .then(() => data);
-    }
-
-    handlePriceDetection(data: any, item: Item): Promise<string> {
-        if (!data || !item || !item.priceQuerySelector) throw new Error();
-        const $ = cheerio.load(data);
-        return this.createAdapterStateIfNotExists(`${item.productName}.current-price`, 'current price', 'string')
-            .then(() => this.setState(`${item.productName}.current-price`, $(item.priceQuerySelector).first().text().replace(/[^(\d|,|.)]/g, ''), true))
-            .then(() => data);
+    private extendAdapterObjectAsync(id: string, name: string, type: 'channel' | 'folder'): ioBroker.SetObjectPromise {
+        return this.extendObjectAsync(id, {
+            type: type,
+            common: {
+                name: name,
+            },
+            native: {},
+        });
     }
 }
 

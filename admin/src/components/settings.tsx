@@ -7,7 +7,6 @@ import AddIcon from '@material-ui/icons/Add';
 import DeleteIcon from '@material-ui/icons/Delete';
 import React from 'react';
 import { Item } from '../../../src/types/item.interface';
-import { Vendor } from '../../../src/types/vendor.enum';
 
 const styles = (): Record<string, CreateCSSProperties> => ({
     input: {
@@ -52,11 +51,6 @@ interface SettingsProps {
 interface SettingsState {
     items: Item[]
 }
-
-const vendors: { value: Vendor; title: AdminWord; }[] = [
-    { title: 'universal', value: Vendor.universal },
-    { title: 'zalando', value: Vendor.zalando }
-];
 
 class Settings extends React.Component<SettingsProps, SettingsState> {
     constructor(props: SettingsProps) {
@@ -139,9 +133,6 @@ class Settings extends React.Component<SettingsProps, SettingsState> {
                         <div style={{ marginTop: 20 }} key={i}>
                             {this.renderInput('productName', 'productName', 'text', i)}
                             {this.renderInput('url', 'url', 'text', i)}
-                            {this.renderInput('unavailableKeyword', 'unavailableKeyword', 'text', i)}
-                            {this.renderInput('priceQuerySelector', 'priceQuerySelector', 'text', i)}
-                            {this.renderSelect('vendor', 'vendor', i, vendors)}
                             <IconButton onClick={() => this.deleteRow(i)}>
                                 <DeleteIcon />
                             </IconButton>

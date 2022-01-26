@@ -9,7 +9,7 @@
 
 [![NPM](https://nodei.co/npm/iobroker.product-alert.png?downloads=true)](https://nodei.co/npm/iobroker.product-alert/)
 
-**Tests:** ![Test and Release](https://github.com/jlssmt/ioBroker.product-alert/workflows/Test%20and%20Release/badge.svg)
+![Test and Release](https://github.com/jlssmt/ioBroker.product-alert/workflows/Test%20and%20Release/badge.svg)
 
 ## product-alert adapter for ioBroker
 

@@ -30,6 +30,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const utils = __importStar(require("@iobroker/adapter-core"));
 const puppeteer_extra_1 = __importDefault(require("puppeteer-extra"));
 const puppeteer_extra_plugin_stealth_1 = __importDefault(require("puppeteer-extra-plugin-stealth"));
+const currency_to_float_1 = require("currency-to-float");
 // Load your modules here, e.g.:
 // import * as fs from "fs";
 class ProductAlert extends utils.Adapter {
@@ -45,9 +46,10 @@ class ProductAlert extends utils.Adapter {
      * Is called when databases are connected and adapter received configuration.
      */
     async onReady() {
+        var _a, _b;
         const promises = [];
         puppeteer_extra_1.default.use((0, puppeteer_extra_plugin_stealth_1.default)());
-        const browser = await puppeteer_extra_1.default.launch({ defaultViewport: { width: 1920, height: 1080 } });
+        const browser = await puppeteer_extra_1.default.launch({ defaultViewport: { width: 4000, height: 2000 } });
         for (const item of this.config.items || []) {
             if (!item.productName || !item.url)
                 continue;
@@ -93,10 +95,13 @@ class ProductAlert extends utils.Adapter {
                     return 1;
                 }
             });
+            await page.screenshot({ path: 'ss.png' });
             await this.extendAdapterObjectAsync(item.productName, item.productName, 'channel');
             await this.createAdapterStateIfNotExistsAsync(`${item.productName}.price`, 'product price', 'number');
-            await this.setStateAsync(`${item.productName}.price`, record[0].text);
-            console.log(record[0].text);
+            if ((_a = record[0]) === null || _a === void 0 ? void 0 : _a.text) {
+                await this.setStateAsync(`${item.productName}.price`, (0, currency_to_float_1.parse)((_b = record[0]) === null || _b === void 0 ? void 0 : _b.text), true);
+            }
+            console.log(record);
             await page.close();
         }
         await browser.close();

@@ -8,6 +8,7 @@ import * as utils from '@iobroker/adapter-core';
 import puppeteer from 'puppeteer-extra';
 import StealthPlugin from 'puppeteer-extra-plugin-stealth';
 import { Record } from './types/record.interface';
+import { parse } from 'currency-to-float';
 
 // Load your modules here, e.g.:
 // import * as fs from "fs";
@@ -30,7 +31,7 @@ class ProductAlert extends utils.Adapter {
         const promises: Promise<string | void>[] = [];
 
         puppeteer.use(StealthPlugin());
-        const browser = await puppeteer.launch({ defaultViewport: { width: 1920, height: 1080 } });
+        const browser = await puppeteer.launch({ defaultViewport: { width: 4000, height: 2000 } });
 
         for (const item of this.config.items || []) {
             if (!item.productName || !item.url) continue;
@@ -81,8 +82,12 @@ class ProductAlert extends utils.Adapter {
 
             await this.extendAdapterObjectAsync(item.productName, item.productName, 'channel');
             await this.createAdapterStateIfNotExistsAsync(`${item.productName}.price`, 'product price', 'number');
-            await this.setStateAsync(`${item.productName}.price`, record[0].text);
-            console.log(record[0].text);
+
+            if (record[0]?.text) {
+                await this.setStateAsync(`${item.productName}.price`, parse(record[0]?.text), true);
+            }
+
+            console.log(record);
             await page.close();
 
         }

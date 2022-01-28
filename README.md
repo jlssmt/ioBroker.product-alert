@@ -24,9 +24,6 @@ With your own javascript code you can f.e. send a telegram alert, or show the pr
 -->
 
 ### **WORK IN PROGRESS**
-* (jlssmt) fix release
-
-### 0.1.0 (2022-01-28)
 * (jlssmt) initial release
 
 ## License

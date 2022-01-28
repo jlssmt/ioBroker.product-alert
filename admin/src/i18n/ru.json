@@ -1,5 +1,5 @@
 {
     "product-alert adapter settings": "Настройки адаптера для product-alert",
-    "option1": "Опция 1",
-    "option2": "option2"
+    "productName": "наименование товара",
+    "url": "URL-адрес"
 }

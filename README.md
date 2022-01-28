@@ -22,8 +22,7 @@ With your own javascript code you can f.e. send a telegram alert, or show the pr
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-
-### **WORK IN PROGRESS**
+### 0.1.1 (2022-01-28)
 * (jlssmt) fix release
 
 ### 0.1.0 (2022-01-28)
